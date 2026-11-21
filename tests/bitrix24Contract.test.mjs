@@ -4,13 +4,10 @@ import {readFileSync} from 'node:fs';
 import {generateFixtures} from '../scripts/generate_bitrix24_contract_fixtures.mjs';
 const read=p=>JSON.parse(readFileSync(new URL(p,import.meta.url),'utf8'));
 const data=generateFixtures(read('../src/data/crm.json'),read('../src/data/synthetic/bank_ml_v2.json'));
-test('deterministic generated fixture structure, preserving enriched REST text',()=>{
+test('deterministic generated REST fixtures including enriched texts',()=>{
  for(const [p,v] of [['manifest.json',data.manifest],['id_mapping.json',data.mapping],...Object.entries(data.pages),...Object.entries(data.errors).map(([k,v])=>['errors/'+k+'.json',v])]){
   const actual=read('../src/data/bitrix24_contract_v1/'+p);
   const normalize=x=>JSON.parse(JSON.stringify(x));
-  if(p.startsWith('activities/')){
-   for(const a of actual.result) if(a.TYPE_ID==='4'||a.TYPE_ID==='1') a.DESCRIPTION=data.pages[p].result.find(y=>y.ID===a.ID)?.DESCRIPTION;
-  }
   assert.deepEqual(normalize(actual),normalize(v),p);
  }
 });
