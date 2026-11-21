@@ -24,7 +24,7 @@ jobs:
           path: src/data/synthetic/bank_nlp_corpus_v1.json
       - name: Run fixture and application tests
         run: npm test
-      - name: Install dependencies
-        run: npm ci
+      - name: Install dependencies (repository has no committed lockfile)
+        run: npm install --no-audit --no-fund
       - name: Build application
         run: npm run build
