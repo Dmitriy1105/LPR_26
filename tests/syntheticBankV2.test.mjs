@@ -1,0 +1,15 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {generateV2} from '../scripts/generate_synthetic_bank_v2.mjs';
+const load=p=>JSON.parse(readFileSync(new URL(p,import.meta.url),'utf8'));
+const crm=load('../src/data/crm.json'),v1=load('../src/data/synthetic/bank_ml_v1.json'),v2=load('../src/data/synthetic/bank_ml_v2.json');
+const people=new Map(crm.people.filter(p=>p.companyId==='bank').map(p=>[p.id,p]));
+test('v2 dataset reproducible',()=>assert.deepEqual(generateV2(crm,v1),v2));
+test('existing people and companies are unchanged',()=>{assert.equal(v2.contactIds.length,30);assert.deepEqual(v2.contactIds,v1.contactIds);assert.equal(crm.companies.length,3);});
+test('all event references point to bank contacts and are time-safe',()=>{for(const e of v2.eventIndex){assert.ok(e.date<=v2.metadata.asOf);for(const id of e.personIds)assert.ok(people.has(id));}assert.equal(new Set(v2.eventIndex.map(e=>e.id)).size,v2.eventIndex.length);});
+test('marketing consent is respected',()=>{for(const e of v2.marketingTouches)assert.equal(people.get(e.personId).consentMarketing,true);});
+test('opportunity outcomes and approvals link to real synthetic opportunities',()=>{const opp=new Map(v2.opportunities.map(x=>[x.id,x]));assert.equal(opp.size,18);for(const x of [...v2.approvalSteps,...v2.decisionOutcomes,...v2.decisionMeetings,...v2.competitorMentions])assert.ok(opp.has(x.opportunityId));for(const o of v2.decisionOutcomes)assert.ok(['won','lost','pending'].includes(o.outcome));});
+test('person snapshots do not use future events and targets are observed',()=>{for(const s of v2.personSnapshots){assert.ok(people.has(s.personId));assert.ok(s.labelWindowEnd<=v2.metadata.asOf);assert.ok(s.features.daysSinceLastContact===null||s.features.daysSinceLastContact>=0);const recent=v2.eventIndex.filter(e=>e.kind==='call'&&e.personIds.includes(s.personId)&&e.date<=s.asOf&&e.date>new Date(Date.parse(s.asOf+'T00:00:00Z')-90*86400000).toISOString().slice(0,10)).length;assert.equal(s.features.calls90d,recent);}});
+test('opportunity snapshot labels have no unobserved future outcomes',()=>{for(const s of v2.opportunitySnapshots){const outcome=v2.decisionOutcomes.find(x=>x.opportunityId===s.opportunityId);if(s.labels.wonWithin180d!==null){assert.ok(outcome.date);assert.ok(outcome.date<=s.labelWindowEnd);assert.ok(outcome.date>s.asOf);}}});
+test('finance amounts reconcile',()=>{for(const r of v2.receivables){const invoice=v2.invoices.find(x=>x.id===r.invoiceId);const paid=v2.payments.filter(x=>x.invoiceId===r.invoiceId).reduce((s,x)=>s+x.amountRub,0);assert.equal(r.outstandingRub,invoice.amountRub-paid);assert.ok(r.outstandingRub>=0);}});
