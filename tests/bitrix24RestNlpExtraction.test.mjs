@@ -25,3 +25,18 @@ test('missing transcript is represented as missing, not generated',()=>{
 test('duplicate activity IDs fail loudly',()=>{
  assert.throws(()=>extractRestNlpDocuments([pages[0],pages[0]],transcripts),/Duplicate/);
 });
+
+test('REST negative scenarios represent missing or inaccessible text without fabrication',()=>{
+ const scenarios=read(root+'nlp/missing_text_scenarios.json');
+ for(const item of scenarios.cases){
+  const copy=structuredClone(pages);
+  const altered=structuredClone(transcripts);
+  const activity=copy.flatMap(p=>p.result).find(a=>item.activityId?a.ID===item.activityId:a.TYPE_ID===item.selector?.TYPE_ID);
+  assert.ok(activity,item.id);
+  if(item.method==='crm.activity.call.getTranscript')altered.responses[activity.ID]=item.response;
+  else Object.assign(activity,item.override);
+  const doc=extractRestNlpDocuments(copy,altered).find(d=>d.activityId===activity.ID);
+  assert.equal(doc.status,item.expectedStatus,item.id);
+  assert.equal(doc.text,null,item.id);
+ }
+});
