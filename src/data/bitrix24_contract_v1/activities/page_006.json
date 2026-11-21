@@ -875,8 +875,7 @@
       "COMMUNICATIONS": [
         {
           "ENTITY_ID": "1007",
-          "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "ENTITY_TYPE_ID": "3"
         }
       ]
     },
@@ -916,8 +915,7 @@
       "COMMUNICATIONS": [
         {
           "ENTITY_ID": "1028",
-          "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "ENTITY_TYPE_ID": "3"
         }
       ]
     },
@@ -978,8 +976,7 @@
       "COMMUNICATIONS": [
         {
           "ENTITY_ID": "1003",
-          "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "ENTITY_TYPE_ID": "3"
         }
       ]
     },
@@ -998,8 +995,7 @@
       "COMMUNICATIONS": [
         {
           "ENTITY_ID": "1015",
-          "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "ENTITY_TYPE_ID": "3"
         }
       ]
     },

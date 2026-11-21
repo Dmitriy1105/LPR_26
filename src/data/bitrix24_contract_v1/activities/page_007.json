@@ -168,8 +168,7 @@
       "COMMUNICATIONS": [
         {
           "ENTITY_ID": "1016",
-          "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "ENTITY_TYPE_ID": "3"
         }
       ]
     },
@@ -318,8 +317,7 @@
       "COMMUNICATIONS": [
         {
           "ENTITY_ID": "1013",
-          "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "ENTITY_TYPE_ID": "3"
         }
       ]
     },
@@ -490,8 +488,7 @@
       "COMMUNICATIONS": [
         {
           "ENTITY_ID": "1019",
-          "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "ENTITY_TYPE_ID": "3"
         }
       ]
     },
@@ -510,8 +507,7 @@
       "COMMUNICATIONS": [
         {
           "ENTITY_ID": "1026",
-          "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "ENTITY_TYPE_ID": "3"
         }
       ]
     },
@@ -530,8 +526,7 @@
       "COMMUNICATIONS": [
         {
           "ENTITY_ID": "1030",
-          "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "ENTITY_TYPE_ID": "3"
         }
       ]
     },
@@ -572,8 +567,7 @@
       "COMMUNICATIONS": [
         {
           "ENTITY_ID": "1012",
-          "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "ENTITY_TYPE_ID": "3"
         }
       ]
     },
@@ -592,8 +586,7 @@
       "COMMUNICATIONS": [
         {
           "ENTITY_ID": "1010",
-          "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "ENTITY_TYPE_ID": "3"
         }
       ]
     },
@@ -656,8 +649,7 @@
       "COMMUNICATIONS": [
         {
           "ENTITY_ID": "1005",
-          "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "ENTITY_TYPE_ID": "3"
         }
       ]
     },
@@ -676,8 +668,7 @@
       "COMMUNICATIONS": [
         {
           "ENTITY_ID": "1006",
-          "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "ENTITY_TYPE_ID": "3"
         }
       ]
     },
@@ -740,8 +731,7 @@
       "COMMUNICATIONS": [
         {
           "ENTITY_ID": "1027",
-          "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "ENTITY_TYPE_ID": "3"
         }
       ]
     },
@@ -760,8 +750,7 @@
       "COMMUNICATIONS": [
         {
           "ENTITY_ID": "1002",
-          "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "ENTITY_TYPE_ID": "3"
         }
       ]
     },
@@ -780,8 +769,7 @@
       "COMMUNICATIONS": [
         {
           "ENTITY_ID": "1008",
-          "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "ENTITY_TYPE_ID": "3"
         }
       ]
     },
@@ -822,8 +810,7 @@
       "COMMUNICATIONS": [
         {
           "ENTITY_ID": "1001",
-          "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "ENTITY_TYPE_ID": "3"
         }
       ]
     },
@@ -842,8 +829,7 @@
       "COMMUNICATIONS": [
         {
           "ENTITY_ID": "1020",
-          "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "ENTITY_TYPE_ID": "3"
         }
       ]
     },
@@ -862,8 +848,7 @@
       "COMMUNICATIONS": [
         {
           "ENTITY_ID": "1021",
-          "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "ENTITY_TYPE_ID": "3"
         }
       ]
     },
@@ -882,8 +867,7 @@
       "COMMUNICATIONS": [
         {
           "ENTITY_ID": "1009",
-          "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "ENTITY_TYPE_ID": "3"
         }
       ]
     },
@@ -946,8 +930,7 @@
       "COMMUNICATIONS": [
         {
           "ENTITY_ID": "1014",
-          "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "ENTITY_TYPE_ID": "3"
         }
       ]
     },
@@ -966,8 +949,7 @@
       "COMMUNICATIONS": [
         {
           "ENTITY_ID": "1018",
-          "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "ENTITY_TYPE_ID": "3"
         }
       ]
     },
@@ -1008,8 +990,7 @@
       "COMMUNICATIONS": [
         {
           "ENTITY_ID": "1017",
-          "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "ENTITY_TYPE_ID": "3"
         }
       ]
     },
@@ -1028,8 +1009,7 @@
       "COMMUNICATIONS": [
         {
           "ENTITY_ID": "1024",
-          "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "ENTITY_TYPE_ID": "3"
         }
       ]
     },

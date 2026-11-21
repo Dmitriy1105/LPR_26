@@ -981,8 +981,7 @@
       "COMMUNICATIONS": [
         {
           "ENTITY_ID": "1028",
-          "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "ENTITY_TYPE_ID": "3"
         }
       ]
     },

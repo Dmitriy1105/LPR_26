@@ -69,3 +69,9 @@ docs/            кейс и документация
 Добавлены [приближённые к Bitrix24 REST JSON-ответы](src/data/bitrix24_mock/manifest.json) и [документация по формату и ограничениям](docs/BITRIX24_MOCK.md). Исходные ID связываются с числовыми CRM ID через [id_mapping.json](src/data/bitrix24_mock/id_mapping.json).
 
 Воспроизведение: `node scripts/export_bitrix24_mock.mjs`. Это демонстрационные ответы, а не реальная интеграция; полный ML-набор по-прежнему в `bank_ml_v2.json`.
+
+### REST-контракты Битрикс24 (актуальная версия синтетических фикстур)
+
+Для разработки адаптера используйте [контрактно-ориентированный набор](src/data/bitrix24_contract_v1/manifest.json) с **полными страницами ответов** и [описанием API-профиля](docs/BITRIX24_CONTRACT_V1.md). Генератор: `node scripts/generate_bitrix24_contract_fixtures.mjs`; тесты: `node --test tests/bitrix24Contract.test.mjs`.
+
+Старый каталог `bitrix24_mock` сохранён как первоначальный прототип и не должен использоваться как источник точных API-контрактов. Ручная разметка карты остаётся самостоятельным будущим источником; её выделение из текущего `CRMData` и ползунок смешивания пока не реализованы.
