@@ -63,3 +63,9 @@ docs/            кейс и документация
 Пересоздать набор: `node scripts/generate_synthetic_bank_v2.mjs`; проверить: `pnpm test`.
 
 **Все данные синтетические; ML-модель пока не обучена и не подключена к интерфейсу.**
+
+### Имитация REST API Битрикс24
+
+Добавлены [приближённые к Bitrix24 REST JSON-ответы](src/data/bitrix24_mock/manifest.json) и [документация по формату и ограничениям](docs/BITRIX24_MOCK.md). Исходные ID связываются с числовыми CRM ID через [id_mapping.json](src/data/bitrix24_mock/id_mapping.json).
+
+Воспроизведение: `node scripts/export_bitrix24_mock.mjs`. Это демонстрационные ответы, а не реальная интеграция; полный ML-набор по-прежнему в `bank_ml_v2.json`.
