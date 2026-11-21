@@ -1,0 +1,38 @@
+# Синтетическая выгрузка по контрактам Bitrix24 REST v1
+
+**Профиль:** классический `/rest/`. Данные демонстрационные; реальные запросы к порталу не выполнялись. Существующая ручная разметка и интерфейс карты не изменены.
+
+## Поддерживаемые методы
+
+| Метод | Тип | Записей | Страниц |
+|---|---|---:|---:|
+| `crm.item.list` | Компания, entityTypeId=4 | 1 | 1 |
+| `crm.item.list` | Контакт, entityTypeId=3 | 30 | 1 |
+| `crm.item.list` | Сделка, entityTypeId=2 | 18 | 1 |
+| `crm.item.list` | Счёт, entityTypeId=31 | 44 | 1 |
+| `crm.activity.list` | Звонки, письма, встречи | 540 | 11 |
+| `tasks.task.list` | Задачи | 48 | 1 |
+
+Папка `src/data/bitrix24_contract_v1/` содержит `manifest.json`, `id_mapping.json`, отдельные `page_001.json`, `page_002.json` и далее, а также `errors/` с иллюстративными ответами об ошибках. В manifest указаны методы, параметры запросов, формат ответа, полные количества записей и пути ко всем страницам. Каждая страница содержит не более 50 записей, `total` и при необходимости `next`.
+
+**Схемы ответа:** `crm.item.list` — `result.items` и camelCase; `crm.activity.list` — массив `result` и поля UPPER_CASE; `tasks.task.list` — `result.tasks` и camelCase. Это разные классические контракты, не REST 3.0. `crm.item.list` помечен как DEPRECATED. Для REST 3.0 нужны другие контракты и адаптеры.
+
+**Отделение ручной разметки:** оценки `influence`, `warmth`, `decisionRole`, `stance`, связи и ML-метки не экспортируются как поля REST. Наличие их в исходном `bank_ml_v2.json` не означает, что они доступны через Bitrix24. Отдельное хранилище ручных оценок предстоит реализовать позднее.
+
+**Ограничения:** данные получены из синтетического набора, а не из API реального портала. Фикстуры содержат подмножество документированных полей. Тексты писем и заметки о встречах в `DESCRIPTION` условны, телефонные транскрипты не экспортируются. Реальные права, ограничения запросов и доступность почты/телефонии не эмулируются. Договоры, оплаты, задолженность и внутренняя переписка клиента не выдаются за стандартные REST-сущности. `UF_CRM_TASK` отражён в `ufCrmTask` с привязками `C_...` и `D_...`. Время — ISO 8601 с условным смещением +03:00.
+
+## Повторная генерация и тесты
+
+```bash
+node scripts/generate_bitrix24_contract_fixtures.mjs
+node --test tests/bitrix24Contract.test.mjs
+```
+
+**Источники документации (проверены 21.11.2026):**
+
+- https://apidocs.bitrix24.ru/api-reference/crm/universal/crm-item-list.html
+- https://apidocs.bitrix24.ru/api-reference/crm/universal/object-fields.html
+- https://apidocs.bitrix24.ru/api-reference/crm/timeline/activities/activity-base/crm-activity-list.html
+- https://apidocs.bitrix24.ru/api-reference/tasks/tasks-task-list.html
+
+**Дальше:** адаптер REST → нормализованные факты, отделение ручных оценок, после этого — ползунок источников. Полноценная совместимость требует тестового портала и проверки схем `crm.item.fields`.

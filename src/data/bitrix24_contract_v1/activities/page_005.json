@@ -1,0 +1,1076 @@
+{
+  "result": [
+    {
+      "ID": "5201",
+      "OWNER_ID": "1010",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — информационная безопасность",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «информационная безопасность». Готов рассмотреть предложение. Просим уточнить условия, сроки и ответственную сторону. С уважением, Ирина Фомина.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-08-25T12:00:00+03:00",
+      "END_TIME": "2025-08-25T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1010",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p9@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5202",
+      "OWNER_ID": "1002",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — сроки миграции",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «сроки миграции». Готов рассмотреть предложение. Просим уточнить условия, сроки и ответственную сторону. С уважением, Мария Соколова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-08-26T12:00:00+03:00",
+      "END_TIME": "2025-08-26T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1002",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p1@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5203",
+      "OWNER_ID": "1023",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: сроки миграции",
+      "DESCRIPTION": "Тема звонка: сроки миграции",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-08-28T14:15:00+03:00",
+      "END_TIME": "2025-08-28T14:23:00+03:00",
+      "RESPONSIBLE_ID": "17",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1023",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE"
+        }
+      ]
+    },
+    {
+      "ID": "5204",
+      "OWNER_ID": "1007",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — согласование договора",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «согласование договора». Ожидает дополнительных аргументов. Просим уточнить условия, сроки и ответственную сторону. С уважением, Николай Ершов.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-08-28T12:00:00+03:00",
+      "END_TIME": "2025-08-28T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1007",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p6@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5205",
+      "OWNER_ID": "1005",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: технические требования",
+      "DESCRIPTION": "Тема звонка: технические требования",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-08-29T13:45:00+03:00",
+      "END_TIME": "2025-08-29T14:03:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1005",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE"
+        }
+      ]
+    },
+    {
+      "ID": "5206",
+      "OWNER_ID": "1009",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: информационная безопасность",
+      "DESCRIPTION": "Тема звонка: информационная безопасность",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-08-30T17:00:00+03:00",
+      "END_TIME": "2025-08-30T17:15:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1009",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE"
+        }
+      ]
+    },
+    {
+      "ID": "5207",
+      "OWNER_ID": "1021",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: облачная инфраструктура",
+      "DESCRIPTION": "Тема звонка: облачная инфраструктура",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-08-31T14:15:00+03:00",
+      "END_TIME": "2025-08-31T14:46:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1021",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE"
+        }
+      ]
+    },
+    {
+      "ID": "5208",
+      "OWNER_ID": "1010",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: бюджет проекта",
+      "DESCRIPTION": "Тема звонка: бюджет проекта",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-08-31T16:30:00+03:00",
+      "END_TIME": "2025-08-31T17:01:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1010",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE"
+        }
+      ]
+    },
+    {
+      "ID": "5209",
+      "OWNER_ID": "1013",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — условия поддержки",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «условия поддержки». Поддерживает инициативу. Просим уточнить условия, сроки и ответственную сторону. С уважением, Павел Жуков.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-08-31T12:00:00+03:00",
+      "END_TIME": "2025-08-31T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1013",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p12@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5210",
+      "OWNER_ID": "1004",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — график внедрения",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «график внедрения». Выражает сомнения. Просим уточнить условия, сроки и ответственную сторону. С уважением, Анна Орлова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-08-31T12:00:00+03:00",
+      "END_TIME": "2025-08-31T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1004",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p3@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5211",
+      "OWNER_ID": "1017",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: бюджет проекта",
+      "DESCRIPTION": "Тема звонка: бюджет проекта",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-01T17:00:00+03:00",
+      "END_TIME": "2025-09-01T17:40:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1017",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE"
+        }
+      ]
+    },
+    {
+      "ID": "5212",
+      "OWNER_ID": "1029",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: технические требования",
+      "DESCRIPTION": "Тема звонка: технические требования",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-01T15:15:00+03:00",
+      "END_TIME": "2025-09-01T15:28:00+03:00",
+      "RESPONSIBLE_ID": "17",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1029",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE"
+        }
+      ]
+    },
+    {
+      "ID": "5213",
+      "OWNER_ID": "1004",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: согласование договора",
+      "DESCRIPTION": "Тема звонка: согласование договора",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-01T13:15:00+03:00",
+      "END_TIME": "2025-09-01T13:22:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1004",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE"
+        }
+      ]
+    },
+    {
+      "ID": "5214",
+      "OWNER_ID": "1027",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — информационная безопасность",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «информационная безопасность». Ожидает дополнительных аргументов. Просим уточнить условия, сроки и ответственную сторону. С уважением, Игорь Комаров.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-01T12:00:00+03:00",
+      "END_TIME": "2025-09-01T12:05:00+03:00",
+      "RESPONSIBLE_ID": "17",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1027",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p26@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5215",
+      "OWNER_ID": "1005",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — бюджет проекта",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «бюджет проекта». Поддерживает инициативу. Просим уточнить условия, сроки и ответственную сторону. С уважением, Илья Власов.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-01T12:00:00+03:00",
+      "END_TIME": "2025-09-01T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1005",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p4@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5216",
+      "OWNER_ID": "1009",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — сроки миграции",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «сроки миграции». Поддерживает инициативу. Просим уточнить условия, сроки и ответственную сторону. С уважением, Андрей Данилов.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-03T12:00:00+03:00",
+      "END_TIME": "2025-09-03T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1009",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p8@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5217",
+      "OWNER_ID": "1027",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: облачная инфраструктура",
+      "DESCRIPTION": "Тема звонка: облачная инфраструктура",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-04T11:30:00+03:00",
+      "END_TIME": "2025-09-04T12:06:00+03:00",
+      "RESPONSIBLE_ID": "17",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1027",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE"
+        }
+      ]
+    },
+    {
+      "ID": "5218",
+      "OWNER_ID": "1017",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — сроки миграции",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «сроки миграции». Поддерживает инициативу. Просим уточнить условия, сроки и ответственную сторону. С уважением, Роман Савин.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-04T12:00:00+03:00",
+      "END_TIME": "2025-09-04T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1017",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p16@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5219",
+      "OWNER_ID": "1006",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — технические требования",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «технические требования». Готов рассмотреть предложение. Просим уточнить условия, сроки и ответственную сторону. С уважением, Елена Громова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-04T12:00:00+03:00",
+      "END_TIME": "2025-09-04T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1006",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p5@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5220",
+      "OWNER_ID": "1020",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: согласование договора",
+      "DESCRIPTION": "Тема звонка: согласование договора",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-07T17:30:00+03:00",
+      "END_TIME": "2025-09-07T17:41:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1020",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE"
+        }
+      ]
+    },
+    {
+      "ID": "5221",
+      "OWNER_ID": "1015",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: информационная безопасность",
+      "DESCRIPTION": "Тема звонка: информационная безопасность",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-09T09:15:00+03:00",
+      "END_TIME": "2025-09-09T09:36:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1015",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE"
+        }
+      ]
+    },
+    {
+      "ID": "5222",
+      "OWNER_ID": "1001",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: информационная безопасность",
+      "DESCRIPTION": "Тема звонка: информационная безопасность",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-11T16:45:00+03:00",
+      "END_TIME": "2025-09-11T17:02:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1001",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE"
+        }
+      ]
+    },
+    {
+      "ID": "5223",
+      "OWNER_ID": "1013",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: бюджет проекта",
+      "DESCRIPTION": "Тема звонка: бюджет проекта",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-14T17:45:00+03:00",
+      "END_TIME": "2025-09-14T18:02:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1013",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE"
+        }
+      ]
+    },
+    {
+      "ID": "5224",
+      "OWNER_ID": "1012",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: информационная безопасность",
+      "DESCRIPTION": "Тема звонка: информационная безопасность",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-17T17:00:00+03:00",
+      "END_TIME": "2025-09-17T17:22:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1012",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE"
+        }
+      ]
+    },
+    {
+      "ID": "5225",
+      "OWNER_ID": "1030",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: сроки миграции",
+      "DESCRIPTION": "Тема звонка: сроки миграции",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-17T15:15:00+03:00",
+      "END_TIME": "2025-09-17T15:56:00+03:00",
+      "RESPONSIBLE_ID": "19",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1030",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE"
+        }
+      ]
+    },
+    {
+      "ID": "5226",
+      "OWNER_ID": "1016",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: информационная безопасность",
+      "DESCRIPTION": "Тема звонка: информационная безопасность",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-19T13:30:00+03:00",
+      "END_TIME": "2025-09-19T13:38:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1016",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE"
+        }
+      ]
+    },
+    {
+      "ID": "5227",
+      "OWNER_ID": "1007",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: информационная безопасность",
+      "DESCRIPTION": "Тема звонка: информационная безопасность",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-20T12:30:00+03:00",
+      "END_TIME": "2025-09-20T13:07:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1007",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE"
+        }
+      ]
+    },
+    {
+      "ID": "5228",
+      "OWNER_ID": "1011",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: согласование договора",
+      "DESCRIPTION": "Тема звонка: согласование договора",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-21T17:30:00+03:00",
+      "END_TIME": "2025-09-21T17:57:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1011",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE"
+        }
+      ]
+    },
+    {
+      "ID": "5229",
+      "OWNER_ID": "1014",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: согласование договора",
+      "DESCRIPTION": "Тема звонка: согласование договора",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-21T09:15:00+03:00",
+      "END_TIME": "2025-09-21T09:39:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1014",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE"
+        }
+      ]
+    },
+    {
+      "ID": "5230",
+      "OWNER_ID": "1028",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: график внедрения",
+      "DESCRIPTION": "Тема звонка: график внедрения",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-22T10:30:00+03:00",
+      "END_TIME": "2025-09-22T10:41:00+03:00",
+      "RESPONSIBLE_ID": "19",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1028",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE"
+        }
+      ]
+    },
+    {
+      "ID": "5231",
+      "OWNER_ID": "1019",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: облачная инфраструктура",
+      "DESCRIPTION": "Тема звонка: облачная инфраструктура",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-23T09:00:00+03:00",
+      "END_TIME": "2025-09-23T09:15:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1019",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE"
+        }
+      ]
+    },
+    {
+      "ID": "5232",
+      "OWNER_ID": "1025",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: сроки миграции",
+      "DESCRIPTION": "Тема звонка: сроки миграции",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-23T09:30:00+03:00",
+      "END_TIME": "2025-09-23T10:02:00+03:00",
+      "RESPONSIBLE_ID": "17",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1025",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE"
+        }
+      ]
+    },
+    {
+      "ID": "5233",
+      "OWNER_ID": "1018",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: сроки миграции",
+      "DESCRIPTION": "Тема звонка: сроки миграции",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-24T12:00:00+03:00",
+      "END_TIME": "2025-09-24T12:08:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1018",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE"
+        }
+      ]
+    },
+    {
+      "ID": "5234",
+      "OWNER_ID": "1022",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: условия поддержки",
+      "DESCRIPTION": "Тема звонка: условия поддержки",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-24T17:45:00+03:00",
+      "END_TIME": "2025-09-24T18:08:00+03:00",
+      "RESPONSIBLE_ID": "19",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1022",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE"
+        }
+      ]
+    },
+    {
+      "ID": "5235",
+      "OWNER_ID": "1002",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: сроки миграции",
+      "DESCRIPTION": "Тема звонка: сроки миграции",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-26T15:30:00+03:00",
+      "END_TIME": "2025-09-26T16:09:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1002",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE"
+        }
+      ]
+    },
+    {
+      "ID": "5236",
+      "OWNER_ID": "1003",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: сроки миграции",
+      "DESCRIPTION": "Тема звонка: сроки миграции",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-26T10:15:00+03:00",
+      "END_TIME": "2025-09-26T10:40:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1003",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE"
+        }
+      ]
+    },
+    {
+      "ID": "5237",
+      "OWNER_ID": "1024",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: технические требования",
+      "DESCRIPTION": "Тема звонка: технические требования",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-27T14:00:00+03:00",
+      "END_TIME": "2025-09-27T14:15:00+03:00",
+      "RESPONSIBLE_ID": "19",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1024",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE"
+        }
+      ]
+    },
+    {
+      "ID": "5238",
+      "OWNER_ID": "1026",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: облачная инфраструктура",
+      "DESCRIPTION": "Тема звонка: облачная инфраструктура",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-27T13:45:00+03:00",
+      "END_TIME": "2025-09-27T14:03:00+03:00",
+      "RESPONSIBLE_ID": "19",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1026",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE"
+        }
+      ]
+    },
+    {
+      "ID": "5239",
+      "OWNER_ID": "1006",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: сроки миграции",
+      "DESCRIPTION": "Тема звонка: сроки миграции",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-27T09:00:00+03:00",
+      "END_TIME": "2025-09-27T09:28:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1006",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE"
+        }
+      ]
+    },
+    {
+      "ID": "5240",
+      "OWNER_ID": "1008",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: условия поддержки",
+      "DESCRIPTION": "Тема звонка: условия поддержки",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-10-02T15:15:00+03:00",
+      "END_TIME": "2025-10-02T15:36:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1008",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE"
+        }
+      ]
+    },
+    {
+      "ID": "5241",
+      "OWNER_ID": "1013",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — график внедрения",
+      "DESCRIPTION": "Здравствуйте, Павел! Направляем материалы по теме «график внедрения». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-10-16T12:00:00+03:00",
+      "END_TIME": "2025-10-16T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1013",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p12@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5242",
+      "OWNER_ID": "1003",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — сроки миграции",
+      "DESCRIPTION": "Здравствуйте, Дмитрий! Направляем материалы по теме «сроки миграции». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-10-17T12:00:00+03:00",
+      "END_TIME": "2025-10-17T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1003",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p2@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5243",
+      "OWNER_ID": "1030",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — сроки миграции",
+      "DESCRIPTION": "Здравствуйте, Екатерина! Направляем материалы по теме «сроки миграции». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Мария Котова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-10-19T12:00:00+03:00",
+      "END_TIME": "2025-10-19T12:05:00+03:00",
+      "RESPONSIBLE_ID": "19",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1030",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p29@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5244",
+      "OWNER_ID": "1029",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — информационная безопасность",
+      "DESCRIPTION": "Здравствуйте, Денис! Направляем материалы по теме «информационная безопасность». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Алексей Волков.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-10-21T12:00:00+03:00",
+      "END_TIME": "2025-10-21T12:05:00+03:00",
+      "RESPONSIBLE_ID": "17",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1029",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p28@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5245",
+      "OWNER_ID": "1002",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — облачная инфраструктура",
+      "DESCRIPTION": "Здравствуйте, Мария! Направляем материалы по теме «облачная инфраструктура». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-10-22T12:00:00+03:00",
+      "END_TIME": "2025-10-22T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1002",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p1@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5246",
+      "OWNER_ID": "1015",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — бюджет проекта",
+      "DESCRIPTION": "Здравствуйте, Кирилл! Направляем материалы по теме «бюджет проекта». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-10-23T12:00:00+03:00",
+      "END_TIME": "2025-10-23T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1015",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p14@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5247",
+      "OWNER_ID": "1004",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — облачная инфраструктура",
+      "DESCRIPTION": "Здравствуйте, Анна! Направляем материалы по теме «облачная инфраструктура». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-10-24T12:00:00+03:00",
+      "END_TIME": "2025-10-24T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1004",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p3@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5248",
+      "OWNER_ID": "1006",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — сроки миграции",
+      "DESCRIPTION": "Здравствуйте, Елена! Направляем материалы по теме «сроки миграции». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-10-24T12:00:00+03:00",
+      "END_TIME": "2025-10-24T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1006",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p5@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5249",
+      "OWNER_ID": "1005",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — график внедрения",
+      "DESCRIPTION": "Здравствуйте, Илья! Направляем материалы по теме «график внедрения». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-10-25T12:00:00+03:00",
+      "END_TIME": "2025-10-25T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1005",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p4@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5250",
+      "OWNER_ID": "1021",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — сроки миграции",
+      "DESCRIPTION": "Здравствуйте, Виктор! Направляем материалы по теме «сроки миграции». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-10-26T12:00:00+03:00",
+      "END_TIME": "2025-10-26T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1021",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p20@client.example"
+        }
+      ]
+    }
+  ],
+  "total": 540,
+  "next": 250
+}

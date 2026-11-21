@@ -1,0 +1,263 @@
+{
+  "synthetic": true,
+  "profile": "legacy-rest-v1",
+  "apiBase": "/rest/",
+  "snapshotDate": "2026-11-21",
+  "docsChecked": "2026-11-21",
+  "pageSize": 50,
+  "timezone": "+03:00",
+  "sources": [
+    "src/data/crm.json",
+    "src/data/synthetic/bank_ml_v2.json"
+  ],
+  "recordCounts": {
+    "companies": 1,
+    "contacts": 30,
+    "deals": 18,
+    "invoices": 44,
+    "activities": 540,
+    "tasks": 48
+  },
+  "methods": [
+    {
+      "key": "companies",
+      "method": "crm.item.list",
+      "entityTypeId": 4,
+      "resultPath": "result.items",
+      "recordCount": 1,
+      "pages": [
+        {
+          "start": 0,
+          "file": "companies/page_001.json",
+          "count": 1
+        }
+      ],
+      "requestExample": {
+        "method": "crm.item.list",
+        "params": {
+          "entityTypeId": 4,
+          "select": [
+            "*"
+          ],
+          "order": {
+            "id": "ASC"
+          },
+          "start": 0
+        }
+      }
+    },
+    {
+      "key": "contacts",
+      "method": "crm.item.list",
+      "entityTypeId": 3,
+      "resultPath": "result.items",
+      "recordCount": 30,
+      "pages": [
+        {
+          "start": 0,
+          "file": "contacts/page_001.json",
+          "count": 30
+        }
+      ],
+      "requestExample": {
+        "method": "crm.item.list",
+        "params": {
+          "entityTypeId": 3,
+          "select": [
+            "*"
+          ],
+          "order": {
+            "id": "ASC"
+          },
+          "start": 0
+        }
+      }
+    },
+    {
+      "key": "deals",
+      "method": "crm.item.list",
+      "entityTypeId": 2,
+      "resultPath": "result.items",
+      "recordCount": 18,
+      "pages": [
+        {
+          "start": 0,
+          "file": "deals/page_001.json",
+          "count": 18
+        }
+      ],
+      "requestExample": {
+        "method": "crm.item.list",
+        "params": {
+          "entityTypeId": 2,
+          "select": [
+            "*"
+          ],
+          "order": {
+            "id": "ASC"
+          },
+          "start": 0
+        }
+      }
+    },
+    {
+      "key": "invoices",
+      "method": "crm.item.list",
+      "entityTypeId": 31,
+      "resultPath": "result.items",
+      "recordCount": 44,
+      "pages": [
+        {
+          "start": 0,
+          "file": "invoices/page_001.json",
+          "count": 44
+        }
+      ],
+      "requestExample": {
+        "method": "crm.item.list",
+        "params": {
+          "entityTypeId": 31,
+          "select": [
+            "*"
+          ],
+          "order": {
+            "id": "ASC"
+          },
+          "start": 0
+        }
+      }
+    },
+    {
+      "key": "activities",
+      "method": "crm.activity.list",
+      "resultPath": "result",
+      "recordCount": 540,
+      "pages": [
+        {
+          "start": 0,
+          "file": "activities/page_001.json",
+          "count": 50
+        },
+        {
+          "start": 50,
+          "file": "activities/page_002.json",
+          "count": 50
+        },
+        {
+          "start": 100,
+          "file": "activities/page_003.json",
+          "count": 50
+        },
+        {
+          "start": 150,
+          "file": "activities/page_004.json",
+          "count": 50
+        },
+        {
+          "start": 200,
+          "file": "activities/page_005.json",
+          "count": 50
+        },
+        {
+          "start": 250,
+          "file": "activities/page_006.json",
+          "count": 50
+        },
+        {
+          "start": 300,
+          "file": "activities/page_007.json",
+          "count": 50
+        },
+        {
+          "start": 350,
+          "file": "activities/page_008.json",
+          "count": 50
+        },
+        {
+          "start": 400,
+          "file": "activities/page_009.json",
+          "count": 50
+        },
+        {
+          "start": 450,
+          "file": "activities/page_010.json",
+          "count": 50
+        },
+        {
+          "start": 500,
+          "file": "activities/page_011.json",
+          "count": 40
+        }
+      ],
+      "requestExample": {
+        "method": "crm.activity.list",
+        "params": {
+          "select": [
+            "*",
+            "COMMUNICATIONS"
+          ],
+          "order": {
+            "ID": "ASC"
+          },
+          "start": 0
+        }
+      }
+    },
+    {
+      "key": "tasks",
+      "method": "tasks.task.list",
+      "resultPath": "result.tasks",
+      "recordCount": 48,
+      "pages": [
+        {
+          "start": 0,
+          "file": "tasks/page_001.json",
+          "count": 48
+        }
+      ],
+      "requestExample": {
+        "method": "tasks.task.list",
+        "params": {
+          "select": [
+            "ID",
+            "TITLE",
+            "DESCRIPTION",
+            "STATUS",
+            "CREATED_DATE",
+            "DEADLINE",
+            "CLOSED_DATE",
+            "RESPONSIBLE_ID",
+            "UF_CRM_TASK"
+          ],
+          "order": {
+            "ID": "asc"
+          },
+          "start": 0
+        }
+      }
+    }
+  ],
+  "errors": [
+    "access_denied",
+    "insufficient_scope",
+    "invalid_credentials"
+  ],
+  "excluded": [
+    "manualAnnotations",
+    "relationshipEvents",
+    "personSnapshots",
+    "opportunitySnapshots",
+    "payments",
+    "receivables",
+    "contracts",
+    "clientInternalMessages",
+    "decisionOutcomes"
+  ],
+  "limitations": [
+    "Subset of fields, not real portal data",
+    "Saved response pages, not a live REST server",
+    "No authorization or access filtering",
+    "Email and meeting descriptions illustrative; transcripts not exported",
+    "This is legacy REST v1, not REST 3.0"
+  ]
+}
