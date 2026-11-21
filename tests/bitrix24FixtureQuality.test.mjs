@@ -77,3 +77,15 @@ test('all REST page pointers are contiguous and exhaustive', () => {
     assert.equal(offset, method.recordCount, method.key);
   }
 });
+
+test('contact names preserve Russian first and family name order', () => {
+  const original = new Map(crm.people.filter(person => person.companyId === 'bank')
+    .map(person => [output.mapping.contactIds[person.id], person.name]));
+  for (const contact of rows('contacts')) {
+    const parts = original.get(contact.id)?.trim().split(/\\s+/);
+    assert.ok(parts, String(contact.id));
+    assert.equal(contact.lastName, parts[0]);
+    assert.equal(contact.name, parts[1] || parts[0]);
+    if (parts.length > 2) assert.equal(contact.secondName, parts.slice(2).join(' '));
+  }
+});
