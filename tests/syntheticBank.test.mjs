@@ -1,0 +1,11 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {generate} from '../scripts/generate_synthetic_bank_data.mjs';
+const crm=JSON.parse(readFileSync(new URL('../src/data/crm.json',import.meta.url),'utf8'));
+const dataset=JSON.parse(readFileSync(new URL('../src/data/synthetic/bank_ml_v1.json',import.meta.url),'utf8'));
+const ids=new Set(crm.people.filter(p=>p.companyId==='bank').map(p=>p.id));
+test('synthetic dataset is reproducible',()=>assert.deepEqual(generate(crm),dataset));
+test('all referenced people are in bank',()=>{for(const type of ['calls','emails','meetings','manualAnnotations'])for(const row of dataset[type])assert.ok(ids.has(row.personId));for(const c of dataset.contracts)for(const field of ['signerPersonId','procurementPersonId','financePersonId'])assert.ok(ids.has(c[field]));});
+test('finance references and debt are consistent',()=>{const contracts=new Set(dataset.contracts.map(c=>c.id)),invoices=new Map(dataset.invoices.map(i=>[i.id,i]));for(const i of dataset.invoices)assert.ok(contracts.has(i.contractId));for(const p of dataset.payments){assert.ok(invoices.has(p.invoiceId));assert.ok(p.date>=invoices.get(p.invoiceId).issuedDate);}for(const r of dataset.receivables){const inv=invoices.get(r.invoiceId);const paid=dataset.payments.filter(p=>p.invoiceId===r.invoiceId).reduce((s,p)=>s+p.amountRub,0);assert.equal(r.paidRub,paid);assert.equal(r.outstandingRub,inv.amountRub-paid);assert.ok(r.outstandingRub>=0);}});
+test('manual annotations cite only past evidence',()=>{const events=new Map([...dataset.calls,...dataset.emails,...dataset.meetings].map(x=>[x.id,x]));for(const note of dataset.manualAnnotations)for(const id of note.evidenceIds){const e=events.get(id);assert.ok(e);assert.equal(e.personId,note.personId);assert.ok(e.date<=note.date);}});
