@@ -41,17 +41,37 @@ export function generateFixtures(crm,bank){
   }
   if(used.size!==Object.keys(overlay.descriptions).length)throw Error('Orphan enrichment in '+page);
  }
+ const transcripts=JSON.parse(readFileSync(resolve(enrichmentRoot,'call_transcriptions.json'),'utf8')).transcriptions;
+ const emailMeta=JSON.parse(readFileSync(resolve(enrichmentRoot,'email_adapter_metadata.json'),'utf8')).metadata;
+ const callResponses={},emailResponses={};
+ for(const [page,payload] of Object.entries(pages)){
+  if(!page.startsWith('activities/'))continue;
+  for(const a of payload.result){
+   if(a.TYPE_ID==='2'){
+    if(!Object.hasOwn(transcripts,a.ID))throw Error('Missing transcript source '+a.ID);
+    callResponses[a.ID]={result:transcripts[a.ID]===null?null:{transcription:transcripts[a.ID]}};
+   }else if(a.TYPE_ID==='4'){
+    const meta=emailMeta[a.ID];if(!meta)throw Error('Missing email metadata '+a.ID);
+    emailResponses[a.ID]={result:{activityId:a.ID,subject:a.SUBJECT,from:meta.from,to:meta.to,body:a.DESCRIPTION,threadId:meta.threadId}};
+   }
+  }
+ }
+ if(Object.keys(callResponses).length!==Object.keys(transcripts).length||Object.keys(emailResponses).length!==Object.keys(emailMeta).length)throw Error('Orphan NLP source metadata');
+ const nlpResponses={
+  'nlp/call_transcript_responses.json':{synthetic:true,method:'crm.activity.call.getTranscript',responses:callResponses},
+  'nlp/email_content_responses.json':{synthetic:true,kind:'synthetic_email_content_adapter',note:'Not a verified standard Bitrix24 REST response. Content derived from crm.activity.list DESCRIPTION.',responses:emailResponses}
+ };
  const errors={access_denied:{error:"ACCESS_DENIED",error_description:"Access denied"},insufficient_scope:{error:"insufficient_scope",error_description:"The request requires higher privileges than provided by the access token"},invalid_credentials:{error:"INVALID_CREDENTIALS",error_description:"Invalid request credentials"}};
  const manifest={synthetic:true,profile:"mixed-crm-item-and-legacy-activity",apiBase:"/rest/",snapshotDate:bank.metadata.asOf,docsChecked:"2026-11-21",pageSize:50,timezone:"+03:00",sources:["src/data/crm.json","src/data/synthetic/bank_ml_v2.json"],recordCounts:Object.fromEntries(defs.map(x=>[x[0],x[4].length])),methods,textSources:{email:"crm.activity.list result[].DESCRIPTION",meeting:"crm.activity.list result[].DESCRIPTION",call:"crm.activity.call.getTranscript result.transcription"},negativeScenarios:"nlp/missing_text_scenarios.json",errors:Object.keys(errors),excluded:["manualAnnotations","relationshipEvents","personSnapshots","opportunitySnapshots","payments","receivables","contracts","clientInternalMessages","decisionOutcomes"],limitations:["Subset of fields, not real portal data","Saved response pages, not a live REST server","No authorization or access filtering","Email and meeting descriptions are authored synthetic scenarios","Call transcripts are separate REST-like response fixtures","Mixes crm.item.list with legacy crm.activity.list; not a complete REST portal"]};
- return {manifest,mapping:{synthetic:true,companyIds:{bank:42},contactIds,dealIds,invoiceIds,activityIds,taskIds,users},pages,errors};
+ return {nlpResponses,manifest,mapping:{synthetic:true,companyIds:{bank:42},contactIds,dealIds,invoiceIds,activityIds,taskIds,users},pages,errors};
 }
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){
  const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
  const crm=JSON.parse(readFileSync(resolve(root,'src/data/crm.json'),'utf8'));
  const bank=JSON.parse(readFileSync(resolve(root,'src/data/synthetic/bank_ml_v2.json'),'utf8'));
  const out=resolve(root,'src/data/bitrix24_contract_v1');
- const {manifest,mapping,pages,errors}=generateFixtures(crm,bank);
- for(const [name,value] of [['manifest.json',manifest],['id_mapping.json',mapping],...Object.entries(pages),...Object.entries(errors).map(([name,obj])=>['errors/'+name+'.json',obj])]){
+ const {manifest,mapping,pages,errors,nlpResponses}=generateFixtures(crm,bank);
+ for(const [name,value] of [['manifest.json',manifest],['id_mapping.json',mapping],...Object.entries(pages),...Object.entries(nlpResponses),...Object.entries(errors).map(([name,obj])=>['errors/'+name+'.json',obj])]){
   const path=resolve(out,name);mkdirSync(dirname(path),{recursive:true});writeFileSync(path,JSON.stringify(value,null,2)+'\n','utf8');
  }
  console.log('Generated contract fixtures',manifest.recordCounts);
