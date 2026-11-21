@@ -1,0 +1,26 @@
+name: Bitrix24 fixture quality
+on:
+  push:
+    branches: [feature/bitrix24-fixtures-qc]
+  pull_request:
+  workflow_dispatch:
+jobs:
+  fixtures:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify generated fixture files are current
+        run: |
+          node scripts/generate_bitrix24_contract_fixtures.mjs
+          git diff --exit-code -- src/data/bitrix24_contract_v1
+      - name: Run fixture and application tests
+        run: npm test
+      - name: Install dependencies
+        run: npm ci
+      - name: Build application
+        run: npm run build
