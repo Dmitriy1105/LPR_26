@@ -14,10 +14,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Verify generated fixture files are current
-        run: |
-          node scripts/generate_bitrix24_contract_fixtures.mjs
-          git diff --exit-code -- src/data/bitrix24_contract_v1
+      - name: Validate committed REST fixtures without overwriting enriched text
+        run: node --test tests/bitrix24RestTextIntegrity.test.mjs tests/bitrix24RestNlpExtraction.test.mjs
       - name: Generate linked NLP text corpus
         run: node scripts/generate_bitrix24_nlp_corpus.mjs
       - uses: actions/upload-artifact@v4
