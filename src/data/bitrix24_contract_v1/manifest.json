@@ -16,7 +16,7 @@
     "deals": 18,
     "invoices": 44,
     "activities": 540,
-    "tasks": 48
+    "tasks": 44
   },
   "methods": [
     {
@@ -207,12 +207,12 @@
       "key": "tasks",
       "method": "tasks.task.list",
       "resultPath": "result.tasks",
-      "recordCount": 48,
+      "recordCount": 44,
       "pages": [
         {
           "start": 0,
           "file": "tasks/page_001.json",
-          "count": 48
+          "count": 44
         }
       ],
       "requestExample": {
