@@ -14,7 +14,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Validate committed REST fixtures without overwriting enriched text
+      - name: Regenerate canonical REST fixture pages with versioned text overlays
+        run: node scripts/generate_bitrix24_contract_fixtures.mjs
+      - name: Validate regenerated REST text and missing-data scenarios
         run: node --test tests/bitrix24RestTextIntegrity.test.mjs tests/bitrix24RestNlpExtraction.test.mjs
       - name: Generate linked NLP text corpus
         run: node scripts/generate_bitrix24_nlp_corpus.mjs
