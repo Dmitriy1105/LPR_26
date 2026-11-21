@@ -28,6 +28,8 @@ npm run build
 
 `src/integrations/bitrix24/extractRestNlpDocuments.mjs` извлекает текст из `activities/` и `nlp/call_transcript_responses.json` без использования заранее рассчитанных NLP-оценок. При отсутствии текста возвращается `status: "missing_text"`, а не придуманная расшифровка.
 
+Для подготовки данных карты добавлен независимый адаптер `src/integrations/bitrix24/buildRestMapFeed.mjs`: он создаёт 30 контактов и 540 взаимодействий непосредственно из REST JSON и намеренно оставляет `decisionRole`, `influence` и `stance` равными `null`, поскольку REST-источник их не доказывает. Его проверяет `tests/bitrix24RestMapFeed.test.mjs`.
+
 **Важно:** действующий UI карты (`src/api/crmApi.ts`) по умолчанию продолжает читать `src/data/crm.json`. REST-фикстуры пока не подключены как источник данных непосредственно к визуальной карте. Это отдельный шаг интеграции; не следует утверждать, что интерфейс уже работает на REST-данных. Ручные аналитические оценки в REST JSON не включены.
 
 ## Ограничения
