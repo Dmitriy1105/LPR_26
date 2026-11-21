@@ -27,6 +27,20 @@ export function generateFixtures(crm,bank){
   const pageInfo=[];for(let i=0;i<rows.length;i+=50){const file=`${key}/page_${String(i/50+1).padStart(3,"0")}.json`,items=rows.slice(i,i+50);pages[file]={result:resultPath==="result.items"?{items}:resultPath==="result.tasks"?{tasks:items}:items,total:rows.length,...(i+50<rows.length?{next:i+50}:{})};pageInfo.push({start:i,file,count:items.length})}
   methods.push({key,method,...(entityTypeId?{entityTypeId}:{}),resultPath,recordCount:rows.length,pages:pageInfo,requestExample:method==="tasks.task.list"?{method,params:{order:{ID:"asc"},filter:{},select:["ID","TITLE","DESCRIPTION","STATUS","CREATED_DATE","DEADLINE","CLOSED_DATE","RESPONSIBLE_ID","UF_CRM_TASK"],start:0}}:{method,params:{...(entityTypeId?{entityTypeId}:{}),...(method==="crm.item.list"?{select:["*"],order:{id:"ASC"}}:{select:["*","COMMUNICATIONS"],order:{ID:"ASC"}}),start:0}}});
  }
+ // Reapply deterministic, versioned synthetic communication texts after generating base rows.
+ // These are authored fixture inputs, not NLP predictions or manual LPR annotations.
+ const enrichmentRoot=resolve(dirname(fileURLToPath(import.meta.url)),'../src/data/bitrix24_contract_v1/enrichment');
+ for(let i=1;i<=11;i++){
+  const page='activities/page_'+String(i).padStart(3,'0')+'.json';
+  const overlay=JSON.parse(readFileSync(resolve(enrichmentRoot,'page_'+String(i).padStart(3,'0')+'.json'),'utf8'));
+  const used=new Set();
+  for(const activity of pages[page].result){
+   if(activity.TYPE_ID!=='4'&&activity.TYPE_ID!=='1')continue;
+   if(typeof overlay.descriptions[activity.ID]!=='string')throw Error('Missing enrichment for '+activity.ID);
+   activity.DESCRIPTION=overlay.descriptions[activity.ID];used.add(activity.ID);
+  }
+  if(used.size!==Object.keys(overlay.descriptions).length)throw Error('Orphan enrichment in '+page);
+ }
  const errors={access_denied:{error:"ACCESS_DENIED",error_description:"Access denied"},insufficient_scope:{error:"insufficient_scope",error_description:"The request requires higher privileges than provided by the access token"},invalid_credentials:{error:"INVALID_CREDENTIALS",error_description:"Invalid request credentials"}};
  const manifest={synthetic:true,profile:"legacy-rest-v1",apiBase:"/rest/",snapshotDate:bank.metadata.asOf,docsChecked:"2026-11-21",pageSize:50,timezone:"+03:00",sources:["src/data/crm.json","src/data/synthetic/bank_ml_v2.json"],recordCounts:Object.fromEntries(defs.map(x=>[x[0],x[4].length])),methods,errors:Object.keys(errors),excluded:["manualAnnotations","relationshipEvents","personSnapshots","opportunitySnapshots","payments","receivables","contracts","clientInternalMessages","decisionOutcomes"],limitations:["Subset of fields, not real portal data","Saved response pages, not a live REST server","No authorization or access filtering","Email and meeting descriptions illustrative; transcripts not exported","This is legacy REST v1, not REST 3.0"]};
  return {manifest,mapping:{synthetic:true,companyIds:{bank:42},contactIds,dealIds,invoiceIds,activityIds,taskIds,users},pages,errors};
