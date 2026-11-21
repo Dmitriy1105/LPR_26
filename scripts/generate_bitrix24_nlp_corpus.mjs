@@ -80,11 +80,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   const dest=resolve(root,'src/data/synthetic/bank_nlp_corpus_v1.json');
   mkdirSync(dirname(dest),{recursive:true});
   writeFileSync(dest,JSON.stringify({metadata:corpus.metadata,counts:corpus.counts,documents:corpus.documents},null,2)+'\n','utf8');
-  const responseDir=resolve(root,'src/data/bitrix24_contract_v1/nlp');
-  mkdirSync(responseDir,{recursive:true});
-  for(const [name,value] of [
-    ['call_transcript_responses.json',{synthetic:true,method:'crm.activity.call.getTranscript',responses:corpus.transcriptResponses}],
-    ['email_content_responses.json',{synthetic:true,kind:'synthetic_email_content_adapter',note:'Not a standard Bitrix24 REST method response',responses:corpus.emailResponses}]
-  ]) writeFileSync(resolve(responseDir,name),JSON.stringify(value,null,2)+'\n','utf8');
+  // Do not overwrite canonical REST transcript and email response fixtures.
+  // The generated NLP corpus is a derived artifact, not the source of truth.
   console.log('Generated NLP corpus:',corpus.counts,'->',dest);
 }
