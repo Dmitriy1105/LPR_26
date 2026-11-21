@@ -24,7 +24,7 @@ test('every exported identifier is unique per entity type', () => {
   for (const key of ['companies', 'contacts', 'deals', 'invoices', 'activities', 'tasks']) {
     const ids = rows(key).map(item => String(item.id ?? item.ID));
     assert.equal(new Set(ids).size, ids.length, key);
-    assert.ok(ids.every(id => /^\\d+$/.test(id)), key);
+    assert.ok(ids.every(id => /^\d+$/.test(id)), key);
   }
 });
 
@@ -82,7 +82,7 @@ test('contact names preserve Russian first and family name order', () => {
   const original = new Map(crm.people.filter(person => person.companyId === 'bank')
     .map(person => [output.mapping.contactIds[person.id], person.name]));
   for (const contact of rows('contacts')) {
-    const parts = original.get(contact.id)?.trim().split(/\\s+/);
+    const parts = original.get(contact.id)?.trim().split(/\s+/);
     assert.ok(parts, String(contact.id));
     assert.equal(contact.lastName, parts[0]);
     assert.equal(contact.name, parts[1] || parts[0]);
