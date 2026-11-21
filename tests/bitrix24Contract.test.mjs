@@ -5,7 +5,7 @@ import {generateFixtures} from '../scripts/generate_bitrix24_contract_fixtures.m
 const read=p=>JSON.parse(readFileSync(new URL(p,import.meta.url),'utf8'));
 const data=generateFixtures(read('../src/data/crm.json'),read('../src/data/synthetic/bank_ml_v2.json'));
 test('deterministic generated REST fixtures including enriched texts',()=>{
- for(const [p,v] of [['manifest.json',data.manifest],['id_mapping.json',data.mapping],...Object.entries(data.pages),...Object.entries(data.errors).map(([k,v])=>['errors/'+k+'.json',v])]){
+ for(const [p,v] of [['manifest.json',data.manifest],['id_mapping.json',data.mapping],...Object.entries(data.pages),...Object.entries(data.nlpResponses),...Object.entries(data.errors).map(([k,v])=>['errors/'+k+'.json',v])]){
   const actual=read('../src/data/bitrix24_contract_v1/'+p);
   const normalize=x=>JSON.parse(JSON.stringify(x));
   assert.deepEqual(normalize(actual),normalize(v),p);
