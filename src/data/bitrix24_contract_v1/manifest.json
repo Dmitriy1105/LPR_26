@@ -1,6 +1,6 @@
 {
   "synthetic": true,
-  "profile": "legacy-rest-v1",
+  "profile": "mixed-crm-item-and-legacy-activity",
   "apiBase": "/rest/",
   "snapshotDate": "2026-11-21",
   "docsChecked": "2026-11-21",
@@ -232,11 +232,18 @@
           "order": {
             "ID": "asc"
           },
-          "start": 0
+          "start": 0,
+          "filter": {}
         }
       }
     }
   ],
+  "textSources": {
+    "email": "crm.activity.list result[].DESCRIPTION",
+    "meeting": "crm.activity.list result[].DESCRIPTION",
+    "call": "crm.activity.call.getTranscript result.transcription"
+  },
+  "negativeScenarios": "nlp/missing_text_scenarios.json",
   "errors": [
     "access_denied",
     "insufficient_scope",
@@ -257,7 +264,8 @@
     "Subset of fields, not real portal data",
     "Saved response pages, not a live REST server",
     "No authorization or access filtering",
-    "Email and meeting descriptions illustrative; transcripts not exported",
-    "This is legacy REST v1, not REST 3.0"
+    "Email and meeting descriptions are authored synthetic scenarios",
+    "Call transcripts are separate REST-like response fixtures",
+    "Mixes crm.item.list with legacy crm.activity.list; not a complete REST portal"
   ]
 }

@@ -1,0 +1,4147 @@
+{
+  "synthetic": true,
+  "source": "REST activity fixture",
+  "recordCount": 90,
+  "documents": [
+    {
+      "id": "nlp_activity_5091",
+      "crmActivityId": "5091",
+      "contactId": "1017",
+      "responsibleId": "18",
+      "date": "2025-05-10T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "согласование договора",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: согласование договора."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Окончательное решение принимается после обсуждения с руководителем направления."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте материалы для согласования."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: согласование договора.\ncustomer: Окончательное решение принимается после обсуждения с руководителем направления.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте материалы для согласования.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5092",
+      "crmActivityId": "5092",
+      "contactId": "1003",
+      "responsibleId": "18",
+      "date": "2025-05-12T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "сроки миграции",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: сроки миграции."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Закупочная комиссия должна оценить условия предложения."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Потребуется сравнительная таблица предложений."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: сроки миграции.\ncustomer: Закупочная комиссия должна оценить условия предложения.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Потребуется сравнительная таблица предложений.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5093",
+      "crmActivityId": "5093",
+      "contactId": "1023",
+      "responsibleId": "17",
+      "date": "2025-05-12T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "сроки миграции",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: сроки миграции."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Служба информационной безопасности должна проверить решение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Нужны документы по защите данных."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: сроки миграции.\ncustomer: Служба информационной безопасности должна проверить решение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Нужны документы по защите данных.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5094",
+      "crmActivityId": "5094",
+      "contactId": "1024",
+      "responsibleId": "19",
+      "date": "2025-05-13T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "согласование договора",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: согласование договора."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "До принятия решения нужно обсудить риски и сопровождение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Пригласим профильного специалиста."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: согласование договора.\ncustomer: До принятия решения нужно обсудить риски и сопровождение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Пригласим профильного специалиста.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5095",
+      "crmActivityId": "5095",
+      "contactId": "1008",
+      "responsibleId": "18",
+      "date": "2025-05-13T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "облачная инфраструктура",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: облачная инфраструктура."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Нам необходимо подтвердить бюджет с финансовой службой."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Пришлите расчёт с вариантами оплаты."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: облачная инфраструктура.\ncustomer: Нам необходимо подтвердить бюджет с финансовой службой.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Пришлите расчёт с вариантами оплаты.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5096",
+      "crmActivityId": "5096",
+      "contactId": "1029",
+      "responsibleId": "17",
+      "date": "2025-05-14T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "информационная безопасность",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: информационная безопасность."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Закупочная комиссия должна оценить условия предложения."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Потребуется сравнительная таблица предложений."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: информационная безопасность.\ncustomer: Закупочная комиссия должна оценить условия предложения.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Потребуется сравнительная таблица предложений.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5097",
+      "crmActivityId": "5097",
+      "contactId": "1013",
+      "responsibleId": "18",
+      "date": "2025-05-16T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "сроки миграции",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: сроки миграции."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Служба информационной безопасности должна проверить решение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Нужны документы по защите данных."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: сроки миграции.\ncustomer: Служба информационной безопасности должна проверить решение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Нужны документы по защите данных.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5098",
+      "crmActivityId": "5098",
+      "contactId": "1019",
+      "responsibleId": "18",
+      "date": "2025-05-19T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "облачная инфраструктура",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: облачная инфраструктура."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Сроки внедрения зависят от загрузки технической команды."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте календарный план."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: облачная инфраструктура.\ncustomer: Сроки внедрения зависят от загрузки технической команды.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте календарный план.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5099",
+      "crmActivityId": "5099",
+      "contactId": "1030",
+      "responsibleId": "19",
+      "date": "2025-05-23T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "условия поддержки",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: условия поддержки."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Сроки внедрения зависят от загрузки технической команды."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте календарный план."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: условия поддержки.\ncustomer: Сроки внедрения зависят от загрузки технической команды.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте календарный план.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5100",
+      "crmActivityId": "5100",
+      "contactId": "1004",
+      "responsibleId": "18",
+      "date": "2025-05-23T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "график внедрения",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: график внедрения."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Служба информационной безопасности должна проверить решение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Нужны документы по защите данных."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: график внедрения.\ncustomer: Служба информационной безопасности должна проверить решение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Нужны документы по защите данных.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5101",
+      "crmActivityId": "5101",
+      "contactId": "1010",
+      "responsibleId": "18",
+      "date": "2025-05-23T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "согласование договора",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: согласование договора."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Сроки внедрения зависят от загрузки технической команды."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте календарный план."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: согласование договора.\ncustomer: Сроки внедрения зависят от загрузки технической команды.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте календарный план.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5102",
+      "crmActivityId": "5102",
+      "contactId": "1021",
+      "responsibleId": "18",
+      "date": "2025-05-24T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "график внедрения",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: график внедрения."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Сроки внедрения зависят от загрузки технической команды."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте календарный план."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: график внедрения.\ncustomer: Сроки внедрения зависят от загрузки технической команды.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте календарный план.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5103",
+      "crmActivityId": "5103",
+      "contactId": "1001",
+      "responsibleId": "18",
+      "date": "2025-05-25T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "согласование договора",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: согласование договора."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Служба информационной безопасности должна проверить решение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Нужны документы по защите данных."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: согласование договора.\ncustomer: Служба информационной безопасности должна проверить решение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Нужны документы по защите данных.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5104",
+      "crmActivityId": "5104",
+      "contactId": "1018",
+      "responsibleId": "18",
+      "date": "2025-05-25T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "условия поддержки",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: условия поддержки."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Служба информационной безопасности должна проверить решение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Нужны документы по защите данных."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: условия поддержки.\ncustomer: Служба информационной безопасности должна проверить решение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Нужны документы по защите данных.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5105",
+      "crmActivityId": "5105",
+      "contactId": "1009",
+      "responsibleId": "18",
+      "date": "2025-05-25T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "бюджет проекта",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: бюджет проекта."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Окончательное решение принимается после обсуждения с руководителем направления."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте материалы для согласования."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: бюджет проекта.\ncustomer: Окончательное решение принимается после обсуждения с руководителем направления.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте материалы для согласования.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5106",
+      "crmActivityId": "5106",
+      "contactId": "1012",
+      "responsibleId": "18",
+      "date": "2025-05-26T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "согласование договора",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: согласование договора."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "До принятия решения нужно обсудить риски и сопровождение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Пригласим профильного специалиста."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: согласование договора.\ncustomer: До принятия решения нужно обсудить риски и сопровождение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Пригласим профильного специалиста.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5107",
+      "crmActivityId": "5107",
+      "contactId": "1002",
+      "responsibleId": "18",
+      "date": "2025-05-27T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "условия поддержки",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: условия поддержки."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Нам необходимо подтвердить бюджет с финансовой службой."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Пришлите расчёт с вариантами оплаты."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: условия поддержки.\ncustomer: Нам необходимо подтвердить бюджет с финансовой службой.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Пришлите расчёт с вариантами оплаты.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5108",
+      "crmActivityId": "5108",
+      "contactId": "1025",
+      "responsibleId": "17",
+      "date": "2025-05-27T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "бюджет проекта",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: бюджет проекта."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Нам необходимо подтвердить бюджет с финансовой службой."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Пришлите расчёт с вариантами оплаты."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: бюджет проекта.\ncustomer: Нам необходимо подтвердить бюджет с финансовой службой.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Пришлите расчёт с вариантами оплаты.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5109",
+      "crmActivityId": "5109",
+      "contactId": "1026",
+      "responsibleId": "19",
+      "date": "2025-05-29T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "бюджет проекта",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: бюджет проекта."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Сроки внедрения зависят от загрузки технической команды."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте календарный план."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: бюджет проекта.\ncustomer: Сроки внедрения зависят от загрузки технической команды.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте календарный план.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5110",
+      "crmActivityId": "5110",
+      "contactId": "1005",
+      "responsibleId": "18",
+      "date": "2025-05-29T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "сроки миграции",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: сроки миграции."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Нам необходимо подтвердить бюджет с финансовой службой."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Пришлите расчёт с вариантами оплаты."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: сроки миграции.\ncustomer: Нам необходимо подтвердить бюджет с финансовой службой.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Пришлите расчёт с вариантами оплаты.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5114",
+      "crmActivityId": "5114",
+      "contactId": "1011",
+      "responsibleId": "18",
+      "date": "2025-05-31T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "бюджет проекта",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: бюджет проекта."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Закупочная комиссия должна оценить условия предложения."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Потребуется сравнительная таблица предложений."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: бюджет проекта.\ncustomer: Закупочная комиссия должна оценить условия предложения.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Потребуется сравнительная таблица предложений.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5115",
+      "crmActivityId": "5115",
+      "contactId": "1014",
+      "responsibleId": "18",
+      "date": "2025-05-31T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "согласование договора",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: согласование договора."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Сроки внедрения зависят от загрузки технической команды."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте календарный план."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: согласование договора.\ncustomer: Сроки внедрения зависят от загрузки технической команды.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте календарный план.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5116",
+      "crmActivityId": "5116",
+      "contactId": "1007",
+      "responsibleId": "18",
+      "date": "2025-05-31T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "условия поддержки",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: условия поддержки."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Сроки внедрения зависят от загрузки технической команды."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте календарный план."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: условия поддержки.\ncustomer: Сроки внедрения зависят от загрузки технической команды.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте календарный план.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5119",
+      "crmActivityId": "5119",
+      "contactId": "1020",
+      "responsibleId": "18",
+      "date": "2025-06-01T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "сроки миграции",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: сроки миграции."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Нам необходимо подтвердить бюджет с финансовой службой."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Пришлите расчёт с вариантами оплаты."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: сроки миграции.\ncustomer: Нам необходимо подтвердить бюджет с финансовой службой.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Пришлите расчёт с вариантами оплаты.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5120",
+      "crmActivityId": "5120",
+      "contactId": "1027",
+      "responsibleId": "17",
+      "date": "2025-06-01T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "технические требования",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: технические требования."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Сроки внедрения зависят от загрузки технической команды."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте календарный план."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: технические требования.\ncustomer: Сроки внедрения зависят от загрузки технической команды.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте календарный план.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5127",
+      "crmActivityId": "5127",
+      "contactId": "1015",
+      "responsibleId": "18",
+      "date": "2025-06-03T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "бюджет проекта",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: бюджет проекта."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "До принятия решения нужно обсудить риски и сопровождение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Пригласим профильного специалиста."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: бюджет проекта.\ncustomer: До принятия решения нужно обсудить риски и сопровождение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Пригласим профильного специалиста.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5130",
+      "crmActivityId": "5130",
+      "contactId": "1022",
+      "responsibleId": "19",
+      "date": "2025-06-05T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "бюджет проекта",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: бюджет проекта."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Служба информационной безопасности должна проверить решение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Нужны документы по защите данных."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: бюджет проекта.\ncustomer: Служба информационной безопасности должна проверить решение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Нужны документы по защите данных.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5131",
+      "crmActivityId": "5131",
+      "contactId": "1016",
+      "responsibleId": "18",
+      "date": "2025-06-06T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "бюджет проекта",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: бюджет проекта."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Сроки внедрения зависят от загрузки технической команды."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте календарный план."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: бюджет проекта.\ncustomer: Сроки внедрения зависят от загрузки технической команды.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте календарный план.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5132",
+      "crmActivityId": "5132",
+      "contactId": "1028",
+      "responsibleId": "19",
+      "date": "2025-06-06T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "сроки миграции",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: сроки миграции."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "До принятия решения нужно обсудить риски и сопровождение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Пригласим профильного специалиста."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: сроки миграции.\ncustomer: До принятия решения нужно обсудить риски и сопровождение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Пригласим профильного специалиста.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5140",
+      "crmActivityId": "5140",
+      "contactId": "1006",
+      "responsibleId": "18",
+      "date": "2025-06-08T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "условия поддержки",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: условия поддержки."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Служба информационной безопасности должна проверить решение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Нужны документы по защите данных."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: условия поддержки.\ncustomer: Служба информационной безопасности должна проверить решение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Нужны документы по защите данных.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5291",
+      "crmActivityId": "5291",
+      "contactId": "1007",
+      "responsibleId": "18",
+      "date": "2025-12-18T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "условия поддержки",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: условия поддержки."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "До принятия решения нужно обсудить риски и сопровождение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Пригласим профильного специалиста."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: условия поддержки.\ncustomer: До принятия решения нужно обсудить риски и сопровождение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Пригласим профильного специалиста.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5293",
+      "crmActivityId": "5293",
+      "contactId": "1028",
+      "responsibleId": "19",
+      "date": "2025-12-19T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "бюджет проекта",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: бюджет проекта."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Сроки внедрения зависят от загрузки технической команды."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте календарный план."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: бюджет проекта.\ncustomer: Сроки внедрения зависят от загрузки технической команды.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте календарный план.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5296",
+      "crmActivityId": "5296",
+      "contactId": "1003",
+      "responsibleId": "18",
+      "date": "2025-12-21T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "сроки миграции",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: сроки миграции."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Закупочная комиссия должна оценить условия предложения."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Потребуется сравнительная таблица предложений."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: сроки миграции.\ncustomer: Закупочная комиссия должна оценить условия предложения.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Потребуется сравнительная таблица предложений.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5297",
+      "crmActivityId": "5297",
+      "contactId": "1015",
+      "responsibleId": "18",
+      "date": "2025-12-22T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "график внедрения",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: график внедрения."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Окончательное решение принимается после обсуждения с руководителем направления."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте материалы для согласования."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: график внедрения.\ncustomer: Окончательное решение принимается после обсуждения с руководителем направления.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте материалы для согласования.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5308",
+      "crmActivityId": "5308",
+      "contactId": "1016",
+      "responsibleId": "18",
+      "date": "2025-12-26T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "бюджет проекта",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: бюджет проекта."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Окончательное решение принимается после обсуждения с руководителем направления."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте материалы для согласования."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: бюджет проекта.\ncustomer: Окончательное решение принимается после обсуждения с руководителем направления.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте материалы для согласования.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5315",
+      "crmActivityId": "5315",
+      "contactId": "1013",
+      "responsibleId": "18",
+      "date": "2025-12-27T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "облачная инфраструктура",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: облачная инфраструктура."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "До принятия решения нужно обсудить риски и сопровождение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Пригласим профильного специалиста."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: облачная инфраструктура.\ncustomer: До принятия решения нужно обсудить риски и сопровождение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Пригласим профильного специалиста.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5323",
+      "crmActivityId": "5323",
+      "contactId": "1019",
+      "responsibleId": "18",
+      "date": "2025-12-31T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "график внедрения",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: график внедрения."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Окончательное решение принимается после обсуждения с руководителем направления."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте материалы для согласования."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: график внедрения.\ncustomer: Окончательное решение принимается после обсуждения с руководителем направления.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте материалы для согласования.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5324",
+      "crmActivityId": "5324",
+      "contactId": "1026",
+      "responsibleId": "19",
+      "date": "2025-12-31T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "условия поддержки",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: условия поддержки."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Служба информационной безопасности должна проверить решение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Нужны документы по защите данных."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: условия поддержки.\ncustomer: Служба информационной безопасности должна проверить решение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Нужны документы по защите данных.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5325",
+      "crmActivityId": "5325",
+      "contactId": "1030",
+      "responsibleId": "19",
+      "date": "2026-01-02T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "бюджет проекта",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: бюджет проекта."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Нам необходимо подтвердить бюджет с финансовой службой."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Пришлите расчёт с вариантами оплаты."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: бюджет проекта.\ncustomer: Нам необходимо подтвердить бюджет с финансовой службой.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Пришлите расчёт с вариантами оплаты.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5327",
+      "crmActivityId": "5327",
+      "contactId": "1012",
+      "responsibleId": "18",
+      "date": "2026-01-03T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "бюджет проекта",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: бюджет проекта."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Сроки внедрения зависят от загрузки технической команды."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте календарный план."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: бюджет проекта.\ncustomer: Сроки внедрения зависят от загрузки технической команды.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте календарный план.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5328",
+      "crmActivityId": "5328",
+      "contactId": "1010",
+      "responsibleId": "18",
+      "date": "2026-01-03T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "согласование договора",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: согласование договора."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Служба информационной безопасности должна проверить решение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Нужны документы по защите данных."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: согласование договора.\ncustomer: Служба информационной безопасности должна проверить решение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Нужны документы по защите данных.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5331",
+      "crmActivityId": "5331",
+      "contactId": "1005",
+      "responsibleId": "18",
+      "date": "2026-01-05T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "технические требования",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: технические требования."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Окончательное решение принимается после обсуждения с руководителем направления."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте материалы для согласования."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: технические требования.\ncustomer: Окончательное решение принимается после обсуждения с руководителем направления.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте материалы для согласования.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5332",
+      "crmActivityId": "5332",
+      "contactId": "1006",
+      "responsibleId": "18",
+      "date": "2026-01-05T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "технические требования",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: технические требования."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Служба информационной безопасности должна проверить решение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Нужны документы по защите данных."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: технические требования.\ncustomer: Служба информационной безопасности должна проверить решение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Нужны документы по защите данных.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5335",
+      "crmActivityId": "5335",
+      "contactId": "1027",
+      "responsibleId": "17",
+      "date": "2026-01-06T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "график внедрения",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: график внедрения."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Служба информационной безопасности должна проверить решение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Нужны документы по защите данных."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: график внедрения.\ncustomer: Служба информационной безопасности должна проверить решение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Нужны документы по защите данных.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5336",
+      "crmActivityId": "5336",
+      "contactId": "1002",
+      "responsibleId": "18",
+      "date": "2026-01-07T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "облачная инфраструктура",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: облачная инфраструктура."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Служба информационной безопасности должна проверить решение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Нужны документы по защите данных."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: облачная инфраструктура.\ncustomer: Служба информационной безопасности должна проверить решение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Нужны документы по защите данных.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5337",
+      "crmActivityId": "5337",
+      "contactId": "1008",
+      "responsibleId": "18",
+      "date": "2026-01-07T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "сроки миграции",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: сроки миграции."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Сроки внедрения зависят от загрузки технической команды."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте календарный план."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: сроки миграции.\ncustomer: Сроки внедрения зависят от загрузки технической команды.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте календарный план.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5339",
+      "crmActivityId": "5339",
+      "contactId": "1001",
+      "responsibleId": "18",
+      "date": "2026-01-08T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "технические требования",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: технические требования."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "До принятия решения нужно обсудить риски и сопровождение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Пригласим профильного специалиста."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: технические требования.\ncustomer: До принятия решения нужно обсудить риски и сопровождение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Пригласим профильного специалиста.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5340",
+      "crmActivityId": "5340",
+      "contactId": "1020",
+      "responsibleId": "18",
+      "date": "2026-01-08T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "согласование договора",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: согласование договора."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Окончательное решение принимается после обсуждения с руководителем направления."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте материалы для согласования."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: согласование договора.\ncustomer: Окончательное решение принимается после обсуждения с руководителем направления.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте материалы для согласования.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5341",
+      "crmActivityId": "5341",
+      "contactId": "1021",
+      "responsibleId": "18",
+      "date": "2026-01-08T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "согласование договора",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: согласование договора."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Служба информационной безопасности должна проверить решение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Нужны документы по защите данных."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: согласование договора.\ncustomer: Служба информационной безопасности должна проверить решение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Нужны документы по защите данных.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5342",
+      "crmActivityId": "5342",
+      "contactId": "1009",
+      "responsibleId": "18",
+      "date": "2026-01-08T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "технические требования",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: технические требования."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Сроки внедрения зависят от загрузки технической команды."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте календарный план."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: технические требования.\ncustomer: Сроки внедрения зависят от загрузки технической команды.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте календарный план.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5345",
+      "crmActivityId": "5345",
+      "contactId": "1014",
+      "responsibleId": "18",
+      "date": "2026-01-10T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "согласование договора",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: согласование договора."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Закупочная комиссия должна оценить условия предложения."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Потребуется сравнительная таблица предложений."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: согласование договора.\ncustomer: Закупочная комиссия должна оценить условия предложения.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Потребуется сравнительная таблица предложений.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5346",
+      "crmActivityId": "5346",
+      "contactId": "1018",
+      "responsibleId": "18",
+      "date": "2026-01-10T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "облачная инфраструктура",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: облачная инфраструктура."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "До принятия решения нужно обсудить риски и сопровождение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Пригласим профильного специалиста."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: облачная инфраструктура.\ncustomer: До принятия решения нужно обсудить риски и сопровождение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Пригласим профильного специалиста.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5348",
+      "crmActivityId": "5348",
+      "contactId": "1017",
+      "responsibleId": "18",
+      "date": "2026-01-11T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "бюджет проекта",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: бюджет проекта."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Закупочная комиссия должна оценить условия предложения."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Потребуется сравнительная таблица предложений."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: бюджет проекта.\ncustomer: Закупочная комиссия должна оценить условия предложения.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Потребуется сравнительная таблица предложений.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5349",
+      "crmActivityId": "5349",
+      "contactId": "1024",
+      "responsibleId": "19",
+      "date": "2026-01-11T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "технические требования",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: технические требования."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Нам необходимо подтвердить бюджет с финансовой службой."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Пришлите расчёт с вариантами оплаты."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: технические требования.\ncustomer: Нам необходимо подтвердить бюджет с финансовой службой.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Пришлите расчёт с вариантами оплаты.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5352",
+      "crmActivityId": "5352",
+      "contactId": "1023",
+      "responsibleId": "17",
+      "date": "2026-01-12T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "облачная инфраструктура",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: облачная инфраструктура."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Сроки внедрения зависят от загрузки технической команды."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте календарный план."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: облачная инфраструктура.\ncustomer: Сроки внедрения зависят от загрузки технической команды.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте календарный план.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5354",
+      "crmActivityId": "5354",
+      "contactId": "1029",
+      "responsibleId": "17",
+      "date": "2026-01-13T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "сроки миграции",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: сроки миграции."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Закупочная комиссия должна оценить условия предложения."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Потребуется сравнительная таблица предложений."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: сроки миграции.\ncustomer: Закупочная комиссия должна оценить условия предложения.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Потребуется сравнительная таблица предложений.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5355",
+      "crmActivityId": "5355",
+      "contactId": "1004",
+      "responsibleId": "18",
+      "date": "2026-01-13T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "бюджет проекта",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: бюджет проекта."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Закупочная комиссия должна оценить условия предложения."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Потребуется сравнительная таблица предложений."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: бюджет проекта.\ncustomer: Закупочная комиссия должна оценить условия предложения.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Потребуется сравнительная таблица предложений.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5356",
+      "crmActivityId": "5356",
+      "contactId": "1025",
+      "responsibleId": "17",
+      "date": "2026-01-14T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "согласование договора",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: согласование договора."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Сроки внедрения зависят от загрузки технической команды."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте календарный план."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: согласование договора.\ncustomer: Сроки внедрения зависят от загрузки технической команды.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте календарный план.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5357",
+      "crmActivityId": "5357",
+      "contactId": "1011",
+      "responsibleId": "18",
+      "date": "2026-01-15T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "сроки миграции",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: сроки миграции."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Служба информационной безопасности должна проверить решение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Нужны документы по защите данных."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: сроки миграции.\ncustomer: Служба информационной безопасности должна проверить решение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Нужны документы по защите данных.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5358",
+      "crmActivityId": "5358",
+      "contactId": "1022",
+      "responsibleId": "19",
+      "date": "2026-01-15T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "согласование договора",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: согласование договора."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Служба информационной безопасности должна проверить решение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Нужны документы по защите данных."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: согласование договора.\ncustomer: Служба информационной безопасности должна проверить решение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Нужны документы по защите данных.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5496",
+      "crmActivityId": "5496",
+      "contactId": "1028",
+      "responsibleId": "19",
+      "date": "2026-07-24T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "технические требования",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: технические требования."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Служба информационной безопасности должна проверить решение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Нужны документы по защите данных."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: технические требования.\ncustomer: Служба информационной безопасности должна проверить решение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Нужны документы по защите данных.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5501",
+      "crmActivityId": "5501",
+      "contactId": "1023",
+      "responsibleId": "17",
+      "date": "2026-07-26T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "согласование договора",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: согласование договора."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Служба информационной безопасности должна проверить решение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Нужны документы по защите данных."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: согласование договора.\ncustomer: Служба информационной безопасности должна проверить решение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Нужны документы по защите данных.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5502",
+      "crmActivityId": "5502",
+      "contactId": "1005",
+      "responsibleId": "18",
+      "date": "2026-07-26T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "согласование договора",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: согласование договора."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Сроки внедрения зависят от загрузки технической команды."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте календарный план."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: согласование договора.\ncustomer: Сроки внедрения зависят от загрузки технической команды.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте календарный план.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5503",
+      "crmActivityId": "5503",
+      "contactId": "1020",
+      "responsibleId": "18",
+      "date": "2026-07-28T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "бюджет проекта",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: бюджет проекта."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Нам необходимо подтвердить бюджет с финансовой службой."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Пришлите расчёт с вариантами оплаты."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: бюджет проекта.\ncustomer: Нам необходимо подтвердить бюджет с финансовой службой.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Пришлите расчёт с вариантами оплаты.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5504",
+      "crmActivityId": "5504",
+      "contactId": "1021",
+      "responsibleId": "18",
+      "date": "2026-07-28T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "график внедрения",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: график внедрения."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Сроки внедрения зависят от загрузки технической команды."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте календарный план."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: график внедрения.\ncustomer: Сроки внедрения зависят от загрузки технической команды.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте календарный план.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5505",
+      "crmActivityId": "5505",
+      "contactId": "1008",
+      "responsibleId": "18",
+      "date": "2026-07-28T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "согласование договора",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: согласование договора."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Сроки внедрения зависят от загрузки технической команды."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте календарный план."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: согласование договора.\ncustomer: Сроки внедрения зависят от загрузки технической команды.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте календарный план.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5506",
+      "crmActivityId": "5506",
+      "contactId": "1025",
+      "responsibleId": "17",
+      "date": "2026-07-29T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "технические требования",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: технические требования."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Сроки внедрения зависят от загрузки технической команды."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте календарный план."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: технические требования.\ncustomer: Сроки внедрения зависят от загрузки технической команды.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте календарный план.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5507",
+      "crmActivityId": "5507",
+      "contactId": "1014",
+      "responsibleId": "18",
+      "date": "2026-07-30T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "облачная инфраструктура",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: облачная инфраструктура."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Закупочная комиссия должна оценить условия предложения."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Потребуется сравнительная таблица предложений."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: облачная инфраструктура.\ncustomer: Закупочная комиссия должна оценить условия предложения.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Потребуется сравнительная таблица предложений.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5508",
+      "crmActivityId": "5508",
+      "contactId": "1016",
+      "responsibleId": "18",
+      "date": "2026-07-30T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "информационная безопасность",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: информационная безопасность."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Служба информационной безопасности должна проверить решение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Нужны документы по защите данных."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: информационная безопасность.\ncustomer: Служба информационной безопасности должна проверить решение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Нужны документы по защите данных.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5509",
+      "crmActivityId": "5509",
+      "contactId": "1019",
+      "responsibleId": "18",
+      "date": "2026-07-30T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "сроки миграции",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: сроки миграции."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Окончательное решение принимается после обсуждения с руководителем направления."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте материалы для согласования."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: сроки миграции.\ncustomer: Окончательное решение принимается после обсуждения с руководителем направления.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте материалы для согласования.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5515",
+      "crmActivityId": "5515",
+      "contactId": "1002",
+      "responsibleId": "18",
+      "date": "2026-08-04T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "информационная безопасность",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: информационная безопасность."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Нам необходимо подтвердить бюджет с финансовой службой."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Пришлите расчёт с вариантами оплаты."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: информационная безопасность.\ncustomer: Нам необходимо подтвердить бюджет с финансовой службой.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Пришлите расчёт с вариантами оплаты.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5516",
+      "crmActivityId": "5516",
+      "contactId": "1027",
+      "responsibleId": "17",
+      "date": "2026-08-04T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "информационная безопасность",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: информационная безопасность."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Сроки внедрения зависят от загрузки технической команды."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте календарный план."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: информационная безопасность.\ncustomer: Сроки внедрения зависят от загрузки технической команды.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте календарный план.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5519",
+      "crmActivityId": "5519",
+      "contactId": "1018",
+      "responsibleId": "18",
+      "date": "2026-08-05T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "график внедрения",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: график внедрения."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Сроки внедрения зависят от загрузки технической команды."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте календарный план."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: график внедрения.\ncustomer: Сроки внедрения зависят от загрузки технической команды.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте календарный план.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5520",
+      "crmActivityId": "5520",
+      "contactId": "1004",
+      "responsibleId": "18",
+      "date": "2026-08-06T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "условия поддержки",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: условия поддержки."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Служба информационной безопасности должна проверить решение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Нужны документы по защите данных."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: условия поддержки.\ncustomer: Служба информационной безопасности должна проверить решение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Нужны документы по защите данных.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5521",
+      "crmActivityId": "5521",
+      "contactId": "1009",
+      "responsibleId": "18",
+      "date": "2026-08-06T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "согласование договора",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: согласование договора."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Служба информационной безопасности должна проверить решение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Нужны документы по защите данных."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: согласование договора.\ncustomer: Служба информационной безопасности должна проверить решение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Нужны документы по защите данных.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5525",
+      "crmActivityId": "5525",
+      "contactId": "1011",
+      "responsibleId": "18",
+      "date": "2026-08-07T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "согласование договора",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: согласование договора."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Служба информационной безопасности должна проверить решение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Нужны документы по защите данных."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: согласование договора.\ncustomer: Служба информационной безопасности должна проверить решение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Нужны документы по защите данных.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5527",
+      "crmActivityId": "5527",
+      "contactId": "1022",
+      "responsibleId": "19",
+      "date": "2026-08-11T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "согласование договора",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: согласование договора."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Сроки внедрения зависят от загрузки технической команды."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте календарный план."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: согласование договора.\ncustomer: Сроки внедрения зависят от загрузки технической команды.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте календарный план.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5528",
+      "crmActivityId": "5528",
+      "contactId": "1010",
+      "responsibleId": "18",
+      "date": "2026-08-11T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "облачная инфраструктура",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: облачная инфраструктура."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "До принятия решения нужно обсудить риски и сопровождение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Пригласим профильного специалиста."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: облачная инфраструктура.\ncustomer: До принятия решения нужно обсудить риски и сопровождение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Пригласим профильного специалиста.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5529",
+      "crmActivityId": "5529",
+      "contactId": "1013",
+      "responsibleId": "18",
+      "date": "2026-08-13T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "облачная инфраструктура",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: облачная инфраструктура."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Служба информационной безопасности должна проверить решение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Нужны документы по защите данных."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: облачная инфраструктура.\ncustomer: Служба информационной безопасности должна проверить решение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Нужны документы по защите данных.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5530",
+      "crmActivityId": "5530",
+      "contactId": "1003",
+      "responsibleId": "18",
+      "date": "2026-08-13T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "график внедрения",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: график внедрения."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Закупочная комиссия должна оценить условия предложения."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Потребуется сравнительная таблица предложений."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: график внедрения.\ncustomer: Закупочная комиссия должна оценить условия предложения.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Потребуется сравнительная таблица предложений.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5531",
+      "crmActivityId": "5531",
+      "contactId": "1006",
+      "responsibleId": "18",
+      "date": "2026-08-13T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "бюджет проекта",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: бюджет проекта."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Сроки внедрения зависят от загрузки технической команды."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте календарный план."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: бюджет проекта.\ncustomer: Сроки внедрения зависят от загрузки технической команды.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте календарный план.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5532",
+      "crmActivityId": "5532",
+      "contactId": "1030",
+      "responsibleId": "19",
+      "date": "2026-08-15T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "сроки миграции",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: сроки миграции."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "До принятия решения нужно обсудить риски и сопровождение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Пригласим профильного специалиста."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: сроки миграции.\ncustomer: До принятия решения нужно обсудить риски и сопровождение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Пригласим профильного специалиста.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5533",
+      "crmActivityId": "5533",
+      "contactId": "1026",
+      "responsibleId": "19",
+      "date": "2026-08-16T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "бюджет проекта",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: бюджет проекта."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Нам необходимо подтвердить бюджет с финансовой службой."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Пришлите расчёт с вариантами оплаты."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: бюджет проекта.\ncustomer: Нам необходимо подтвердить бюджет с финансовой службой.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Пришлите расчёт с вариантами оплаты.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5534",
+      "crmActivityId": "5534",
+      "contactId": "1029",
+      "responsibleId": "17",
+      "date": "2026-08-16T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "технические требования",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: технические требования."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Закупочная комиссия должна оценить условия предложения."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Потребуется сравнительная таблица предложений."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: технические требования.\ncustomer: Закупочная комиссия должна оценить условия предложения.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Потребуется сравнительная таблица предложений.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5535",
+      "crmActivityId": "5535",
+      "contactId": "1007",
+      "responsibleId": "18",
+      "date": "2026-08-18T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "сроки миграции",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: сроки миграции."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Служба информационной безопасности должна проверить решение."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Нужны документы по защите данных."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: сроки миграции.\ncustomer: Служба информационной безопасности должна проверить решение.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Нужны документы по защите данных.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5536",
+      "crmActivityId": "5536",
+      "contactId": "1015",
+      "responsibleId": "18",
+      "date": "2026-08-19T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "сроки миграции",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: сроки миграции."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Закупочная комиссия должна оценить условия предложения."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Потребуется сравнительная таблица предложений."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: сроки миграции.\ncustomer: Закупочная комиссия должна оценить условия предложения.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Потребуется сравнительная таблица предложений.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5537",
+      "crmActivityId": "5537",
+      "contactId": "1024",
+      "responsibleId": "19",
+      "date": "2026-08-19T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "бюджет проекта",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: бюджет проекта."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Сроки внедрения зависят от загрузки технической команды."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте календарный план."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: бюджет проекта.\ncustomer: Сроки внедрения зависят от загрузки технической команды.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте календарный план.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5538",
+      "crmActivityId": "5538",
+      "contactId": "1017",
+      "responsibleId": "18",
+      "date": "2026-08-21T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "график внедрения",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: график внедрения."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Сроки внедрения зависят от загрузки технической команды."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Подготовьте календарный план."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: график внедрения.\ncustomer: Сроки внедрения зависят от загрузки технической команды.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Подготовьте календарный план.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5539",
+      "crmActivityId": "5539",
+      "contactId": "1012",
+      "responsibleId": "18",
+      "date": "2026-08-22T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "бюджет проекта",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: бюджет проекта."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Закупочная комиссия должна оценить условия предложения."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Потребуется сравнительная таблица предложений."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: бюджет проекта.\ncustomer: Закупочная комиссия должна оценить условия предложения.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Потребуется сравнительная таблица предложений.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    },
+    {
+      "id": "nlp_activity_5540",
+      "crmActivityId": "5540",
+      "contactId": "1001",
+      "responsibleId": "18",
+      "date": "2026-08-23T12:00:00+03:00",
+      "kind": "meeting",
+      "synthetic": true,
+      "provenance": "rest_activity_fixture_v1",
+      "language": "ru",
+      "documentType": "meeting_minutes",
+      "subject": "сроки миграции",
+      "utterances": [
+        {
+          "speaker": "manager",
+          "startMs": 0,
+          "endMs": 13000,
+          "text": "Здравствуйте. Обсудим тему: сроки миграции."
+        },
+        {
+          "speaker": "customer",
+          "startMs": 13000,
+          "endMs": 32000,
+          "text": "Нам необходимо подтвердить бюджет с финансовой службой."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 32000,
+          "endMs": 48000,
+          "text": "Какие документы и согласования необходимы для дальнейшей работы?"
+        },
+        {
+          "speaker": "customer",
+          "startMs": 48000,
+          "endMs": 65000,
+          "text": "Пришлите расчёт с вариантами оплаты."
+        },
+        {
+          "speaker": "manager",
+          "startMs": 65000,
+          "endMs": 80000,
+          "text": "Зафиксируем договорённости и отправим материалы после встречи."
+        }
+      ],
+      "fullText": "manager: Здравствуйте. Обсудим тему: сроки миграции.\ncustomer: Нам необходимо подтвердить бюджет с финансовой службой.\nmanager: Какие документы и согласования необходимы для дальнейшей работы?\ncustomer: Пришлите расчёт с вариантами оплаты.\nmanager: Зафиксируем договорённости и отправим материалы после встречи."
+    }
+  ]
+}

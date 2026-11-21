@@ -12,7 +12,7 @@ export function generateFixtures(crm,bank){
  const iso=(d,t="12:00:00")=>d?`${d}T${t}+03:00`:null;
  const plus=(d,t,m)=>{const parts=t.split(":").map(Number);const z=new Date(Date.UTC(...d.split("-").map((v,i)=>Number(v)-(i===1?1:0)),parts[0],parts[1],parts[2]||0));if(!Number.isFinite(z.getTime()))throw Error(`Bad time ${d} ${t}`);z.setUTCMinutes(z.getUTCMinutes()+m);return z.toISOString().slice(0,19)+"+03:00"};
  const companies=[{id:42,title:company.name,comments:company.description,assignedById:users[people[0].owner]}];
- const contacts=people.map(p=>({id:contactIds[p.id],name:p.name.split(" ")[0],lastName:p.name.split(" ").slice(1).join(" "),post:p.title,companyId:42,assignedById:users[p.owner],typeId:"CLIENT"}));
+ const contacts=people.map(p=>{const parts=p.name.trim().split(/\s+/);return {id:contactIds[p.id],name:parts.length>1?parts[1]:parts[0],lastName:parts[0],secondName:parts.length>2?parts.slice(2).join(" "):undefined,post:p.title,companyId:42,assignedById:users[p.owner],typeId:"CLIENT"};});
  const deals=bank.opportunities.map(o=>({id:dealIds[o.id],title:`${company.initiative} — ${o.id}`,companyId:42,contactIds:o.stakeholderIds.map(x=>contactIds[x]).filter(Boolean),assignedById:users[o.manager],stageId:o.stage==="won"?"WON":o.stage==="lost"?"LOSE":"NEW",closed:["won","lost"].includes(o.stage),opportunity:o.estimatedAmountRub,currencyId:"RUB",begindate:o.createdDate,closedate:o.closedDate||null}));
  const invoices=bank.invoices.map(x=>({id:invoiceIds[x.id],title:`Счёт ${x.id}`,accountNumber:x.id,companyId:42,opportunity:x.amountRub,currencyId:x.currency||"RUB",createdTime:iso(x.issuedDate)}));
  const activities=[...bank.calls.map(x=>({x,kind:"call"})),...bank.emails.map(x=>({x,kind:"email"})),...bank.meetings.map(x=>({x,kind:"meeting"}))].sort((a,b)=>a.x.date.localeCompare(b.x.date)||a.x.id.localeCompare(b.x.id)).map(({x,kind},i)=>{
@@ -25,19 +25,53 @@ export function generateFixtures(crm,bank){
  const pages={},methods=[];
  for(const [key,method,entityTypeId,resultPath,rows] of defs){
   const pageInfo=[];for(let i=0;i<rows.length;i+=50){const file=`${key}/page_${String(i/50+1).padStart(3,"0")}.json`,items=rows.slice(i,i+50);pages[file]={result:resultPath==="result.items"?{items}:resultPath==="result.tasks"?{tasks:items}:items,total:rows.length,...(i+50<rows.length?{next:i+50}:{})};pageInfo.push({start:i,file,count:items.length})}
-  methods.push({key,method,...(entityTypeId?{entityTypeId}:{}),resultPath,recordCount:rows.length,pages:pageInfo,requestExample:{method,params:{...(entityTypeId?{entityTypeId}:{}),...(method==="crm.item.list"?{select:["*"],order:{id:"ASC"}}:method==="crm.activity.list"?{select:["*","COMMUNICATIONS"],order:{ID:"ASC"}}:{select:["ID","TITLE","DESCRIPTION","STATUS","CREATED_DATE","DEADLINE","CLOSED_DATE","RESPONSIBLE_ID","UF_CRM_TASK"],order:{ID:"asc"}}),start:0}}});
+  methods.push({key,method,...(entityTypeId?{entityTypeId}:{}),resultPath,recordCount:rows.length,pages:pageInfo,requestExample:method==="tasks.task.list"?{method,params:{order:{ID:"asc"},filter:{},select:["ID","TITLE","DESCRIPTION","STATUS","CREATED_DATE","DEADLINE","CLOSED_DATE","RESPONSIBLE_ID","UF_CRM_TASK"],start:0}}:{method,params:{...(entityTypeId?{entityTypeId}:{}),...(method==="crm.item.list"?{select:["*"],order:{id:"ASC"}}:{select:["*","COMMUNICATIONS"],order:{ID:"ASC"}}),start:0}}});
  }
+ // Reapply deterministic, versioned synthetic communication texts after generating base rows.
+ // These are authored fixture inputs, not NLP predictions or manual LPR annotations.
+ const enrichmentRoot=resolve(dirname(fileURLToPath(import.meta.url)),'../src/data/bitrix24_contract_v1/enrichment');
+ for(let i=1;i<=11;i++){
+  const page='activities/page_'+String(i).padStart(3,'0')+'.json';
+  const overlay=JSON.parse(readFileSync(resolve(enrichmentRoot,'page_'+String(i).padStart(3,'0')+'.json'),'utf8'));
+  const used=new Set();
+  for(const activity of pages[page].result){
+   if(activity.TYPE_ID!=='4'&&activity.TYPE_ID!=='1')continue;
+   if(typeof overlay.descriptions[activity.ID]!=='string')throw Error('Missing enrichment for '+activity.ID);
+   activity.DESCRIPTION=overlay.descriptions[activity.ID];used.add(activity.ID);
+  }
+  if(used.size!==Object.keys(overlay.descriptions).length)throw Error('Orphan enrichment in '+page);
+ }
+ const transcripts=JSON.parse(readFileSync(resolve(enrichmentRoot,'call_transcriptions.json'),'utf8')).transcriptions;
+ const emailMeta=JSON.parse(readFileSync(resolve(enrichmentRoot,'email_adapter_metadata.json'),'utf8')).metadata;
+ const callResponses={},emailResponses={};
+ for(const [page,payload] of Object.entries(pages)){
+  if(!page.startsWith('activities/'))continue;
+  for(const a of payload.result){
+   if(a.TYPE_ID==='2'){
+    if(!Object.hasOwn(transcripts,a.ID))throw Error('Missing transcript source '+a.ID);
+    callResponses[a.ID]={result:transcripts[a.ID]===null?null:{transcription:transcripts[a.ID]}};
+   }else if(a.TYPE_ID==='4'){
+    const meta=emailMeta[a.ID];if(!meta)throw Error('Missing email metadata '+a.ID);
+    emailResponses[a.ID]={result:{activityId:a.ID,subject:a.SUBJECT,from:meta.from,to:meta.to,body:a.DESCRIPTION,threadId:meta.threadId}};
+   }
+  }
+ }
+ if(Object.keys(callResponses).length!==Object.keys(transcripts).length||Object.keys(emailResponses).length!==Object.keys(emailMeta).length)throw Error('Orphan NLP source metadata');
+ const nlpResponses={
+  'nlp/call_transcript_responses.json':{synthetic:true,method:'crm.activity.call.getTranscript',responses:callResponses},
+  'nlp/email_content_responses.json':{synthetic:true,kind:'synthetic_email_content_adapter',note:'Not a verified standard Bitrix24 REST response. Content derived from crm.activity.list DESCRIPTION.',responses:emailResponses}
+ };
  const errors={access_denied:{error:"ACCESS_DENIED",error_description:"Access denied"},insufficient_scope:{error:"insufficient_scope",error_description:"The request requires higher privileges than provided by the access token"},invalid_credentials:{error:"INVALID_CREDENTIALS",error_description:"Invalid request credentials"}};
- const manifest={synthetic:true,profile:"legacy-rest-v1",apiBase:"/rest/",snapshotDate:bank.metadata.asOf,docsChecked:"2026-11-21",pageSize:50,timezone:"+03:00",sources:["src/data/crm.json","src/data/synthetic/bank_ml_v2.json"],recordCounts:Object.fromEntries(defs.map(x=>[x[0],x[4].length])),methods,errors:Object.keys(errors),excluded:["manualAnnotations","relationshipEvents","personSnapshots","opportunitySnapshots","payments","receivables","contracts","clientInternalMessages","decisionOutcomes"],limitations:["Subset of fields, not real portal data","Saved response pages, not a live REST server","No authorization or access filtering","Email and meeting descriptions illustrative; transcripts not exported","This is legacy REST v1, not REST 3.0"]};
- return {manifest,mapping:{synthetic:true,companyIds:{bank:42},contactIds,dealIds,invoiceIds,activityIds,taskIds,users},pages,errors};
+ const manifest={synthetic:true,profile:"mixed-crm-item-and-legacy-activity",apiBase:"/rest/",snapshotDate:bank.metadata.asOf,docsChecked:"2026-11-21",pageSize:50,timezone:"+03:00",sources:["src/data/crm.json","src/data/synthetic/bank_ml_v2.json"],recordCounts:Object.fromEntries(defs.map(x=>[x[0],x[4].length])),methods,textSources:{email:"crm.activity.list result[].DESCRIPTION",meeting:"crm.activity.list result[].DESCRIPTION",call:"crm.activity.call.getTranscript result.transcription"},negativeScenarios:"nlp/missing_text_scenarios.json",errors:Object.keys(errors),excluded:["manualAnnotations","relationshipEvents","personSnapshots","opportunitySnapshots","payments","receivables","contracts","clientInternalMessages","decisionOutcomes"],limitations:["Subset of fields, not real portal data","Saved response pages, not a live REST server","No authorization or access filtering","Email and meeting descriptions are authored synthetic scenarios","Call transcripts are separate REST-like response fixtures","Mixes crm.item.list with legacy crm.activity.list; not a complete REST portal"]};
+ return {nlpResponses,manifest,mapping:{synthetic:true,companyIds:{bank:42},contactIds,dealIds,invoiceIds,activityIds,taskIds,users},pages,errors};
 }
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){
  const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
  const crm=JSON.parse(readFileSync(resolve(root,'src/data/crm.json'),'utf8'));
  const bank=JSON.parse(readFileSync(resolve(root,'src/data/synthetic/bank_ml_v2.json'),'utf8'));
  const out=resolve(root,'src/data/bitrix24_contract_v1');
- const {manifest,mapping,pages,errors}=generateFixtures(crm,bank);
- for(const [name,value] of [['manifest.json',manifest],['id_mapping.json',mapping],...Object.entries(pages),...Object.entries(errors).map(([name,obj])=>['errors/'+name+'.json',obj])]){
+ const {manifest,mapping,pages,errors,nlpResponses}=generateFixtures(crm,bank);
+ for(const [name,value] of [['manifest.json',manifest],['id_mapping.json',mapping],...Object.entries(pages),...Object.entries(nlpResponses),...Object.entries(errors).map(([name,obj])=>['errors/'+name+'.json',obj])]){
   const path=resolve(out,name);mkdirSync(dirname(path),{recursive:true});writeFileSync(path,JSON.stringify(value,null,2)+'\n','utf8');
  }
  console.log('Generated contract fixtures',manifest.recordCounts);

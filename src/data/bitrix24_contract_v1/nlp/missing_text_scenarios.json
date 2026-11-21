@@ -1,0 +1,47 @@
+{
+  "synthetic": true,
+  "kind": "negative_test_scenarios",
+  "note": "Separate response variants: baseline 540 communications remain complete; apply one scenario per test.",
+  "cases": [
+    {
+      "id": "transcript_not_ready",
+      "method": "crm.activity.call.getTranscript",
+      "activityId": "5031",
+      "response": {
+        "result": null
+      },
+      "expectedStatus": "missing_text"
+    },
+    {
+      "id": "transcript_access_denied",
+      "method": "crm.activity.call.getTranscript",
+      "activityId": "5032",
+      "response": {
+        "error": "ACCESS_DENIED",
+        "error_description": "Access denied"
+      },
+      "expectedStatus": "missing_text"
+    },
+    {
+      "id": "empty_email_description",
+      "method": "crm.activity.list",
+      "activityId": "5001",
+      "override": {
+        "DESCRIPTION": ""
+      },
+      "expectedStatus": "missing_text"
+    },
+    {
+      "id": "empty_meeting_description",
+      "method": "crm.activity.list",
+      "activityId": "",
+      "selector": {
+        "TYPE_ID": "1"
+      },
+      "override": {
+        "DESCRIPTION": ""
+      },
+      "expectedStatus": "missing_text"
+    }
+  ]
+}

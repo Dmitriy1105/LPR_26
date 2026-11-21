@@ -1,0 +1,1356 @@
+{
+  "synthetic": true,
+  "source": "synthetic_email_adapter_metadata_v1",
+  "metadata": {
+    "5001": {
+      "from": "manager@example.invalid",
+      "to": "bank-p29@client.example",
+      "threadId": "thread_contact_1030"
+    },
+    "5002": {
+      "from": "manager@example.invalid",
+      "to": "bank-p13@client.example",
+      "threadId": "thread_contact_1014"
+    },
+    "5003": {
+      "from": "manager@example.invalid",
+      "to": "bank-p17@client.example",
+      "threadId": "thread_contact_1018"
+    },
+    "5004": {
+      "from": "manager@example.invalid",
+      "to": "bank-p22@client.example",
+      "threadId": "thread_contact_1023"
+    },
+    "5005": {
+      "from": "manager@example.invalid",
+      "to": "bank-p15@client.example",
+      "threadId": "thread_contact_1016"
+    },
+    "5006": {
+      "from": "manager@example.invalid",
+      "to": "bank-p26@client.example",
+      "threadId": "thread_contact_1027"
+    },
+    "5007": {
+      "from": "manager@example.invalid",
+      "to": "bank-p27@client.example",
+      "threadId": "thread_contact_1028"
+    },
+    "5008": {
+      "from": "manager@example.invalid",
+      "to": "bank-p10@client.example",
+      "threadId": "thread_contact_1011"
+    },
+    "5009": {
+      "from": "manager@example.invalid",
+      "to": "bank-p18@client.example",
+      "threadId": "thread_contact_1019"
+    },
+    "5010": {
+      "from": "manager@example.invalid",
+      "to": "bank-p21@client.example",
+      "threadId": "thread_contact_1022"
+    },
+    "5011": {
+      "from": "manager@example.invalid",
+      "to": "bank-p20@client.example",
+      "threadId": "thread_contact_1021"
+    },
+    "5012": {
+      "from": "manager@example.invalid",
+      "to": "bank-p4@client.example",
+      "threadId": "thread_contact_1005"
+    },
+    "5013": {
+      "from": "manager@example.invalid",
+      "to": "bank-p25@client.example",
+      "threadId": "thread_contact_1026"
+    },
+    "5014": {
+      "from": "manager@example.invalid",
+      "to": "bank-p28@client.example",
+      "threadId": "thread_contact_1029"
+    },
+    "5015": {
+      "from": "manager@example.invalid",
+      "to": "bank-p12@client.example",
+      "threadId": "thread_contact_1013"
+    },
+    "5016": {
+      "from": "manager@example.invalid",
+      "to": "bank-p2@client.example",
+      "threadId": "thread_contact_1003"
+    },
+    "5017": {
+      "from": "manager@example.invalid",
+      "to": "bank-p5@client.example",
+      "threadId": "thread_contact_1006"
+    },
+    "5018": {
+      "from": "manager@example.invalid",
+      "to": "bank-p8@client.example",
+      "threadId": "thread_contact_1009"
+    },
+    "5019": {
+      "from": "manager@example.invalid",
+      "to": "bank-p6@client.example",
+      "threadId": "thread_contact_1007"
+    },
+    "5020": {
+      "from": "manager@example.invalid",
+      "to": "bank-p7@client.example",
+      "threadId": "thread_contact_1008"
+    },
+    "5021": {
+      "from": "manager@example.invalid",
+      "to": "bank-p14@client.example",
+      "threadId": "thread_contact_1015"
+    },
+    "5022": {
+      "from": "manager@example.invalid",
+      "to": "bank-p19@client.example",
+      "threadId": "thread_contact_1020"
+    },
+    "5023": {
+      "from": "manager@example.invalid",
+      "to": "bank-p0@client.example",
+      "threadId": "thread_contact_1001"
+    },
+    "5024": {
+      "from": "manager@example.invalid",
+      "to": "bank-p3@client.example",
+      "threadId": "thread_contact_1004"
+    },
+    "5025": {
+      "from": "manager@example.invalid",
+      "to": "bank-p24@client.example",
+      "threadId": "thread_contact_1025"
+    },
+    "5026": {
+      "from": "manager@example.invalid",
+      "to": "bank-p11@client.example",
+      "threadId": "thread_contact_1012"
+    },
+    "5027": {
+      "from": "manager@example.invalid",
+      "to": "bank-p1@client.example",
+      "threadId": "thread_contact_1002"
+    },
+    "5028": {
+      "from": "manager@example.invalid",
+      "to": "bank-p23@client.example",
+      "threadId": "thread_contact_1024"
+    },
+    "5029": {
+      "from": "manager@example.invalid",
+      "to": "bank-p9@client.example",
+      "threadId": "thread_contact_1010"
+    },
+    "5030": {
+      "from": "manager@example.invalid",
+      "to": "bank-p16@client.example",
+      "threadId": "thread_contact_1017"
+    },
+    "5055": {
+      "from": "bank-p0@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1001"
+    },
+    "5056": {
+      "from": "bank-p8@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1009"
+    },
+    "5057": {
+      "from": "bank-p10@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1011"
+    },
+    "5059": {
+      "from": "bank-p26@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1027"
+    },
+    "5060": {
+      "from": "bank-p27@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1028"
+    },
+    "5061": {
+      "from": "bank-p28@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1029"
+    },
+    "5062": {
+      "from": "bank-p11@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1012"
+    },
+    "5063": {
+      "from": "bank-p2@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1003"
+    },
+    "5064": {
+      "from": "bank-p29@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1030"
+    },
+    "5068": {
+      "from": "bank-p4@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1005"
+    },
+    "5071": {
+      "from": "bank-p17@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1018"
+    },
+    "5072": {
+      "from": "bank-p7@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1008"
+    },
+    "5073": {
+      "from": "bank-p13@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1014"
+    },
+    "5074": {
+      "from": "bank-p16@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1017"
+    },
+    "5075": {
+      "from": "bank-p19@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1020"
+    },
+    "5076": {
+      "from": "bank-p20@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1021"
+    },
+    "5077": {
+      "from": "bank-p5@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1006"
+    },
+    "5078": {
+      "from": "bank-p25@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1026"
+    },
+    "5079": {
+      "from": "bank-p1@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1002"
+    },
+    "5080": {
+      "from": "bank-p12@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1013"
+    },
+    "5081": {
+      "from": "bank-p23@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1024"
+    },
+    "5082": {
+      "from": "bank-p6@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1007"
+    },
+    "5083": {
+      "from": "bank-p14@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1015"
+    },
+    "5084": {
+      "from": "bank-p21@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1022"
+    },
+    "5085": {
+      "from": "bank-p24@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1025"
+    },
+    "5086": {
+      "from": "bank-p9@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1010"
+    },
+    "5087": {
+      "from": "bank-p18@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1019"
+    },
+    "5088": {
+      "from": "bank-p15@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1016"
+    },
+    "5089": {
+      "from": "bank-p22@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1023"
+    },
+    "5090": {
+      "from": "bank-p3@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1004"
+    },
+    "5113": {
+      "from": "manager@example.invalid",
+      "to": "bank-p2@client.example",
+      "threadId": "thread_contact_1003"
+    },
+    "5118": {
+      "from": "manager@example.invalid",
+      "to": "bank-p27@client.example",
+      "threadId": "thread_contact_1028"
+    },
+    "5125": {
+      "from": "manager@example.invalid",
+      "to": "bank-p5@client.example",
+      "threadId": "thread_contact_1006"
+    },
+    "5126": {
+      "from": "manager@example.invalid",
+      "to": "bank-p8@client.example",
+      "threadId": "thread_contact_1009"
+    },
+    "5128": {
+      "from": "manager@example.invalid",
+      "to": "bank-p10@client.example",
+      "threadId": "thread_contact_1011"
+    },
+    "5129": {
+      "from": "manager@example.invalid",
+      "to": "bank-p6@client.example",
+      "threadId": "thread_contact_1007"
+    },
+    "5135": {
+      "from": "manager@example.invalid",
+      "to": "bank-p21@client.example",
+      "threadId": "thread_contact_1022"
+    },
+    "5136": {
+      "from": "manager@example.invalid",
+      "to": "bank-p9@client.example",
+      "threadId": "thread_contact_1010"
+    },
+    "5138": {
+      "from": "manager@example.invalid",
+      "to": "bank-p13@client.example",
+      "threadId": "thread_contact_1014"
+    },
+    "5139": {
+      "from": "manager@example.invalid",
+      "to": "bank-p22@client.example",
+      "threadId": "thread_contact_1023"
+    },
+    "5141": {
+      "from": "manager@example.invalid",
+      "to": "bank-p0@client.example",
+      "threadId": "thread_contact_1001"
+    },
+    "5142": {
+      "from": "manager@example.invalid",
+      "to": "bank-p23@client.example",
+      "threadId": "thread_contact_1024"
+    },
+    "5144": {
+      "from": "manager@example.invalid",
+      "to": "bank-p29@client.example",
+      "threadId": "thread_contact_1030"
+    },
+    "5145": {
+      "from": "manager@example.invalid",
+      "to": "bank-p7@client.example",
+      "threadId": "thread_contact_1008"
+    },
+    "5148": {
+      "from": "manager@example.invalid",
+      "to": "bank-p15@client.example",
+      "threadId": "thread_contact_1016"
+    },
+    "5153": {
+      "from": "manager@example.invalid",
+      "to": "bank-p12@client.example",
+      "threadId": "thread_contact_1013"
+    },
+    "5156": {
+      "from": "manager@example.invalid",
+      "to": "bank-p17@client.example",
+      "threadId": "thread_contact_1018"
+    },
+    "5157": {
+      "from": "manager@example.invalid",
+      "to": "bank-p1@client.example",
+      "threadId": "thread_contact_1002"
+    },
+    "5158": {
+      "from": "manager@example.invalid",
+      "to": "bank-p26@client.example",
+      "threadId": "thread_contact_1027"
+    },
+    "5162": {
+      "from": "manager@example.invalid",
+      "to": "bank-p18@client.example",
+      "threadId": "thread_contact_1019"
+    },
+    "5163": {
+      "from": "manager@example.invalid",
+      "to": "bank-p4@client.example",
+      "threadId": "thread_contact_1005"
+    },
+    "5164": {
+      "from": "manager@example.invalid",
+      "to": "bank-p24@client.example",
+      "threadId": "thread_contact_1025"
+    },
+    "5166": {
+      "from": "manager@example.invalid",
+      "to": "bank-p16@client.example",
+      "threadId": "thread_contact_1017"
+    },
+    "5169": {
+      "from": "manager@example.invalid",
+      "to": "bank-p14@client.example",
+      "threadId": "thread_contact_1015"
+    },
+    "5170": {
+      "from": "manager@example.invalid",
+      "to": "bank-p25@client.example",
+      "threadId": "thread_contact_1026"
+    },
+    "5171": {
+      "from": "manager@example.invalid",
+      "to": "bank-p28@client.example",
+      "threadId": "thread_contact_1029"
+    },
+    "5172": {
+      "from": "manager@example.invalid",
+      "to": "bank-p11@client.example",
+      "threadId": "thread_contact_1012"
+    },
+    "5175": {
+      "from": "manager@example.invalid",
+      "to": "bank-p20@client.example",
+      "threadId": "thread_contact_1021"
+    },
+    "5177": {
+      "from": "manager@example.invalid",
+      "to": "bank-p19@client.example",
+      "threadId": "thread_contact_1020"
+    },
+    "5178": {
+      "from": "manager@example.invalid",
+      "to": "bank-p3@client.example",
+      "threadId": "thread_contact_1004"
+    },
+    "5181": {
+      "from": "bank-p0@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1001"
+    },
+    "5182": {
+      "from": "bank-p13@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1014"
+    },
+    "5183": {
+      "from": "bank-p2@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1003"
+    },
+    "5184": {
+      "from": "bank-p22@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1023"
+    },
+    "5185": {
+      "from": "bank-p15@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1016"
+    },
+    "5186": {
+      "from": "bank-p10@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1011"
+    },
+    "5187": {
+      "from": "bank-p25@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1026"
+    },
+    "5188": {
+      "from": "bank-p24@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1025"
+    },
+    "5189": {
+      "from": "bank-p14@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1015"
+    },
+    "5190": {
+      "from": "bank-p17@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1018"
+    },
+    "5191": {
+      "from": "bank-p23@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1024"
+    },
+    "5192": {
+      "from": "bank-p18@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1019"
+    },
+    "5193": {
+      "from": "bank-p19@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1020"
+    },
+    "5194": {
+      "from": "bank-p21@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1022"
+    },
+    "5195": {
+      "from": "bank-p20@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1021"
+    },
+    "5196": {
+      "from": "bank-p28@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1029"
+    },
+    "5197": {
+      "from": "bank-p29@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1030"
+    },
+    "5198": {
+      "from": "bank-p27@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1028"
+    },
+    "5199": {
+      "from": "bank-p11@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1012"
+    },
+    "5200": {
+      "from": "bank-p7@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1008"
+    },
+    "5201": {
+      "from": "bank-p9@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1010"
+    },
+    "5202": {
+      "from": "bank-p1@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1002"
+    },
+    "5204": {
+      "from": "bank-p6@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1007"
+    },
+    "5209": {
+      "from": "bank-p12@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1013"
+    },
+    "5210": {
+      "from": "bank-p3@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1004"
+    },
+    "5214": {
+      "from": "bank-p26@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1027"
+    },
+    "5215": {
+      "from": "bank-p4@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1005"
+    },
+    "5216": {
+      "from": "bank-p8@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1009"
+    },
+    "5218": {
+      "from": "bank-p16@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1017"
+    },
+    "5219": {
+      "from": "bank-p5@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1006"
+    },
+    "5241": {
+      "from": "manager@example.invalid",
+      "to": "bank-p12@client.example",
+      "threadId": "thread_contact_1013"
+    },
+    "5242": {
+      "from": "manager@example.invalid",
+      "to": "bank-p2@client.example",
+      "threadId": "thread_contact_1003"
+    },
+    "5243": {
+      "from": "manager@example.invalid",
+      "to": "bank-p29@client.example",
+      "threadId": "thread_contact_1030"
+    },
+    "5244": {
+      "from": "manager@example.invalid",
+      "to": "bank-p28@client.example",
+      "threadId": "thread_contact_1029"
+    },
+    "5245": {
+      "from": "manager@example.invalid",
+      "to": "bank-p1@client.example",
+      "threadId": "thread_contact_1002"
+    },
+    "5246": {
+      "from": "manager@example.invalid",
+      "to": "bank-p14@client.example",
+      "threadId": "thread_contact_1015"
+    },
+    "5247": {
+      "from": "manager@example.invalid",
+      "to": "bank-p3@client.example",
+      "threadId": "thread_contact_1004"
+    },
+    "5248": {
+      "from": "manager@example.invalid",
+      "to": "bank-p5@client.example",
+      "threadId": "thread_contact_1006"
+    },
+    "5249": {
+      "from": "manager@example.invalid",
+      "to": "bank-p4@client.example",
+      "threadId": "thread_contact_1005"
+    },
+    "5250": {
+      "from": "manager@example.invalid",
+      "to": "bank-p20@client.example",
+      "threadId": "thread_contact_1021"
+    },
+    "5251": {
+      "from": "manager@example.invalid",
+      "to": "bank-p15@client.example",
+      "threadId": "thread_contact_1016"
+    },
+    "5252": {
+      "from": "manager@example.invalid",
+      "to": "bank-p18@client.example",
+      "threadId": "thread_contact_1019"
+    },
+    "5253": {
+      "from": "manager@example.invalid",
+      "to": "bank-p22@client.example",
+      "threadId": "thread_contact_1023"
+    },
+    "5254": {
+      "from": "manager@example.invalid",
+      "to": "bank-p24@client.example",
+      "threadId": "thread_contact_1025"
+    },
+    "5255": {
+      "from": "manager@example.invalid",
+      "to": "bank-p26@client.example",
+      "threadId": "thread_contact_1027"
+    },
+    "5256": {
+      "from": "manager@example.invalid",
+      "to": "bank-p6@client.example",
+      "threadId": "thread_contact_1007"
+    },
+    "5257": {
+      "from": "manager@example.invalid",
+      "to": "bank-p10@client.example",
+      "threadId": "thread_contact_1011"
+    },
+    "5258": {
+      "from": "manager@example.invalid",
+      "to": "bank-p13@client.example",
+      "threadId": "thread_contact_1014"
+    },
+    "5259": {
+      "from": "manager@example.invalid",
+      "to": "bank-p25@client.example",
+      "threadId": "thread_contact_1026"
+    },
+    "5260": {
+      "from": "manager@example.invalid",
+      "to": "bank-p0@client.example",
+      "threadId": "thread_contact_1001"
+    },
+    "5261": {
+      "from": "manager@example.invalid",
+      "to": "bank-p23@client.example",
+      "threadId": "thread_contact_1024"
+    },
+    "5262": {
+      "from": "manager@example.invalid",
+      "to": "bank-p9@client.example",
+      "threadId": "thread_contact_1010"
+    },
+    "5263": {
+      "from": "manager@example.invalid",
+      "to": "bank-p21@client.example",
+      "threadId": "thread_contact_1022"
+    },
+    "5264": {
+      "from": "manager@example.invalid",
+      "to": "bank-p8@client.example",
+      "threadId": "thread_contact_1009"
+    },
+    "5265": {
+      "from": "manager@example.invalid",
+      "to": "bank-p27@client.example",
+      "threadId": "thread_contact_1028"
+    },
+    "5266": {
+      "from": "manager@example.invalid",
+      "to": "bank-p11@client.example",
+      "threadId": "thread_contact_1012"
+    },
+    "5267": {
+      "from": "manager@example.invalid",
+      "to": "bank-p16@client.example",
+      "threadId": "thread_contact_1017"
+    },
+    "5268": {
+      "from": "manager@example.invalid",
+      "to": "bank-p17@client.example",
+      "threadId": "thread_contact_1018"
+    },
+    "5269": {
+      "from": "manager@example.invalid",
+      "to": "bank-p19@client.example",
+      "threadId": "thread_contact_1020"
+    },
+    "5270": {
+      "from": "manager@example.invalid",
+      "to": "bank-p7@client.example",
+      "threadId": "thread_contact_1008"
+    },
+    "5300": {
+      "from": "bank-p22@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1023"
+    },
+    "5301": {
+      "from": "bank-p27@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1028"
+    },
+    "5303": {
+      "from": "bank-p0@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1001"
+    },
+    "5304": {
+      "from": "bank-p11@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1012"
+    },
+    "5305": {
+      "from": "bank-p16@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1017"
+    },
+    "5306": {
+      "from": "bank-p24@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1025"
+    },
+    "5307": {
+      "from": "bank-p3@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1004"
+    },
+    "5311": {
+      "from": "bank-p10@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1011"
+    },
+    "5312": {
+      "from": "bank-p29@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1030"
+    },
+    "5313": {
+      "from": "bank-p6@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1007"
+    },
+    "5314": {
+      "from": "bank-p8@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1009"
+    },
+    "5317": {
+      "from": "bank-p18@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1019"
+    },
+    "5318": {
+      "from": "bank-p7@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1008"
+    },
+    "5319": {
+      "from": "bank-p13@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1014"
+    },
+    "5320": {
+      "from": "bank-p17@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1018"
+    },
+    "5322": {
+      "from": "bank-p26@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1027"
+    },
+    "5326": {
+      "from": "bank-p25@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1026"
+    },
+    "5329": {
+      "from": "bank-p19@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1020"
+    },
+    "5330": {
+      "from": "bank-p20@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1021"
+    },
+    "5333": {
+      "from": "bank-p1@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1002"
+    },
+    "5334": {
+      "from": "bank-p15@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1016"
+    },
+    "5338": {
+      "from": "bank-p4@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1005"
+    },
+    "5343": {
+      "from": "bank-p9@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1010"
+    },
+    "5344": {
+      "from": "bank-p14@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1015"
+    },
+    "5347": {
+      "from": "bank-p21@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1022"
+    },
+    "5350": {
+      "from": "bank-p23@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1024"
+    },
+    "5351": {
+      "from": "bank-p5@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1006"
+    },
+    "5353": {
+      "from": "bank-p12@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1013"
+    },
+    "5359": {
+      "from": "bank-p2@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1003"
+    },
+    "5360": {
+      "from": "bank-p28@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1029"
+    },
+    "5364": {
+      "from": "manager@example.invalid",
+      "to": "bank-p0@client.example",
+      "threadId": "thread_contact_1001"
+    },
+    "5365": {
+      "from": "manager@example.invalid",
+      "to": "bank-p2@client.example",
+      "threadId": "thread_contact_1003"
+    },
+    "5366": {
+      "from": "manager@example.invalid",
+      "to": "bank-p8@client.example",
+      "threadId": "thread_contact_1009"
+    },
+    "5368": {
+      "from": "manager@example.invalid",
+      "to": "bank-p23@client.example",
+      "threadId": "thread_contact_1024"
+    },
+    "5369": {
+      "from": "manager@example.invalid",
+      "to": "bank-p28@client.example",
+      "threadId": "thread_contact_1029"
+    },
+    "5370": {
+      "from": "manager@example.invalid",
+      "to": "bank-p13@client.example",
+      "threadId": "thread_contact_1014"
+    },
+    "5371": {
+      "from": "manager@example.invalid",
+      "to": "bank-p17@client.example",
+      "threadId": "thread_contact_1018"
+    },
+    "5374": {
+      "from": "manager@example.invalid",
+      "to": "bank-p18@client.example",
+      "threadId": "thread_contact_1019"
+    },
+    "5375": {
+      "from": "manager@example.invalid",
+      "to": "bank-p3@client.example",
+      "threadId": "thread_contact_1004"
+    },
+    "5379": {
+      "from": "manager@example.invalid",
+      "to": "bank-p14@client.example",
+      "threadId": "thread_contact_1015"
+    },
+    "5381": {
+      "from": "manager@example.invalid",
+      "to": "bank-p29@client.example",
+      "threadId": "thread_contact_1030"
+    },
+    "5382": {
+      "from": "manager@example.invalid",
+      "to": "bank-p4@client.example",
+      "threadId": "thread_contact_1005"
+    },
+    "5384": {
+      "from": "manager@example.invalid",
+      "to": "bank-p26@client.example",
+      "threadId": "thread_contact_1027"
+    },
+    "5385": {
+      "from": "manager@example.invalid",
+      "to": "bank-p27@client.example",
+      "threadId": "thread_contact_1028"
+    },
+    "5386": {
+      "from": "manager@example.invalid",
+      "to": "bank-p9@client.example",
+      "threadId": "thread_contact_1010"
+    },
+    "5388": {
+      "from": "manager@example.invalid",
+      "to": "bank-p5@client.example",
+      "threadId": "thread_contact_1006"
+    },
+    "5389": {
+      "from": "manager@example.invalid",
+      "to": "bank-p11@client.example",
+      "threadId": "thread_contact_1012"
+    },
+    "5394": {
+      "from": "manager@example.invalid",
+      "to": "bank-p20@client.example",
+      "threadId": "thread_contact_1021"
+    },
+    "5395": {
+      "from": "manager@example.invalid",
+      "to": "bank-p22@client.example",
+      "threadId": "thread_contact_1023"
+    },
+    "5396": {
+      "from": "manager@example.invalid",
+      "to": "bank-p24@client.example",
+      "threadId": "thread_contact_1025"
+    },
+    "5399": {
+      "from": "manager@example.invalid",
+      "to": "bank-p16@client.example",
+      "threadId": "thread_contact_1017"
+    },
+    "5400": {
+      "from": "manager@example.invalid",
+      "to": "bank-p25@client.example",
+      "threadId": "thread_contact_1026"
+    },
+    "5403": {
+      "from": "manager@example.invalid",
+      "to": "bank-p10@client.example",
+      "threadId": "thread_contact_1011"
+    },
+    "5404": {
+      "from": "manager@example.invalid",
+      "to": "bank-p1@client.example",
+      "threadId": "thread_contact_1002"
+    },
+    "5405": {
+      "from": "manager@example.invalid",
+      "to": "bank-p6@client.example",
+      "threadId": "thread_contact_1007"
+    },
+    "5407": {
+      "from": "manager@example.invalid",
+      "to": "bank-p12@client.example",
+      "threadId": "thread_contact_1013"
+    },
+    "5408": {
+      "from": "manager@example.invalid",
+      "to": "bank-p21@client.example",
+      "threadId": "thread_contact_1022"
+    },
+    "5412": {
+      "from": "manager@example.invalid",
+      "to": "bank-p15@client.example",
+      "threadId": "thread_contact_1016"
+    },
+    "5414": {
+      "from": "manager@example.invalid",
+      "to": "bank-p19@client.example",
+      "threadId": "thread_contact_1020"
+    },
+    "5415": {
+      "from": "manager@example.invalid",
+      "to": "bank-p7@client.example",
+      "threadId": "thread_contact_1008"
+    },
+    "5421": {
+      "from": "bank-p26@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1027"
+    },
+    "5422": {
+      "from": "bank-p21@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1022"
+    },
+    "5423": {
+      "from": "bank-p3@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1004"
+    },
+    "5424": {
+      "from": "bank-p13@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1014"
+    },
+    "5425": {
+      "from": "bank-p27@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1028"
+    },
+    "5426": {
+      "from": "bank-p17@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1018"
+    },
+    "5427": {
+      "from": "bank-p20@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1021"
+    },
+    "5428": {
+      "from": "bank-p4@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1005"
+    },
+    "5429": {
+      "from": "bank-p28@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1029"
+    },
+    "5430": {
+      "from": "bank-p6@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1007"
+    },
+    "5431": {
+      "from": "bank-p19@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1020"
+    },
+    "5432": {
+      "from": "bank-p0@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1001"
+    },
+    "5433": {
+      "from": "bank-p18@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1019"
+    },
+    "5434": {
+      "from": "bank-p2@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1003"
+    },
+    "5435": {
+      "from": "bank-p15@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1016"
+    },
+    "5436": {
+      "from": "bank-p24@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1025"
+    },
+    "5437": {
+      "from": "bank-p11@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1012"
+    },
+    "5440": {
+      "from": "bank-p8@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1009"
+    },
+    "5441": {
+      "from": "bank-p16@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1017"
+    },
+    "5442": {
+      "from": "bank-p14@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1015"
+    },
+    "5443": {
+      "from": "bank-p29@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1030"
+    },
+    "5444": {
+      "from": "bank-p5@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1006"
+    },
+    "5449": {
+      "from": "bank-p10@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1011"
+    },
+    "5450": {
+      "from": "bank-p12@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1013"
+    },
+    "5451": {
+      "from": "bank-p25@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1026"
+    },
+    "5452": {
+      "from": "bank-p9@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1010"
+    },
+    "5455": {
+      "from": "bank-p22@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1023"
+    },
+    "5457": {
+      "from": "bank-p1@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1002"
+    },
+    "5459": {
+      "from": "bank-p7@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1008"
+    },
+    "5463": {
+      "from": "bank-p23@client.example",
+      "to": "manager@example.invalid",
+      "threadId": "thread_contact_1024"
+    },
+    "5481": {
+      "from": "manager@example.invalid",
+      "to": "bank-p3@client.example",
+      "threadId": "thread_contact_1004"
+    },
+    "5482": {
+      "from": "manager@example.invalid",
+      "to": "bank-p1@client.example",
+      "threadId": "thread_contact_1002"
+    },
+    "5483": {
+      "from": "manager@example.invalid",
+      "to": "bank-p0@client.example",
+      "threadId": "thread_contact_1001"
+    },
+    "5484": {
+      "from": "manager@example.invalid",
+      "to": "bank-p14@client.example",
+      "threadId": "thread_contact_1015"
+    },
+    "5485": {
+      "from": "manager@example.invalid",
+      "to": "bank-p15@client.example",
+      "threadId": "thread_contact_1016"
+    },
+    "5486": {
+      "from": "manager@example.invalid",
+      "to": "bank-p17@client.example",
+      "threadId": "thread_contact_1018"
+    },
+    "5487": {
+      "from": "manager@example.invalid",
+      "to": "bank-p19@client.example",
+      "threadId": "thread_contact_1020"
+    },
+    "5488": {
+      "from": "manager@example.invalid",
+      "to": "bank-p22@client.example",
+      "threadId": "thread_contact_1023"
+    },
+    "5489": {
+      "from": "manager@example.invalid",
+      "to": "bank-p21@client.example",
+      "threadId": "thread_contact_1022"
+    },
+    "5490": {
+      "from": "manager@example.invalid",
+      "to": "bank-p13@client.example",
+      "threadId": "thread_contact_1014"
+    },
+    "5491": {
+      "from": "manager@example.invalid",
+      "to": "bank-p6@client.example",
+      "threadId": "thread_contact_1007"
+    },
+    "5492": {
+      "from": "manager@example.invalid",
+      "to": "bank-p16@client.example",
+      "threadId": "thread_contact_1017"
+    },
+    "5493": {
+      "from": "manager@example.invalid",
+      "to": "bank-p7@client.example",
+      "threadId": "thread_contact_1008"
+    },
+    "5494": {
+      "from": "manager@example.invalid",
+      "to": "bank-p4@client.example",
+      "threadId": "thread_contact_1005"
+    },
+    "5495": {
+      "from": "manager@example.invalid",
+      "to": "bank-p10@client.example",
+      "threadId": "thread_contact_1011"
+    },
+    "5497": {
+      "from": "manager@example.invalid",
+      "to": "bank-p26@client.example",
+      "threadId": "thread_contact_1027"
+    },
+    "5498": {
+      "from": "manager@example.invalid",
+      "to": "bank-p11@client.example",
+      "threadId": "thread_contact_1012"
+    },
+    "5499": {
+      "from": "manager@example.invalid",
+      "to": "bank-p18@client.example",
+      "threadId": "thread_contact_1019"
+    },
+    "5500": {
+      "from": "manager@example.invalid",
+      "to": "bank-p24@client.example",
+      "threadId": "thread_contact_1025"
+    },
+    "5510": {
+      "from": "manager@example.invalid",
+      "to": "bank-p5@client.example",
+      "threadId": "thread_contact_1006"
+    },
+    "5511": {
+      "from": "manager@example.invalid",
+      "to": "bank-p2@client.example",
+      "threadId": "thread_contact_1003"
+    },
+    "5512": {
+      "from": "manager@example.invalid",
+      "to": "bank-p9@client.example",
+      "threadId": "thread_contact_1010"
+    },
+    "5513": {
+      "from": "manager@example.invalid",
+      "to": "bank-p8@client.example",
+      "threadId": "thread_contact_1009"
+    },
+    "5514": {
+      "from": "manager@example.invalid",
+      "to": "bank-p23@client.example",
+      "threadId": "thread_contact_1024"
+    },
+    "5517": {
+      "from": "manager@example.invalid",
+      "to": "bank-p20@client.example",
+      "threadId": "thread_contact_1021"
+    },
+    "5518": {
+      "from": "manager@example.invalid",
+      "to": "bank-p27@client.example",
+      "threadId": "thread_contact_1028"
+    },
+    "5522": {
+      "from": "manager@example.invalid",
+      "to": "bank-p12@client.example",
+      "threadId": "thread_contact_1013"
+    },
+    "5523": {
+      "from": "manager@example.invalid",
+      "to": "bank-p25@client.example",
+      "threadId": "thread_contact_1026"
+    },
+    "5524": {
+      "from": "manager@example.invalid",
+      "to": "bank-p28@client.example",
+      "threadId": "thread_contact_1029"
+    },
+    "5526": {
+      "from": "manager@example.invalid",
+      "to": "bank-p29@client.example",
+      "threadId": "thread_contact_1030"
+    }
+  }
+}
