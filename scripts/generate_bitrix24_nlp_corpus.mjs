@@ -61,7 +61,14 @@ export function generateNlpCorpus(crm, bank) {
   bank.calls.forEach((x,i)=>append(x,'call',i));
   bank.emails.forEach((x,i)=>append(x,'email',i));
   bank.meetings.forEach((x,i)=>append(x,'meeting',i));
-  return {metadata:{synthetic:true,version:'nlp-corpus-v1',source:'bank_ml_v2',
+  const transcriptResponses = Object.fromEntries(documents.filter(d=>d.kind==='call').map(d=>[
+    d.crmActivityId,{result:{transcription:d.fullText}}
+  ]));
+  const emailResponses = Object.fromEntries(documents.filter(d=>d.kind==='email').map(d=>[
+    d.crmActivityId,{result:{activityId:d.crmActivityId,subject:d.subject,from:d.from,to:d.to,
+      body:d.body,threadId:d.threadId}}
+  ]));
+  return {transcriptResponses,emailResponses,metadata:{synthetic:true,version:'nlp-corpus-v1',source:'bank_ml_v2',
     linkedRestProfile:'legacy-rest-v1',note:'Illustrative generated text, not a real call transcript or email export'},
     counts:{calls:bank.calls.length,emails:bank.emails.length,meetings:bank.meetings.length,total:documents.length},
     documents};
@@ -72,6 +79,12 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   const corpus=generateNlpCorpus(read('src/data/crm.json'),read('src/data/synthetic/bank_ml_v2.json'));
   const dest=resolve(root,'src/data/synthetic/bank_nlp_corpus_v1.json');
   mkdirSync(dirname(dest),{recursive:true});
-  writeFileSync(dest,JSON.stringify(corpus,null,2)+'\n','utf8');
+  writeFileSync(dest,JSON.stringify({metadata:corpus.metadata,counts:corpus.counts,documents:corpus.documents},null,2)+'\\n','utf8');
+  const responseDir=resolve(root,'src/data/bitrix24_contract_v1/nlp');
+  mkdirSync(responseDir,{recursive:true});
+  for(const [name,value] of [
+    ['call_transcript_responses.json',{synthetic:true,method:'crm.activity.call.getTranscript',responses:corpus.transcriptResponses}],
+    ['email_content_responses.json',{synthetic:true,kind:'synthetic_email_content_adapter',note:'Not a standard Bitrix24 REST method response',responses:corpus.emailResponses}]
+  ]) writeFileSync(resolve(responseDir,name),JSON.stringify(value,null,2)+'\\n','utf8');
   console.log('Generated NLP corpus:',corpus.counts,'->',dest);
 }
