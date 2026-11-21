@@ -1,0 +1,307 @@
+{
+  "result": {
+    "items": [
+      {
+        "id": 1001,
+        "name": "Александр",
+        "lastName": "Белов",
+        "post": "Руководитель ИТ-направления",
+        "companyId": 42,
+        "assignedById": 17,
+        "typeId": "CLIENT",
+        "sourceId": "OTHER"
+      },
+      {
+        "id": 1002,
+        "name": "Мария",
+        "lastName": "Соколова",
+        "post": "Эксперт по безопасности",
+        "companyId": 42,
+        "assignedById": 17,
+        "typeId": "CLIENT",
+        "sourceId": "OTHER"
+      },
+      {
+        "id": 1003,
+        "name": "Дмитрий",
+        "lastName": "Миронов",
+        "post": "Менеджер по закупкам",
+        "companyId": 42,
+        "assignedById": 17,
+        "typeId": "CLIENT",
+        "sourceId": "OTHER"
+      },
+      {
+        "id": 1004,
+        "name": "Анна",
+        "lastName": "Орлова",
+        "post": "Финансовый контролёр",
+        "companyId": 42,
+        "assignedById": 17,
+        "typeId": "CLIENT",
+        "sourceId": "OTHER"
+      },
+      {
+        "id": 1005,
+        "name": "Илья",
+        "lastName": "Власов",
+        "post": "Руководитель направления",
+        "companyId": 42,
+        "assignedById": 17,
+        "typeId": "CLIENT",
+        "sourceId": "OTHER"
+      },
+      {
+        "id": 1006,
+        "name": "Елена",
+        "lastName": "Громова",
+        "post": "Руководитель проекта",
+        "companyId": 42,
+        "assignedById": 17,
+        "typeId": "CLIENT",
+        "sourceId": "OTHER"
+      },
+      {
+        "id": 1007,
+        "name": "Николай",
+        "lastName": "Ершов",
+        "post": "Руководитель ИТ-направления",
+        "companyId": 42,
+        "assignedById": 17,
+        "typeId": "CLIENT",
+        "sourceId": "OTHER"
+      },
+      {
+        "id": 1008,
+        "name": "Ольга",
+        "lastName": "Крылова",
+        "post": "Эксперт по безопасности",
+        "companyId": 42,
+        "assignedById": 17,
+        "typeId": "CLIENT",
+        "sourceId": "OTHER"
+      },
+      {
+        "id": 1009,
+        "name": "Андрей",
+        "lastName": "Данилов",
+        "post": "Менеджер по закупкам",
+        "companyId": 42,
+        "assignedById": 17,
+        "typeId": "CLIENT",
+        "sourceId": "OTHER"
+      },
+      {
+        "id": 1010,
+        "name": "Ирина",
+        "lastName": "Фомина",
+        "post": "Финансовый контролёр",
+        "companyId": 42,
+        "assignedById": 17,
+        "typeId": "CLIENT",
+        "sourceId": "OTHER"
+      },
+      {
+        "id": 1011,
+        "name": "Михаил",
+        "lastName": "Титов",
+        "post": "Руководитель направления",
+        "companyId": 42,
+        "assignedById": 17,
+        "typeId": "CLIENT",
+        "sourceId": "OTHER"
+      },
+      {
+        "id": 1012,
+        "name": "Наталья",
+        "lastName": "Баранова",
+        "post": "Руководитель проекта",
+        "companyId": 42,
+        "assignedById": 17,
+        "typeId": "CLIENT",
+        "sourceId": "OTHER"
+      },
+      {
+        "id": 1013,
+        "name": "Павел",
+        "lastName": "Жуков",
+        "post": "Руководитель ИТ-направления",
+        "companyId": 42,
+        "assignedById": 17,
+        "typeId": "CLIENT",
+        "sourceId": "OTHER"
+      },
+      {
+        "id": 1014,
+        "name": "Светлана",
+        "lastName": "Романова",
+        "post": "Эксперт по безопасности",
+        "companyId": 42,
+        "assignedById": 17,
+        "typeId": "CLIENT",
+        "sourceId": "OTHER"
+      },
+      {
+        "id": 1015,
+        "name": "Кирилл",
+        "lastName": "Морозов",
+        "post": "Менеджер по закупкам",
+        "companyId": 42,
+        "assignedById": 17,
+        "typeId": "CLIENT",
+        "sourceId": "OTHER"
+      },
+      {
+        "id": 1016,
+        "name": "Вера",
+        "lastName": "Калинина",
+        "post": "Финансовый контролёр",
+        "companyId": 42,
+        "assignedById": 17,
+        "typeId": "CLIENT",
+        "sourceId": "OTHER"
+      },
+      {
+        "id": 1017,
+        "name": "Роман",
+        "lastName": "Савин",
+        "post": "Руководитель направления",
+        "companyId": 42,
+        "assignedById": 17,
+        "typeId": "CLIENT",
+        "sourceId": "OTHER"
+      },
+      {
+        "id": 1018,
+        "name": "Татьяна",
+        "lastName": "Котова",
+        "post": "Руководитель проекта",
+        "companyId": 42,
+        "assignedById": 17,
+        "typeId": "CLIENT",
+        "sourceId": "OTHER"
+      },
+      {
+        "id": 1019,
+        "name": "Максим",
+        "lastName": "Фролов",
+        "post": "Руководитель ИТ-направления",
+        "companyId": 42,
+        "assignedById": 17,
+        "typeId": "CLIENT",
+        "sourceId": "OTHER"
+      },
+      {
+        "id": 1020,
+        "name": "Алина",
+        "lastName": "Климова",
+        "post": "Эксперт по безопасности",
+        "companyId": 42,
+        "assignedById": 17,
+        "typeId": "CLIENT",
+        "sourceId": "OTHER"
+      },
+      {
+        "id": 1021,
+        "name": "Виктор",
+        "lastName": "Быков",
+        "post": "Менеджер по закупкам",
+        "companyId": 42,
+        "assignedById": 17,
+        "typeId": "CLIENT",
+        "sourceId": "OTHER"
+      },
+      {
+        "id": 1022,
+        "name": "Полина",
+        "lastName": "Лебедева",
+        "post": "Финансовый контролёр",
+        "companyId": 42,
+        "assignedById": 18,
+        "typeId": "CLIENT",
+        "sourceId": "OTHER"
+      },
+      {
+        "id": 1023,
+        "name": "Сергей",
+        "lastName": "Осипов",
+        "post": "Руководитель направления",
+        "companyId": 42,
+        "assignedById": 19,
+        "typeId": "CLIENT",
+        "sourceId": "OTHER"
+      },
+      {
+        "id": 1024,
+        "name": "Юлия",
+        "lastName": "Зорина",
+        "post": "Руководитель проекта",
+        "companyId": 42,
+        "assignedById": 18,
+        "typeId": "CLIENT",
+        "sourceId": "OTHER"
+      },
+      {
+        "id": 1025,
+        "name": "Артём",
+        "lastName": "Гущин",
+        "post": "Руководитель ИТ-направления",
+        "companyId": 42,
+        "assignedById": 19,
+        "typeId": "CLIENT",
+        "sourceId": "OTHER"
+      },
+      {
+        "id": 1026,
+        "name": "Дарья",
+        "lastName": "Никитина",
+        "post": "Эксперт по безопасности",
+        "companyId": 42,
+        "assignedById": 18,
+        "typeId": "CLIENT",
+        "sourceId": "OTHER"
+      },
+      {
+        "id": 1027,
+        "name": "Игорь",
+        "lastName": "Комаров",
+        "post": "Менеджер по закупкам",
+        "companyId": 42,
+        "assignedById": 19,
+        "typeId": "CLIENT",
+        "sourceId": "OTHER"
+      },
+      {
+        "id": 1028,
+        "name": "Ксения",
+        "lastName": "Лазарева",
+        "post": "Финансовый контролёр",
+        "companyId": 42,
+        "assignedById": 18,
+        "typeId": "CLIENT",
+        "sourceId": "OTHER"
+      },
+      {
+        "id": 1029,
+        "name": "Денис",
+        "lastName": "Медведев",
+        "post": "Руководитель направления",
+        "companyId": 42,
+        "assignedById": 19,
+        "typeId": "CLIENT",
+        "sourceId": "OTHER"
+      },
+      {
+        "id": 1030,
+        "name": "Екатерина",
+        "lastName": "Волкова",
+        "post": "Руководитель проекта",
+        "companyId": 42,
+        "assignedById": 18,
+        "typeId": "CLIENT",
+        "sourceId": "OTHER"
+      }
+    ]
+  },
+  "total": 30
+}

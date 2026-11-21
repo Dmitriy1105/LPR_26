@@ -1,0 +1,14 @@
+{
+  "result": {
+    "items": [
+      {
+        "id": 42,
+        "title": "Банк «Северный контур»",
+        "industry": "BANKING",
+        "assignedById": 17,
+        "comments": "Развитие цифровой инфраструктуры"
+      }
+    ]
+  },
+  "total": 1
+}

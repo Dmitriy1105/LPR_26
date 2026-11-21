@@ -1,0 +1,12 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+import {exportBitrix24Mock} from '../scripts/export_bitrix24_mock.mjs';
+const load=p=>JSON.parse(readFileSync(new URL(p,import.meta.url),'utf8'));
+const crm=load('../src/data/crm.json');
+const bank=load('../src/data/synthetic/bank_ml_v2.json');
+const generated=exportBitrix24Mock(crm,bank);
+const files={manifest:'manifest.json',mapping:'id_mapping.json',companies:'crm_company_list.json',contacts:'crm_contact_list.json',deals:'crm_deal_list.json',invoices:'crm_invoice_list.json',activities:'crm_activity_list.json',tasks:'tasks_task_list.json'};
+test('Bitrix24-like fixtures are reproducible',()=>{for(const [key,name] of Object.entries(files))assert.deepEqual(load('../src/data/bitrix24_mock/'+name),generated[key]);});
+test('numeric IDs preserve bank contact and deal relationships',()=>{const ids=new Set(generated.contacts.result.items.map(x=>x.id));assert.equal(ids.size,30);for(const x of generated.deals.result.items){assert.ok(ids.has(x.contactId));assert.equal(x.companyId,42);}assert.equal(generated.deals.result.items.length,18);});
+test('REST-like envelopes and pagination are explicit',()=>{assert.equal(generated.invoices.total,44);assert.equal(generated.activities.total,540);assert.equal(generated.activities.result.length,50);assert.equal(generated.activities.next,50);assert.equal(generated.tasks.result.tasks.length,48);});
