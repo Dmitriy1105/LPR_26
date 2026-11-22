@@ -36,7 +36,8 @@ test("Bitrix24 legacy REST activity shape carries multiple COMMUNICATIONS", () =
   const multi = activities.filter(a => a.COMMUNICATIONS.length >= 2);
   assert.ok(multi.length > 0);
   assert.ok(multi.every(a => a.COMMUNICATIONS.every(c =>
-    typeof c.ENTITY_ID === "string" && c.ENTITY_TYPE_ID === "3"
+    typeof c.ENTITY_ID === "string" && c.ENTITY_TYPE_ID === "3" &&
+    typeof c.TYPE === "string" && typeof c.VALUE === "string"
   )));
   assert.equal(fixtures.manifest.profile, "legacy-rest-v1");
   assert.equal(fixtures.manifest.recordCounts.activities, activities.length);
