@@ -54,3 +54,38 @@ test("all activity communications resolve to known CRM contacts", () => {
     }
   }
 });
+
+test("v3.1 generates deterministic, event-specific communication text", () => {
+  const first = generateV3(crm, v1, 20261122);
+  const second = generateV3(crm, v1, 20261122);
+  assert.equal(first.bank.metadata.generatorVersion, "3.1.0");
+  assert.deepEqual(first.bank.calls, second.bank.calls);
+  assert.deepEqual(first.bank.emails, second.bank.emails);
+  assert.deepEqual(first.bank.meetings, second.bank.meetings);
+
+  const fixtures = generateFixturesV2(crm, first.bank);
+  const byType = new Map();
+  for (const row of fixtures.activityRecords) {
+    const key = row.TYPE_ID;
+    if (!byType.has(key)) byType.set(key, []);
+    byType.get(key).push(String(row.DESCRIPTION || "").toLowerCase().replace(/\\s+/g, " ").trim());
+  }
+  for (const [type, texts] of byType) {
+    const uniqueCount = new Set(texts).size;
+    const ratio = uniqueCount / texts.length;
+    assert.ok(ratio >= 0.95, "Exact-text uniqueness below 95% for TYPE_ID " + type + ": " + ratio);
+    assert.ok(texts.every(Boolean), "Empty DESCRIPTION for TYPE_ID " + type);
+  }
+});
+
+test("v3.1 preserves REST counts and multiparty communication schema", () => {
+  const { bank } = generateV3(crm, v1, 20261122);
+  const fixtures = generateFixturesV2(crm, bank);
+  assert.equal(fixtures.manifest.profile, "legacy-rest-v1");
+  assert.equal(fixtures.manifest.recordCounts.activities, fixtures.activityRecords.length);
+  assert.equal(fixtures.activityRecords.length, 630);
+  assert.ok(fixtures.activityRecords.every(a => Array.isArray(a.COMMUNICATIONS)));
+  assert.ok(fixtures.activityRecords.every(a => a.COMMUNICATIONS.length >= 1));
+  assert.ok(fixtures.activityRecords.some(a => a.COMMUNICATIONS.length >= 2));
+});
+
