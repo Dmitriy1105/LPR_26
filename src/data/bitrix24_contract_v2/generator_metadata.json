@@ -15,8 +15,6 @@
     "2": "call",
     "4": "email_or_internal_email"
   },
-  "uniqueDescriptions": 630,
-  "descriptionUniquenessPct": 100,
   "dataIsSynthetic": true,
   "compatibility": "legacy-rest-v1",
   "invariants": [
@@ -28,5 +26,19 @@
   "limitations": [
     "Run NLP 20 and NLP 20A to evaluate similarity",
     "Synthetic text is not real customer communication"
-  ]
+  ],
+  "validation": {
+    "restPages": 13,
+    "activityRecords": 630,
+    "activityTypeCounts": {
+      "meeting": 126,
+      "call": 180,
+      "emailAndInternal": 324
+    },
+    "nonEmptyDescriptions": true,
+    "activityIdsPreserved": true,
+    "datesPreserved": true,
+    "communicationsPreserved": true,
+    "fullNlpAudit": "pending"
+  }
 }
