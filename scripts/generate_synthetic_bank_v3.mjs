@@ -124,7 +124,7 @@ function diversifyCall(call, peopleById, seed) {
     follow_up: "Договорились вернуться к вопросу после внутренней проверки."
   }[call.disposition] || "Следующий шаг будет определен после сверки информации.";
   call.transcript = [
-    { speaker: "manager", text: variant(openers, key + "|open") },
+    { speaker: "manager", text: variant(openers, key + "|open") + " Дата звонка: " + ruDate(call.date) + "." },
     { speaker: "client", text: outcome + " " + variant(managerQuestions, key + "|question") },
     { speaker: "manager", text: disposition + " " + variant(managerActions, key + "|action") },
     { speaker: "client", text: variant(clientActions, key + "|client-action") }
@@ -180,7 +180,7 @@ function diversifyEmail(email, peopleById, seed) {
         "Для удобства проверки вынесли отдельным разделом: " + context + "."
       ], key + "|context") + " " + variant(requests, key + "|request") +
       " Просим по возможности вернуться с ответом до " + due +
-      ". С уважением, " + (email.manager || "проектная команда") + ".";
+      ". Дата письма: " + ruDate(email.date) + ". С уважением, " + (email.manager || "проектная команда") + ".";
   }
 }
 function meetingMinutes(topic, date, attendeeIds, peopleById, key, sentiment = "нейтральный") {
