@@ -68,7 +68,7 @@ test("v3.1 generates deterministic, event-specific communication text", () => {
   for (const row of fixtures.activityRecords) {
     const key = row.TYPE_ID;
     if (!byType.has(key)) byType.set(key, []);
-    byType.get(key).push(String(row.DESCRIPTION || "").toLowerCase().replace(/\\s+/g, " ").trim());
+    byType.get(key).push(String(row.DESCRIPTION || "").toLowerCase().replace(/\s+/g, " ").trim());
   }
   for (const [type, texts] of byType) {
     const uniqueCount = new Set(texts).size;
