@@ -42,11 +42,15 @@
       "COMMUNICATIONS": [
         {
           "ENTITY_ID": "1001",
-          "ENTITY_TYPE_ID": "3"
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p0@client.example"
         },
         {
           "ENTITY_ID": "1003",
-          "ENTITY_TYPE_ID": "3"
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p2@client.example"
         }
       ]
     },
@@ -356,15 +360,21 @@
       "COMMUNICATIONS": [
         {
           "ENTITY_ID": "1001",
-          "ENTITY_TYPE_ID": "3"
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p0@client.example"
         },
         {
           "ENTITY_ID": "1003",
-          "ENTITY_TYPE_ID": "3"
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p2@client.example"
         },
         {
           "ENTITY_ID": "1004",
-          "ENTITY_TYPE_ID": "3"
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p3@client.example"
         }
       ]
     },
@@ -808,7 +818,8 @@
         {
           "ENTITY_ID": "1027",
           "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "TYPE": "PHONE",
+          "VALUE": "+7 900 000-00-27"
         }
       ]
     },
@@ -829,7 +840,8 @@
         {
           "ENTITY_ID": "1008",
           "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "TYPE": "PHONE",
+          "VALUE": "+7 900 000-00-08"
         }
       ]
     },
@@ -850,7 +862,8 @@
         {
           "ENTITY_ID": "1023",
           "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "TYPE": "PHONE",
+          "VALUE": "+7 900 000-00-23"
         }
       ]
     },
@@ -871,7 +884,8 @@
         {
           "ENTITY_ID": "1022",
           "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "TYPE": "PHONE",
+          "VALUE": "+7 900 000-00-22"
         }
       ]
     },
@@ -892,7 +906,8 @@
         {
           "ENTITY_ID": "1001",
           "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "TYPE": "PHONE",
+          "VALUE": "+7 900 000-00-01"
         }
       ]
     },
@@ -911,15 +926,21 @@
       "COMMUNICATIONS": [
         {
           "ENTITY_ID": "1006",
-          "ENTITY_TYPE_ID": "3"
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p5@client.example"
         },
         {
           "ENTITY_ID": "1009",
-          "ENTITY_TYPE_ID": "3"
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p8@client.example"
         },
         {
           "ENTITY_ID": "1010",
-          "ENTITY_TYPE_ID": "3"
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p9@client.example"
         }
       ]
     },
@@ -994,7 +1015,8 @@
         {
           "ENTITY_ID": "1026",
           "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "TYPE": "PHONE",
+          "VALUE": "+7 900 000-00-26"
         }
       ]
     },
@@ -1015,7 +1037,8 @@
         {
           "ENTITY_ID": "1029",
           "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "TYPE": "PHONE",
+          "VALUE": "+7 900 000-00-29"
         }
       ]
     },
@@ -1036,7 +1059,8 @@
         {
           "ENTITY_ID": "1002",
           "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "TYPE": "PHONE",
+          "VALUE": "+7 900 000-00-02"
         }
       ]
     },
@@ -1057,7 +1081,8 @@
         {
           "ENTITY_ID": "1009",
           "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "TYPE": "PHONE",
+          "VALUE": "+7 900 000-00-09"
         }
       ]
     },
@@ -1078,7 +1103,8 @@
         {
           "ENTITY_ID": "1030",
           "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "TYPE": "PHONE",
+          "VALUE": "+7 900 000-00-30"
         }
       ]
     },
@@ -1099,7 +1125,8 @@
         {
           "ENTITY_ID": "1013",
           "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "TYPE": "PHONE",
+          "VALUE": "+7 900 000-00-13"
         }
       ]
     },
@@ -1120,7 +1147,8 @@
         {
           "ENTITY_ID": "1025",
           "ENTITY_TYPE_ID": "3",
-          "TYPE": "PHONE"
+          "TYPE": "PHONE",
+          "VALUE": "+7 900 000-00-25"
         }
       ]
     }
