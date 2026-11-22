@@ -71,7 +71,9 @@ export function generateFixturesV2(crm, bank) {
     const ids = unique(spec.participantIds).filter(id => contactIds[id]);
     if (!ids.length) throw new Error("Activity " + spec.sourceId + " has no mapped contact");
     const owner = ids[0];
-    const communications = ids.map(id => ({
+    const id = 5001 + activityRecords.length;
+    const communications = ids.map((id, communicationIndex) => ({
+      ID: String(1000000 + id * 10 + communicationIndex),
       ENTITY_ID: String(contactIds[id]),
       ENTITY_TYPE_ID: "3",
       ...(spec.kind === "call" ? {
@@ -82,7 +84,6 @@ export function generateFixturesV2(crm, bank) {
         VALUE: (spec.emailValues && spec.emailValues[id]) || emailByContact[id]
       })
     }));
-    const id = 5001 + activityRecords.length;
     activityRecords.push({
       ID: String(id),
       OWNER_ID: String(contactIds[owner]),
