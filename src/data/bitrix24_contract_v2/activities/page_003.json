@@ -1,0 +1,1164 @@
+{
+  "result": [
+    {
+      "ID": "5101",
+      "OWNER_ID": "1023",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — согласование договора",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «согласование договора». Ожидает дополнительных аргументов. Просим уточнить условия, сроки и ответственную сторону. С уважением, Сергей Осипов.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-04-20T12:00:00+03:00",
+      "END_TIME": "2025-04-20T12:05:00+03:00",
+      "RESPONSIBLE_ID": "17",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1053800",
+          "ENTITY_ID": "1023",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p22@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5102",
+      "OWNER_ID": "1004",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — график внедрения",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «график внедрения». Выражает сомнения. Просим уточнить условия, сроки и ответственную сторону. С уважением, Анна Орлова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-04-20T12:00:00+03:00",
+      "END_TIME": "2025-04-20T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1052090",
+          "ENTITY_ID": "1004",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p3@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5103",
+      "OWNER_ID": "1016",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Внутреннее обсуждение: Согласование решения",
+      "DESCRIPTION": "Зафиксированы разные позиции подразделений; требуется согласование.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-04-26T12:00:00+03:00",
+      "END_TIME": "2025-04-26T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1056150",
+          "ENTITY_ID": "1016",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p15@client.example"
+        },
+        {
+          "ID": "1056151",
+          "ENTITY_ID": "1011",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p10@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5104",
+      "OWNER_ID": "1011",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча по решению: Бюджет и выбор поставщика",
+      "DESCRIPTION": "Стороны сверили технические ограничения, бюджетные условия и порядок согласования. Подтверждены условия и дальнейшие шаги.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-01T12:00:00+03:00",
+      "END_TIME": "2025-05-01T12:45:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1055460",
+          "ENTITY_ID": "1011",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p10@client.example"
+        },
+        {
+          "ID": "1055461",
+          "ENTITY_ID": "1015",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p14@client.example"
+        },
+        {
+          "ID": "1055462",
+          "ENTITY_ID": "1016",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p15@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5105",
+      "OWNER_ID": "1015",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Внутреннее обсуждение: Бюджет закупки",
+      "DESCRIPTION": "Уточняются условия и участники согласования.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-01T12:00:00+03:00",
+      "END_TIME": "2025-05-01T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1055820",
+          "ENTITY_ID": "1015",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p14@client.example"
+        },
+        {
+          "ID": "1055821",
+          "ENTITY_ID": "1016",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p15@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5106",
+      "OWNER_ID": "1017",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча: согласование договора",
+      "DESCRIPTION": "Обсуждали согласование договора. Представитель клиента поддерживает инициативу. Отмечены вопросы по стоимости, рискам внедрения и согласованию графика.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-10T12:00:00+03:00",
+      "END_TIME": "2025-05-10T12:30:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1054990",
+          "ENTITY_ID": "1017",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p16@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5107",
+      "OWNER_ID": "1003",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча: сроки миграции",
+      "DESCRIPTION": "Обсуждали сроки миграции. Представитель клиента ожидает дополнительных аргументов. Отмечены вопросы по стоимости, рискам внедрения и согласованию графика.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-12T12:00:00+03:00",
+      "END_TIME": "2025-05-12T13:30:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1054570",
+          "ENTITY_ID": "1003",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p2@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5108",
+      "OWNER_ID": "1023",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча: сроки миграции",
+      "DESCRIPTION": "Обсуждали сроки миграции. Представитель клиента ожидает дополнительных аргументов. Отмечены вопросы по стоимости, рискам внедрения и согласованию графика.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-12T12:00:00+03:00",
+      "END_TIME": "2025-05-12T13:30:00+03:00",
+      "RESPONSIBLE_ID": "17",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1055170",
+          "ENTITY_ID": "1023",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p22@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5109",
+      "OWNER_ID": "1024",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча: согласование договора",
+      "DESCRIPTION": "Обсуждали согласование договора. Представитель клиента выражает сомнения. Отмечены вопросы по стоимости, рискам внедрения и согласованию графика.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-13T12:00:00+03:00",
+      "END_TIME": "2025-05-13T12:45:00+03:00",
+      "RESPONSIBLE_ID": "19",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1055200",
+          "ENTITY_ID": "1024",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p23@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5110",
+      "OWNER_ID": "1008",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча: облачная инфраструктура",
+      "DESCRIPTION": "Обсуждали облачная инфраструктура. Представитель клиента выражает сомнения. Отмечены вопросы по стоимости, рискам внедрения и согласованию графика.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-13T12:00:00+03:00",
+      "END_TIME": "2025-05-13T12:30:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1054720",
+          "ENTITY_ID": "1008",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p7@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5111",
+      "OWNER_ID": "1029",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча: информационная безопасность",
+      "DESCRIPTION": "Обсуждали информационная безопасность. Представитель клиента поддерживает инициативу. Отмечены вопросы по стоимости, рискам внедрения и согласованию графика.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-14T12:00:00+03:00",
+      "END_TIME": "2025-05-14T12:30:00+03:00",
+      "RESPONSIBLE_ID": "17",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1055350",
+          "ENTITY_ID": "1029",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p28@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5112",
+      "OWNER_ID": "1016",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча по решению: Технические требования",
+      "DESCRIPTION": "Зафиксированы позиции подразделений; окончательное решение отложено до получения дополнительных материалов. Подтверждены условия и дальнейшие шаги.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-16T12:00:00+03:00",
+      "END_TIME": "2025-05-16T12:45:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1055470",
+          "ENTITY_ID": "1016",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p15@client.example"
+        },
+        {
+          "ID": "1055471",
+          "ENTITY_ID": "1021",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p20@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5113",
+      "OWNER_ID": "1016",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Внутреннее обсуждение: Требования ИБ",
+      "DESCRIPTION": "Уточняются условия и участники согласования.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-16T12:00:00+03:00",
+      "END_TIME": "2025-05-16T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1055830",
+          "ENTITY_ID": "1016",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p15@client.example"
+        },
+        {
+          "ID": "1055831",
+          "ENTITY_ID": "1021",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p20@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5114",
+      "OWNER_ID": "1013",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча: сроки миграции",
+      "DESCRIPTION": "Обсуждали сроки миграции. Представитель клиента поддерживает инициативу. Отмечены вопросы по стоимости, рискам внедрения и согласованию графика.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-16T12:00:00+03:00",
+      "END_TIME": "2025-05-16T13:30:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1054870",
+          "ENTITY_ID": "1013",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p12@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5115",
+      "OWNER_ID": "1019",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча: облачная инфраструктура",
+      "DESCRIPTION": "Обсуждали облачная инфраструктура. Представитель клиента ожидает дополнительных аргументов. Отмечены вопросы по стоимости, рискам внедрения и согласованию графика.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-19T12:00:00+03:00",
+      "END_TIME": "2025-05-19T12:30:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1055050",
+          "ENTITY_ID": "1019",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p18@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5116",
+      "OWNER_ID": "1030",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча: условия поддержки",
+      "DESCRIPTION": "Обсуждали условия поддержки. Представитель клиента готов рассмотреть предложение. Отмечены вопросы по стоимости, рискам внедрения и согласованию графика.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-23T12:00:00+03:00",
+      "END_TIME": "2025-05-23T12:30:00+03:00",
+      "RESPONSIBLE_ID": "19",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1055380",
+          "ENTITY_ID": "1030",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p29@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5117",
+      "OWNER_ID": "1004",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча: график внедрения",
+      "DESCRIPTION": "Обсуждали график внедрения. Представитель клиента выражает сомнения. Отмечены вопросы по стоимости, рискам внедрения и согласованию графика.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-23T12:00:00+03:00",
+      "END_TIME": "2025-05-23T13:30:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1054600",
+          "ENTITY_ID": "1004",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p3@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5118",
+      "OWNER_ID": "1010",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча: согласование договора",
+      "DESCRIPTION": "Обсуждали согласование договора. Представитель клиента готов рассмотреть предложение. Отмечены вопросы по стоимости, рискам внедрения и согласованию графика.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-23T12:00:00+03:00",
+      "END_TIME": "2025-05-23T12:45:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1054780",
+          "ENTITY_ID": "1010",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p9@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5119",
+      "OWNER_ID": "1021",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча: график внедрения",
+      "DESCRIPTION": "Обсуждали график внедрения. Представитель клиента поддерживает инициативу. Отмечены вопросы по стоимости, рискам внедрения и согласованию графика.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-24T12:00:00+03:00",
+      "END_TIME": "2025-05-24T13:30:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1055110",
+          "ENTITY_ID": "1021",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p20@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5120",
+      "OWNER_ID": "1001",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча: согласование договора",
+      "DESCRIPTION": "Обсуждали согласование договора. Представитель клиента поддерживает инициативу. Отмечены вопросы по стоимости, рискам внедрения и согласованию графика.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-25T12:00:00+03:00",
+      "END_TIME": "2025-05-25T12:45:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1054510",
+          "ENTITY_ID": "1001",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p0@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5121",
+      "OWNER_ID": "1018",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча: условия поддержки",
+      "DESCRIPTION": "Обсуждали условия поддержки. Представитель клиента готов рассмотреть предложение. Отмечены вопросы по стоимости, рискам внедрения и согласованию графика.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-25T12:00:00+03:00",
+      "END_TIME": "2025-05-25T12:45:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1055020",
+          "ENTITY_ID": "1018",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p17@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5122",
+      "OWNER_ID": "1009",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча: бюджет проекта",
+      "DESCRIPTION": "Обсуждали бюджет проекта. Представитель клиента поддерживает инициативу. Отмечены вопросы по стоимости, рискам внедрения и согласованию графика.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-25T12:00:00+03:00",
+      "END_TIME": "2025-05-25T13:30:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1054750",
+          "ENTITY_ID": "1009",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p8@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5123",
+      "OWNER_ID": "1012",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча: согласование договора",
+      "DESCRIPTION": "Обсуждали согласование договора. Представитель клиента выражает сомнения. Отмечены вопросы по стоимости, рискам внедрения и согласованию графика.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-26T12:00:00+03:00",
+      "END_TIME": "2025-05-26T12:45:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1054840",
+          "ENTITY_ID": "1012",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p11@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5124",
+      "OWNER_ID": "1002",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча: условия поддержки",
+      "DESCRIPTION": "Обсуждали условия поддержки. Представитель клиента готов рассмотреть предложение. Отмечены вопросы по стоимости, рискам внедрения и согласованию графика.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-27T12:00:00+03:00",
+      "END_TIME": "2025-05-27T13:00:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1054540",
+          "ENTITY_ID": "1002",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p1@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5125",
+      "OWNER_ID": "1025",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча: бюджет проекта",
+      "DESCRIPTION": "Обсуждали бюджет проекта. Представитель клиента поддерживает инициативу. Отмечены вопросы по стоимости, рискам внедрения и согласованию графика.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-27T12:00:00+03:00",
+      "END_TIME": "2025-05-27T12:45:00+03:00",
+      "RESPONSIBLE_ID": "17",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1055230",
+          "ENTITY_ID": "1025",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p24@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5126",
+      "OWNER_ID": "1026",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча: бюджет проекта",
+      "DESCRIPTION": "Обсуждали бюджет проекта. Представитель клиента готов рассмотреть предложение. Отмечены вопросы по стоимости, рискам внедрения и согласованию графика.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-29T12:00:00+03:00",
+      "END_TIME": "2025-05-29T12:45:00+03:00",
+      "RESPONSIBLE_ID": "19",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1055260",
+          "ENTITY_ID": "1026",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p25@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5127",
+      "OWNER_ID": "1005",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча: сроки миграции",
+      "DESCRIPTION": "Обсуждали сроки миграции. Представитель клиента поддерживает инициативу. Отмечены вопросы по стоимости, рискам внедрения и согласованию графика.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-29T12:00:00+03:00",
+      "END_TIME": "2025-05-29T13:00:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1054630",
+          "ENTITY_ID": "1005",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p4@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5128",
+      "OWNER_ID": "1021",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: облачная инфраструктура",
+      "DESCRIPTION": "Тема звонка: облачная инфраструктура\nmanager: Добрый день, Виктор. Хотел уточнить статус вопроса: облачная инфраструктура.\nclient: Сейчас поддерживает инициативу. Важно уточнить сроки и ответственных.\nmanager: Подготовим материалы и согласуем следующий шаг.\nclient: Направьте краткое резюме и предложите время обсуждения.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-30T10:00:00+03:00",
+      "END_TIME": "2025-05-30T10:14:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1051220",
+          "ENTITY_ID": "1021",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE",
+          "VALUE": "+7 900 000-00-21"
+        }
+      ]
+    },
+    {
+      "ID": "5129",
+      "OWNER_ID": "1012",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: сроки миграции",
+      "DESCRIPTION": "Тема звонка: сроки миграции\nmanager: Добрый день, Наталья. Хотел уточнить статус вопроса: сроки миграции.\nclient: Сейчас выражает сомнения. Важно уточнить сроки и ответственных.\nmanager: Подготовим материалы и согласуем следующий шаг.\nclient: Направьте краткое резюме и предложите время обсуждения.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-31T11:45:00+03:00",
+      "END_TIME": "2025-05-31T11:56:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1050680",
+          "ENTITY_ID": "1012",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE",
+          "VALUE": "+7 900 000-00-12"
+        }
+      ]
+    },
+    {
+      "ID": "5130",
+      "OWNER_ID": "1003",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — бюджет проекта",
+      "DESCRIPTION": "Здравствуйте, Дмитрий! Направляем материалы по теме «бюджет проекта». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-31T12:00:00+03:00",
+      "END_TIME": "2025-05-31T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1052010",
+          "ENTITY_ID": "1003",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p2@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5131",
+      "OWNER_ID": "1011",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча: бюджет проекта",
+      "DESCRIPTION": "Обсуждали бюджет проекта. Представитель клиента ожидает дополнительных аргументов. Отмечены вопросы по стоимости, рискам внедрения и согласованию графика.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-31T12:00:00+03:00",
+      "END_TIME": "2025-05-31T13:00:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1054810",
+          "ENTITY_ID": "1011",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p10@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5132",
+      "OWNER_ID": "1014",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча: согласование договора",
+      "DESCRIPTION": "Обсуждали согласование договора. Представитель клиента готов рассмотреть предложение. Отмечены вопросы по стоимости, рискам внедрения и согласованию графика.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-31T12:00:00+03:00",
+      "END_TIME": "2025-05-31T13:30:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1054900",
+          "ENTITY_ID": "1014",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p13@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5133",
+      "OWNER_ID": "1007",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча: условия поддержки",
+      "DESCRIPTION": "Обсуждали условия поддержки. Представитель клиента ожидает дополнительных аргументов. Отмечены вопросы по стоимости, рискам внедрения и согласованию графика.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-31T12:00:00+03:00",
+      "END_TIME": "2025-05-31T12:30:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1054690",
+          "ENTITY_ID": "1007",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p6@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5134",
+      "OWNER_ID": "1028",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — график внедрения",
+      "DESCRIPTION": "Здравствуйте, Ксения! Направляем материалы по теме «график внедрения». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Мария Котова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-06-01T12:00:00+03:00",
+      "END_TIME": "2025-06-01T12:05:00+03:00",
+      "RESPONSIBLE_ID": "19",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1054260",
+          "ENTITY_ID": "1028",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p27@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5135",
+      "OWNER_ID": "1020",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча: сроки миграции",
+      "DESCRIPTION": "Обсуждали сроки миграции. Представитель клиента выражает сомнения. Отмечены вопросы по стоимости, рискам внедрения и согласованию графика.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-06-01T12:00:00+03:00",
+      "END_TIME": "2025-06-01T13:30:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1055080",
+          "ENTITY_ID": "1020",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p19@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5136",
+      "OWNER_ID": "1027",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча: технические требования",
+      "DESCRIPTION": "Обсуждали технические требования. Представитель клиента ожидает дополнительных аргументов. Отмечены вопросы по стоимости, рискам внедрения и согласованию графика.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-06-01T12:00:00+03:00",
+      "END_TIME": "2025-06-01T13:00:00+03:00",
+      "RESPONSIBLE_ID": "17",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1055290",
+          "ENTITY_ID": "1027",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p26@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5137",
+      "OWNER_ID": "1005",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: сроки миграции",
+      "DESCRIPTION": "Тема звонка: сроки миграции\nmanager: Добрый день, Илья. Хотел уточнить статус вопроса: сроки миграции.\nclient: Сейчас поддерживает инициативу. Важно уточнить сроки и ответственных.\nmanager: Подготовим материалы и согласуем следующий шаг.\nclient: Направьте краткое резюме и предложите время обсуждения.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-06-01T14:30:00+03:00",
+      "END_TIME": "2025-06-01T15:10:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1050260",
+          "ENTITY_ID": "1005",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE",
+          "VALUE": "+7 900 000-00-05"
+        }
+      ]
+    },
+    {
+      "ID": "5138",
+      "OWNER_ID": "1026",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: облачная инфраструктура",
+      "DESCRIPTION": "Тема звонка: облачная инфраструктура\nmanager: Добрый день, Дарья. Хотел уточнить статус вопроса: облачная инфраструктура.\nclient: Сейчас готов рассмотреть предложение. Важно уточнить сроки и ответственных.\nmanager: Подготовим материалы и согласуем следующий шаг.\nclient: Направьте краткое резюме и предложите время обсуждения.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-06-02T12:00:00+03:00",
+      "END_TIME": "2025-06-02T12:06:00+03:00",
+      "RESPONSIBLE_ID": "19",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1051520",
+          "ENTITY_ID": "1026",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE",
+          "VALUE": "+7 900 000-00-26"
+        }
+      ]
+    },
+    {
+      "ID": "5139",
+      "OWNER_ID": "1027",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: согласование договора",
+      "DESCRIPTION": "Тема звонка: согласование договора\nmanager: Добрый день, Игорь. Хотел уточнить статус вопроса: согласование договора.\nclient: Сейчас ожидает дополнительных аргументов. Важно уточнить сроки и ответственных.\nmanager: Подготовим материалы и согласуем следующий шаг.\nclient: Направьте краткое резюме и предложите время обсуждения.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-06-02T16:00:00+03:00",
+      "END_TIME": "2025-06-02T16:06:00+03:00",
+      "RESPONSIBLE_ID": "17",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1051580",
+          "ENTITY_ID": "1027",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE",
+          "VALUE": "+7 900 000-00-27"
+        }
+      ]
+    },
+    {
+      "ID": "5140",
+      "OWNER_ID": "1015",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: информационная безопасность",
+      "DESCRIPTION": "Тема звонка: информационная безопасность\nmanager: Добрый день, Кирилл. Хотел уточнить статус вопроса: информационная безопасность.\nclient: Сейчас ожидает дополнительных аргументов. Важно уточнить сроки и ответственных.\nmanager: Подготовим материалы и согласуем следующий шаг.\nclient: Направьте краткое резюме и предложите время обсуждения.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-06-03T09:45:00+03:00",
+      "END_TIME": "2025-06-03T10:06:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1050860",
+          "ENTITY_ID": "1015",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE",
+          "VALUE": "+7 900 000-00-15"
+        }
+      ]
+    },
+    {
+      "ID": "5141",
+      "OWNER_ID": "1030",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: информационная безопасность",
+      "DESCRIPTION": "Тема звонка: информационная безопасность\nmanager: Добрый день, Екатерина. Хотел уточнить статус вопроса: информационная безопасность.\nclient: Сейчас готов рассмотреть предложение. Важно уточнить сроки и ответственных.\nmanager: Подготовим материалы и согласуем следующий шаг.\nclient: Направьте краткое резюме и предложите время обсуждения.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-06-03T11:45:00+03:00",
+      "END_TIME": "2025-06-03T11:53:00+03:00",
+      "RESPONSIBLE_ID": "19",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1051760",
+          "ENTITY_ID": "1030",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE",
+          "VALUE": "+7 900 000-00-30"
+        }
+      ]
+    },
+    {
+      "ID": "5142",
+      "OWNER_ID": "1006",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — сроки миграции",
+      "DESCRIPTION": "Здравствуйте, Елена! Направляем материалы по теме «сроки миграции». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-06-03T12:00:00+03:00",
+      "END_TIME": "2025-06-03T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1052280",
+          "ENTITY_ID": "1006",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p5@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5143",
+      "OWNER_ID": "1009",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — информационная безопасность",
+      "DESCRIPTION": "Здравствуйте, Андрей! Направляем материалы по теме «информационная безопасность». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-06-03T12:00:00+03:00",
+      "END_TIME": "2025-06-03T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1052550",
+          "ENTITY_ID": "1009",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p8@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5144",
+      "OWNER_ID": "1015",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча: бюджет проекта",
+      "DESCRIPTION": "Обсуждали бюджет проекта. Представитель клиента ожидает дополнительных аргументов. Отмечены вопросы по стоимости, рискам внедрения и согласованию графика.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-06-03T12:00:00+03:00",
+      "END_TIME": "2025-06-03T13:30:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1054930",
+          "ENTITY_ID": "1015",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p14@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5145",
+      "OWNER_ID": "1011",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — сроки миграции",
+      "DESCRIPTION": "Здравствуйте, Михаил! Направляем материалы по теме «сроки миграции». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-06-04T12:00:00+03:00",
+      "END_TIME": "2025-06-04T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1052730",
+          "ENTITY_ID": "1011",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p10@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5146",
+      "OWNER_ID": "1007",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — облачная инфраструктура",
+      "DESCRIPTION": "Здравствуйте, Николай! Направляем материалы по теме «облачная инфраструктура». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-06-04T12:00:00+03:00",
+      "END_TIME": "2025-06-04T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1052370",
+          "ENTITY_ID": "1007",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p6@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5147",
+      "OWNER_ID": "1022",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча: бюджет проекта",
+      "DESCRIPTION": "Обсуждали бюджет проекта. Представитель клиента готов рассмотреть предложение. Отмечены вопросы по стоимости, рискам внедрения и согласованию графика.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-06-05T12:00:00+03:00",
+      "END_TIME": "2025-06-05T12:30:00+03:00",
+      "RESPONSIBLE_ID": "19",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1055140",
+          "ENTITY_ID": "1022",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p21@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5148",
+      "OWNER_ID": "1016",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча: бюджет проекта",
+      "DESCRIPTION": "Обсуждали бюджет проекта. Представитель клиента выражает сомнения. Отмечены вопросы по стоимости, рискам внедрения и согласованию графика.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-06-06T12:00:00+03:00",
+      "END_TIME": "2025-06-06T12:45:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1054960",
+          "ENTITY_ID": "1016",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p15@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5149",
+      "OWNER_ID": "1028",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча: сроки миграции",
+      "DESCRIPTION": "Обсуждали сроки миграции. Представитель клиента выражает сомнения. Отмечены вопросы по стоимости, рискам внедрения и согласованию графика.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-06-06T12:00:00+03:00",
+      "END_TIME": "2025-06-06T13:30:00+03:00",
+      "RESPONSIBLE_ID": "19",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1055320",
+          "ENTITY_ID": "1028",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p27@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5150",
+      "OWNER_ID": "1008",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "2",
+      "SUBJECT": "Звонок: бюджет проекта",
+      "DESCRIPTION": "Тема звонка: бюджет проекта\nmanager: Добрый день, Ольга. Хотел уточнить статус вопроса: бюджет проекта.\nclient: Сейчас выражает сомнения. Важно уточнить сроки и ответственных.\nmanager: Подготовим материалы и согласуем следующий шаг.\nclient: Направьте краткое резюме и предложите время обсуждения.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-06-07T12:00:00+03:00",
+      "END_TIME": "2025-06-07T12:31:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ID": "1050440",
+          "ENTITY_ID": "1008",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "PHONE",
+          "VALUE": "+7 900 000-00-08"
+        }
+      ]
+    }
+  ],
+  "total": 630,
+  "next": 150
+}
