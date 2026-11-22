@@ -47,4 +47,5 @@ jobs:
           git add src/data/synthetic/bank_ml_v3_ground_truth.json
           git add src/data/bitrix24_contract_v2
           git diff --cached --quiet || git commit -m "Generate synthetic bank v3.2 scenario-diverse dataset and REST fixtures"
+          git pull --rebase origin feature/synthetic-bank-v3.2-scenario-diversity
           git push
