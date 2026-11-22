@@ -31,6 +31,7 @@ export function generateFixturesV2(crm, bank) {
   const invoiceIds = Object.fromEntries(bank.invoices.map((x, i) => [x.id, 4001 + i]));
   const taskIds = Object.fromEntries(bank.crmTasks.map((x, i) => [x.id, 9001 + i]));
   const emailByContact = Object.fromEntries(people.map(p => [p.id, p.id + "@client.example"]));
+  const phoneByContact = Object.fromEntries(people.map((p, i) => [p.id, "+7 900 000-" + String(Math.floor(i / 100)).padStart(2, "0") + "-" + String(i + 1).padStart(2, "0")]));
   const personIdFromAddress = value => {
     const match = String(value || "").match(/(bank-p\d+)@client\.example/i);
     return match && contactIds[match[1]] ? match[1] : null;
@@ -73,10 +74,13 @@ export function generateFixturesV2(crm, bank) {
     const communications = ids.map(id => ({
       ENTITY_ID: String(contactIds[id]),
       ENTITY_TYPE_ID: "3",
-      ...(spec.kind === "email" ? {
+      ...(spec.kind === "call" ? {
+        TYPE: "PHONE",
+        VALUE: phoneByContact[id]
+      } : {
         TYPE: "EMAIL",
         VALUE: (spec.emailValues && spec.emailValues[id]) || emailByContact[id]
-      } : spec.kind === "call" ? { TYPE: "PHONE" } : {})
+      })
     }));
     const id = 5001 + activityRecords.length;
     activityRecords.push({
