@@ -72,16 +72,16 @@ export function generateFixturesV2(crm, bank) {
     if (!ids.length) throw new Error("Activity " + spec.sourceId + " has no mapped contact");
     const owner = ids[0];
     const id = 5001 + activityRecords.length;
-    const communications = ids.map((id, communicationIndex) => ({
+    const communications = ids.map((contactId, communicationIndex) => ({
       ID: String(1000000 + id * 10 + communicationIndex),
-      ENTITY_ID: String(contactIds[id]),
+      ENTITY_ID: String(contactIds[contactId]),
       ENTITY_TYPE_ID: "3",
       ...(spec.kind === "call" ? {
         TYPE: "PHONE",
-        VALUE: phoneByContact[id]
+        VALUE: phoneByContact[contactId]
       } : {
         TYPE: "EMAIL",
-        VALUE: (spec.emailValues && spec.emailValues[id]) || emailByContact[id]
+        VALUE: (spec.emailValues && spec.emailValues[contactId]) || emailByContact[contactId]
       })
     }));
     activityRecords.push({
