@@ -1,0 +1,47 @@
+name: Generate synthetic bank v3 and Bitrix24 fixtures
+
+on:
+  push:
+    branches:
+      - feature/synthetic-bank-v3-bitrix24-multiparty
+    paths:
+      - "scripts/generate_synthetic_bank_v3.mjs"
+      - "scripts/generate_bitrix24_contract_fixtures_v2.mjs"
+      - "tests/synthetic_bank_v3.test.mjs"
+      - ".github/workflows/generate-synthetic-bank-v3.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  generate-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: feature/synthetic-bank-v3-bitrix24-multiparty
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Generate normalized synthetic dataset v3
+        run: node scripts/generate_synthetic_bank_v3.mjs
+
+      - name: Generate Bitrix24 REST-compatible fixtures v2
+        run: node scripts/generate_bitrix24_contract_fixtures_v2.mjs
+
+      - name: Validate generator and REST contract
+        run: node --test tests/synthetic_bank_v3.test.mjs
+
+      - name: Commit generated datasets and fixtures
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/synthetic/bank_ml_v3.json
+          git add src/data/synthetic/bank_ml_v3_ground_truth.json
+          git add src/data/bitrix24_contract_v2
+          git diff --cached --quiet || git commit -m "Generate synthetic bank v3 and multiparty Bitrix24 REST fixtures"
+          git push
