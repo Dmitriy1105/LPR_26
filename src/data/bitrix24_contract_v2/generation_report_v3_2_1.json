@@ -1,0 +1,28 @@
+{
+  "generatorVersion": "3.2.1",
+  "parentGeneratorVersion": "3.2.0",
+  "seed": 20261123,
+  "records": {
+    "companies": 1,
+    "contacts": 30,
+    "deals": 18,
+    "invoices": 44,
+    "activities": 630,
+    "tasks": 44,
+    "calls": 180,
+    "emails": 324,
+    "meetings": 126
+  },
+  "exactEmailTextUniqueness": {
+    "documents": 324,
+    "uniqueTexts": 324,
+    "percent": 100
+  },
+  "preserved": [
+    "activity IDs",
+    "COMMUNICATIONS references",
+    "REST response fields",
+    "entity counts"
+  ],
+  "warning": "All records are fictional synthetic data. Exact uniqueness is a lexical check, not semantic validation."
+}
