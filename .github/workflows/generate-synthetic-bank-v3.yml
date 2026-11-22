@@ -1,9 +1,10 @@
 name: Generate synthetic bank v3 and Bitrix24 fixtures
 
 on:
+  workflow_dispatch:
   push:
     branches:
-      - feature/synthetic-bank-v3-bitrix24-multiparty
+      - feature/synthetic-bank-v3.1-diverse-texts
     paths:
       - "scripts/generate_synthetic_bank_v3.mjs"
       - "scripts/generate_bitrix24_contract_fixtures_v2.mjs"
@@ -20,7 +21,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: feature/synthetic-bank-v3-bitrix24-multiparty
+          ref: feature/synthetic-bank-v3.1-diverse-texts
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
