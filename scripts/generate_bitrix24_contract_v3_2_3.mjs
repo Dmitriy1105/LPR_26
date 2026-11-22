@@ -164,7 +164,7 @@ function transformActivity(activity, contactById, roleById) {
   const opening = pick(variants.open, key + "|opening").replaceAll("{topic}", topic);
   const middle = pick(variants.middle, key + "|argument");
   const ending = pick(variants.end, key + "|ending");
-  activity.DESCRIPTION = [opening, participantSentence, String(activity.DESCRIPTION || "").trim(), middle, ending].join(" ");
+  activity.DESCRIPTION = [opening, participantSentence, middle, ending].join(" ");
   return { type, ending };
 }
 
@@ -207,7 +207,7 @@ export function generateV323(sourceDir = SOURCE, outputDir = OUTPUT) {
   outputManifest.parentGeneratorVersion = "3.2.2";
   outputManifest.datasetVersion = "v3.2.3";
   outputManifest.generationSeed = SEED;
-  outputManifest.sourceBranch = "feature/synthetic-bank-v3.2.2-content-diversity";
+  outputManifest.sourceBranch = "feature/synthetic-bank-v3.2.3-nlp-diversity";
   outputManifest.sourceDataset = "src/data/bitrix24_contract_v2";
   outputManifest.textGeneration = "activity_type_specific_opening_argument_and_closing_variants";
   outputManifest.recordCounts = { ...manifest.recordCounts };
@@ -216,7 +216,7 @@ export function generateV323(sourceDir = SOURCE, outputDir = OUTPUT) {
     activityTypes: counts,
     uniqueNormalizedDescriptions: exact.size,
     emailClosingVariants: emailEndings.size,
-    note: "Exact uniqueness is a deterministic generator-side check; run NLP 20 and NLP 20A for independent TF-IDF/template validation."
+    note: "Descriptions are regenerated from type-specific scenarios; the previous DESCRIPTION is intentionally not concatenated. Exact uniqueness is only a lexical precheck; run NLP 20 and NLP 20A for independent TF-IDF/template validation."
   };
   outputManifest.limitations = [
     ...(manifest.limitations || []),
