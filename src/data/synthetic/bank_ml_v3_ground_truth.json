@@ -1,0 +1,1289 @@
+{
+  "synthetic": true,
+  "dataset": "lpr_bank_synthetic_v3_ground_truth",
+  "version": 3,
+  "warning": "EVALUATION ONLY. MUST NOT BE USED AS NLP INPUT FEATURES OR INFERENCE CONTEXT.",
+  "excludedFromNlpInputs": true,
+  "participantTruth": [
+    {
+      "sourceId": "decision-meeting-opp-bank-1-1",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p0",
+        "bank-p2"
+      ],
+      "expectedParticipantCount": 2
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-1-2",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p0",
+        "bank-p2",
+        "bank-p3"
+      ],
+      "expectedParticipantCount": 3
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-2-1",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p5",
+        "bank-p8",
+        "bank-p9"
+      ],
+      "expectedParticipantCount": 3
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-2-2",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p5",
+        "bank-p8"
+      ],
+      "expectedParticipantCount": 2
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-3-1",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p10",
+        "bank-p14",
+        "bank-p15"
+      ],
+      "expectedParticipantCount": 3
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-3-2",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p10",
+        "bank-p14",
+        "bank-p15"
+      ],
+      "expectedParticipantCount": 3
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-4-1",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p15",
+        "bank-p20"
+      ],
+      "expectedParticipantCount": 2
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-4-2",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p15",
+        "bank-p20",
+        "bank-p21"
+      ],
+      "expectedParticipantCount": 3
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-5-1",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p20",
+        "bank-p26",
+        "bank-p27"
+      ],
+      "expectedParticipantCount": 3
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-5-2",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p20",
+        "bank-p26"
+      ],
+      "expectedParticipantCount": 2
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-6-1",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p25",
+        "bank-p2",
+        "bank-p3"
+      ],
+      "expectedParticipantCount": 3
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-6-2",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p25",
+        "bank-p2",
+        "bank-p3"
+      ],
+      "expectedParticipantCount": 3
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-7-1",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p0",
+        "bank-p8"
+      ],
+      "expectedParticipantCount": 2
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-7-2",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p0",
+        "bank-p8",
+        "bank-p9"
+      ],
+      "expectedParticipantCount": 3
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-8-1",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p5",
+        "bank-p14",
+        "bank-p15"
+      ],
+      "expectedParticipantCount": 3
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-8-2",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p5",
+        "bank-p14"
+      ],
+      "expectedParticipantCount": 2
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-9-1",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p10",
+        "bank-p20",
+        "bank-p21"
+      ],
+      "expectedParticipantCount": 3
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-9-2",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p10",
+        "bank-p20",
+        "bank-p21"
+      ],
+      "expectedParticipantCount": 3
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-10-1",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p15",
+        "bank-p26"
+      ],
+      "expectedParticipantCount": 2
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-10-2",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p15",
+        "bank-p26",
+        "bank-p27"
+      ],
+      "expectedParticipantCount": 3
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-extra-1-1",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p10",
+        "bank-p2",
+        "bank-p3",
+        "bank-p1"
+      ],
+      "expectedParticipantCount": 4
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-extra-1-2",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p10",
+        "bank-p2"
+      ],
+      "expectedParticipantCount": 2
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-extra-2-1",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p15",
+        "bank-p8",
+        "bank-p9"
+      ],
+      "expectedParticipantCount": 3
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-extra-2-2",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p15",
+        "bank-p8",
+        "bank-p9",
+        "bank-p7"
+      ],
+      "expectedParticipantCount": 4
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-extra-3-1",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p20",
+        "bank-p14"
+      ],
+      "expectedParticipantCount": 2
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-extra-3-2",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p20",
+        "bank-p14",
+        "bank-p15"
+      ],
+      "expectedParticipantCount": 3
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-extra-4-1",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p25",
+        "bank-p20",
+        "bank-p21",
+        "bank-p19"
+      ],
+      "expectedParticipantCount": 4
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-extra-4-2",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p25",
+        "bank-p20"
+      ],
+      "expectedParticipantCount": 2
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-extra-5-1",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p0",
+        "bank-p26",
+        "bank-p27"
+      ],
+      "expectedParticipantCount": 3
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-extra-5-2",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p0",
+        "bank-p26",
+        "bank-p27",
+        "bank-p25"
+      ],
+      "expectedParticipantCount": 4
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-extra-6-1",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p5",
+        "bank-p2"
+      ],
+      "expectedParticipantCount": 2
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-extra-6-2",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p5",
+        "bank-p2",
+        "bank-p3"
+      ],
+      "expectedParticipantCount": 3
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-extra-7-1",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p10",
+        "bank-p8",
+        "bank-p9",
+        "bank-p7"
+      ],
+      "expectedParticipantCount": 4
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-extra-7-2",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p10",
+        "bank-p8"
+      ],
+      "expectedParticipantCount": 2
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-extra-8-1",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p15",
+        "bank-p14",
+        "bank-p13"
+      ],
+      "expectedParticipantCount": 3
+    },
+    {
+      "sourceId": "decision-meeting-opp-bank-extra-8-2",
+      "eventType": "decision_meeting",
+      "participantContactIds": [
+        "bank-p15",
+        "bank-p14",
+        "bank-p13"
+      ],
+      "expectedParticipantCount": 3
+    },
+    {
+      "sourceId": "internal-opp-bank-1-1",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p0",
+        "bank-p2"
+      ],
+      "senderContactId": "bank-p0",
+      "recipientContactId": "bank-p2"
+    },
+    {
+      "sourceId": "internal-opp-bank-1-2",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p2",
+        "bank-p3"
+      ],
+      "senderContactId": "bank-p2",
+      "recipientContactId": "bank-p3"
+    },
+    {
+      "sourceId": "internal-opp-bank-2-1",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p5",
+        "bank-p8"
+      ],
+      "senderContactId": "bank-p5",
+      "recipientContactId": "bank-p8"
+    },
+    {
+      "sourceId": "internal-opp-bank-2-2",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p8",
+        "bank-p9"
+      ],
+      "senderContactId": "bank-p8",
+      "recipientContactId": "bank-p9"
+    },
+    {
+      "sourceId": "internal-opp-bank-3-1",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p10",
+        "bank-p14"
+      ],
+      "senderContactId": "bank-p10",
+      "recipientContactId": "bank-p14"
+    },
+    {
+      "sourceId": "internal-opp-bank-3-2",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p14",
+        "bank-p15"
+      ],
+      "senderContactId": "bank-p14",
+      "recipientContactId": "bank-p15"
+    },
+    {
+      "sourceId": "internal-opp-bank-4-1",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p15",
+        "bank-p20"
+      ],
+      "senderContactId": "bank-p15",
+      "recipientContactId": "bank-p20"
+    },
+    {
+      "sourceId": "internal-opp-bank-4-2",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p20",
+        "bank-p21"
+      ],
+      "senderContactId": "bank-p20",
+      "recipientContactId": "bank-p21"
+    },
+    {
+      "sourceId": "internal-opp-bank-5-1",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p20",
+        "bank-p26"
+      ],
+      "senderContactId": "bank-p20",
+      "recipientContactId": "bank-p26"
+    },
+    {
+      "sourceId": "internal-opp-bank-5-2",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p26",
+        "bank-p27"
+      ],
+      "senderContactId": "bank-p26",
+      "recipientContactId": "bank-p27"
+    },
+    {
+      "sourceId": "internal-opp-bank-6-1",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p25",
+        "bank-p2"
+      ],
+      "senderContactId": "bank-p25",
+      "recipientContactId": "bank-p2"
+    },
+    {
+      "sourceId": "internal-opp-bank-6-2",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p2",
+        "bank-p3"
+      ],
+      "senderContactId": "bank-p2",
+      "recipientContactId": "bank-p3"
+    },
+    {
+      "sourceId": "internal-opp-bank-7-1",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p0",
+        "bank-p8"
+      ],
+      "senderContactId": "bank-p0",
+      "recipientContactId": "bank-p8"
+    },
+    {
+      "sourceId": "internal-opp-bank-7-2",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p8",
+        "bank-p9"
+      ],
+      "senderContactId": "bank-p8",
+      "recipientContactId": "bank-p9"
+    },
+    {
+      "sourceId": "internal-opp-bank-8-1",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p5",
+        "bank-p14"
+      ],
+      "senderContactId": "bank-p5",
+      "recipientContactId": "bank-p14"
+    },
+    {
+      "sourceId": "internal-opp-bank-8-2",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p14",
+        "bank-p15"
+      ],
+      "senderContactId": "bank-p14",
+      "recipientContactId": "bank-p15"
+    },
+    {
+      "sourceId": "internal-opp-bank-9-1",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p10",
+        "bank-p20"
+      ],
+      "senderContactId": "bank-p10",
+      "recipientContactId": "bank-p20"
+    },
+    {
+      "sourceId": "internal-opp-bank-9-2",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p20",
+        "bank-p21"
+      ],
+      "senderContactId": "bank-p20",
+      "recipientContactId": "bank-p21"
+    },
+    {
+      "sourceId": "internal-opp-bank-10-1",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p15",
+        "bank-p26"
+      ],
+      "senderContactId": "bank-p15",
+      "recipientContactId": "bank-p26"
+    },
+    {
+      "sourceId": "internal-opp-bank-10-2",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p26",
+        "bank-p27"
+      ],
+      "senderContactId": "bank-p26",
+      "recipientContactId": "bank-p27"
+    },
+    {
+      "sourceId": "internal-opp-bank-extra-1-1",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p10",
+        "bank-p2"
+      ],
+      "senderContactId": "bank-p10",
+      "recipientContactId": "bank-p2"
+    },
+    {
+      "sourceId": "internal-opp-bank-extra-1-2",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p2",
+        "bank-p3"
+      ],
+      "senderContactId": "bank-p2",
+      "recipientContactId": "bank-p3"
+    },
+    {
+      "sourceId": "internal-opp-bank-extra-2-1",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p15",
+        "bank-p8"
+      ],
+      "senderContactId": "bank-p15",
+      "recipientContactId": "bank-p8"
+    },
+    {
+      "sourceId": "internal-opp-bank-extra-2-2",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p8",
+        "bank-p9"
+      ],
+      "senderContactId": "bank-p8",
+      "recipientContactId": "bank-p9"
+    },
+    {
+      "sourceId": "internal-opp-bank-extra-3-1",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p20",
+        "bank-p14"
+      ],
+      "senderContactId": "bank-p20",
+      "recipientContactId": "bank-p14"
+    },
+    {
+      "sourceId": "internal-opp-bank-extra-3-2",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p14",
+        "bank-p15"
+      ],
+      "senderContactId": "bank-p14",
+      "recipientContactId": "bank-p15"
+    },
+    {
+      "sourceId": "internal-opp-bank-extra-4-1",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p25",
+        "bank-p20"
+      ],
+      "senderContactId": "bank-p25",
+      "recipientContactId": "bank-p20"
+    },
+    {
+      "sourceId": "internal-opp-bank-extra-4-2",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p20",
+        "bank-p21"
+      ],
+      "senderContactId": "bank-p20",
+      "recipientContactId": "bank-p21"
+    },
+    {
+      "sourceId": "internal-opp-bank-extra-5-1",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p0",
+        "bank-p26"
+      ],
+      "senderContactId": "bank-p0",
+      "recipientContactId": "bank-p26"
+    },
+    {
+      "sourceId": "internal-opp-bank-extra-5-2",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p26",
+        "bank-p27"
+      ],
+      "senderContactId": "bank-p26",
+      "recipientContactId": "bank-p27"
+    },
+    {
+      "sourceId": "internal-opp-bank-extra-6-1",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p5",
+        "bank-p2"
+      ],
+      "senderContactId": "bank-p5",
+      "recipientContactId": "bank-p2"
+    },
+    {
+      "sourceId": "internal-opp-bank-extra-6-2",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p2",
+        "bank-p3"
+      ],
+      "senderContactId": "bank-p2",
+      "recipientContactId": "bank-p3"
+    },
+    {
+      "sourceId": "internal-opp-bank-extra-7-1",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p10",
+        "bank-p8"
+      ],
+      "senderContactId": "bank-p10",
+      "recipientContactId": "bank-p8"
+    },
+    {
+      "sourceId": "internal-opp-bank-extra-7-2",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p8",
+        "bank-p9"
+      ],
+      "senderContactId": "bank-p8",
+      "recipientContactId": "bank-p9"
+    },
+    {
+      "sourceId": "internal-opp-bank-extra-8-1",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p15",
+        "bank-p14"
+      ],
+      "senderContactId": "bank-p15",
+      "recipientContactId": "bank-p14"
+    },
+    {
+      "sourceId": "internal-opp-bank-extra-8-2",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p14",
+        "bank-p15"
+      ],
+      "senderContactId": "bank-p14",
+      "recipientContactId": "bank-p15"
+    },
+    {
+      "sourceId": "internal-v3-opp-bank-1",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p0",
+        "bank-p2"
+      ],
+      "senderContactId": "bank-p0",
+      "recipientContactId": "bank-p2"
+    },
+    {
+      "sourceId": "internal-v3-opp-bank-2",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p8",
+        "bank-p9"
+      ],
+      "senderContactId": "bank-p8",
+      "recipientContactId": "bank-p9"
+    },
+    {
+      "sourceId": "internal-v3-opp-bank-3",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p15",
+        "bank-p10"
+      ],
+      "senderContactId": "bank-p15",
+      "recipientContactId": "bank-p10"
+    },
+    {
+      "sourceId": "internal-v3-opp-bank-4",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p15",
+        "bank-p20"
+      ],
+      "senderContactId": "bank-p15",
+      "recipientContactId": "bank-p20"
+    },
+    {
+      "sourceId": "internal-v3-opp-bank-5",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p26",
+        "bank-p27"
+      ],
+      "senderContactId": "bank-p26",
+      "recipientContactId": "bank-p27"
+    },
+    {
+      "sourceId": "internal-v3-opp-bank-6",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p3",
+        "bank-p25"
+      ],
+      "senderContactId": "bank-p3",
+      "recipientContactId": "bank-p25"
+    },
+    {
+      "sourceId": "internal-v3-opp-bank-7",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p0",
+        "bank-p8"
+      ],
+      "senderContactId": "bank-p0",
+      "recipientContactId": "bank-p8"
+    },
+    {
+      "sourceId": "internal-v3-opp-bank-8",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p14",
+        "bank-p15"
+      ],
+      "senderContactId": "bank-p14",
+      "recipientContactId": "bank-p15"
+    },
+    {
+      "sourceId": "internal-v3-opp-bank-9",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p21",
+        "bank-p10"
+      ],
+      "senderContactId": "bank-p21",
+      "recipientContactId": "bank-p10"
+    },
+    {
+      "sourceId": "internal-v3-opp-bank-10",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p15",
+        "bank-p26"
+      ],
+      "senderContactId": "bank-p15",
+      "recipientContactId": "bank-p26"
+    },
+    {
+      "sourceId": "internal-v3-opp-bank-extra-1",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p3",
+        "bank-p1"
+      ],
+      "senderContactId": "bank-p3",
+      "recipientContactId": "bank-p1"
+    },
+    {
+      "sourceId": "internal-v3-opp-bank-extra-2",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p7",
+        "bank-p15"
+      ],
+      "senderContactId": "bank-p7",
+      "recipientContactId": "bank-p15"
+    },
+    {
+      "sourceId": "internal-v3-opp-bank-extra-3",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p20",
+        "bank-p14"
+      ],
+      "senderContactId": "bank-p20",
+      "recipientContactId": "bank-p14"
+    },
+    {
+      "sourceId": "internal-v3-opp-bank-extra-4",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p20",
+        "bank-p21"
+      ],
+      "senderContactId": "bank-p20",
+      "recipientContactId": "bank-p21"
+    },
+    {
+      "sourceId": "internal-v3-opp-bank-extra-5",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p27",
+        "bank-p25"
+      ],
+      "senderContactId": "bank-p27",
+      "recipientContactId": "bank-p25"
+    },
+    {
+      "sourceId": "internal-v3-opp-bank-extra-6",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p1",
+        "bank-p5"
+      ],
+      "senderContactId": "bank-p1",
+      "recipientContactId": "bank-p5"
+    },
+    {
+      "sourceId": "internal-v3-opp-bank-extra-7",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p10",
+        "bank-p8"
+      ],
+      "senderContactId": "bank-p10",
+      "recipientContactId": "bank-p8"
+    },
+    {
+      "sourceId": "internal-v3-opp-bank-extra-8",
+      "eventType": "client_internal",
+      "participantContactIds": [
+        "bank-p13",
+        "bank-p15"
+      ],
+      "senderContactId": "bank-p13",
+      "recipientContactId": "bank-p15"
+    }
+  ],
+  "roleTruth": [
+    {
+      "contactId": "bank-p0",
+      "decisionRole": "decision_maker",
+      "department": "ИТ",
+      "title": "Руководитель ИТ-направления"
+    },
+    {
+      "contactId": "bank-p1",
+      "decisionRole": "influencer",
+      "department": "ИБ",
+      "title": "Эксперт по безопасности"
+    },
+    {
+      "contactId": "bank-p2",
+      "decisionRole": "evaluator",
+      "department": "Закупки",
+      "title": "Менеджер по закупкам"
+    },
+    {
+      "contactId": "bank-p3",
+      "decisionRole": "user",
+      "department": "Финансы",
+      "title": "Финансовый контролёр"
+    },
+    {
+      "contactId": "bank-p4",
+      "decisionRole": "blocker",
+      "department": "Бизнес",
+      "title": "Руководитель направления"
+    },
+    {
+      "contactId": "bank-p5",
+      "decisionRole": "decision_maker",
+      "department": "Прочее",
+      "title": "Руководитель проекта"
+    },
+    {
+      "contactId": "bank-p6",
+      "decisionRole": "influencer",
+      "department": "ИТ",
+      "title": "Руководитель ИТ-направления"
+    },
+    {
+      "contactId": "bank-p7",
+      "decisionRole": "evaluator",
+      "department": "ИБ",
+      "title": "Эксперт по безопасности"
+    },
+    {
+      "contactId": "bank-p8",
+      "decisionRole": "user",
+      "department": "Закупки",
+      "title": "Менеджер по закупкам"
+    },
+    {
+      "contactId": "bank-p9",
+      "decisionRole": "blocker",
+      "department": "Финансы",
+      "title": "Финансовый контролёр"
+    },
+    {
+      "contactId": "bank-p10",
+      "decisionRole": "decision_maker",
+      "department": "Бизнес",
+      "title": "Руководитель направления"
+    },
+    {
+      "contactId": "bank-p11",
+      "decisionRole": "influencer",
+      "department": "Прочее",
+      "title": "Руководитель проекта"
+    },
+    {
+      "contactId": "bank-p12",
+      "decisionRole": "evaluator",
+      "department": "ИТ",
+      "title": "Руководитель ИТ-направления"
+    },
+    {
+      "contactId": "bank-p13",
+      "decisionRole": "user",
+      "department": "ИБ",
+      "title": "Эксперт по безопасности"
+    },
+    {
+      "contactId": "bank-p14",
+      "decisionRole": "blocker",
+      "department": "Закупки",
+      "title": "Менеджер по закупкам"
+    },
+    {
+      "contactId": "bank-p15",
+      "decisionRole": "decision_maker",
+      "department": "Финансы",
+      "title": "Финансовый контролёр"
+    },
+    {
+      "contactId": "bank-p16",
+      "decisionRole": "influencer",
+      "department": "Бизнес",
+      "title": "Руководитель направления"
+    },
+    {
+      "contactId": "bank-p17",
+      "decisionRole": "evaluator",
+      "department": "Прочее",
+      "title": "Руководитель проекта"
+    },
+    {
+      "contactId": "bank-p18",
+      "decisionRole": "user",
+      "department": "ИТ",
+      "title": "Руководитель ИТ-направления"
+    },
+    {
+      "contactId": "bank-p19",
+      "decisionRole": "blocker",
+      "department": "ИБ",
+      "title": "Эксперт по безопасности"
+    },
+    {
+      "contactId": "bank-p20",
+      "decisionRole": "decision_maker",
+      "department": "Закупки",
+      "title": "Менеджер по закупкам"
+    },
+    {
+      "contactId": "bank-p21",
+      "decisionRole": "influencer",
+      "department": "Финансы",
+      "title": "Финансовый контролёр"
+    },
+    {
+      "contactId": "bank-p22",
+      "decisionRole": "evaluator",
+      "department": "Бизнес",
+      "title": "Руководитель направления"
+    },
+    {
+      "contactId": "bank-p23",
+      "decisionRole": "user",
+      "department": "Прочее",
+      "title": "Руководитель проекта"
+    },
+    {
+      "contactId": "bank-p24",
+      "decisionRole": "blocker",
+      "department": "ИТ",
+      "title": "Руководитель ИТ-направления"
+    },
+    {
+      "contactId": "bank-p25",
+      "decisionRole": "decision_maker",
+      "department": "ИБ",
+      "title": "Эксперт по безопасности"
+    },
+    {
+      "contactId": "bank-p26",
+      "decisionRole": "influencer",
+      "department": "Закупки",
+      "title": "Менеджер по закупкам"
+    },
+    {
+      "contactId": "bank-p27",
+      "decisionRole": "evaluator",
+      "department": "Финансы",
+      "title": "Финансовый контролёр"
+    },
+    {
+      "contactId": "bank-p28",
+      "decisionRole": "user",
+      "department": "Бизнес",
+      "title": "Руководитель направления"
+    },
+    {
+      "contactId": "bank-p29",
+      "decisionRole": "blocker",
+      "department": "Прочее",
+      "title": "Руководитель проекта"
+    }
+  ],
+  "organizationalRelationTruth": [
+    {
+      "relationId": "bank-r1",
+      "sourceContactId": "bank-p1",
+      "targetContactId": "bank-p0",
+      "relationType": "informal",
+      "source": "CRM_SYNTHETIC_GROUND_TRUTH"
+    },
+    {
+      "relationId": "bank-r2",
+      "sourceContactId": "bank-p2",
+      "targetContactId": "bank-p1",
+      "relationType": "reports_to",
+      "source": "CRM_SYNTHETIC_GROUND_TRUTH"
+    },
+    {
+      "relationId": "bank-r3",
+      "sourceContactId": "bank-p3",
+      "targetContactId": "bank-p0",
+      "relationType": "works_with",
+      "source": "CRM_SYNTHETIC_GROUND_TRUTH"
+    },
+    {
+      "relationId": "bank-r4",
+      "sourceContactId": "bank-p4",
+      "targetContactId": "bank-p3",
+      "relationType": "informal",
+      "source": "CRM_SYNTHETIC_GROUND_TRUTH"
+    },
+    {
+      "relationId": "bank-r5",
+      "sourceContactId": "bank-p5",
+      "targetContactId": "bank-p3",
+      "relationType": "reports_to",
+      "source": "CRM_SYNTHETIC_GROUND_TRUTH"
+    },
+    {
+      "relationId": "bank-r6",
+      "sourceContactId": "bank-p6",
+      "targetContactId": "bank-p3",
+      "relationType": "works_with",
+      "source": "CRM_SYNTHETIC_GROUND_TRUTH"
+    },
+    {
+      "relationId": "bank-r7",
+      "sourceContactId": "bank-p7",
+      "targetContactId": "bank-p3",
+      "relationType": "informal",
+      "source": "CRM_SYNTHETIC_GROUND_TRUTH"
+    },
+    {
+      "relationId": "bank-r8",
+      "sourceContactId": "bank-p8",
+      "targetContactId": "bank-p3",
+      "relationType": "reports_to",
+      "source": "CRM_SYNTHETIC_GROUND_TRUTH"
+    },
+    {
+      "relationId": "bank-r9",
+      "sourceContactId": "bank-p9",
+      "targetContactId": "bank-p3",
+      "relationType": "works_with",
+      "source": "CRM_SYNTHETIC_GROUND_TRUTH"
+    },
+    {
+      "relationId": "bank-r10",
+      "sourceContactId": "bank-p10",
+      "targetContactId": "bank-p3",
+      "relationType": "informal",
+      "source": "CRM_SYNTHETIC_GROUND_TRUTH"
+    },
+    {
+      "relationId": "bank-r11",
+      "sourceContactId": "bank-p11",
+      "targetContactId": "bank-p3",
+      "relationType": "reports_to",
+      "source": "CRM_SYNTHETIC_GROUND_TRUTH"
+    },
+    {
+      "relationId": "bank-r12",
+      "sourceContactId": "bank-p12",
+      "targetContactId": "bank-p3",
+      "relationType": "works_with",
+      "source": "CRM_SYNTHETIC_GROUND_TRUTH"
+    },
+    {
+      "relationId": "bank-r13",
+      "sourceContactId": "bank-p13",
+      "targetContactId": "bank-p3",
+      "relationType": "informal",
+      "source": "CRM_SYNTHETIC_GROUND_TRUTH"
+    },
+    {
+      "relationId": "bank-r14",
+      "sourceContactId": "bank-p14",
+      "targetContactId": "bank-p3",
+      "relationType": "reports_to",
+      "source": "CRM_SYNTHETIC_GROUND_TRUTH"
+    },
+    {
+      "relationId": "bank-r15",
+      "sourceContactId": "bank-p15",
+      "targetContactId": "bank-p3",
+      "relationType": "works_with",
+      "source": "CRM_SYNTHETIC_GROUND_TRUTH"
+    },
+    {
+      "relationId": "bank-r16",
+      "sourceContactId": "bank-p16",
+      "targetContactId": "bank-p3",
+      "relationType": "informal",
+      "source": "CRM_SYNTHETIC_GROUND_TRUTH"
+    },
+    {
+      "relationId": "bank-r17",
+      "sourceContactId": "bank-p17",
+      "targetContactId": "bank-p3",
+      "relationType": "reports_to",
+      "source": "CRM_SYNTHETIC_GROUND_TRUTH"
+    },
+    {
+      "relationId": "bank-r18",
+      "sourceContactId": "bank-p18",
+      "targetContactId": "bank-p3",
+      "relationType": "works_with",
+      "source": "CRM_SYNTHETIC_GROUND_TRUTH"
+    },
+    {
+      "relationId": "bank-r19",
+      "sourceContactId": "bank-p19",
+      "targetContactId": "bank-p3",
+      "relationType": "informal",
+      "source": "CRM_SYNTHETIC_GROUND_TRUTH"
+    },
+    {
+      "relationId": "bank-r20",
+      "sourceContactId": "bank-p20",
+      "targetContactId": "bank-p3",
+      "relationType": "reports_to",
+      "source": "CRM_SYNTHETIC_GROUND_TRUTH"
+    },
+    {
+      "relationId": "bank-r21",
+      "sourceContactId": "bank-p21",
+      "targetContactId": "bank-p3",
+      "relationType": "works_with",
+      "source": "CRM_SYNTHETIC_GROUND_TRUTH"
+    },
+    {
+      "relationId": "bank-r22",
+      "sourceContactId": "bank-p22",
+      "targetContactId": "bank-p3",
+      "relationType": "informal",
+      "source": "CRM_SYNTHETIC_GROUND_TRUTH"
+    },
+    {
+      "relationId": "bank-r23",
+      "sourceContactId": "bank-p23",
+      "targetContactId": "bank-p3",
+      "relationType": "reports_to",
+      "source": "CRM_SYNTHETIC_GROUND_TRUTH"
+    },
+    {
+      "relationId": "bank-r24",
+      "sourceContactId": "bank-p24",
+      "targetContactId": "bank-p3",
+      "relationType": "works_with",
+      "source": "CRM_SYNTHETIC_GROUND_TRUTH"
+    },
+    {
+      "relationId": "bank-r25",
+      "sourceContactId": "bank-p25",
+      "targetContactId": "bank-p3",
+      "relationType": "informal",
+      "source": "CRM_SYNTHETIC_GROUND_TRUTH"
+    },
+    {
+      "relationId": "bank-r26",
+      "sourceContactId": "bank-p26",
+      "targetContactId": "bank-p3",
+      "relationType": "reports_to",
+      "source": "CRM_SYNTHETIC_GROUND_TRUTH"
+    },
+    {
+      "relationId": "bank-r27",
+      "sourceContactId": "bank-p27",
+      "targetContactId": "bank-p3",
+      "relationType": "works_with",
+      "source": "CRM_SYNTHETIC_GROUND_TRUTH"
+    },
+    {
+      "relationId": "bank-r28",
+      "sourceContactId": "bank-p28",
+      "targetContactId": "bank-p3",
+      "relationType": "informal",
+      "source": "CRM_SYNTHETIC_GROUND_TRUTH"
+    },
+    {
+      "relationId": "bank-r29",
+      "sourceContactId": "bank-p29",
+      "targetContactId": "bank-p3",
+      "relationType": "reports_to",
+      "source": "CRM_SYNTHETIC_GROUND_TRUTH"
+    }
+  ]
+}

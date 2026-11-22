@@ -1,0 +1,1106 @@
+{
+  "result": [
+    {
+      "ID": "5201",
+      "OWNER_ID": "1003",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — бюджет проекта",
+      "DESCRIPTION": "Здравствуйте, Дмитрий! Направляем материалы по теме «бюджет проекта». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-31T12:00:00+03:00",
+      "END_TIME": "2025-05-31T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1003",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p2@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5202",
+      "OWNER_ID": "1003",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — информационная безопасность",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «информационная безопасность». Ожидает дополнительных аргументов. Просим уточнить условия, сроки и ответственную сторону. С уважением, Дмитрий Миронов.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-08-09T12:00:00+03:00",
+      "END_TIME": "2025-08-09T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1003",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p2@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5203",
+      "OWNER_ID": "1003",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — сроки миграции",
+      "DESCRIPTION": "Здравствуйте, Дмитрий! Направляем материалы по теме «сроки миграции». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-10-17T12:00:00+03:00",
+      "END_TIME": "2025-10-17T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1003",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p2@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5204",
+      "OWNER_ID": "1003",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — облачная инфраструктура",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «облачная инфраструктура». Ожидает дополнительных аргументов. Просим уточнить условия, сроки и ответственную сторону. С уважением, Дмитрий Миронов.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-01-17T12:00:00+03:00",
+      "END_TIME": "2026-01-17T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1003",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p2@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5205",
+      "OWNER_ID": "1003",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — согласование договора",
+      "DESCRIPTION": "Здравствуйте, Дмитрий! Направляем материалы по теме «согласование договора». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-02-27T12:00:00+03:00",
+      "END_TIME": "2026-02-27T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1003",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p2@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5206",
+      "OWNER_ID": "1003",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — условия поддержки",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «условия поддержки». Ожидает дополнительных аргументов. Просим уточнить условия, сроки и ответственную сторону. С уважением, Дмитрий Миронов.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-05-17T12:00:00+03:00",
+      "END_TIME": "2026-05-17T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1003",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p2@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5207",
+      "OWNER_ID": "1003",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — бюджет проекта",
+      "DESCRIPTION": "Здравствуйте, Дмитрий! Направляем материалы по теме «бюджет проекта». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-08-01T12:00:00+03:00",
+      "END_TIME": "2026-08-01T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1003",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p2@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5208",
+      "OWNER_ID": "1004",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — облачная инфраструктура",
+      "DESCRIPTION": "Здравствуйте, Анна! Направляем материалы по теме «облачная инфраструктура». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-02-03T12:00:00+03:00",
+      "END_TIME": "2025-02-03T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1004",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p3@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5209",
+      "OWNER_ID": "1004",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — график внедрения",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «график внедрения». Выражает сомнения. Просим уточнить условия, сроки и ответственную сторону. С уважением, Анна Орлова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-04-20T12:00:00+03:00",
+      "END_TIME": "2025-04-20T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1004",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p3@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5210",
+      "OWNER_ID": "1004",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — информационная безопасность",
+      "DESCRIPTION": "Здравствуйте, Анна! Направляем материалы по теме «информационная безопасность». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-06-28T12:00:00+03:00",
+      "END_TIME": "2025-06-28T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1004",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p3@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5211",
+      "OWNER_ID": "1004",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — график внедрения",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «график внедрения». Выражает сомнения. Просим уточнить условия, сроки и ответственную сторону. С уважением, Анна Орлова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-08-31T12:00:00+03:00",
+      "END_TIME": "2025-08-31T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1004",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p3@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5212",
+      "OWNER_ID": "1004",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — облачная инфраструктура",
+      "DESCRIPTION": "Здравствуйте, Анна! Направляем материалы по теме «облачная инфраструктура». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-10-24T12:00:00+03:00",
+      "END_TIME": "2025-10-24T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1004",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p3@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5213",
+      "OWNER_ID": "1004",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — сроки миграции",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «сроки миграции». Выражает сомнения. Просим уточнить условия, сроки и ответственную сторону. С уважением, Анна Орлова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-12-26T12:00:00+03:00",
+      "END_TIME": "2025-12-26T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1004",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p3@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5214",
+      "OWNER_ID": "1004",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — облачная инфраструктура",
+      "DESCRIPTION": "Здравствуйте, Анна! Направляем материалы по теме «облачная инфраструктура». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-03-05T12:00:00+03:00",
+      "END_TIME": "2026-03-05T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1004",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p3@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5215",
+      "OWNER_ID": "1004",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — бюджет проекта",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «бюджет проекта». Выражает сомнения. Просим уточнить условия, сроки и ответственную сторону. С уважением, Анна Орлова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-05-09T12:00:00+03:00",
+      "END_TIME": "2026-05-09T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1004",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p3@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5216",
+      "OWNER_ID": "1004",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — условия поддержки",
+      "DESCRIPTION": "Здравствуйте, Анна! Направляем материалы по теме «условия поддержки». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-07-13T12:00:00+03:00",
+      "END_TIME": "2026-07-13T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1004",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p3@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5217",
+      "OWNER_ID": "1005",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — сроки миграции",
+      "DESCRIPTION": "Здравствуйте, Илья! Направляем материалы по теме «сроки миграции». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-01-26T12:00:00+03:00",
+      "END_TIME": "2025-01-26T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1005",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p4@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5218",
+      "OWNER_ID": "1005",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — облачная инфраструктура",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «облачная инфраструктура». Поддерживает инициативу. Просим уточнить условия, сроки и ответственную сторону. С уважением, Илья Власов.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-03-31T12:00:00+03:00",
+      "END_TIME": "2025-03-31T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1005",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p4@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5219",
+      "OWNER_ID": "1005",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — согласование договора",
+      "DESCRIPTION": "Здравствуйте, Илья! Направляем материалы по теме «согласование договора». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-06-18T12:00:00+03:00",
+      "END_TIME": "2025-06-18T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1005",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p4@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5220",
+      "OWNER_ID": "1005",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — бюджет проекта",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «бюджет проекта». Поддерживает инициативу. Просим уточнить условия, сроки и ответственную сторону. С уважением, Илья Власов.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-01T12:00:00+03:00",
+      "END_TIME": "2025-09-01T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1005",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p4@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5221",
+      "OWNER_ID": "1005",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — график внедрения",
+      "DESCRIPTION": "Здравствуйте, Илья! Направляем материалы по теме «график внедрения». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-10-25T12:00:00+03:00",
+      "END_TIME": "2025-10-25T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1005",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p4@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5222",
+      "OWNER_ID": "1005",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — бюджет проекта",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «бюджет проекта». Поддерживает инициативу. Просим уточнить условия, сроки и ответственную сторону. С уважением, Илья Власов.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-01-08T12:00:00+03:00",
+      "END_TIME": "2026-01-08T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1005",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p4@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5223",
+      "OWNER_ID": "1005",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — график внедрения",
+      "DESCRIPTION": "Здравствуйте, Илья! Направляем материалы по теме «график внедрения». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-03-07T12:00:00+03:00",
+      "END_TIME": "2026-03-07T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1005",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p4@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5224",
+      "OWNER_ID": "1005",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — сроки миграции",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «сроки миграции». Поддерживает инициативу. Просим уточнить условия, сроки и ответственную сторону. С уважением, Илья Власов.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-05-11T12:00:00+03:00",
+      "END_TIME": "2026-05-11T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1005",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p4@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5225",
+      "OWNER_ID": "1005",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — бюджет проекта",
+      "DESCRIPTION": "Здравствуйте, Илья! Направляем материалы по теме «бюджет проекта». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-07-23T12:00:00+03:00",
+      "END_TIME": "2026-07-23T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1005",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p4@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5226",
+      "OWNER_ID": "1006",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — облачная инфраструктура",
+      "DESCRIPTION": "Здравствуйте, Елена! Направляем материалы по теме «облачная инфраструктура». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-01-30T12:00:00+03:00",
+      "END_TIME": "2025-01-30T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1006",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p5@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5227",
+      "OWNER_ID": "1006",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — облачная инфраструктура",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «облачная инфраструктура». Готов рассмотреть предложение. Просим уточнить условия, сроки и ответственную сторону. С уважением, Елена Громова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-04-08T12:00:00+03:00",
+      "END_TIME": "2025-04-08T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1006",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p5@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5228",
+      "OWNER_ID": "1006",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — сроки миграции",
+      "DESCRIPTION": "Здравствуйте, Елена! Направляем материалы по теме «сроки миграции». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-06-03T12:00:00+03:00",
+      "END_TIME": "2025-06-03T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1006",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p5@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5229",
+      "OWNER_ID": "1006",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — технические требования",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «технические требования». Готов рассмотреть предложение. Просим уточнить условия, сроки и ответственную сторону. С уважением, Елена Громова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-04T12:00:00+03:00",
+      "END_TIME": "2025-09-04T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1006",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p5@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5230",
+      "OWNER_ID": "1006",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — сроки миграции",
+      "DESCRIPTION": "Здравствуйте, Елена! Направляем материалы по теме «сроки миграции». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-10-24T12:00:00+03:00",
+      "END_TIME": "2025-10-24T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1006",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p5@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5231",
+      "OWNER_ID": "1006",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — облачная инфраструктура",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «облачная инфраструктура». Готов рассмотреть предложение. Просим уточнить условия, сроки и ответственную сторону. С уважением, Елена Громова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-01-12T12:00:00+03:00",
+      "END_TIME": "2026-01-12T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1006",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p5@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5232",
+      "OWNER_ID": "1006",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — сроки миграции",
+      "DESCRIPTION": "Здравствуйте, Елена! Направляем материалы по теме «сроки миграции». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-03-09T12:00:00+03:00",
+      "END_TIME": "2026-03-09T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1006",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p5@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5233",
+      "OWNER_ID": "1006",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — облачная инфраструктура",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «облачная инфраструктура». Готов рассмотреть предложение. Просим уточнить условия, сроки и ответственную сторону. С уважением, Елена Громова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-05-29T12:00:00+03:00",
+      "END_TIME": "2026-05-29T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1006",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p5@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5234",
+      "OWNER_ID": "1006",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — согласование договора",
+      "DESCRIPTION": "Здравствуйте, Елена! Направляем материалы по теме «согласование договора». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-07-31T12:00:00+03:00",
+      "END_TIME": "2026-07-31T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1006",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p5@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5235",
+      "OWNER_ID": "1007",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — технические требования",
+      "DESCRIPTION": "Здравствуйте, Николай! Направляем материалы по теме «технические требования». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-01-31T12:00:00+03:00",
+      "END_TIME": "2025-01-31T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1007",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p6@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5236",
+      "OWNER_ID": "1007",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — облачная инфраструктура",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «облачная инфраструктура». Ожидает дополнительных аргументов. Просим уточнить условия, сроки и ответственную сторону. С уважением, Николай Ершов.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-04-12T12:00:00+03:00",
+      "END_TIME": "2025-04-12T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1007",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p6@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5237",
+      "OWNER_ID": "1007",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — облачная инфраструктура",
+      "DESCRIPTION": "Здравствуйте, Николай! Направляем материалы по теме «облачная инфраструктура». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-06-04T12:00:00+03:00",
+      "END_TIME": "2025-06-04T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1007",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p6@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5238",
+      "OWNER_ID": "1007",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — согласование договора",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «согласование договора». Ожидает дополнительных аргументов. Просим уточнить условия, сроки и ответственную сторону. С уважением, Николай Ершов.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-08-28T12:00:00+03:00",
+      "END_TIME": "2025-08-28T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1007",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p6@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5239",
+      "OWNER_ID": "1007",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — сроки миграции",
+      "DESCRIPTION": "Здравствуйте, Николай! Направляем материалы по теме «сроки миграции». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-10-30T12:00:00+03:00",
+      "END_TIME": "2025-10-30T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1007",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p6@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5240",
+      "OWNER_ID": "1007",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — облачная инфраструктура",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «облачная инфраструктура». Ожидает дополнительных аргументов. Просим уточнить условия, сроки и ответственную сторону. С уважением, Николай Ершов.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-12-27T12:00:00+03:00",
+      "END_TIME": "2025-12-27T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1007",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p6@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5241",
+      "OWNER_ID": "1007",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — условия поддержки",
+      "DESCRIPTION": "Здравствуйте, Николай! Направляем материалы по теме «условия поддержки». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-03-19T12:00:00+03:00",
+      "END_TIME": "2026-03-19T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1007",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p6@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5242",
+      "OWNER_ID": "1007",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — согласование договора",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «согласование договора». Ожидает дополнительных аргументов. Просим уточнить условия, сроки и ответственную сторону. С уважением, Николай Ершов.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-05-12T12:00:00+03:00",
+      "END_TIME": "2026-05-12T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1007",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p6@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5243",
+      "OWNER_ID": "1007",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — информационная безопасность",
+      "DESCRIPTION": "Здравствуйте, Николай! Направляем материалы по теме «информационная безопасность». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-07-21T12:00:00+03:00",
+      "END_TIME": "2026-07-21T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1007",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p6@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5244",
+      "OWNER_ID": "1008",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — сроки миграции",
+      "DESCRIPTION": "Здравствуйте, Ольга! Направляем материалы по теме «сроки миграции». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-01-31T12:00:00+03:00",
+      "END_TIME": "2025-01-31T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1008",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p7@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5245",
+      "OWNER_ID": "1008",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — бюджет проекта",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «бюджет проекта». Выражает сомнения. Просим уточнить условия, сроки и ответственную сторону. С уважением, Ольга Крылова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-04-03T12:00:00+03:00",
+      "END_TIME": "2025-04-03T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1008",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p7@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5246",
+      "OWNER_ID": "1008",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — согласование договора",
+      "DESCRIPTION": "Здравствуйте, Ольга! Направляем материалы по теме «согласование договора». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-06-10T12:00:00+03:00",
+      "END_TIME": "2025-06-10T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1008",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p7@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5247",
+      "OWNER_ID": "1008",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — информационная безопасность",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «информационная безопасность». Выражает сомнения. Просим уточнить условия, сроки и ответственную сторону. С уважением, Ольга Крылова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-08-25T12:00:00+03:00",
+      "END_TIME": "2025-08-25T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1008",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p7@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5248",
+      "OWNER_ID": "1008",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — облачная инфраструктура",
+      "DESCRIPTION": "Здравствуйте, Ольга! Направляем материалы по теме «облачная инфраструктура». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-11-11T12:00:00+03:00",
+      "END_TIME": "2025-11-11T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1008",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p7@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5249",
+      "OWNER_ID": "1008",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — облачная инфраструктура",
+      "DESCRIPTION": "Добрый день! Получили материалы по теме «облачная инфраструктура». Выражает сомнения. Просим уточнить условия, сроки и ответственную сторону. С уважением, Ольга Крылова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-12-29T12:00:00+03:00",
+      "END_TIME": "2025-12-29T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "1",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1008",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p7@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5250",
+      "OWNER_ID": "1008",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Облачная платформа — сроки миграции",
+      "DESCRIPTION": "Здравствуйте, Ольга! Направляем материалы по теме «сроки миграции». Просим сообщить замечания и удобную дату следующего обсуждения. С уважением, Ирина Белова.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-03-26T12:00:00+03:00",
+      "END_TIME": "2026-03-26T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "DIRECTION": "2",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1008",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p7@client.example"
+        }
+      ]
+    }
+  ],
+  "total": 630,
+  "next": 250
+}

@@ -1,0 +1,4 @@
+{
+  "error": "insufficient_scope",
+  "error_description": "The request requires higher privileges than those provided by the access token"
+}

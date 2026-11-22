@@ -1,0 +1,1344 @@
+{
+  "result": [
+    {
+      "ID": "5551",
+      "OWNER_ID": "1026",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча по решению: Технические требования",
+      "DESCRIPTION": "Зафиксированы позиции подразделений; окончательное решение отложено до получения дополнительных материалов. Подтверждены условия и дальнейшие шаги.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-08-07T12:00:00+03:00",
+      "END_TIME": "2025-08-07T12:45:00+03:00",
+      "RESPONSIBLE_ID": "19",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1026",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1003",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1004",
+          "ENTITY_TYPE_ID": "3"
+        }
+      ]
+    },
+    {
+      "ID": "5552",
+      "OWNER_ID": "1026",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча по решению: Бюджет и выбор поставщика",
+      "DESCRIPTION": "Обсуждены замечания участников и необходимые проверки перед следующим этапом. Подтверждены условия и дальнейшие шаги.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-01T12:00:00+03:00",
+      "END_TIME": "2025-09-01T12:45:00+03:00",
+      "RESPONSIBLE_ID": "19",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1026",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1003",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1004",
+          "ENTITY_TYPE_ID": "3"
+        }
+      ]
+    },
+    {
+      "ID": "5553",
+      "OWNER_ID": "1001",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча по решению: Технические требования",
+      "DESCRIPTION": "Участники обсудили критерии выбора решения и распределили дальнейшие действия. Подтверждены условия и дальнейшие шаги.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-16T12:00:00+03:00",
+      "END_TIME": "2025-09-16T12:45:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1001",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1009",
+          "ENTITY_TYPE_ID": "3"
+        }
+      ]
+    },
+    {
+      "ID": "5554",
+      "OWNER_ID": "1001",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча по решению: Бюджет и выбор поставщика",
+      "DESCRIPTION": "Стороны сверили технические ограничения, бюджетные условия и порядок согласования. Подтверждены условия и дальнейшие шаги.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-10-09T12:00:00+03:00",
+      "END_TIME": "2025-10-09T12:45:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1001",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1009",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1010",
+          "ENTITY_TYPE_ID": "3"
+        }
+      ]
+    },
+    {
+      "ID": "5555",
+      "OWNER_ID": "1006",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча по решению: Технические требования",
+      "DESCRIPTION": "Зафиксированы позиции подразделений; окончательное решение отложено до получения дополнительных материалов. Подтверждены условия и дальнейшие шаги.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-11-24T12:00:00+03:00",
+      "END_TIME": "2025-11-24T12:45:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1006",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1015",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1016",
+          "ENTITY_TYPE_ID": "3"
+        }
+      ]
+    },
+    {
+      "ID": "5556",
+      "OWNER_ID": "1006",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча по решению: Бюджет и выбор поставщика",
+      "DESCRIPTION": "Обсуждены замечания участников и необходимые проверки перед следующим этапом. Подтверждены условия и дальнейшие шаги.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-12-12T12:00:00+03:00",
+      "END_TIME": "2025-12-12T12:45:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1006",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1015",
+          "ENTITY_TYPE_ID": "3"
+        }
+      ]
+    },
+    {
+      "ID": "5557",
+      "OWNER_ID": "1011",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча по решению: Технические требования",
+      "DESCRIPTION": "Участники обсудили критерии выбора решения и распределили дальнейшие действия. Подтверждены условия и дальнейшие шаги.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-01-09T12:00:00+03:00",
+      "END_TIME": "2026-01-09T12:45:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1011",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1021",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1022",
+          "ENTITY_TYPE_ID": "3"
+        }
+      ]
+    },
+    {
+      "ID": "5558",
+      "OWNER_ID": "1011",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча по решению: Бюджет и выбор поставщика",
+      "DESCRIPTION": "Стороны сверили технические ограничения, бюджетные условия и порядок согласования. Подтверждены условия и дальнейшие шаги.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-01-24T12:00:00+03:00",
+      "END_TIME": "2026-01-24T12:45:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1011",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1021",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1022",
+          "ENTITY_TYPE_ID": "3"
+        }
+      ]
+    },
+    {
+      "ID": "5559",
+      "OWNER_ID": "1016",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча по решению: Технические требования",
+      "DESCRIPTION": "Зафиксированы позиции подразделений; окончательное решение отложено до получения дополнительных материалов. Подтверждены условия и дальнейшие шаги.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-02-06T12:00:00+03:00",
+      "END_TIME": "2026-02-06T12:45:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1016",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1027",
+          "ENTITY_TYPE_ID": "3"
+        }
+      ]
+    },
+    {
+      "ID": "5560",
+      "OWNER_ID": "1016",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча по решению: Бюджет и выбор поставщика",
+      "DESCRIPTION": "Обсуждены замечания участников и необходимые проверки перед следующим этапом. Подтверждены условия и дальнейшие шаги.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-03-01T12:00:00+03:00",
+      "END_TIME": "2026-03-01T12:45:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1016",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1027",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1028",
+          "ENTITY_TYPE_ID": "3"
+        }
+      ]
+    },
+    {
+      "ID": "5561",
+      "OWNER_ID": "1011",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча по решению: Технические требования",
+      "DESCRIPTION": "Участники обсудили критерии выбора решения и распределили дальнейшие действия. Выявлены существенные возражения.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-06-09T12:00:00+03:00",
+      "END_TIME": "2025-06-09T12:45:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1011",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1003",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1004",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1002",
+          "ENTITY_TYPE_ID": "3"
+        }
+      ]
+    },
+    {
+      "ID": "5562",
+      "OWNER_ID": "1011",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча по решению: Бюджет и выбор поставщика",
+      "DESCRIPTION": "Стороны сверили технические ограничения, бюджетные условия и порядок согласования. Выявлены существенные возражения.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-07-06T12:00:00+03:00",
+      "END_TIME": "2025-07-06T12:45:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1011",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1003",
+          "ENTITY_TYPE_ID": "3"
+        }
+      ]
+    },
+    {
+      "ID": "5563",
+      "OWNER_ID": "1016",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча по решению: Технические требования",
+      "DESCRIPTION": "Зафиксированы позиции подразделений; окончательное решение отложено до получения дополнительных материалов. Выявлены существенные возражения.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-08-06T12:00:00+03:00",
+      "END_TIME": "2025-08-06T12:45:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1016",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1009",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1010",
+          "ENTITY_TYPE_ID": "3"
+        }
+      ]
+    },
+    {
+      "ID": "5564",
+      "OWNER_ID": "1016",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча по решению: Бюджет и выбор поставщика",
+      "DESCRIPTION": "Обсуждены замечания участников и необходимые проверки перед следующим этапом. Выявлены существенные возражения.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-08-26T12:00:00+03:00",
+      "END_TIME": "2025-08-26T12:45:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1016",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1009",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1010",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1008",
+          "ENTITY_TYPE_ID": "3"
+        }
+      ]
+    },
+    {
+      "ID": "5565",
+      "OWNER_ID": "1021",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча по решению: Технические требования",
+      "DESCRIPTION": "Участники обсудили критерии выбора решения и распределили дальнейшие действия. Выявлены существенные возражения.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-10-18T12:00:00+03:00",
+      "END_TIME": "2025-10-18T12:45:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1021",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1015",
+          "ENTITY_TYPE_ID": "3"
+        }
+      ]
+    },
+    {
+      "ID": "5566",
+      "OWNER_ID": "1021",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча по решению: Бюджет и выбор поставщика",
+      "DESCRIPTION": "Стороны сверили технические ограничения, бюджетные условия и порядок согласования. Выявлены существенные возражения.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-11-11T12:00:00+03:00",
+      "END_TIME": "2025-11-11T12:45:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1021",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1015",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1016",
+          "ENTITY_TYPE_ID": "3"
+        }
+      ]
+    },
+    {
+      "ID": "5567",
+      "OWNER_ID": "1026",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча по решению: Технические требования",
+      "DESCRIPTION": "Зафиксированы позиции подразделений; окончательное решение отложено до получения дополнительных материалов. Выявлены существенные возражения.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-12-08T12:00:00+03:00",
+      "END_TIME": "2025-12-08T12:45:00+03:00",
+      "RESPONSIBLE_ID": "19",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1026",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1021",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1022",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1020",
+          "ENTITY_TYPE_ID": "3"
+        }
+      ]
+    },
+    {
+      "ID": "5568",
+      "OWNER_ID": "1026",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча по решению: Бюджет и выбор поставщика",
+      "DESCRIPTION": "Обсуждены замечания участников и необходимые проверки перед следующим этапом. Выявлены существенные возражения.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-12-26T12:00:00+03:00",
+      "END_TIME": "2025-12-26T12:45:00+03:00",
+      "RESPONSIBLE_ID": "19",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1026",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1021",
+          "ENTITY_TYPE_ID": "3"
+        }
+      ]
+    },
+    {
+      "ID": "5569",
+      "OWNER_ID": "1001",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча по решению: Технические требования",
+      "DESCRIPTION": "Участники обсудили критерии выбора решения и распределили дальнейшие действия. Требуются дополнительные согласования.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-05-17T12:00:00+03:00",
+      "END_TIME": "2026-05-17T12:45:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1001",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1027",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1028",
+          "ENTITY_TYPE_ID": "3"
+        }
+      ]
+    },
+    {
+      "ID": "5570",
+      "OWNER_ID": "1001",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча по решению: Бюджет и выбор поставщика",
+      "DESCRIPTION": "Стороны сверили технические ограничения, бюджетные условия и порядок согласования. Требуются дополнительные согласования.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-07-18T12:00:00+03:00",
+      "END_TIME": "2026-07-18T12:45:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1001",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1027",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1028",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1026",
+          "ENTITY_TYPE_ID": "3"
+        }
+      ]
+    },
+    {
+      "ID": "5571",
+      "OWNER_ID": "1006",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча по решению: Технические требования",
+      "DESCRIPTION": "Зафиксированы позиции подразделений; окончательное решение отложено до получения дополнительных материалов. Требуются дополнительные согласования.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-06-25T12:00:00+03:00",
+      "END_TIME": "2026-06-25T12:45:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1006",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1003",
+          "ENTITY_TYPE_ID": "3"
+        }
+      ]
+    },
+    {
+      "ID": "5572",
+      "OWNER_ID": "1006",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча по решению: Бюджет и выбор поставщика",
+      "DESCRIPTION": "Обсуждены замечания участников и необходимые проверки перед следующим этапом. Требуются дополнительные согласования.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-08-14T12:00:00+03:00",
+      "END_TIME": "2026-08-14T12:45:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1006",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1003",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1004",
+          "ENTITY_TYPE_ID": "3"
+        }
+      ]
+    },
+    {
+      "ID": "5573",
+      "OWNER_ID": "1011",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча по решению: Технические требования",
+      "DESCRIPTION": "Участники обсудили критерии выбора решения и распределили дальнейшие действия. Требуются дополнительные согласования.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-08-02T12:00:00+03:00",
+      "END_TIME": "2026-08-02T12:45:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1011",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1009",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1010",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1008",
+          "ENTITY_TYPE_ID": "3"
+        }
+      ]
+    },
+    {
+      "ID": "5574",
+      "OWNER_ID": "1011",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча по решению: Бюджет и выбор поставщика",
+      "DESCRIPTION": "Стороны сверили технические ограничения, бюджетные условия и порядок согласования. Требуются дополнительные согласования.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-09-08T12:00:00+03:00",
+      "END_TIME": "2026-09-08T12:45:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1011",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1009",
+          "ENTITY_TYPE_ID": "3"
+        }
+      ]
+    },
+    {
+      "ID": "5575",
+      "OWNER_ID": "1016",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча по решению: Технические требования",
+      "DESCRIPTION": "Зафиксированы позиции подразделений; окончательное решение отложено до получения дополнительных материалов. Требуются дополнительные согласования.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-09-05T12:00:00+03:00",
+      "END_TIME": "2026-09-05T12:45:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1016",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1015",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1014",
+          "ENTITY_TYPE_ID": "3"
+        }
+      ]
+    },
+    {
+      "ID": "5576",
+      "OWNER_ID": "1016",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "1",
+      "SUBJECT": "Встреча по решению: Бюджет и выбор поставщика",
+      "DESCRIPTION": "Обсуждены замечания участников и необходимые проверки перед следующим этапом. Требуются дополнительные согласования.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-10-01T12:00:00+03:00",
+      "END_TIME": "2026-10-01T12:45:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1016",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1015",
+          "ENTITY_TYPE_ID": "3"
+        },
+        {
+          "ENTITY_ID": "1014",
+          "ENTITY_TYPE_ID": "3"
+        }
+      ]
+    },
+    {
+      "ID": "5577",
+      "OWNER_ID": "1001",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Внутреннее обсуждение: Требования ИБ",
+      "DESCRIPTION": "Уточняются условия и участники согласования.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-01-09T12:00:00+03:00",
+      "END_TIME": "2025-01-09T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1001",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p0@client.example"
+        },
+        {
+          "ENTITY_ID": "1003",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p2@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5578",
+      "OWNER_ID": "1003",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Внутреннее обсуждение: Бюджет закупки",
+      "DESCRIPTION": "Уточняются условия и участники согласования.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-01-27T12:00:00+03:00",
+      "END_TIME": "2025-01-27T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1003",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p2@client.example"
+        },
+        {
+          "ENTITY_ID": "1004",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p3@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5579",
+      "OWNER_ID": "1006",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Внутреннее обсуждение: Требования ИБ",
+      "DESCRIPTION": "Уточняются условия и участники согласования.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-03-06T12:00:00+03:00",
+      "END_TIME": "2025-03-06T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1006",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p5@client.example"
+        },
+        {
+          "ENTITY_ID": "1009",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p8@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5580",
+      "OWNER_ID": "1009",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Внутреннее обсуждение: Бюджет закупки",
+      "DESCRIPTION": "Уточняются условия и участники согласования.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-03-24T12:00:00+03:00",
+      "END_TIME": "2025-03-24T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1009",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p8@client.example"
+        },
+        {
+          "ENTITY_ID": "1010",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p9@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5581",
+      "OWNER_ID": "1011",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Внутреннее обсуждение: Требования ИБ",
+      "DESCRIPTION": "Уточняются условия и участники согласования.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-04-13T12:00:00+03:00",
+      "END_TIME": "2025-04-13T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1011",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p10@client.example"
+        },
+        {
+          "ENTITY_ID": "1015",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p14@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5582",
+      "OWNER_ID": "1015",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Внутреннее обсуждение: Бюджет закупки",
+      "DESCRIPTION": "Уточняются условия и участники согласования.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-01T12:00:00+03:00",
+      "END_TIME": "2025-05-01T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1015",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p14@client.example"
+        },
+        {
+          "ENTITY_ID": "1016",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p15@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5583",
+      "OWNER_ID": "1016",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Внутреннее обсуждение: Требования ИБ",
+      "DESCRIPTION": "Уточняются условия и участники согласования.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-05-16T12:00:00+03:00",
+      "END_TIME": "2025-05-16T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1016",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p15@client.example"
+        },
+        {
+          "ENTITY_ID": "1021",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p20@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5584",
+      "OWNER_ID": "1021",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Внутреннее обсуждение: Бюджет закупки",
+      "DESCRIPTION": "Уточняются условия и участники согласования.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-06-08T12:00:00+03:00",
+      "END_TIME": "2025-06-08T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1021",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p20@client.example"
+        },
+        {
+          "ENTITY_ID": "1022",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p21@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5585",
+      "OWNER_ID": "1021",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Внутреннее обсуждение: Требования ИБ",
+      "DESCRIPTION": "Уточняются условия и участники согласования.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-06-20T12:00:00+03:00",
+      "END_TIME": "2025-06-20T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1021",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p20@client.example"
+        },
+        {
+          "ENTITY_ID": "1027",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p26@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5586",
+      "OWNER_ID": "1027",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Внутреннее обсуждение: Бюджет закупки",
+      "DESCRIPTION": "Уточняются условия и участники согласования.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-07-13T12:00:00+03:00",
+      "END_TIME": "2025-07-13T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1027",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p26@client.example"
+        },
+        {
+          "ENTITY_ID": "1028",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p27@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5587",
+      "OWNER_ID": "1026",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Внутреннее обсуждение: Требования ИБ",
+      "DESCRIPTION": "Уточняются условия и участники согласования.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-08-07T12:00:00+03:00",
+      "END_TIME": "2025-08-07T12:05:00+03:00",
+      "RESPONSIBLE_ID": "19",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1026",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p25@client.example"
+        },
+        {
+          "ENTITY_ID": "1003",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p2@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5588",
+      "OWNER_ID": "1003",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Внутреннее обсуждение: Бюджет закупки",
+      "DESCRIPTION": "Уточняются условия и участники согласования.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-01T12:00:00+03:00",
+      "END_TIME": "2025-09-01T12:05:00+03:00",
+      "RESPONSIBLE_ID": "19",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1003",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p2@client.example"
+        },
+        {
+          "ENTITY_ID": "1004",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p3@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5589",
+      "OWNER_ID": "1001",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Внутреннее обсуждение: Требования ИБ",
+      "DESCRIPTION": "Уточняются условия и участники согласования.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-09-16T12:00:00+03:00",
+      "END_TIME": "2025-09-16T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1001",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p0@client.example"
+        },
+        {
+          "ENTITY_ID": "1009",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p8@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5590",
+      "OWNER_ID": "1009",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Внутреннее обсуждение: Бюджет закупки",
+      "DESCRIPTION": "Уточняются условия и участники согласования.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-10-09T12:00:00+03:00",
+      "END_TIME": "2025-10-09T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1009",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p8@client.example"
+        },
+        {
+          "ENTITY_ID": "1010",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p9@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5591",
+      "OWNER_ID": "1006",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Внутреннее обсуждение: Требования ИБ",
+      "DESCRIPTION": "Уточняются условия и участники согласования.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-11-24T12:00:00+03:00",
+      "END_TIME": "2025-11-24T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1006",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p5@client.example"
+        },
+        {
+          "ENTITY_ID": "1015",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p14@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5592",
+      "OWNER_ID": "1015",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Внутреннее обсуждение: Бюджет закупки",
+      "DESCRIPTION": "Уточняются условия и участники согласования.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-12-12T12:00:00+03:00",
+      "END_TIME": "2025-12-12T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1015",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p14@client.example"
+        },
+        {
+          "ENTITY_ID": "1016",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p15@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5593",
+      "OWNER_ID": "1011",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Внутреннее обсуждение: Требования ИБ",
+      "DESCRIPTION": "Уточняются условия и участники согласования.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-01-09T12:00:00+03:00",
+      "END_TIME": "2026-01-09T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1011",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p10@client.example"
+        },
+        {
+          "ENTITY_ID": "1021",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p20@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5594",
+      "OWNER_ID": "1021",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Внутреннее обсуждение: Бюджет закупки",
+      "DESCRIPTION": "Уточняются условия и участники согласования.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-01-24T12:00:00+03:00",
+      "END_TIME": "2026-01-24T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1021",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p20@client.example"
+        },
+        {
+          "ENTITY_ID": "1022",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p21@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5595",
+      "OWNER_ID": "1016",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Внутреннее обсуждение: Требования ИБ",
+      "DESCRIPTION": "Уточняются условия и участники согласования.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-02-06T12:00:00+03:00",
+      "END_TIME": "2026-02-06T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1016",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p15@client.example"
+        },
+        {
+          "ENTITY_ID": "1027",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p26@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5596",
+      "OWNER_ID": "1027",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Внутреннее обсуждение: Бюджет закупки",
+      "DESCRIPTION": "Уточняются условия и участники согласования.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2026-03-01T12:00:00+03:00",
+      "END_TIME": "2026-03-01T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1027",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p26@client.example"
+        },
+        {
+          "ENTITY_ID": "1028",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p27@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5597",
+      "OWNER_ID": "1011",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Внутреннее обсуждение: Требования ИБ",
+      "DESCRIPTION": "Обсуждается отказ от текущего предложения.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-06-09T12:00:00+03:00",
+      "END_TIME": "2025-06-09T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1011",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p10@client.example"
+        },
+        {
+          "ENTITY_ID": "1003",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p2@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5598",
+      "OWNER_ID": "1003",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Внутреннее обсуждение: Бюджет закупки",
+      "DESCRIPTION": "Обсуждается отказ от текущего предложения.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-07-06T12:00:00+03:00",
+      "END_TIME": "2025-07-06T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1003",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p2@client.example"
+        },
+        {
+          "ENTITY_ID": "1004",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p3@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5599",
+      "OWNER_ID": "1016",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Внутреннее обсуждение: Требования ИБ",
+      "DESCRIPTION": "Обсуждается отказ от текущего предложения.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-08-06T12:00:00+03:00",
+      "END_TIME": "2025-08-06T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1016",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p15@client.example"
+        },
+        {
+          "ENTITY_ID": "1009",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p8@client.example"
+        }
+      ]
+    },
+    {
+      "ID": "5600",
+      "OWNER_ID": "1009",
+      "OWNER_TYPE_ID": "3",
+      "TYPE_ID": "4",
+      "SUBJECT": "Внутреннее обсуждение: Бюджет закупки",
+      "DESCRIPTION": "Обсуждается отказ от текущего предложения.",
+      "DESCRIPTION_TYPE": "1",
+      "START_TIME": "2025-08-26T12:00:00+03:00",
+      "END_TIME": "2025-08-26T12:05:00+03:00",
+      "RESPONSIBLE_ID": "18",
+      "COMPLETED": "Y",
+      "COMMUNICATIONS": [
+        {
+          "ENTITY_ID": "1009",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p8@client.example"
+        },
+        {
+          "ENTITY_ID": "1010",
+          "ENTITY_TYPE_ID": "3",
+          "TYPE": "EMAIL",
+          "VALUE": "bank-p9@client.example"
+        }
+      ]
+    }
+  ],
+  "total": 630,
+  "next": 600
+}
