@@ -92,7 +92,8 @@ export function generateFixturesV2(crm, bank) {
       RESPONSIBLE_ID: String(users[spec.manager] || users[people[0].owner]),
       COMPLETED: "Y",
       ...(spec.direction ? { DIRECTION: spec.direction } : {}),
-      COMMUNICATIONS: communications
+      COMMUNICATIONS: communications,
+      __sourceId: spec.sourceId
     });
   };
 
@@ -151,6 +152,14 @@ export function generateFixturesV2(crm, bank) {
       emailValues: Object.fromEntries(participantIds.map(id => [id, emailByContact[id]]))
     });
   }
+
+  activityRecords.sort((a, b) => a.START_TIME.localeCompare(b.START_TIME) || a.__sourceId.localeCompare(b.__sourceId));
+  const activityIds = {};
+  activityRecords.forEach((activity, index) => {
+    activity.ID = String(5001 + index);
+    activityIds[activity.__sourceId] = 5001 + index;
+    delete activity.__sourceId;
+  });
 
   const tasks = bank.crmTasks.filter(t => t.status !== "cancelled").map(t => ({
     id: String(taskIds[t.id]),
@@ -230,7 +239,7 @@ export function generateFixturesV2(crm, bank) {
   };
   const mapping = {
     synthetic: true, companyIds: { bank: 42 }, contactIds, dealIds, invoiceIds,
-    activityIds: Object.fromEntries(activityRecords.map(a => [a.ID, Number(a.ID)])),
+    activityIds,
     taskIds, users
   };
   return { manifest, mapping, pages, errors, activityRecords };
