@@ -270,5 +270,9 @@
     "No authorization or access filtering",
     "Internal client messages are represented as illustrative email activities",
     "This is legacy REST v1 response shape, not REST 3.0"
-  ]
+  ],
+  "generatorVersion": "3.2.1",
+  "parentGeneratorVersion": "3.2.0",
+  "generationSeed": 20261123,
+  "textGeneration": "scenario_composed_email_diversity"
 }
