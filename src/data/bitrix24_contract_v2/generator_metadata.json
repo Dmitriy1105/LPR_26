@@ -1,0 +1,32 @@
+{
+  "generatorVersion": "3.2.2",
+  "parentVersion": "3.2.1",
+  "seed": 20261122,
+  "generatedAt": "2026-11-22",
+  "recordCounts": {
+    "contacts": 30,
+    "activities": 630,
+    "calls": 180,
+    "emails": 324,
+    "meetings": 126
+  },
+  "activityTypeIds": {
+    "1": "meeting",
+    "2": "call",
+    "4": "email_or_internal_email"
+  },
+  "uniqueDescriptions": 630,
+  "descriptionUniquenessPct": 100,
+  "dataIsSynthetic": true,
+  "compatibility": "legacy-rest-v1",
+  "invariants": [
+    "All activity IDs preserved",
+    "All dates and COMMUNICATIONS references preserved",
+    "No activity records added or removed",
+    "REST page boundaries preserved"
+  ],
+  "limitations": [
+    "Run NLP 20 and NLP 20A to evaluate similarity",
+    "Synthetic text is not real customer communication"
+  ]
+}
