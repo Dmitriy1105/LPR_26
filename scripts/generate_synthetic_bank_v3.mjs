@@ -27,6 +27,236 @@ function stablePick(values, index) {
   return values[((index % values.length) + values.length) % values.length];
 }
 
+
+// ---------------------------------------------------------------------------
+// Contextual text diversification v3.1.
+// Deterministic from event fields and seed; does not change schemas or counts.
+// ---------------------------------------------------------------------------
+function hashIndex(value, length) {
+  let hash = 2166136261;
+  for (const ch of String(value)) {
+    hash ^= ch.charCodeAt(0);
+    hash = Math.imul(hash, 16777619);
+  }
+  return (hash >>> 0) % length;
+}
+function variant(values, key) {
+  return values[hashIndex(key, values.length)];
+}
+function ruDate(value) {
+  const [year, month, day] = String(value).slice(0, 10).split("-");
+  return day + "." + month + "." + year;
+}
+function personName(peopleById, id) {
+  return peopleById.get(id)?.name || "коллега";
+}
+function firstName(peopleById, id) {
+  return personName(peopleById, id).split(/\s+/)[0];
+}
+function topicContext(topic) {
+  const t = String(topic || "").toLowerCase();
+  if (t.includes("бюджет")) return "лимиты финансирования, структуру затрат и порядок подтверждения расходов";
+  if (t.includes("безопас")) return "требования защиты информации, модель угроз и порядок проверки";
+  if (t.includes("договор")) return "условия договора, распределение обязательств и маршрут согласования";
+  if (t.includes("миграц")) return "этапы переноса, окно переключения и критерии готовности";
+  if (t.includes("график")) return "сроки этапов, зависимости работ и ответственных исполнителей";
+  if (t.includes("поддерж")) return "уровень сервиса, время реакции и порядок эскалации";
+  if (t.includes("техничес")) return "архитектуру решения, интеграционные ограничения и критерии приемки";
+  return "объем работ, ограничения проекта и порядок принятия решения";
+}
+function positionText(sentiment, key) {
+  const tone = String(sentiment || "").toLowerCase();
+  const options = tone.includes("позит")
+    ? [
+        "В целом предложенный подход поддерживаем; просим отдельно зафиксировать условия перехода.",
+        "Предложение выглядит приемлемым. Для продвижения нужны подтвержденные сроки и ответственные.",
+        "Готовы продолжить проработку при условии документального подтверждения ключевых параметров.",
+        "Существенных возражений по направлению нет, но остаются вопросы по реализации."
+      ]
+    : tone.includes("сдерж")
+      ? [
+          "Пока сохраняются вопросы по рискам и распределению ответственности.",
+          "Окончательную позицию сформируем после проверки расчетов и технических условий.",
+          "Для согласования не хватает подтверждений по срокам, затратам и критериям приемки.",
+          "Есть замечания, которые необходимо закрыть до вынесения вопроса на следующий уровень."
+        ]
+      : [
+          "Позиция пока не определена; требуется сопоставить альтернативы и уточнить исходные данные.",
+          "Нужно получить дополнительные сведения, прежде чем подтверждать предложенный вариант.",
+          "Вопрос оставлен открытым до получения расчетов и заключений профильных подразделений.",
+          "Участник запросил пояснения по условиям и ожидает консолидированную информацию."
+        ];
+  return variant(options, key);
+}
+function diversifyCall(call, peopleById, seed) {
+  const name = firstName(peopleById, call.personId);
+  const context = topicContext(call.topic);
+  const key = String(seed) + "|" + call.id;
+  const openers = [
+    "Добрый день, " + name + ". Возвращаюсь к обсуждению темы «" + call.topic + "».",
+    name + ", здравствуйте. Хотел сверить текущий статус вопроса «" + call.topic + "».",
+    "Добрый день, " + name + ". Связываюсь по итогам предыдущего обсуждения «" + call.topic + "».",
+    name + ", добрый день. Предлагаю уточнить оставшиеся вопросы по направлению «" + call.topic + "»."
+  ];
+  const managerQuestions = [
+    "Предлагаю пройтись по таким пунктам: " + context + ".",
+    "Важно согласовать следующие аспекты: " + context + ".",
+    "Для следующего шага нужно уточнить: " + context + ".",
+    "Отдельно предлагаю проверить: " + context + "."
+  ];
+  const managerActions = [
+    "Со своей стороны подготовим сводку и направим ее участникам.",
+    "Я зафиксирую договоренности и передам материалы ответственным коллегам.",
+    "После звонка отправим перечень открытых вопросов и проект дальнейшего плана.",
+    "Подготовим обновленные материалы, чтобы предметно обсудить оставшиеся разногласия."
+  ];
+  const clientActions = [
+    "Пожалуйста, приложите исходные расчеты и укажите, какие решения требуются от нашей стороны.",
+    "Направьте краткое резюме, перечень допущений и возможные даты следующего обсуждения.",
+    "Просьба отдельно отметить открытые вопросы и подразделения, от которых ожидается ответ.",
+    "После получения материалов вернемся с комментариями и предложением по дальнейшим действиям."
+  ];
+  const outcome = positionText(call.sentiment, key + "|position");
+  const disposition = {
+    materials_requested: "По итогам разговора запрошены дополнительные материалы.",
+    next_meeting: "Стороны договорились вынести вопрос на отдельную рабочую встречу.",
+    clarification: "Зафиксирована необходимость уточнить исходные условия.",
+    follow_up: "Договорились вернуться к вопросу после внутренней проверки."
+  }[call.disposition] || "Следующий шаг будет определен после сверки информации.";
+  call.transcript = [
+    { speaker: "manager", text: variant(openers, key + "|open") },
+    { speaker: "client", text: outcome + " " + variant(managerQuestions, key + "|question") },
+    { speaker: "manager", text: disposition + " " + variant(managerActions, key + "|action") },
+    { speaker: "client", text: variant(clientActions, key + "|client-action") }
+  ];
+}
+function diversifyEmail(email, peopleById, seed) {
+  const name = firstName(peopleById, email.personId);
+  const fullName = personName(peopleById, email.personId);
+  const context = topicContext(email.subject || email.topic);
+  const key = String(seed) + "|" + email.id;
+  const followUpDays = 3 + hashIndex(key + "|due", 9);
+  const due = ruDate(addDays(email.date, followUpDays));
+  if (email.direction === "incoming") {
+    const openings = [
+      "Добрый день. Получили ваше сообщение по вопросу «" + (email.subject || "проекта") + "».",
+      "Здравствуйте. Возвращаемся с ответом по теме «" + (email.subject || "проекта") + "».",
+      "Коллеги, добрый день. Изучили направленные материалы по вопросу «" + (email.subject || "проекта") + "».",
+      "Добрый день. Благодарим за материалы и пояснения по теме «" + (email.subject || "проекта") + "»."
+    ];
+    const requests = [
+      "Просим дополнительно раскрыть следующие пункты: " + context + ".",
+      "Для подготовки позиции необходимы уточнения по направлениям: " + context + ".",
+      "Просим приложить расчеты и пояснить, как предлагается закрыть вопросы: " + context + ".",
+      "Будем признательны за отдельный ответ по следующим аспектам: " + context + "."
+    ];
+    email.body = variant(openings, key + "|opening") + " " +
+      positionText(email.sentiment, key + "|position") + " " +
+      variant(requests, key + "|request") + " " +
+      variant([
+        "После внутреннего рассмотрения направим консолидированные замечания.",
+        "Ответственных коллег подключим после получения недостающей информации.",
+        "Просим учесть эти вопросы при подготовке следующей версии материалов.",
+        "К дальнейшему согласованию вернемся после проверки профильными подразделениями."
+      ], key + "|closing") + " С уважением, " + fullName + ".";
+  } else {
+    const openings = [
+      "Здравствуйте, " + name + "! Направляем обновленные материалы по теме «" + (email.subject || "проекта") + "».",
+      "Добрый день, " + name + ". По итогам предыдущего контакта подготовили информацию по теме «" + (email.subject || "проекта") + "».",
+      name + ", здравствуйте. Во вложении направляем уточнения по вопросу «" + (email.subject || "проекта") + "».",
+      "Уважаемый(ая) " + name + ", направляем согласованную версию материалов по теме «" + (email.subject || "проекта") + "»."
+    ];
+    const requests = [
+      "Просим проверить указанные параметры и прислать замечания.",
+      "Будем признательны, если подтвердите корректность исходных условий.",
+      "Просим обозначить ответственных за проверку и удобный срок обратной связи.",
+      "Если потребуется, организуем короткую рабочую встречу для разбора открытых пунктов."
+    ];
+    email.body = variant(openings, key + "|opening") + " " +
+      variant([
+        "В документе отдельно отражены " + context + ".",
+        "В обновленной версии учтены замечания по направлениям: " + context + ".",
+        "Ключевые допущения и варианты решения сгруппированы по вопросам: " + context + ".",
+        "Для удобства проверки вынесли отдельным разделом: " + context + "."
+      ], key + "|context") + " " + variant(requests, key + "|request") +
+      " Просим по возможности вернуться с ответом до " + due +
+      ". С уважением, " + (email.manager || "проектная команда") + ".";
+  }
+}
+function meetingMinutes(topic, date, attendeeIds, peopleById, key, sentiment = "нейтральный") {
+  const names = attendeeIds.map(id => personName(peopleById, id));
+  const participants = names.length
+    ? "Со стороны клиента участвовали: " + names.join(", ") + "."
+    : "Состав участников зафиксирован в карточке встречи.";
+  const context = topicContext(topic);
+  const openings = [
+    "На встрече " + ruDate(date) + " рассмотрели вопрос «" + topic + "» и сверили текущее состояние работ.",
+    "Рабочая встреча " + ruDate(date) + " была посвящена теме «" + topic + "» и оставшимся пунктам согласования.",
+    "В ходе обсуждения " + ruDate(date) + " участники сопоставили текущие требования и предложенный план по теме «" + topic + "».",
+    "На встрече " + ruDate(date) + " проверили статус направления «" + topic + "», распределение задач и условия перехода к следующему этапу.",
+    "Участники встречи " + ruDate(date) + " рассмотрели варианты решения по теме «" + topic + "» и зафиксировали вопросы для дополнительной проработки."
+  ];
+  const issues = [
+    "Отдельно разобрали " + context + ".",
+    "Основная часть обсуждения касалась следующих аспектов: " + context + ".",
+    "В перечень открытых вопросов включили: " + context + ".",
+    "Проверили взаимосвязь требований: " + context + ".",
+    "Участники запросили дополнительные пояснения по направлениям: " + context + "."
+  ];
+  const decisions = [
+    "Решение по спорным пунктам перенесено до получения подтверждающих материалов.",
+    "Договорились подготовить консолидированный перечень замечаний и назначить ответственных.",
+    "Согласовали продолжение проработки; окончательное утверждение оставлено за профильными подразделениями.",
+    "Зафиксировали предварительный вариант, который должен пройти техническую и финансовую проверку.",
+    "Подтверждено движение по согласованным пунктам, остальные вопросы оставлены в работе."
+  ];
+  const actions = [
+    "Следующий шаг — обмен обновленными документами и повторная сверка.",
+    "Ответственные стороны должны представить комментарии до следующего контрольного обсуждения.",
+    "Проектная команда подготовит сводку решений, рисков и открытых зависимостей.",
+    "После получения заключений вопрос будет возвращен на совместное рассмотрение."
+  ];
+  return [
+    variant(openings, key + "|opening"),
+    participants,
+    positionText(sentiment, key + "|position"),
+    variant(issues, key + "|issues"),
+    variant(decisions, key + "|decision"),
+    variant(actions, key + "|actions")
+  ].join(" ");
+}
+function diversifyAllText(bank, peopleById, seed) {
+  for (const call of bank.calls || []) diversifyCall(call, peopleById, seed);
+  for (const email of bank.emails || []) diversifyEmail(email, peopleById, seed);
+  for (const meeting of bank.meetings || []) {
+    meeting.minutes = meetingMinutes(
+      meeting.topic, meeting.date, meeting.clientAttendeeIds || [meeting.personId],
+      peopleById, String(seed) + "|" + meeting.id, meeting.sentiment || "нейтральный"
+    );
+  }
+  for (const meeting of bank.decisionMeetings || []) {
+    meeting.minutes = meetingMinutes(
+      meeting.agenda, meeting.date, meeting.clientAttendeeIds || [],
+      peopleById, String(seed) + "|" + meeting.id, "нейтральный"
+    );
+  }
+  for (const message of bank.clientInternalMessages || []) {
+    const from = personName(peopleById, message.fromPersonId);
+    const to = personName(peopleById, message.toPersonId);
+    const context = topicContext(message.topic);
+    const key = String(seed) + "|" + message.id;
+    const bodies = [
+      from + " направил(а) " + to + " замечания по теме «" + message.topic + "». В первую очередь требуется проверить " + context + ". Просьба собрать позицию профильного подразделения и вернуть комментарии.",
+      from + " обратился(лась) к " + to + " за экспертной оценкой вопроса «" + message.topic + "». В сообщении выделены " + context + ". До общего согласования необходимо сверить исходные допущения.",
+      from + " предложил(а) подключить " + to + " к проработке темы «" + message.topic + "». Причина обращения — необходимость уточнить " + context + ". Результат проверки следует зафиксировать для участников проекта.",
+      from + " сообщил(а) " + to + ", что по теме «" + message.topic + "» остаются открытые пункты. Требуется дополнительно рассмотреть " + context + " и определить, какие данные нужны для решения.",
+      from + " передал(а) " + to + " промежуточную позицию по теме «" + message.topic + "». Отдельного подтверждения требуют " + context + ". До получения ответа окончательный вывод делать рано.",
+      from + " попросил(а) " + to + " проверить материалы по теме «" + message.topic + "». Вопросы относятся к направлениям: " + context + ". После проверки стороны смогут согласовать дальнейший порядок действий."
+    ];
+    message.summary = variant(bodies, key) + " Дата обмена: " + ruDate(message.date) + ".";
+  }
+}
+
 export function generateV3(crm, v1, seed = 20261122) {
   const bank = generateV2(crm, v1, seed);
   const people = crm.people.filter(p => p.companyId === "bank");
@@ -108,6 +338,9 @@ export function generateV3(crm, v1, seed = 20261122) {
   }
   bank.clientInternalMessages.push(...extraMessages);
 
+  // Diversify all customer-facing and internal event text without changing schemas/counts.
+  diversifyAllText(bank, peopleById, seed);
+
   // Keep eventIndex synchronized with the expanded attendee lists.
   const eventBySourceId = new Map(bank.eventIndex.map(e => [e.sourceId, e]));
   for (const meeting of bank.decisionMeetings) {
@@ -136,6 +369,9 @@ export function generateV3(crm, v1, seed = 20261122) {
     asOf: AS_OF,
     parentDataset: "lpr_bank_synthetic_v2",
     compatibility: "normalized_v2_schema_additive_records",
+    generatorVersion: "3.1.0",
+    textGeneration: "deterministic_contextual_variants",
+    textQuality: "event_specific_nonboilerplate",
     warning: "ALL DATA FICTIONAL. NOT REAL CLIENT ACTIVITY, FINANCE OR VALIDATED ML LABELS."
   };
 
