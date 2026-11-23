@@ -1,0 +1,33 @@
+{
+  "dataset": "v3.2.3",
+  "status": "PASS",
+  "expected": {
+    "companies": 1,
+    "contacts": 30,
+    "deals": 18,
+    "invoices": 44,
+    "activities": 630,
+    "tasks": 44
+  },
+  "actual": {
+    "companies": 1,
+    "contacts": 30,
+    "deals": 18,
+    "invoices": 44,
+    "activities": 630,
+    "tasks": 44
+  },
+  "activityTypes": {
+    "email": 324,
+    "call": 180,
+    "meeting": 126
+  },
+  "uniqueActivityIds": 630,
+  "uniqueNormalizedDescriptions": 625,
+  "missingText": 0,
+  "danglingContactReferences": 0,
+  "checks": [],
+  "notes": [
+    "Syntactic/structural audit only; independent EDA 19, NLP 20, NLP 20A remain required."
+  ]
+}

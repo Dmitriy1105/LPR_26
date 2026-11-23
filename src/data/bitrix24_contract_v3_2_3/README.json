@@ -1,0 +1,8 @@
+{
+  "synthetic": true,
+  "version": "3.2.3",
+  "seed": 20261123,
+  "source": "src/data/bitrix24_contract_v2",
+  "manifest": "manifest.json",
+  "warning": "Fictional CRM communication data. Not real client records or validated model labels."
+}
