@@ -13,7 +13,7 @@ for(let i=1;i<=13;i++){
  const data=JSON.parse(fs.readFileSync(file,'utf8'));
  if(!Array.isArray(data.result))throw Error('Unexpected REST shape: '+file);
  for(const row of data.result){
-  const old=String(row.DESCRIPTION);const seg=old.split(/(?<=[.!?])\\s+/u);
+  const old=String(row.DESCRIPTION);const seg=old.split(/(?<=[.!?])\s+/u);
   // Regeneration is idempotent: a second run preserves the already-generated text.
   if(old.includes('(обращение '+row.ID+')')){
    if(seg.length!==4)throw Error('Four-segment contract violated: '+row.ID);
@@ -22,12 +22,12 @@ for(let i=1;i<=13;i++){
   if(seg.length!==4||!seg[1].includes('функциональные роли:'))throw Error('Unexpected original segments: '+row.ID);
   const id=Number(row.ID),topic=String(row.SUBJECT||'текущие условия').split(':').slice(-1)[0].trim();
   const action=actions[(id*17+3)%actions.length];
-  const second=seg[1].replace(/\\.$/,'')+'; по обсуждаемому вопросу представитель клиента '+action+'.';
+  const second=seg[1].replace(/\.$/,'')+'; по обсуждаемому вопросу представитель клиента '+action+'.';
   const description=`${openings[id%openings.length]} «${topic}» (обращение ${id}) уточнили исходные условия. ${second} ${details[(id*7+1)%details.length]}. ${endings[(id*11+2)%endings.length]}.`;
-  if(description.split(/(?<=[.!?])\\s+/u).length!==4)throw Error('Bad segmentation: '+id);
+  if(description.split(/(?<=[.!?])\s+/u).length!==4)throw Error('Bad segmentation: '+id);
   row.DESCRIPTION=description;count++;texts.add(description);
  }
- fs.writeFileSync(file,JSON.stringify(data,null,2)+'\\n');
+ fs.writeFileSync(file,JSON.stringify(data,null,2)+'\n');
 }
 if(count!==630||texts.size!==630)throw Error('Count or uniqueness check failed: '+count+'/'+texts.size);
 console.log(JSON.stringify({version:'3.3.0',activities:count,unique_descriptions:texts.size,compatibility:'unchanged CRM schema and page paths',note:'Role cooccurrence does not verify actor identity'},null,2));
