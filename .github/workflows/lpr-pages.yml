@@ -11,9 +11,10 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  actions: read
 concurrency:
   group: lpr-pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 jobs:
   deploy:
     environment:
@@ -28,5 +29,27 @@ jobs:
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public
+      - name: Wait for Pages artifact visibility
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_ID: ${{ github.run_id }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          for attempt in {1..20}; do
+            count="$(gh api "repos/$REPO/actions/runs/$RUN_ID/artifacts?per_page=100" --jq '[.artifacts[] | select(.name == "github-pages" and .expired == false)] | length')"
+            echo "Pages artifact count: $count (check $attempt/20)"
+            if [[ "$count" == "1" ]]; then
+              exit 0
+            fi
+            if [[ "$count" -gt 1 ]]; then
+              echo "::error::Multiple github-pages artifacts detected in this workflow run. Do not rerun failed jobs; start a new workflow run instead."
+              exit 1
+            fi
+            sleep 3
+          done
+          echo "::error::Pages artifact did not become visible in GitHub API"
+          exit 1
       - id: deployment
         uses: actions/deploy-pages@v4
