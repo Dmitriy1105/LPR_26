@@ -1,0 +1,9 @@
+{
+  "version": "3.3.0",
+  "activities": 630,
+  "unique_descriptions": 630,
+  "expected_segments": 2520,
+  "crm_non_description_fields": "preserved",
+  "actor_identity_verified": 0,
+  "notes": "Role-action same-segment context is not verified person attribution."
+}
