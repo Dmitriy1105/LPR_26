@@ -2,7 +2,7 @@ name: LPR prototype GitHub Pages
 on:
   push:
     branches:
-      - feature/lpr-visualization-data-v1
+      - main
     paths:
       - 'public/**'
       - '.github/workflows/lpr-pages.yml'
