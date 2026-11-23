@@ -1,0 +1,104 @@
+name: Build and audit synthetic CRM v3.2.3
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - feature/synthetic-bank-v3.2.3-nlp-diversity
+    paths:
+      - .github/workflows/build-v323.yml
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/synthetic-bank-v3.2.3-nlp-diversity
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Generate fixtures
+        run: node scripts/generate_bitrix24_contract_v3_2_3.mjs
+      - name: Audit generated fixtures
+        run: |
+          node --input-type=module <<'JS'
+          import fs from 'node:fs';
+          import path from 'node:path';
+          const root='src/data/bitrix24_contract_v3_2_3';
+          const read=(p)=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
+          const manifest=read('manifest.json');
+          const expected={companies:1,contacts:30,deals:18,invoices:44,activities:630,tasks:44};
+          const collections={};
+          const results={};
+          const errors=[];
+          for(const [key,n] of Object.entries(expected)){
+            const method=manifest.methods.find(x=>x.key===key);
+            if(!method){errors.push('Missing method '+key);continue;}
+            const records=[];
+            for(const page of method.pages){
+              const p=read(page.file);
+              const parts=page.file.startsWith('activities/')?p.result:
+                page.file.startsWith('tasks/')?p.result.tasks:p.result.items;
+              if(!Array.isArray(parts)){errors.push('Invalid result '+page.file);continue;}
+              if(parts.length!==page.count)errors.push('Page count mismatch '+page.file);
+              records.push(...parts);
+            }
+            collections[key]=records;
+            results[key]=records.length;
+            if(records.length!==n||manifest.recordCounts[key]!==n||method.recordCount!==n)
+              errors.push('Count mismatch '+key+': '+records.length);
+            const ids=records.map(x=>String(x.ID??x.id));
+            if(new Set(ids).size!==ids.length)errors.push('Duplicate IDs '+key);
+          }
+          const activities=collections.activities||[];
+          const contacts=new Set((collections.contacts||[]).map(x=>String(x.id)));
+          const activityIds=new Set();
+          const normalized=new Set();
+          const types={email:0,call:0,meeting:0};
+          let dangling=0,missingText=0;
+          for(const a of activities){
+            const id=String(a.ID);
+            if(activityIds.has(id))errors.push('Duplicate activity '+id);
+            activityIds.add(id);
+            const type=String(a.TYPE_ID)==='4'?'email':String(a.TYPE_ID)==='2'?'call':'meeting';
+            types[type]++;
+            const s=String(a.DESCRIPTION||'').trim();
+            if(!s)missingText++;
+            normalized.add(s.toLowerCase().replace(/\s+/g,' '));
+            for(const c of a.COMMUNICATIONS||[]){
+              if(String(c.ENTITY_TYPE_ID)==='3'&&!contacts.has(String(c.ENTITY_ID)))dangling++;
+            }
+          }
+          if(dangling)errors.push('Dangling contact refs '+dangling);
+          if(missingText)errors.push('Missing descriptions '+missingText);
+          if(!fs.existsSync(path.join(root,'id_mapping.json')))errors.push('Missing id_mapping.json');
+          for(const f of ['access_denied.json','insufficient_scope.json','invalid_credentials.json']){
+            if(!fs.existsSync(path.join(root,'errors',f)))errors.push('Missing errors/'+f);
+          }
+          if(!fs.existsSync(path.join(root,'README.json')))errors.push('Missing README.json');
+          if(manifest.generatorVersion!=='3.2.3')errors.push('Incorrect generatorVersion');
+          const report={dataset:'v3.2.3',status:errors.length?'FAIL':'PASS',expected,actual:results,
+            activityTypes:types,uniqueActivityIds:activityIds.size,
+            uniqueNormalizedDescriptions:normalized.size,missingText,danglingContactReferences:dangling,
+            checks:errors,notes:['Syntactic/structural audit only; independent EDA 19, NLP 20, NLP 20A remain required.']};
+          fs.mkdirSync('reports/v3_2_3',{recursive:true});
+          fs.writeFileSync('reports/v3_2_3/structural_audit.json',JSON.stringify(report,null,2)+'\n');
+          console.log(JSON.stringify(report,null,2));
+          if(errors.length)process.exitCode=1;
+          JS
+      - name: Commit verified dataset and audit
+        if: success()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/bitrix24_contract_v3_2_3 reports/v3_2_3/structural_audit.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Build and structurally audit complete v3.2.3 dataset"
+            git push
+          fi
