@@ -1,0 +1,55 @@
+{
+  "dataset": "nlp_enrichment_v3.3.1",
+  "dataset_scope": "synthetic_mvp_graph",
+  "ground_truth_included": false,
+  "limitations": [
+    "Synthetic dataset only",
+    "Narrow template-based NLP evaluation",
+    "Directed actions are not verified influence",
+    "Human review required for influence claims",
+    "No automatic decision-maker classification"
+  ],
+  "manifest_version": "1.0.1",
+  "pipeline_versions": {
+    "nlp_enrichment_02": "1.0.1",
+    "nlp_enrichment_03": "1.0.0",
+    "nlp_enrichment_04": "1.0.0",
+    "nlp_enrichment_05": "1.0.0"
+  },
+  "project": "LPR_26",
+  "public_files": [
+    {
+      "filename": "lpr_final_payload.json",
+      "sha256": "8e32fef5eedfc794bed803b85b8758ad21386bdde93f88a01f8360abcb2e2ed8",
+      "size_bytes": 178674
+    },
+    {
+      "filename": "lpr_final_audit.csv",
+      "sha256": "a01fcbe0149ca5721b4ed266ee8ef38a3dca1b375f027dfa4c933ca36be008c6",
+      "size_bytes": 2448
+    }
+  ],
+  "quality_control": {
+    "checks_failed": 0,
+    "checks_passed": 52,
+    "checks_total": 52
+  },
+  "real_world_influence_verified": false,
+  "record_counts": {
+    "action_edges": 29,
+    "action_evidence": 73,
+    "communication_edges": 54,
+    "communication_evidence": 153,
+    "company_analytics": 1,
+    "component_analytics": 13,
+    "contact_analytics": 30,
+    "nodes": 30,
+    "relation_analytics": 54,
+    "temporal_analytics": 53
+  },
+  "release": "visualization-data-v1",
+  "requires_human_review": true,
+  "source_branch": "feature/nlp-influence-v3.3.1-mvp",
+  "source_crm_contract": "bitrix24_contract_v3_2_3",
+  "source_manifest_sha256": "135610c1f97db88ed62e36b755641fa72ccb4835510396efba3402815e8a47aa"
+}

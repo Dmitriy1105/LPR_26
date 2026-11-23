@@ -1,0 +1,6201 @@
+{
+  "analytics": {
+    "companies": [
+      {
+        "action_evidence_count": 73,
+        "company_id": "42",
+        "influence_verified": false,
+        "observed_action_contact_count": 16,
+        "observed_directed_pair_count": 29,
+        "relation_type_counts": {
+          "delegation": 18,
+          "objection": 12,
+          "recommendation": 15,
+          "request": 15,
+          "support": 13
+        },
+        "synthetic": true
+      }
+    ],
+    "components": [
+      {
+        "communication_edge_count": 54,
+        "component_id": 1,
+        "contact_count": 18,
+        "contact_ids": [
+          "1001",
+          "1002",
+          "1003",
+          "1004",
+          "1006",
+          "1008",
+          "1009",
+          "1010",
+          "1011",
+          "1014",
+          "1015",
+          "1016",
+          "1020",
+          "1021",
+          "1022",
+          "1026",
+          "1027",
+          "1028"
+        ]
+      },
+      {
+        "communication_edge_count": 0,
+        "component_id": 2,
+        "contact_count": 1,
+        "contact_ids": [
+          "1005"
+        ]
+      },
+      {
+        "communication_edge_count": 0,
+        "component_id": 3,
+        "contact_count": 1,
+        "contact_ids": [
+          "1007"
+        ]
+      },
+      {
+        "communication_edge_count": 0,
+        "component_id": 4,
+        "contact_count": 1,
+        "contact_ids": [
+          "1012"
+        ]
+      },
+      {
+        "communication_edge_count": 0,
+        "component_id": 5,
+        "contact_count": 1,
+        "contact_ids": [
+          "1013"
+        ]
+      },
+      {
+        "communication_edge_count": 0,
+        "component_id": 6,
+        "contact_count": 1,
+        "contact_ids": [
+          "1017"
+        ]
+      },
+      {
+        "communication_edge_count": 0,
+        "component_id": 7,
+        "contact_count": 1,
+        "contact_ids": [
+          "1018"
+        ]
+      },
+      {
+        "communication_edge_count": 0,
+        "component_id": 8,
+        "contact_count": 1,
+        "contact_ids": [
+          "1019"
+        ]
+      },
+      {
+        "communication_edge_count": 0,
+        "component_id": 9,
+        "contact_count": 1,
+        "contact_ids": [
+          "1023"
+        ]
+      },
+      {
+        "communication_edge_count": 0,
+        "component_id": 10,
+        "contact_count": 1,
+        "contact_ids": [
+          "1024"
+        ]
+      },
+      {
+        "communication_edge_count": 0,
+        "component_id": 11,
+        "contact_count": 1,
+        "contact_ids": [
+          "1025"
+        ]
+      },
+      {
+        "communication_edge_count": 0,
+        "component_id": 12,
+        "contact_count": 1,
+        "contact_ids": [
+          "1029"
+        ]
+      },
+      {
+        "communication_edge_count": 0,
+        "component_id": 13,
+        "contact_count": 1,
+        "contact_ids": [
+          "1030"
+        ]
+      }
+    ],
+    "contacts": [
+      {
+        "action_hhi": 0.40625,
+        "communication_component_id": 1,
+        "communication_degree": 7,
+        "communication_degree_centrality": 0.241379,
+        "communication_hhi": 0.1875,
+        "communication_pair_incidence_count": 16,
+        "contact_id": "1001",
+        "contact_name": "Александр Белов",
+        "incoming_action_count": 0,
+        "incoming_action_partner_count": 0,
+        "influence_verified": false,
+        "outgoing_action_count": 8,
+        "outgoing_action_partner_count": 3,
+        "reciprocal_action_partner_count": 0,
+        "synthetic": true,
+        "top_action_partner_share": 0.5,
+        "top_communication_partner_share": 0.25,
+        "total_action_count": 8,
+        "unique_action_partner_count": 3
+      },
+      {
+        "action_hhi": 0.5,
+        "communication_component_id": 1,
+        "communication_degree": 4,
+        "communication_degree_centrality": 0.137931,
+        "communication_hhi": 0.28,
+        "communication_pair_incidence_count": 5,
+        "contact_id": "1002",
+        "contact_name": "Мария Соколова",
+        "incoming_action_count": 1,
+        "incoming_action_partner_count": 1,
+        "influence_verified": false,
+        "outgoing_action_count": 1,
+        "outgoing_action_partner_count": 1,
+        "reciprocal_action_partner_count": 0,
+        "synthetic": true,
+        "top_action_partner_share": 0.5,
+        "top_communication_partner_share": 0.4,
+        "total_action_count": 2,
+        "unique_action_partner_count": 2
+      },
+      {
+        "action_hhi": 0.204082,
+        "communication_component_id": 1,
+        "communication_degree": 6,
+        "communication_degree_centrality": 0.206897,
+        "communication_hhi": 0.236295,
+        "communication_pair_incidence_count": 23,
+        "contact_id": "1003",
+        "contact_name": "Дмитрий Миронов",
+        "incoming_action_count": 11,
+        "incoming_action_partner_count": 4,
+        "influence_verified": false,
+        "outgoing_action_count": 3,
+        "outgoing_action_partner_count": 1,
+        "reciprocal_action_partner_count": 0,
+        "synthetic": true,
+        "top_action_partner_share": 0.214286,
+        "top_communication_partner_share": 0.391304,
+        "total_action_count": 14,
+        "unique_action_partner_count": 5
+      },
+      {
+        "action_hhi": 0.625,
+        "communication_component_id": 1,
+        "communication_degree": 6,
+        "communication_degree_centrality": 0.206897,
+        "communication_hhi": 0.33564,
+        "communication_pair_incidence_count": 17,
+        "contact_id": "1004",
+        "contact_name": "Анна Орлова",
+        "incoming_action_count": 3,
+        "incoming_action_partner_count": 1,
+        "influence_verified": false,
+        "outgoing_action_count": 1,
+        "outgoing_action_partner_count": 1,
+        "reciprocal_action_partner_count": 0,
+        "synthetic": true,
+        "top_action_partner_share": 0.75,
+        "top_communication_partner_share": 0.529412,
+        "total_action_count": 4,
+        "unique_action_partner_count": 2
+      },
+      {
+        "action_hhi": 0.0,
+        "communication_component_id": 2,
+        "communication_degree": 0,
+        "communication_degree_centrality": 0.0,
+        "communication_hhi": 0.0,
+        "communication_pair_incidence_count": 0,
+        "contact_id": "1005",
+        "contact_name": "Илья Власов",
+        "incoming_action_count": 0,
+        "incoming_action_partner_count": 0,
+        "influence_verified": false,
+        "outgoing_action_count": 0,
+        "outgoing_action_partner_count": 0,
+        "reciprocal_action_partner_count": 0,
+        "synthetic": true,
+        "top_action_partner_share": 0.0,
+        "top_communication_partner_share": 0.0,
+        "total_action_count": 0,
+        "unique_action_partner_count": 0
+      },
+      {
+        "action_hhi": 0.283951,
+        "communication_component_id": 1,
+        "communication_degree": 7,
+        "communication_degree_centrality": 0.241379,
+        "communication_hhi": 0.183432,
+        "communication_pair_incidence_count": 13,
+        "contact_id": "1006",
+        "contact_name": "Елена Громова",
+        "incoming_action_count": 1,
+        "incoming_action_partner_count": 1,
+        "influence_verified": false,
+        "outgoing_action_count": 8,
+        "outgoing_action_partner_count": 3,
+        "reciprocal_action_partner_count": 0,
+        "synthetic": true,
+        "top_action_partner_share": 0.333333,
+        "top_communication_partner_share": 0.230769,
+        "total_action_count": 9,
+        "unique_action_partner_count": 4
+      },
+      {
+        "action_hhi": 0.0,
+        "communication_component_id": 3,
+        "communication_degree": 0,
+        "communication_degree_centrality": 0.0,
+        "communication_hhi": 0.0,
+        "communication_pair_incidence_count": 0,
+        "contact_id": "1007",
+        "contact_name": "Николай Ершов",
+        "incoming_action_count": 0,
+        "incoming_action_partner_count": 0,
+        "influence_verified": false,
+        "outgoing_action_count": 0,
+        "outgoing_action_partner_count": 0,
+        "reciprocal_action_partner_count": 0,
+        "synthetic": true,
+        "top_action_partner_share": 0.0,
+        "top_communication_partner_share": 0.0,
+        "total_action_count": 0,
+        "unique_action_partner_count": 0
+      },
+      {
+        "action_hhi": 1.0,
+        "communication_component_id": 1,
+        "communication_degree": 4,
+        "communication_degree_centrality": 0.137931,
+        "communication_hhi": 0.265306,
+        "communication_pair_incidence_count": 7,
+        "contact_id": "1008",
+        "contact_name": "Ольга Крылова",
+        "incoming_action_count": 0,
+        "incoming_action_partner_count": 0,
+        "influence_verified": false,
+        "outgoing_action_count": 1,
+        "outgoing_action_partner_count": 1,
+        "reciprocal_action_partner_count": 0,
+        "synthetic": true,
+        "top_action_partner_share": 1.0,
+        "top_communication_partner_share": 0.285714,
+        "total_action_count": 1,
+        "unique_action_partner_count": 1
+      },
+      {
+        "action_hhi": 0.209877,
+        "communication_component_id": 1,
+        "communication_degree": 6,
+        "communication_degree_centrality": 0.206897,
+        "communication_hhi": 0.227811,
+        "communication_pair_incidence_count": 26,
+        "contact_id": "1009",
+        "contact_name": "Андрей Данилов",
+        "incoming_action_count": 13,
+        "incoming_action_partner_count": 4,
+        "influence_verified": false,
+        "outgoing_action_count": 5,
+        "outgoing_action_partner_count": 1,
+        "reciprocal_action_partner_count": 0,
+        "synthetic": true,
+        "top_action_partner_share": 0.277778,
+        "top_communication_partner_share": 0.384615,
+        "total_action_count": 18,
+        "unique_action_partner_count": 5
+      },
+      {
+        "action_hhi": 1.0,
+        "communication_component_id": 1,
+        "communication_degree": 6,
+        "communication_degree_centrality": 0.206897,
+        "communication_hhi": 0.384083,
+        "communication_pair_incidence_count": 17,
+        "contact_id": "1010",
+        "contact_name": "Ирина Фомина",
+        "incoming_action_count": 5,
+        "incoming_action_partner_count": 1,
+        "influence_verified": false,
+        "outgoing_action_count": 0,
+        "outgoing_action_partner_count": 0,
+        "reciprocal_action_partner_count": 0,
+        "synthetic": true,
+        "top_action_partner_share": 1.0,
+        "top_communication_partner_share": 0.588235,
+        "total_action_count": 5,
+        "unique_action_partner_count": 1
+      },
+      {
+        "action_hhi": 0.2,
+        "communication_component_id": 1,
+        "communication_degree": 10,
+        "communication_degree_centrality": 0.344828,
+        "communication_hhi": 0.122873,
+        "communication_pair_incidence_count": 23,
+        "contact_id": "1011",
+        "contact_name": "Михаил Титов",
+        "incoming_action_count": 2,
+        "incoming_action_partner_count": 2,
+        "influence_verified": false,
+        "outgoing_action_count": 8,
+        "outgoing_action_partner_count": 4,
+        "reciprocal_action_partner_count": 0,
+        "synthetic": true,
+        "top_action_partner_share": 0.3,
+        "top_communication_partner_share": 0.173913,
+        "total_action_count": 10,
+        "unique_action_partner_count": 6
+      },
+      {
+        "action_hhi": 0.0,
+        "communication_component_id": 4,
+        "communication_degree": 0,
+        "communication_degree_centrality": 0.0,
+        "communication_hhi": 0.0,
+        "communication_pair_incidence_count": 0,
+        "contact_id": "1012",
+        "contact_name": "Наталья Баранова",
+        "incoming_action_count": 0,
+        "incoming_action_partner_count": 0,
+        "influence_verified": false,
+        "outgoing_action_count": 0,
+        "outgoing_action_partner_count": 0,
+        "reciprocal_action_partner_count": 0,
+        "synthetic": true,
+        "top_action_partner_share": 0.0,
+        "top_communication_partner_share": 0.0,
+        "total_action_count": 0,
+        "unique_action_partner_count": 0
+      },
+      {
+        "action_hhi": 0.0,
+        "communication_component_id": 5,
+        "communication_degree": 0,
+        "communication_degree_centrality": 0.0,
+        "communication_hhi": 0.0,
+        "communication_pair_incidence_count": 0,
+        "contact_id": "1013",
+        "contact_name": "Павел Жуков",
+        "incoming_action_count": 0,
+        "incoming_action_partner_count": 0,
+        "influence_verified": false,
+        "outgoing_action_count": 0,
+        "outgoing_action_partner_count": 0,
+        "reciprocal_action_partner_count": 0,
+        "synthetic": true,
+        "top_action_partner_share": 0.0,
+        "top_communication_partner_share": 0.0,
+        "total_action_count": 0,
+        "unique_action_partner_count": 0
+      },
+      {
+        "action_hhi": 0.0,
+        "communication_component_id": 1,
+        "communication_degree": 2,
+        "communication_degree_centrality": 0.068966,
+        "communication_hhi": 0.52,
+        "communication_pair_incidence_count": 5,
+        "contact_id": "1014",
+        "contact_name": "Светлана Романова",
+        "incoming_action_count": 0,
+        "incoming_action_partner_count": 0,
+        "influence_verified": false,
+        "outgoing_action_count": 0,
+        "outgoing_action_partner_count": 0,
+        "reciprocal_action_partner_count": 0,
+        "synthetic": true,
+        "top_action_partner_share": 0.0,
+        "top_communication_partner_share": 0.6,
+        "total_action_count": 0,
+        "unique_action_partner_count": 0
+      },
+      {
+        "action_hhi": 0.387755,
+        "communication_component_id": 1,
+        "communication_degree": 5,
+        "communication_degree_centrality": 0.172414,
+        "communication_hhi": 0.315972,
+        "communication_pair_incidence_count": 24,
+        "contact_id": "1015",
+        "contact_name": "Кирилл Морозов",
+        "incoming_action_count": 9,
+        "incoming_action_partner_count": 4,
+        "influence_verified": false,
+        "outgoing_action_count": 5,
+        "outgoing_action_partner_count": 1,
+        "reciprocal_action_partner_count": 1,
+        "synthetic": true,
+        "top_action_partner_share": 0.571429,
+        "top_communication_partner_share": 0.5,
+        "total_action_count": 14,
+        "unique_action_partner_count": 4
+      },
+      {
+        "action_hhi": 0.271605,
+        "communication_component_id": 1,
+        "communication_degree": 11,
+        "communication_degree_centrality": 0.37931,
+        "communication_hhi": 0.162893,
+        "communication_pair_incidence_count": 37,
+        "contact_id": "1016",
+        "contact_name": "Вера Калинина",
+        "incoming_action_count": 6,
+        "incoming_action_partner_count": 2,
+        "influence_verified": false,
+        "outgoing_action_count": 12,
+        "outgoing_action_partner_count": 5,
+        "reciprocal_action_partner_count": 1,
+        "synthetic": true,
+        "top_action_partner_share": 0.444444,
+        "top_communication_partner_share": 0.324324,
+        "total_action_count": 18,
+        "unique_action_partner_count": 6
+      },
+      {
+        "action_hhi": 0.0,
+        "communication_component_id": 6,
+        "communication_degree": 0,
+        "communication_degree_centrality": 0.0,
+        "communication_hhi": 0.0,
+        "communication_pair_incidence_count": 0,
+        "contact_id": "1017",
+        "contact_name": "Роман Савин",
+        "incoming_action_count": 0,
+        "incoming_action_partner_count": 0,
+        "influence_verified": false,
+        "outgoing_action_count": 0,
+        "outgoing_action_partner_count": 0,
+        "reciprocal_action_partner_count": 0,
+        "synthetic": true,
+        "top_action_partner_share": 0.0,
+        "top_communication_partner_share": 0.0,
+        "total_action_count": 0,
+        "unique_action_partner_count": 0
+      },
+      {
+        "action_hhi": 0.0,
+        "communication_component_id": 7,
+        "communication_degree": 0,
+        "communication_degree_centrality": 0.0,
+        "communication_hhi": 0.0,
+        "communication_pair_incidence_count": 0,
+        "contact_id": "1018",
+        "contact_name": "Татьяна Котова",
+        "incoming_action_count": 0,
+        "incoming_action_partner_count": 0,
+        "influence_verified": false,
+        "outgoing_action_count": 0,
+        "outgoing_action_partner_count": 0,
+        "reciprocal_action_partner_count": 0,
+        "synthetic": true,
+        "top_action_partner_share": 0.0,
+        "top_communication_partner_share": 0.0,
+        "total_action_count": 0,
+        "unique_action_partner_count": 0
+      },
+      {
+        "action_hhi": 0.0,
+        "communication_component_id": 8,
+        "communication_degree": 0,
+        "communication_degree_centrality": 0.0,
+        "communication_hhi": 0.0,
+        "communication_pair_incidence_count": 0,
+        "contact_id": "1019",
+        "contact_name": "Максим Фролов",
+        "incoming_action_count": 0,
+        "incoming_action_partner_count": 0,
+        "influence_verified": false,
+        "outgoing_action_count": 0,
+        "outgoing_action_partner_count": 0,
+        "reciprocal_action_partner_count": 0,
+        "synthetic": true,
+        "top_action_partner_share": 0.0,
+        "top_communication_partner_share": 0.0,
+        "total_action_count": 0,
+        "unique_action_partner_count": 0
+      },
+      {
+        "action_hhi": 0.0,
+        "communication_component_id": 1,
+        "communication_degree": 3,
+        "communication_degree_centrality": 0.103448,
+        "communication_hhi": 0.333333,
+        "communication_pair_incidence_count": 3,
+        "contact_id": "1020",
+        "contact_name": "Алина Климова",
+        "incoming_action_count": 0,
+        "incoming_action_partner_count": 0,
+        "influence_verified": false,
+        "outgoing_action_count": 0,
+        "outgoing_action_partner_count": 0,
+        "reciprocal_action_partner_count": 0,
+        "synthetic": true,
+        "top_action_partner_share": 0.0,
+        "top_communication_partner_share": 0.333333,
+        "total_action_count": 0,
+        "unique_action_partner_count": 0
+      },
+      {
+        "action_hhi": 0.191111,
+        "communication_component_id": 1,
+        "communication_degree": 8,
+        "communication_degree_centrality": 0.275862,
+        "communication_hhi": 0.170918,
+        "communication_pair_incidence_count": 28,
+        "contact_id": "1021",
+        "contact_name": "Виктор Быков",
+        "incoming_action_count": 6,
+        "incoming_action_partner_count": 3,
+        "influence_verified": false,
+        "outgoing_action_count": 9,
+        "outgoing_action_partner_count": 3,
+        "reciprocal_action_partner_count": 0,
+        "synthetic": true,
+        "top_action_partner_share": 0.266667,
+        "top_communication_partner_share": 0.285714,
+        "total_action_count": 15,
+        "unique_action_partner_count": 6
+      },
+      {
+        "action_hhi": 0.68,
+        "communication_component_id": 1,
+        "communication_degree": 5,
+        "communication_degree_centrality": 0.172414,
+        "communication_hhi": 0.387755,
+        "communication_pair_incidence_count": 14,
+        "contact_id": "1022",
+        "contact_name": "Полина Лебедева",
+        "incoming_action_count": 4,
+        "incoming_action_partner_count": 1,
+        "influence_verified": false,
+        "outgoing_action_count": 1,
+        "outgoing_action_partner_count": 1,
+        "reciprocal_action_partner_count": 0,
+        "synthetic": true,
+        "top_action_partner_share": 0.8,
+        "top_communication_partner_share": 0.571429,
+        "total_action_count": 5,
+        "unique_action_partner_count": 2
+      },
+      {
+        "action_hhi": 0.0,
+        "communication_component_id": 9,
+        "communication_degree": 0,
+        "communication_degree_centrality": 0.0,
+        "communication_hhi": 0.0,
+        "communication_pair_incidence_count": 0,
+        "contact_id": "1023",
+        "contact_name": "Сергей Осипов",
+        "incoming_action_count": 0,
+        "incoming_action_partner_count": 0,
+        "influence_verified": false,
+        "outgoing_action_count": 0,
+        "outgoing_action_partner_count": 0,
+        "reciprocal_action_partner_count": 0,
+        "synthetic": true,
+        "top_action_partner_share": 0.0,
+        "top_communication_partner_share": 0.0,
+        "total_action_count": 0,
+        "unique_action_partner_count": 0
+      },
+      {
+        "action_hhi": 0.0,
+        "communication_component_id": 10,
+        "communication_degree": 0,
+        "communication_degree_centrality": 0.0,
+        "communication_hhi": 0.0,
+        "communication_pair_incidence_count": 0,
+        "contact_id": "1024",
+        "contact_name": "Юлия Зорина",
+        "incoming_action_count": 0,
+        "incoming_action_partner_count": 0,
+        "influence_verified": false,
+        "outgoing_action_count": 0,
+        "outgoing_action_partner_count": 0,
+        "reciprocal_action_partner_count": 0,
+        "synthetic": true,
+        "top_action_partner_share": 0.0,
+        "top_communication_partner_share": 0.0,
+        "total_action_count": 0,
+        "unique_action_partner_count": 0
+      },
+      {
+        "action_hhi": 0.0,
+        "communication_component_id": 11,
+        "communication_degree": 0,
+        "communication_degree_centrality": 0.0,
+        "communication_hhi": 0.0,
+        "communication_pair_incidence_count": 0,
+        "contact_id": "1025",
+        "contact_name": "Артём Гущин",
+        "incoming_action_count": 0,
+        "incoming_action_partner_count": 0,
+        "influence_verified": false,
+        "outgoing_action_count": 0,
+        "outgoing_action_partner_count": 0,
+        "reciprocal_action_partner_count": 0,
+        "synthetic": true,
+        "top_action_partner_share": 0.0,
+        "top_communication_partner_share": 0.0,
+        "total_action_count": 0,
+        "unique_action_partner_count": 0
+      },
+      {
+        "action_hhi": 0.387755,
+        "communication_component_id": 1,
+        "communication_degree": 8,
+        "communication_degree_centrality": 0.275862,
+        "communication_hhi": 0.155556,
+        "communication_pair_incidence_count": 15,
+        "contact_id": "1026",
+        "contact_name": "Дарья Никитина",
+        "incoming_action_count": 1,
+        "incoming_action_partner_count": 1,
+        "influence_verified": false,
+        "outgoing_action_count": 6,
+        "outgoing_action_partner_count": 2,
+        "reciprocal_action_partner_count": 0,
+        "synthetic": true,
+        "top_action_partner_share": 0.428571,
+        "top_communication_partner_share": 0.2,
+        "total_action_count": 7,
+        "unique_action_partner_count": 3
+      },
+      {
+        "action_hhi": 0.289256,
+        "communication_component_id": 1,
+        "communication_degree": 5,
+        "communication_degree_centrality": 0.172414,
+        "communication_hhi": 0.274238,
+        "communication_pair_incidence_count": 19,
+        "contact_id": "1027",
+        "contact_name": "Игорь Комаров",
+        "incoming_action_count": 7,
+        "incoming_action_partner_count": 3,
+        "influence_verified": false,
+        "outgoing_action_count": 4,
+        "outgoing_action_partner_count": 1,
+        "reciprocal_action_partner_count": 0,
+        "synthetic": true,
+        "top_action_partner_share": 0.363636,
+        "top_communication_partner_share": 0.421053,
+        "total_action_count": 11,
+        "unique_action_partner_count": 4
+      },
+      {
+        "action_hhi": 0.68,
+        "communication_component_id": 1,
+        "communication_degree": 5,
+        "communication_degree_centrality": 0.172414,
+        "communication_hhi": 0.377551,
+        "communication_pair_incidence_count": 14,
+        "contact_id": "1028",
+        "contact_name": "Ксения Лазарева",
+        "incoming_action_count": 4,
+        "incoming_action_partner_count": 1,
+        "influence_verified": false,
+        "outgoing_action_count": 1,
+        "outgoing_action_partner_count": 1,
+        "reciprocal_action_partner_count": 0,
+        "synthetic": true,
+        "top_action_partner_share": 0.8,
+        "top_communication_partner_share": 0.571429,
+        "total_action_count": 5,
+        "unique_action_partner_count": 2
+      },
+      {
+        "action_hhi": 0.0,
+        "communication_component_id": 12,
+        "communication_degree": 0,
+        "communication_degree_centrality": 0.0,
+        "communication_hhi": 0.0,
+        "communication_pair_incidence_count": 0,
+        "contact_id": "1029",
+        "contact_name": "Денис Медведев",
+        "incoming_action_count": 0,
+        "incoming_action_partner_count": 0,
+        "influence_verified": false,
+        "outgoing_action_count": 0,
+        "outgoing_action_partner_count": 0,
+        "reciprocal_action_partner_count": 0,
+        "synthetic": true,
+        "top_action_partner_share": 0.0,
+        "top_communication_partner_share": 0.0,
+        "total_action_count": 0,
+        "unique_action_partner_count": 0
+      },
+      {
+        "action_hhi": 0.0,
+        "communication_component_id": 13,
+        "communication_degree": 0,
+        "communication_degree_centrality": 0.0,
+        "communication_hhi": 0.0,
+        "communication_pair_incidence_count": 0,
+        "contact_id": "1030",
+        "contact_name": "Екатерина Волкова",
+        "incoming_action_count": 0,
+        "incoming_action_partner_count": 0,
+        "influence_verified": false,
+        "outgoing_action_count": 0,
+        "outgoing_action_partner_count": 0,
+        "reciprocal_action_partner_count": 0,
+        "synthetic": true,
+        "top_action_partner_share": 0.0,
+        "top_communication_partner_share": 0.0,
+        "total_action_count": 0,
+        "unique_action_partner_count": 0
+      }
+    ],
+    "relations": [
+      {
+        "action_a_to_b_count": 3,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 4,
+        "contact_a": "1001",
+        "contact_b": "1003",
+        "has_communication": true,
+        "has_textual_action": true,
+        "influence_verified": false,
+        "pair_id": "pair:1001:1003",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 3
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 1,
+        "contact_a": "1001",
+        "contact_b": "1004",
+        "has_communication": true,
+        "has_textual_action": false,
+        "influence_verified": false,
+        "pair_id": "pair:1001:1004",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 0
+      },
+      {
+        "action_a_to_b_count": 4,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 4,
+        "contact_a": "1001",
+        "contact_b": "1009",
+        "has_communication": true,
+        "has_textual_action": true,
+        "influence_verified": false,
+        "pair_id": "pair:1001:1009",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 4
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 1,
+        "contact_a": "1001",
+        "contact_b": "1010",
+        "has_communication": true,
+        "has_textual_action": false,
+        "influence_verified": false,
+        "pair_id": "pair:1001:1010",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 0
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 1,
+        "contact_a": "1001",
+        "contact_b": "1026",
+        "has_communication": true,
+        "has_textual_action": false,
+        "influence_verified": false,
+        "pair_id": "pair:1001:1026",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 0
+      },
+      {
+        "action_a_to_b_count": 1,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 3,
+        "contact_a": "1001",
+        "contact_b": "1027",
+        "has_communication": true,
+        "has_textual_action": true,
+        "influence_verified": false,
+        "pair_id": "pair:1001:1027",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 1
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 2,
+        "contact_a": "1001",
+        "contact_b": "1028",
+        "has_communication": true,
+        "has_textual_action": false,
+        "influence_verified": false,
+        "pair_id": "pair:1001:1028",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 0
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 1,
+        "contact_a": "1002",
+        "contact_b": "1003",
+        "has_communication": true,
+        "has_textual_action": false,
+        "influence_verified": false,
+        "pair_id": "pair:1002:1003",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 0
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 1,
+        "communication_pair_incidence_count": 2,
+        "contact_a": "1002",
+        "contact_b": "1004",
+        "has_communication": true,
+        "has_textual_action": true,
+        "influence_verified": false,
+        "pair_id": "pair:1002:1004",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 1
+      },
+      {
+        "action_a_to_b_count": 1,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 1,
+        "contact_a": "1002",
+        "contact_b": "1006",
+        "has_communication": true,
+        "has_textual_action": true,
+        "influence_verified": false,
+        "pair_id": "pair:1002:1006",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 1
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 1,
+        "contact_a": "1002",
+        "contact_b": "1011",
+        "has_communication": true,
+        "has_textual_action": false,
+        "influence_verified": false,
+        "pair_id": "pair:1002:1011",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 0
+      },
+      {
+        "action_a_to_b_count": 3,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 9,
+        "contact_a": "1003",
+        "contact_b": "1004",
+        "has_communication": true,
+        "has_textual_action": true,
+        "influence_verified": false,
+        "pair_id": "pair:1003:1004",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 3
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 3,
+        "communication_pair_incidence_count": 3,
+        "contact_a": "1003",
+        "contact_b": "1006",
+        "has_communication": true,
+        "has_textual_action": true,
+        "influence_verified": false,
+        "pair_id": "pair:1003:1006",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 3
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 2,
+        "communication_pair_incidence_count": 3,
+        "contact_a": "1003",
+        "contact_b": "1011",
+        "has_communication": true,
+        "has_textual_action": true,
+        "influence_verified": false,
+        "pair_id": "pair:1003:1011",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 2
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 3,
+        "communication_pair_incidence_count": 3,
+        "contact_a": "1003",
+        "contact_b": "1026",
+        "has_communication": true,
+        "has_textual_action": true,
+        "influence_verified": false,
+        "pair_id": "pair:1003:1026",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 3
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 1,
+        "contact_a": "1004",
+        "contact_b": "1006",
+        "has_communication": true,
+        "has_textual_action": false,
+        "influence_verified": false,
+        "pair_id": "pair:1004:1006",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 0
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 1,
+        "contact_a": "1004",
+        "contact_b": "1011",
+        "has_communication": true,
+        "has_textual_action": false,
+        "influence_verified": false,
+        "pair_id": "pair:1004:1011",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 0
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 3,
+        "contact_a": "1004",
+        "contact_b": "1026",
+        "has_communication": true,
+        "has_textual_action": false,
+        "influence_verified": false,
+        "pair_id": "pair:1004:1026",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 0
+      },
+      {
+        "action_a_to_b_count": 3,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 3,
+        "contact_a": "1006",
+        "contact_b": "1009",
+        "has_communication": true,
+        "has_textual_action": true,
+        "influence_verified": false,
+        "pair_id": "pair:1006:1009",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 3
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 1,
+        "contact_a": "1006",
+        "contact_b": "1010",
+        "has_communication": true,
+        "has_textual_action": false,
+        "influence_verified": false,
+        "pair_id": "pair:1006:1010",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 0
+      },
+      {
+        "action_a_to_b_count": 2,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 3,
+        "contact_a": "1006",
+        "contact_b": "1015",
+        "has_communication": true,
+        "has_textual_action": true,
+        "influence_verified": false,
+        "pair_id": "pair:1006:1015",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 2
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 1,
+        "contact_a": "1006",
+        "contact_b": "1016",
+        "has_communication": true,
+        "has_textual_action": false,
+        "influence_verified": false,
+        "pair_id": "pair:1006:1016",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 0
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 2,
+        "contact_a": "1008",
+        "contact_b": "1009",
+        "has_communication": true,
+        "has_textual_action": false,
+        "influence_verified": false,
+        "pair_id": "pair:1008:1009",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 0
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 2,
+        "contact_a": "1008",
+        "contact_b": "1010",
+        "has_communication": true,
+        "has_textual_action": false,
+        "influence_verified": false,
+        "pair_id": "pair:1008:1010",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 0
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 1,
+        "contact_a": "1008",
+        "contact_b": "1011",
+        "has_communication": true,
+        "has_textual_action": false,
+        "influence_verified": false,
+        "pair_id": "pair:1008:1011",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 0
+      },
+      {
+        "action_a_to_b_count": 1,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 2,
+        "contact_a": "1008",
+        "contact_b": "1016",
+        "has_communication": true,
+        "has_textual_action": true,
+        "influence_verified": false,
+        "pair_id": "pair:1008:1016",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 1
+      },
+      {
+        "action_a_to_b_count": 5,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 10,
+        "contact_a": "1009",
+        "contact_b": "1010",
+        "has_communication": true,
+        "has_textual_action": true,
+        "influence_verified": false,
+        "pair_id": "pair:1009:1010",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 5
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 3,
+        "communication_pair_incidence_count": 4,
+        "contact_a": "1009",
+        "contact_b": "1011",
+        "has_communication": true,
+        "has_textual_action": true,
+        "influence_verified": false,
+        "pair_id": "pair:1009:1011",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 3
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 3,
+        "communication_pair_incidence_count": 3,
+        "contact_a": "1009",
+        "contact_b": "1016",
+        "has_communication": true,
+        "has_textual_action": true,
+        "influence_verified": false,
+        "pair_id": "pair:1009:1016",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 3
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 1,
+        "contact_a": "1010",
+        "contact_b": "1011",
+        "has_communication": true,
+        "has_textual_action": false,
+        "influence_verified": false,
+        "pair_id": "pair:1010:1011",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 0
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 2,
+        "contact_a": "1010",
+        "contact_b": "1016",
+        "has_communication": true,
+        "has_textual_action": false,
+        "influence_verified": false,
+        "pair_id": "pair:1010:1016",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 0
+      },
+      {
+        "action_a_to_b_count": 2,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 3,
+        "contact_a": "1011",
+        "contact_b": "1015",
+        "has_communication": true,
+        "has_textual_action": true,
+        "influence_verified": false,
+        "pair_id": "pair:1011:1015",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 2
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 1,
+        "communication_pair_incidence_count": 3,
+        "contact_a": "1011",
+        "contact_b": "1016",
+        "has_communication": true,
+        "has_textual_action": true,
+        "influence_verified": false,
+        "pair_id": "pair:1011:1016",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 1
+      },
+      {
+        "action_a_to_b_count": 1,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 3,
+        "contact_a": "1011",
+        "contact_b": "1021",
+        "has_communication": true,
+        "has_textual_action": true,
+        "influence_verified": false,
+        "pair_id": "pair:1011:1021",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 1
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 1,
+        "communication_pair_incidence_count": 3,
+        "contact_a": "1011",
+        "contact_b": "1022",
+        "has_communication": true,
+        "has_textual_action": true,
+        "influence_verified": false,
+        "pair_id": "pair:1011:1022",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 1
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 2,
+        "contact_a": "1014",
+        "contact_b": "1015",
+        "has_communication": true,
+        "has_textual_action": false,
+        "influence_verified": false,
+        "pair_id": "pair:1014:1015",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 0
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 3,
+        "contact_a": "1014",
+        "contact_b": "1016",
+        "has_communication": true,
+        "has_textual_action": false,
+        "influence_verified": false,
+        "pair_id": "pair:1014:1016",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 0
+      },
+      {
+        "action_a_to_b_count": 5,
+        "action_b_to_a_count": 3,
+        "communication_pair_incidence_count": 12,
+        "contact_a": "1015",
+        "contact_b": "1016",
+        "has_communication": true,
+        "has_textual_action": true,
+        "influence_verified": false,
+        "pair_id": "pair:1015:1016",
+        "reciprocal_actions": true,
+        "synthetic": true,
+        "total_action_count": 8
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 2,
+        "communication_pair_incidence_count": 4,
+        "contact_a": "1015",
+        "contact_b": "1021",
+        "has_communication": true,
+        "has_textual_action": true,
+        "influence_verified": false,
+        "pair_id": "pair:1015:1021",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 2
+      },
+      {
+        "action_a_to_b_count": 2,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 5,
+        "contact_a": "1016",
+        "contact_b": "1021",
+        "has_communication": true,
+        "has_textual_action": true,
+        "influence_verified": false,
+        "pair_id": "pair:1016:1021",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 2
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 1,
+        "contact_a": "1016",
+        "contact_b": "1022",
+        "has_communication": true,
+        "has_textual_action": false,
+        "influence_verified": false,
+        "pair_id": "pair:1016:1022",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 0
+      },
+      {
+        "action_a_to_b_count": 3,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 4,
+        "contact_a": "1016",
+        "contact_b": "1027",
+        "has_communication": true,
+        "has_textual_action": true,
+        "influence_verified": false,
+        "pair_id": "pair:1016:1027",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 3
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 1,
+        "contact_a": "1016",
+        "contact_b": "1028",
+        "has_communication": true,
+        "has_textual_action": false,
+        "influence_verified": false,
+        "pair_id": "pair:1016:1028",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 0
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 1,
+        "contact_a": "1020",
+        "contact_b": "1021",
+        "has_communication": true,
+        "has_textual_action": false,
+        "influence_verified": false,
+        "pair_id": "pair:1020:1021",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 0
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 1,
+        "contact_a": "1020",
+        "contact_b": "1022",
+        "has_communication": true,
+        "has_textual_action": false,
+        "influence_verified": false,
+        "pair_id": "pair:1020:1022",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 0
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 1,
+        "contact_a": "1020",
+        "contact_b": "1026",
+        "has_communication": true,
+        "has_textual_action": false,
+        "influence_verified": false,
+        "pair_id": "pair:1020:1026",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 0
+      },
+      {
+        "action_a_to_b_count": 4,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 8,
+        "contact_a": "1021",
+        "contact_b": "1022",
+        "has_communication": true,
+        "has_textual_action": true,
+        "influence_verified": false,
+        "pair_id": "pair:1021:1022",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 4
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 3,
+        "communication_pair_incidence_count": 3,
+        "contact_a": "1021",
+        "contact_b": "1026",
+        "has_communication": true,
+        "has_textual_action": true,
+        "influence_verified": false,
+        "pair_id": "pair:1021:1026",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 3
+      },
+      {
+        "action_a_to_b_count": 3,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 3,
+        "contact_a": "1021",
+        "contact_b": "1027",
+        "has_communication": true,
+        "has_textual_action": true,
+        "influence_verified": false,
+        "pair_id": "pair:1021:1027",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 3
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 1,
+        "contact_a": "1021",
+        "contact_b": "1028",
+        "has_communication": true,
+        "has_textual_action": false,
+        "influence_verified": false,
+        "pair_id": "pair:1021:1028",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 0
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 1,
+        "contact_a": "1022",
+        "contact_b": "1026",
+        "has_communication": true,
+        "has_textual_action": false,
+        "influence_verified": false,
+        "pair_id": "pair:1022:1026",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 0
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 1,
+        "contact_a": "1026",
+        "contact_b": "1027",
+        "has_communication": true,
+        "has_textual_action": false,
+        "influence_verified": false,
+        "pair_id": "pair:1026:1027",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 0
+      },
+      {
+        "action_a_to_b_count": 0,
+        "action_b_to_a_count": 1,
+        "communication_pair_incidence_count": 2,
+        "contact_a": "1026",
+        "contact_b": "1028",
+        "has_communication": true,
+        "has_textual_action": true,
+        "influence_verified": false,
+        "pair_id": "pair:1026:1028",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 1
+      },
+      {
+        "action_a_to_b_count": 4,
+        "action_b_to_a_count": 0,
+        "communication_pair_incidence_count": 8,
+        "contact_a": "1027",
+        "contact_b": "1028",
+        "has_communication": true,
+        "has_textual_action": true,
+        "influence_verified": false,
+        "pair_id": "pair:1027:1028",
+        "reciprocal_actions": false,
+        "synthetic": true,
+        "total_action_count": 4
+      }
+    ],
+    "temporal": [
+      {
+        "action_count": 3,
+        "month": "2025-01",
+        "source": "1001",
+        "target": "1003"
+      },
+      {
+        "action_count": 1,
+        "month": "2025-01",
+        "source": "1003",
+        "target": "1004"
+      },
+      {
+        "action_count": 3,
+        "month": "2025-03",
+        "source": "1006",
+        "target": "1009"
+      },
+      {
+        "action_count": 2,
+        "month": "2025-03",
+        "source": "1009",
+        "target": "1010"
+      },
+      {
+        "action_count": 1,
+        "month": "2025-04",
+        "source": "1011",
+        "target": "1015"
+      },
+      {
+        "action_count": 1,
+        "month": "2025-04",
+        "source": "1016",
+        "target": "1011"
+      },
+      {
+        "action_count": 1,
+        "month": "2025-05",
+        "source": "1011",
+        "target": "1015"
+      },
+      {
+        "action_count": 1,
+        "month": "2025-05",
+        "source": "1015",
+        "target": "1016"
+      },
+      {
+        "action_count": 1,
+        "month": "2025-05",
+        "source": "1016",
+        "target": "1021"
+      },
+      {
+        "action_count": 1,
+        "month": "2025-06",
+        "source": "1004",
+        "target": "1002"
+      },
+      {
+        "action_count": 1,
+        "month": "2025-06",
+        "source": "1011",
+        "target": "1003"
+      },
+      {
+        "action_count": 1,
+        "month": "2025-06",
+        "source": "1016",
+        "target": "1021"
+      },
+      {
+        "action_count": 1,
+        "month": "2025-06",
+        "source": "1021",
+        "target": "1022"
+      },
+      {
+        "action_count": 2,
+        "month": "2025-06",
+        "source": "1021",
+        "target": "1027"
+      },
+      {
+        "action_count": 1,
+        "month": "2025-06",
+        "source": "1027",
+        "target": "1028"
+      },
+      {
+        "action_count": 1,
+        "month": "2025-07",
+        "source": "1011",
+        "target": "1003"
+      },
+      {
+        "action_count": 1,
+        "month": "2025-07",
+        "source": "1021",
+        "target": "1027"
+      },
+      {
+        "action_count": 1,
+        "month": "2025-07",
+        "source": "1027",
+        "target": "1028"
+      },
+      {
+        "action_count": 1,
+        "month": "2025-08",
+        "source": "1008",
+        "target": "1016"
+      },
+      {
+        "action_count": 1,
+        "month": "2025-08",
+        "source": "1009",
+        "target": "1010"
+      },
+      {
+        "action_count": 3,
+        "month": "2025-08",
+        "source": "1016",
+        "target": "1009"
+      },
+      {
+        "action_count": 2,
+        "month": "2025-08",
+        "source": "1026",
+        "target": "1003"
+      },
+      {
+        "action_count": 2,
+        "month": "2025-09",
+        "source": "1001",
+        "target": "1009"
+      },
+      {
+        "action_count": 1,
+        "month": "2025-09",
+        "source": "1003",
+        "target": "1004"
+      },
+      {
+        "action_count": 1,
+        "month": "2025-09",
+        "source": "1026",
+        "target": "1003"
+      },
+      {
+        "action_count": 2,
+        "month": "2025-10",
+        "source": "1001",
+        "target": "1009"
+      },
+      {
+        "action_count": 1,
+        "month": "2025-10",
+        "source": "1009",
+        "target": "1010"
+      },
+      {
+        "action_count": 2,
+        "month": "2025-10",
+        "source": "1021",
+        "target": "1015"
+      },
+      {
+        "action_count": 1,
+        "month": "2025-11",
+        "source": "1006",
+        "target": "1015"
+      },
+      {
+        "action_count": 1,
+        "month": "2025-11",
+        "source": "1015",
+        "target": "1016"
+      },
+      {
+        "action_count": 1,
+        "month": "2025-12",
+        "source": "1006",
+        "target": "1015"
+      },
+      {
+        "action_count": 2,
+        "month": "2025-12",
+        "source": "1015",
+        "target": "1016"
+      },
+      {
+        "action_count": 2,
+        "month": "2025-12",
+        "source": "1021",
+        "target": "1022"
+      },
+      {
+        "action_count": 3,
+        "month": "2025-12",
+        "source": "1026",
+        "target": "1021"
+      },
+      {
+        "action_count": 1,
+        "month": "2026-01",
+        "source": "1011",
+        "target": "1021"
+      },
+      {
+        "action_count": 1,
+        "month": "2026-01",
+        "source": "1021",
+        "target": "1022"
+      },
+      {
+        "action_count": 1,
+        "month": "2026-01",
+        "source": "1022",
+        "target": "1011"
+      },
+      {
+        "action_count": 3,
+        "month": "2026-02",
+        "source": "1016",
+        "target": "1027"
+      },
+      {
+        "action_count": 1,
+        "month": "2026-03",
+        "source": "1027",
+        "target": "1028"
+      },
+      {
+        "action_count": 1,
+        "month": "2026-05",
+        "source": "1001",
+        "target": "1027"
+      },
+      {
+        "action_count": 2,
+        "month": "2026-06",
+        "source": "1006",
+        "target": "1003"
+      },
+      {
+        "action_count": 1,
+        "month": "2026-07",
+        "source": "1011",
+        "target": "1009"
+      },
+      {
+        "action_count": 1,
+        "month": "2026-07",
+        "source": "1027",
+        "target": "1028"
+      },
+      {
+        "action_count": 1,
+        "month": "2026-07",
+        "source": "1028",
+        "target": "1026"
+      },
+      {
+        "action_count": 1,
+        "month": "2026-08",
+        "source": "1002",
+        "target": "1006"
+      },
+      {
+        "action_count": 1,
+        "month": "2026-08",
+        "source": "1003",
+        "target": "1004"
+      },
+      {
+        "action_count": 1,
+        "month": "2026-08",
+        "source": "1006",
+        "target": "1003"
+      },
+      {
+        "action_count": 1,
+        "month": "2026-08",
+        "source": "1011",
+        "target": "1009"
+      },
+      {
+        "action_count": 1,
+        "month": "2026-09",
+        "source": "1009",
+        "target": "1010"
+      },
+      {
+        "action_count": 1,
+        "month": "2026-09",
+        "source": "1011",
+        "target": "1009"
+      },
+      {
+        "action_count": 2,
+        "month": "2026-09",
+        "source": "1016",
+        "target": "1015"
+      },
+      {
+        "action_count": 1,
+        "month": "2026-10",
+        "source": "1015",
+        "target": "1016"
+      },
+      {
+        "action_count": 1,
+        "month": "2026-10",
+        "source": "1016",
+        "target": "1015"
+      }
+    ]
+  },
+  "dataset": "nlp_enrichment_v3.3.1",
+  "dataset_scope": "synthetic_mvp_graph",
+  "graph": {
+    "action_edges": [
+      {
+        "action_count": 3,
+        "activity_ids": [
+          "5001",
+          "5002",
+          "5003"
+        ],
+        "directed": true,
+        "edge_type": "textual_directed_action",
+        "evidence_ids": [
+          "action:5001",
+          "action:5002",
+          "action:5003"
+        ],
+        "id": "action:1001:1003",
+        "influence_verified": false,
+        "relation_types": {
+          "delegation": 1,
+          "objection": 1,
+          "support": 1
+        },
+        "requires_human_review": true,
+        "source": "1001",
+        "synthetic": true,
+        "target": "1003"
+      },
+      {
+        "action_count": 4,
+        "activity_ids": [
+          "5264",
+          "5265",
+          "5283",
+          "5284"
+        ],
+        "directed": true,
+        "edge_type": "textual_directed_action",
+        "evidence_ids": [
+          "action:5264",
+          "action:5265",
+          "action:5283",
+          "action:5284"
+        ],
+        "id": "action:1001:1009",
+        "influence_verified": false,
+        "relation_types": {
+          "recommendation": 1,
+          "request": 2,
+          "support": 1
+        },
+        "requires_human_review": true,
+        "source": "1001",
+        "synthetic": true,
+        "target": "1009"
+      },
+      {
+        "action_count": 1,
+        "activity_ids": [
+          "5506"
+        ],
+        "directed": true,
+        "edge_type": "textual_directed_action",
+        "evidence_ids": [
+          "action:5506"
+        ],
+        "id": "action:1001:1027",
+        "influence_verified": false,
+        "relation_types": {
+          "objection": 1
+        },
+        "requires_human_review": true,
+        "source": "1001",
+        "synthetic": true,
+        "target": "1027"
+      },
+      {
+        "action_count": 1,
+        "activity_ids": [
+          "5623"
+        ],
+        "directed": true,
+        "edge_type": "textual_directed_action",
+        "evidence_ids": [
+          "action:5623"
+        ],
+        "id": "action:1002:1006",
+        "influence_verified": false,
+        "relation_types": {
+          "support": 1
+        },
+        "requires_human_review": true,
+        "source": "1002",
+        "synthetic": true,
+        "target": "1006"
+      },
+      {
+        "action_count": 3,
+        "activity_ids": [
+          "5019",
+          "5252",
+          "5613"
+        ],
+        "directed": true,
+        "edge_type": "textual_directed_action",
+        "evidence_ids": [
+          "action:5019",
+          "action:5252",
+          "action:5613"
+        ],
+        "id": "action:1003:1004",
+        "influence_verified": false,
+        "relation_types": {
+          "delegation": 1,
+          "request": 1,
+          "support": 1
+        },
+        "requires_human_review": true,
+        "source": "1003",
+        "synthetic": true,
+        "target": "1004"
+      },
+      {
+        "action_count": 1,
+        "activity_ids": [
+          "5204"
+        ],
+        "directed": true,
+        "edge_type": "textual_directed_action",
+        "evidence_ids": [
+          "action:5204"
+        ],
+        "id": "action:1004:1002",
+        "influence_verified": false,
+        "relation_types": {
+          "request": 1
+        },
+        "requires_human_review": true,
+        "source": "1004",
+        "synthetic": true,
+        "target": "1002"
+      },
+      {
+        "action_count": 3,
+        "activity_ids": [
+          "5551",
+          "5552",
+          "5612"
+        ],
+        "directed": true,
+        "edge_type": "textual_directed_action",
+        "evidence_ids": [
+          "action:5551",
+          "action:5552",
+          "action:5612"
+        ],
+        "id": "action:1006:1003",
+        "influence_verified": false,
+        "relation_types": {
+          "delegation": 2,
+          "objection": 1
+        },
+        "requires_human_review": true,
+        "source": "1006",
+        "synthetic": true,
+        "target": "1003"
+      },
+      {
+        "action_count": 3,
+        "activity_ids": [
+          "5041",
+          "5042",
+          "5061"
+        ],
+        "directed": true,
+        "edge_type": "textual_directed_action",
+        "evidence_ids": [
+          "action:5041",
+          "action:5042",
+          "action:5061"
+        ],
+        "id": "action:1006:1009",
+        "influence_verified": false,
+        "relation_types": {
+          "delegation": 1,
+          "objection": 2
+        },
+        "requires_human_review": true,
+        "source": "1006",
+        "synthetic": true,
+        "target": "1009"
+      },
+      {
+        "action_count": 2,
+        "activity_ids": [
+          "5321",
+          "5342"
+        ],
+        "directed": true,
+        "edge_type": "textual_directed_action",
+        "evidence_ids": [
+          "action:5321",
+          "action:5342"
+        ],
+        "id": "action:1006:1015",
+        "influence_verified": false,
+        "relation_types": {
+          "delegation": 1,
+          "objection": 1
+        },
+        "requires_human_review": true,
+        "source": "1006",
+        "synthetic": true,
+        "target": "1015"
+      },
+      {
+        "action_count": 1,
+        "activity_ids": [
+          "5246"
+        ],
+        "directed": true,
+        "edge_type": "textual_directed_action",
+        "evidence_ids": [
+          "action:5246"
+        ],
+        "id": "action:1008:1016",
+        "influence_verified": false,
+        "relation_types": {
+          "objection": 1
+        },
+        "requires_human_review": true,
+        "source": "1008",
+        "synthetic": true,
+        "target": "1016"
+      },
+      {
+        "action_count": 5,
+        "activity_ids": [
+          "5043",
+          "5062",
+          "5239",
+          "5285",
+          "5627"
+        ],
+        "directed": true,
+        "edge_type": "textual_directed_action",
+        "evidence_ids": [
+          "action:5043",
+          "action:5062",
+          "action:5239",
+          "action:5285",
+          "action:5627"
+        ],
+        "id": "action:1009:1010",
+        "influence_verified": false,
+        "relation_types": {
+          "delegation": 2,
+          "recommendation": 1,
+          "request": 1,
+          "support": 1
+        },
+        "requires_human_review": true,
+        "source": "1009",
+        "synthetic": true,
+        "target": "1010"
+      },
+      {
+        "action_count": 2,
+        "activity_ids": [
+          "5163",
+          "5207"
+        ],
+        "directed": true,
+        "edge_type": "textual_directed_action",
+        "evidence_ids": [
+          "action:5163",
+          "action:5207"
+        ],
+        "id": "action:1011:1003",
+        "influence_verified": false,
+        "relation_types": {
+          "delegation": 1,
+          "support": 1
+        },
+        "requires_human_review": true,
+        "source": "1011",
+        "synthetic": true,
+        "target": "1003"
+      },
+      {
+        "action_count": 3,
+        "activity_ids": [
+          "5572",
+          "5590",
+          "5626"
+        ],
+        "directed": true,
+        "edge_type": "textual_directed_action",
+        "evidence_ids": [
+          "action:5572",
+          "action:5590",
+          "action:5626"
+        ],
+        "id": "action:1011:1009",
+        "influence_verified": false,
+        "relation_types": {
+          "delegation": 1,
+          "objection": 1,
+          "recommendation": 1
+        },
+        "requires_human_review": true,
+        "source": "1011",
+        "synthetic": true,
+        "target": "1009"
+      },
+      {
+        "action_count": 2,
+        "activity_ids": [
+          "5093",
+          "5104"
+        ],
+        "directed": true,
+        "edge_type": "textual_directed_action",
+        "evidence_ids": [
+          "action:5093",
+          "action:5104"
+        ],
+        "id": "action:1011:1015",
+        "influence_verified": false,
+        "relation_types": {
+          "request": 1,
+          "support": 1
+        },
+        "requires_human_review": true,
+        "source": "1011",
+        "synthetic": true,
+        "target": "1015"
+      },
+      {
+        "action_count": 1,
+        "activity_ids": [
+          "5404"
+        ],
+        "directed": true,
+        "edge_type": "textual_directed_action",
+        "evidence_ids": [
+          "action:5404"
+        ],
+        "id": "action:1011:1021",
+        "influence_verified": false,
+        "relation_types": {
+          "request": 1
+        },
+        "requires_human_review": true,
+        "source": "1011",
+        "synthetic": true,
+        "target": "1021"
+      },
+      {
+        "action_count": 5,
+        "activity_ids": [
+          "5105",
+          "5320",
+          "5343",
+          "5347",
+          "5630"
+        ],
+        "directed": true,
+        "edge_type": "textual_directed_action",
+        "evidence_ids": [
+          "action:5105",
+          "action:5320",
+          "action:5343",
+          "action:5347",
+          "action:5630"
+        ],
+        "id": "action:1015:1016",
+        "influence_verified": false,
+        "relation_types": {
+          "delegation": 1,
+          "recommendation": 3,
+          "support": 1
+        },
+        "requires_human_review": true,
+        "source": "1015",
+        "synthetic": true,
+        "target": "1016"
+      },
+      {
+        "action_count": 3,
+        "activity_ids": [
+          "5211",
+          "5212",
+          "5237"
+        ],
+        "directed": true,
+        "edge_type": "textual_directed_action",
+        "evidence_ids": [
+          "action:5211",
+          "action:5212",
+          "action:5237"
+        ],
+        "id": "action:1016:1009",
+        "influence_verified": false,
+        "relation_types": {
+          "delegation": 2,
+          "objection": 1
+        },
+        "requires_human_review": true,
+        "source": "1016",
+        "synthetic": true,
+        "target": "1009"
+      },
+      {
+        "action_count": 1,
+        "activity_ids": [
+          "5103"
+        ],
+        "directed": true,
+        "edge_type": "textual_directed_action",
+        "evidence_ids": [
+          "action:5103"
+        ],
+        "id": "action:1016:1011",
+        "influence_verified": false,
+        "relation_types": {
+          "support": 1
+        },
+        "requires_human_review": true,
+        "source": "1016",
+        "synthetic": true,
+        "target": "1011"
+      },
+      {
+        "action_count": 3,
+        "activity_ids": [
+          "5624",
+          "5625",
+          "5629"
+        ],
+        "directed": true,
+        "edge_type": "textual_directed_action",
+        "evidence_ids": [
+          "action:5624",
+          "action:5625",
+          "action:5629"
+        ],
+        "id": "action:1016:1015",
+        "influence_verified": false,
+        "relation_types": {
+          "recommendation": 1,
+          "request": 2
+        },
+        "requires_human_review": true,
+        "source": "1016",
+        "synthetic": true,
+        "target": "1015"
+      },
+      {
+        "action_count": 2,
+        "activity_ids": [
+          "5113",
+          "5175"
+        ],
+        "directed": true,
+        "edge_type": "textual_directed_action",
+        "evidence_ids": [
+          "action:5113",
+          "action:5175"
+        ],
+        "id": "action:1016:1021",
+        "influence_verified": false,
+        "relation_types": {
+          "recommendation": 1,
+          "support": 1
+        },
+        "requires_human_review": true,
+        "source": "1016",
+        "synthetic": true,
+        "target": "1021"
+      },
+      {
+        "action_count": 3,
+        "activity_ids": [
+          "5426",
+          "5427",
+          "5428"
+        ],
+        "directed": true,
+        "edge_type": "textual_directed_action",
+        "evidence_ids": [
+          "action:5426",
+          "action:5427",
+          "action:5428"
+        ],
+        "id": "action:1016:1027",
+        "influence_verified": false,
+        "relation_types": {
+          "delegation": 1,
+          "objection": 1,
+          "support": 1
+        },
+        "requires_human_review": true,
+        "source": "1016",
+        "synthetic": true,
+        "target": "1027"
+      },
+      {
+        "action_count": 2,
+        "activity_ids": [
+          "5289",
+          "5290"
+        ],
+        "directed": true,
+        "edge_type": "textual_directed_action",
+        "evidence_ids": [
+          "action:5289",
+          "action:5290"
+        ],
+        "id": "action:1021:1015",
+        "influence_verified": false,
+        "relation_types": {
+          "recommendation": 1,
+          "request": 1
+        },
+        "requires_human_review": true,
+        "source": "1021",
+        "synthetic": true,
+        "target": "1015"
+      },
+      {
+        "action_count": 4,
+        "activity_ids": [
+          "5157",
+          "5344",
+          "5367",
+          "5425"
+        ],
+        "directed": true,
+        "edge_type": "textual_directed_action",
+        "evidence_ids": [
+          "action:5157",
+          "action:5344",
+          "action:5367",
+          "action:5425"
+        ],
+        "id": "action:1021:1022",
+        "influence_verified": false,
+        "relation_types": {
+          "delegation": 2,
+          "recommendation": 1,
+          "request": 1
+        },
+        "requires_human_review": true,
+        "source": "1021",
+        "synthetic": true,
+        "target": "1022"
+      },
+      {
+        "action_count": 3,
+        "activity_ids": [
+          "5187",
+          "5189",
+          "5209"
+        ],
+        "directed": true,
+        "edge_type": "textual_directed_action",
+        "evidence_ids": [
+          "action:5187",
+          "action:5189",
+          "action:5209"
+        ],
+        "id": "action:1021:1027",
+        "influence_verified": false,
+        "relation_types": {
+          "delegation": 1,
+          "request": 2
+        },
+        "requires_human_review": true,
+        "source": "1021",
+        "synthetic": true,
+        "target": "1027"
+      },
+      {
+        "action_count": 1,
+        "activity_ids": [
+          "5391"
+        ],
+        "directed": true,
+        "edge_type": "textual_directed_action",
+        "evidence_ids": [
+          "action:5391"
+        ],
+        "id": "action:1022:1011",
+        "influence_verified": false,
+        "relation_types": {
+          "objection": 1
+        },
+        "requires_human_review": true,
+        "source": "1022",
+        "synthetic": true,
+        "target": "1011"
+      },
+      {
+        "action_count": 3,
+        "activity_ids": [
+          "5213",
+          "5215",
+          "5249"
+        ],
+        "directed": true,
+        "edge_type": "textual_directed_action",
+        "evidence_ids": [
+          "action:5213",
+          "action:5215",
+          "action:5249"
+        ],
+        "id": "action:1026:1003",
+        "influence_verified": false,
+        "relation_types": {
+          "recommendation": 1,
+          "request": 1,
+          "support": 1
+        },
+        "requires_human_review": true,
+        "source": "1026",
+        "synthetic": true,
+        "target": "1003"
+      },
+      {
+        "action_count": 3,
+        "activity_ids": [
+          "5337",
+          "5338",
+          "5365"
+        ],
+        "directed": true,
+        "edge_type": "textual_directed_action",
+        "evidence_ids": [
+          "action:5337",
+          "action:5338",
+          "action:5365"
+        ],
+        "id": "action:1026:1021",
+        "influence_verified": false,
+        "relation_types": {
+          "delegation": 1,
+          "recommendation": 1,
+          "support": 1
+        },
+        "requires_human_review": true,
+        "source": "1026",
+        "synthetic": true,
+        "target": "1021"
+      },
+      {
+        "action_count": 4,
+        "activity_ids": [
+          "5176",
+          "5210",
+          "5439",
+          "5565"
+        ],
+        "directed": true,
+        "edge_type": "textual_directed_action",
+        "evidence_ids": [
+          "action:5176",
+          "action:5210",
+          "action:5439",
+          "action:5565"
+        ],
+        "id": "action:1027:1028",
+        "influence_verified": false,
+        "relation_types": {
+          "objection": 1,
+          "recommendation": 2,
+          "request": 1
+        },
+        "requires_human_review": true,
+        "source": "1027",
+        "synthetic": true,
+        "target": "1028"
+      },
+      {
+        "action_count": 1,
+        "activity_ids": [
+          "5555"
+        ],
+        "directed": true,
+        "edge_type": "textual_directed_action",
+        "evidence_ids": [
+          "action:5555"
+        ],
+        "id": "action:1028:1026",
+        "influence_verified": false,
+        "relation_types": {
+          "recommendation": 1
+        },
+        "requires_human_review": true,
+        "source": "1028",
+        "synthetic": true,
+        "target": "1026"
+      }
+    ],
+    "action_evidence": [
+      {
+        "activity_id": "5001",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5001",
+        "evidence_text": "Александр Белов попросил Дмитрий Миронов пересмотреть бюджет.",
+        "id": "action:5001",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "objection",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1001",
+        "synthetic": true,
+        "target": "1003"
+      },
+      {
+        "activity_id": "5002",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5002",
+        "evidence_text": "Александр Белов поручил Дмитрий Миронов подготовить заключение.",
+        "id": "action:5002",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "delegation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1001",
+        "synthetic": true,
+        "target": "1003"
+      },
+      {
+        "activity_id": "5003",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5003",
+        "evidence_text": "Александр Белов убедил Дмитрий Миронов поддержать инициативу.",
+        "id": "action:5003",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "support",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1001",
+        "synthetic": true,
+        "target": "1003"
+      },
+      {
+        "activity_id": "5019",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5019",
+        "evidence_text": "Дмитрий Миронов попросил Анна Орлова уточнить сроки.",
+        "id": "action:5019",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "request",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1003",
+        "synthetic": true,
+        "target": "1004"
+      },
+      {
+        "activity_id": "5041",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5041",
+        "evidence_text": "Елена Громова попросил Андрей Данилов пересмотреть бюджет.",
+        "id": "action:5041",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "objection",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1006",
+        "synthetic": true,
+        "target": "1009"
+      },
+      {
+        "activity_id": "5042",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5042",
+        "evidence_text": "Елена Громова поручил Андрей Данилов подготовить заключение.",
+        "id": "action:5042",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "delegation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1006",
+        "synthetic": true,
+        "target": "1009"
+      },
+      {
+        "activity_id": "5043",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5043",
+        "evidence_text": "Андрей Данилов убедил Ирина Фомина поддержать инициативу.",
+        "id": "action:5043",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "support",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1009",
+        "synthetic": true,
+        "target": "1010"
+      },
+      {
+        "activity_id": "5061",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5061",
+        "evidence_text": "Елена Громова попросил Андрей Данилов пересмотреть бюджет.",
+        "id": "action:5061",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "objection",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1006",
+        "synthetic": true,
+        "target": "1009"
+      },
+      {
+        "activity_id": "5062",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5062",
+        "evidence_text": "Андрей Данилов поручил Ирина Фомина подготовить заключение.",
+        "id": "action:5062",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "delegation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1009",
+        "synthetic": true,
+        "target": "1010"
+      },
+      {
+        "activity_id": "5093",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5093",
+        "evidence_text": "Михаил Титов убедил Кирилл Морозов поддержать инициативу.",
+        "id": "action:5093",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "support",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1011",
+        "synthetic": true,
+        "target": "1015"
+      },
+      {
+        "activity_id": "5103",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5103",
+        "evidence_text": "Вера Калинина убедил Михаил Титов поддержать инициативу.",
+        "id": "action:5103",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "support",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1016",
+        "synthetic": true,
+        "target": "1011"
+      },
+      {
+        "activity_id": "5104",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5104",
+        "evidence_text": "Михаил Титов попросил Кирилл Морозов уточнить сроки.",
+        "id": "action:5104",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "request",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1011",
+        "synthetic": true,
+        "target": "1015"
+      },
+      {
+        "activity_id": "5105",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5105",
+        "evidence_text": "Кирилл Морозов рекомендовал Вера Калинина рассмотреть предложение.",
+        "id": "action:5105",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "recommendation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1015",
+        "synthetic": true,
+        "target": "1016"
+      },
+      {
+        "activity_id": "5113",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5113",
+        "evidence_text": "Вера Калинина убедил Виктор Быков поддержать инициативу.",
+        "id": "action:5113",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "support",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1016",
+        "synthetic": true,
+        "target": "1021"
+      },
+      {
+        "activity_id": "5157",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5157",
+        "evidence_text": "Виктор Быков поручил Полина Лебедева подготовить заключение.",
+        "id": "action:5157",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "delegation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1021",
+        "synthetic": true,
+        "target": "1022"
+      },
+      {
+        "activity_id": "5163",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5163",
+        "evidence_text": "Михаил Титов убедил Дмитрий Миронов поддержать инициативу.",
+        "id": "action:5163",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "support",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1011",
+        "synthetic": true,
+        "target": "1003"
+      },
+      {
+        "activity_id": "5175",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5175",
+        "evidence_text": "Вера Калинина рекомендовал Виктор Быков рассмотреть предложение.",
+        "id": "action:5175",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "recommendation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1016",
+        "synthetic": true,
+        "target": "1021"
+      },
+      {
+        "activity_id": "5176",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5176",
+        "evidence_text": "Игорь Комаров попросил Ксения Лазарева пересмотреть бюджет.",
+        "id": "action:5176",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "objection",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1027",
+        "synthetic": true,
+        "target": "1028"
+      },
+      {
+        "activity_id": "5187",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5187",
+        "evidence_text": "Виктор Быков поручил Игорь Комаров подготовить заключение.",
+        "id": "action:5187",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "delegation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1021",
+        "synthetic": true,
+        "target": "1027"
+      },
+      {
+        "activity_id": "5189",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5189",
+        "evidence_text": "Виктор Быков попросил Игорь Комаров уточнить сроки.",
+        "id": "action:5189",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "request",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1021",
+        "synthetic": true,
+        "target": "1027"
+      },
+      {
+        "activity_id": "5204",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5204",
+        "evidence_text": "Анна Орлова попросил Мария Соколова уточнить сроки.",
+        "id": "action:5204",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "request",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1004",
+        "synthetic": true,
+        "target": "1002"
+      },
+      {
+        "activity_id": "5207",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5207",
+        "evidence_text": "Михаил Титов поручил Дмитрий Миронов подготовить заключение.",
+        "id": "action:5207",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "delegation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1011",
+        "synthetic": true,
+        "target": "1003"
+      },
+      {
+        "activity_id": "5209",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5209",
+        "evidence_text": "Виктор Быков попросил Игорь Комаров уточнить сроки.",
+        "id": "action:5209",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "request",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1021",
+        "synthetic": true,
+        "target": "1027"
+      },
+      {
+        "activity_id": "5210",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5210",
+        "evidence_text": "Игорь Комаров рекомендовал Ксения Лазарева рассмотреть предложение.",
+        "id": "action:5210",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "recommendation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1027",
+        "synthetic": true,
+        "target": "1028"
+      },
+      {
+        "activity_id": "5211",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5211",
+        "evidence_text": "Вера Калинина попросил Андрей Данилов пересмотреть бюджет.",
+        "id": "action:5211",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "objection",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1016",
+        "synthetic": true,
+        "target": "1009"
+      },
+      {
+        "activity_id": "5212",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5212",
+        "evidence_text": "Вера Калинина поручил Андрей Данилов подготовить заключение.",
+        "id": "action:5212",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "delegation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1016",
+        "synthetic": true,
+        "target": "1009"
+      },
+      {
+        "activity_id": "5213",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5213",
+        "evidence_text": "Дарья Никитина убедил Дмитрий Миронов поддержать инициативу.",
+        "id": "action:5213",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "support",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1026",
+        "synthetic": true,
+        "target": "1003"
+      },
+      {
+        "activity_id": "5215",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5215",
+        "evidence_text": "Дарья Никитина рекомендовал Дмитрий Миронов рассмотреть предложение.",
+        "id": "action:5215",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "recommendation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1026",
+        "synthetic": true,
+        "target": "1003"
+      },
+      {
+        "activity_id": "5237",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5237",
+        "evidence_text": "Вера Калинина поручил Андрей Данилов подготовить заключение.",
+        "id": "action:5237",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "delegation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1016",
+        "synthetic": true,
+        "target": "1009"
+      },
+      {
+        "activity_id": "5239",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5239",
+        "evidence_text": "Андрей Данилов попросил Ирина Фомина уточнить сроки.",
+        "id": "action:5239",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "request",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1009",
+        "synthetic": true,
+        "target": "1010"
+      },
+      {
+        "activity_id": "5246",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5246",
+        "evidence_text": "Ольга Крылова попросил Вера Калинина пересмотреть бюджет.",
+        "id": "action:5246",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "objection",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1008",
+        "synthetic": true,
+        "target": "1016"
+      },
+      {
+        "activity_id": "5249",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5249",
+        "evidence_text": "Дарья Никитина попросил Дмитрий Миронов уточнить сроки.",
+        "id": "action:5249",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "request",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1026",
+        "synthetic": true,
+        "target": "1003"
+      },
+      {
+        "activity_id": "5252",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5252",
+        "evidence_text": "Дмитрий Миронов поручил Анна Орлова подготовить заключение.",
+        "id": "action:5252",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "delegation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1003",
+        "synthetic": true,
+        "target": "1004"
+      },
+      {
+        "activity_id": "5264",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5264",
+        "evidence_text": "Александр Белов попросил Андрей Данилов уточнить сроки.",
+        "id": "action:5264",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "request",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1001",
+        "synthetic": true,
+        "target": "1009"
+      },
+      {
+        "activity_id": "5265",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5265",
+        "evidence_text": "Александр Белов рекомендовал Андрей Данилов рассмотреть предложение.",
+        "id": "action:5265",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "recommendation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1001",
+        "synthetic": true,
+        "target": "1009"
+      },
+      {
+        "activity_id": "5283",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5283",
+        "evidence_text": "Александр Белов убедил Андрей Данилов поддержать инициативу.",
+        "id": "action:5283",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "support",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1001",
+        "synthetic": true,
+        "target": "1009"
+      },
+      {
+        "activity_id": "5284",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5284",
+        "evidence_text": "Александр Белов попросил Андрей Данилов уточнить сроки.",
+        "id": "action:5284",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "request",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1001",
+        "synthetic": true,
+        "target": "1009"
+      },
+      {
+        "activity_id": "5285",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5285",
+        "evidence_text": "Андрей Данилов рекомендовал Ирина Фомина рассмотреть предложение.",
+        "id": "action:5285",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "recommendation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1009",
+        "synthetic": true,
+        "target": "1010"
+      },
+      {
+        "activity_id": "5289",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5289",
+        "evidence_text": "Виктор Быков попросил Кирилл Морозов уточнить сроки.",
+        "id": "action:5289",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "request",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1021",
+        "synthetic": true,
+        "target": "1015"
+      },
+      {
+        "activity_id": "5290",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5290",
+        "evidence_text": "Виктор Быков рекомендовал Кирилл Морозов рассмотреть предложение.",
+        "id": "action:5290",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "recommendation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1021",
+        "synthetic": true,
+        "target": "1015"
+      },
+      {
+        "activity_id": "5320",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5320",
+        "evidence_text": "Кирилл Морозов рекомендовал Вера Калинина рассмотреть предложение.",
+        "id": "action:5320",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "recommendation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1015",
+        "synthetic": true,
+        "target": "1016"
+      },
+      {
+        "activity_id": "5321",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5321",
+        "evidence_text": "Елена Громова попросил Кирилл Морозов пересмотреть бюджет.",
+        "id": "action:5321",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "objection",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1006",
+        "synthetic": true,
+        "target": "1015"
+      },
+      {
+        "activity_id": "5337",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5337",
+        "evidence_text": "Дарья Никитина поручил Виктор Быков подготовить заключение.",
+        "id": "action:5337",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "delegation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1026",
+        "synthetic": true,
+        "target": "1021"
+      },
+      {
+        "activity_id": "5338",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5338",
+        "evidence_text": "Дарья Никитина убедил Виктор Быков поддержать инициативу.",
+        "id": "action:5338",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "support",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1026",
+        "synthetic": true,
+        "target": "1021"
+      },
+      {
+        "activity_id": "5342",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5342",
+        "evidence_text": "Елена Громова поручил Кирилл Морозов подготовить заключение.",
+        "id": "action:5342",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "delegation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1006",
+        "synthetic": true,
+        "target": "1015"
+      },
+      {
+        "activity_id": "5343",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5343",
+        "evidence_text": "Кирилл Морозов убедил Вера Калинина поддержать инициативу.",
+        "id": "action:5343",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "support",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1015",
+        "synthetic": true,
+        "target": "1016"
+      },
+      {
+        "activity_id": "5344",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5344",
+        "evidence_text": "Виктор Быков попросил Полина Лебедева уточнить сроки.",
+        "id": "action:5344",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "request",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1021",
+        "synthetic": true,
+        "target": "1022"
+      },
+      {
+        "activity_id": "5347",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5347",
+        "evidence_text": "Кирилл Морозов поручил Вера Калинина подготовить заключение.",
+        "id": "action:5347",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "delegation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1015",
+        "synthetic": true,
+        "target": "1016"
+      },
+      {
+        "activity_id": "5365",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5365",
+        "evidence_text": "Дарья Никитина рекомендовал Виктор Быков рассмотреть предложение.",
+        "id": "action:5365",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "recommendation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1026",
+        "synthetic": true,
+        "target": "1021"
+      },
+      {
+        "activity_id": "5367",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5367",
+        "evidence_text": "Виктор Быков поручил Полина Лебедева подготовить заключение.",
+        "id": "action:5367",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "delegation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1021",
+        "synthetic": true,
+        "target": "1022"
+      },
+      {
+        "activity_id": "5391",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5391",
+        "evidence_text": "Полина Лебедева попросил Михаил Титов пересмотреть бюджет.",
+        "id": "action:5391",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "objection",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1022",
+        "synthetic": true,
+        "target": "1011"
+      },
+      {
+        "activity_id": "5404",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5404",
+        "evidence_text": "Михаил Титов попросил Виктор Быков уточнить сроки.",
+        "id": "action:5404",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "request",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1011",
+        "synthetic": true,
+        "target": "1021"
+      },
+      {
+        "activity_id": "5425",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5425",
+        "evidence_text": "Виктор Быков рекомендовал Полина Лебедева рассмотреть предложение.",
+        "id": "action:5425",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "recommendation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1021",
+        "synthetic": true,
+        "target": "1022"
+      },
+      {
+        "activity_id": "5426",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5426",
+        "evidence_text": "Вера Калинина попросил Игорь Комаров пересмотреть бюджет.",
+        "id": "action:5426",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "objection",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1016",
+        "synthetic": true,
+        "target": "1027"
+      },
+      {
+        "activity_id": "5427",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5427",
+        "evidence_text": "Вера Калинина поручил Игорь Комаров подготовить заключение.",
+        "id": "action:5427",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "delegation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1016",
+        "synthetic": true,
+        "target": "1027"
+      },
+      {
+        "activity_id": "5428",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5428",
+        "evidence_text": "Вера Калинина убедил Игорь Комаров поддержать инициативу.",
+        "id": "action:5428",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "support",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1016",
+        "synthetic": true,
+        "target": "1027"
+      },
+      {
+        "activity_id": "5439",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5439",
+        "evidence_text": "Игорь Комаров попросил Ксения Лазарева уточнить сроки.",
+        "id": "action:5439",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "request",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1027",
+        "synthetic": true,
+        "target": "1028"
+      },
+      {
+        "activity_id": "5506",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5506",
+        "evidence_text": "Александр Белов попросил Игорь Комаров пересмотреть бюджет.",
+        "id": "action:5506",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "objection",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1001",
+        "synthetic": true,
+        "target": "1027"
+      },
+      {
+        "activity_id": "5551",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5551",
+        "evidence_text": "Елена Громова попросил Дмитрий Миронов пересмотреть бюджет.",
+        "id": "action:5551",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "objection",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1006",
+        "synthetic": true,
+        "target": "1003"
+      },
+      {
+        "activity_id": "5552",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5552",
+        "evidence_text": "Елена Громова поручил Дмитрий Миронов подготовить заключение.",
+        "id": "action:5552",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "delegation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1006",
+        "synthetic": true,
+        "target": "1003"
+      },
+      {
+        "activity_id": "5555",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5555",
+        "evidence_text": "Ксения Лазарева рекомендовал Дарья Никитина рассмотреть предложение.",
+        "id": "action:5555",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "recommendation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1028",
+        "synthetic": true,
+        "target": "1026"
+      },
+      {
+        "activity_id": "5565",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5565",
+        "evidence_text": "Игорь Комаров рекомендовал Ксения Лазарева рассмотреть предложение.",
+        "id": "action:5565",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "recommendation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1027",
+        "synthetic": true,
+        "target": "1028"
+      },
+      {
+        "activity_id": "5572",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5572",
+        "evidence_text": "Михаил Титов поручил Андрей Данилов подготовить заключение.",
+        "id": "action:5572",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "delegation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1011",
+        "synthetic": true,
+        "target": "1009"
+      },
+      {
+        "activity_id": "5590",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5590",
+        "evidence_text": "Михаил Титов рекомендовал Андрей Данилов рассмотреть предложение.",
+        "id": "action:5590",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "recommendation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1011",
+        "synthetic": true,
+        "target": "1009"
+      },
+      {
+        "activity_id": "5612",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5612",
+        "evidence_text": "Елена Громова поручил Дмитрий Миронов подготовить заключение.",
+        "id": "action:5612",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "delegation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1006",
+        "synthetic": true,
+        "target": "1003"
+      },
+      {
+        "activity_id": "5613",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5613",
+        "evidence_text": "Дмитрий Миронов убедил Анна Орлова поддержать инициативу.",
+        "id": "action:5613",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "support",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1003",
+        "synthetic": true,
+        "target": "1004"
+      },
+      {
+        "activity_id": "5623",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5623",
+        "evidence_text": "Мария Соколова убедил Елена Громова поддержать инициативу.",
+        "id": "action:5623",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "support",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1002",
+        "synthetic": true,
+        "target": "1006"
+      },
+      {
+        "activity_id": "5624",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5624",
+        "evidence_text": "Вера Калинина попросил Кирилл Морозов уточнить сроки.",
+        "id": "action:5624",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "request",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1016",
+        "synthetic": true,
+        "target": "1015"
+      },
+      {
+        "activity_id": "5625",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5625",
+        "evidence_text": "Вера Калинина рекомендовал Кирилл Морозов рассмотреть предложение.",
+        "id": "action:5625",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "recommendation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1016",
+        "synthetic": true,
+        "target": "1015"
+      },
+      {
+        "activity_id": "5626",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5626",
+        "evidence_text": "Михаил Титов попросил Андрей Данилов пересмотреть бюджет.",
+        "id": "action:5626",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "objection",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1011",
+        "synthetic": true,
+        "target": "1009"
+      },
+      {
+        "activity_id": "5627",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5627",
+        "evidence_text": "Андрей Данилов поручил Ирина Фомина подготовить заключение.",
+        "id": "action:5627",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "delegation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1009",
+        "synthetic": true,
+        "target": "1010"
+      },
+      {
+        "activity_id": "5629",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5629",
+        "evidence_text": "Вера Калинина попросил Кирилл Морозов уточнить сроки.",
+        "id": "action:5629",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "request",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1016",
+        "synthetic": true,
+        "target": "1015"
+      },
+      {
+        "activity_id": "5630",
+        "company_id": 42,
+        "directed": true,
+        "document_id": "activity:5630",
+        "evidence_text": "Кирилл Морозов рекомендовал Вера Калинина рассмотреть предложение.",
+        "id": "action:5630",
+        "identity_status": "name_matched_in_text",
+        "influence_verified": false,
+        "relation_type": "recommendation",
+        "requires_human_review": true,
+        "scenario_source": "synthetic_nlp_enrichment_v3.3.1",
+        "source": "1015",
+        "synthetic": true,
+        "target": "1016"
+      }
+    ],
+    "communication_edges": [
+      {
+        "activity_count": 4,
+        "activity_ids": [
+          "5001",
+          "5002",
+          "5003",
+          "5016"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1001:1003",
+        "influence_verified": false,
+        "pair_key": [
+          "1001",
+          "1003"
+        ],
+        "source": "1001",
+        "synthetic": true,
+        "target": "1003"
+      },
+      {
+        "activity_count": 1,
+        "activity_ids": [
+          "5016"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1001:1004",
+        "influence_verified": false,
+        "pair_key": [
+          "1001",
+          "1004"
+        ],
+        "source": "1001",
+        "synthetic": true,
+        "target": "1004"
+      },
+      {
+        "activity_count": 4,
+        "activity_ids": [
+          "5264",
+          "5265",
+          "5283",
+          "5284"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1001:1009",
+        "influence_verified": false,
+        "pair_key": [
+          "1001",
+          "1009"
+        ],
+        "source": "1001",
+        "synthetic": true,
+        "target": "1009"
+      },
+      {
+        "activity_count": 1,
+        "activity_ids": [
+          "5284"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1001:1010",
+        "influence_verified": false,
+        "pair_key": [
+          "1001",
+          "1010"
+        ],
+        "source": "1001",
+        "synthetic": true,
+        "target": "1010"
+      },
+      {
+        "activity_count": 1,
+        "activity_ids": [
+          "5562"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1001:1026",
+        "influence_verified": false,
+        "pair_key": [
+          "1001",
+          "1026"
+        ],
+        "source": "1001",
+        "synthetic": true,
+        "target": "1026"
+      },
+      {
+        "activity_count": 3,
+        "activity_ids": [
+          "5502",
+          "5506",
+          "5562"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1001:1027",
+        "influence_verified": false,
+        "pair_key": [
+          "1001",
+          "1027"
+        ],
+        "source": "1001",
+        "synthetic": true,
+        "target": "1027"
+      },
+      {
+        "activity_count": 2,
+        "activity_ids": [
+          "5502",
+          "5562"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1001:1028",
+        "influence_verified": false,
+        "pair_key": [
+          "1001",
+          "1028"
+        ],
+        "source": "1001",
+        "synthetic": true,
+        "target": "1028"
+      },
+      {
+        "activity_count": 1,
+        "activity_ids": [
+          "5160"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1002:1003",
+        "influence_verified": false,
+        "pair_key": [
+          "1002",
+          "1003"
+        ],
+        "source": "1002",
+        "synthetic": true,
+        "target": "1003"
+      },
+      {
+        "activity_count": 2,
+        "activity_ids": [
+          "5160",
+          "5204"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1002:1004",
+        "influence_verified": false,
+        "pair_key": [
+          "1002",
+          "1004"
+        ],
+        "source": "1002",
+        "synthetic": true,
+        "target": "1004"
+      },
+      {
+        "activity_count": 1,
+        "activity_ids": [
+          "5623"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1002:1006",
+        "influence_verified": false,
+        "pair_key": [
+          "1002",
+          "1006"
+        ],
+        "source": "1002",
+        "synthetic": true,
+        "target": "1006"
+      },
+      {
+        "activity_count": 1,
+        "activity_ids": [
+          "5160"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1002:1011",
+        "influence_verified": false,
+        "pair_key": [
+          "1002",
+          "1011"
+        ],
+        "source": "1002",
+        "synthetic": true,
+        "target": "1011"
+      },
+      {
+        "activity_count": 9,
+        "activity_ids": [
+          "5016",
+          "5019",
+          "5160",
+          "5208",
+          "5213",
+          "5249",
+          "5252",
+          "5612",
+          "5613"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1003:1004",
+        "influence_verified": false,
+        "pair_key": [
+          "1003",
+          "1004"
+        ],
+        "source": "1003",
+        "synthetic": true,
+        "target": "1004"
+      },
+      {
+        "activity_count": 3,
+        "activity_ids": [
+          "5551",
+          "5552",
+          "5612"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1003:1006",
+        "influence_verified": false,
+        "pair_key": [
+          "1003",
+          "1006"
+        ],
+        "source": "1003",
+        "synthetic": true,
+        "target": "1006"
+      },
+      {
+        "activity_count": 3,
+        "activity_ids": [
+          "5160",
+          "5163",
+          "5207"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1003:1011",
+        "influence_verified": false,
+        "pair_key": [
+          "1003",
+          "1011"
+        ],
+        "source": "1003",
+        "synthetic": true,
+        "target": "1011"
+      },
+      {
+        "activity_count": 3,
+        "activity_ids": [
+          "5213",
+          "5215",
+          "5249"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1003:1026",
+        "influence_verified": false,
+        "pair_key": [
+          "1003",
+          "1026"
+        ],
+        "source": "1003",
+        "synthetic": true,
+        "target": "1026"
+      },
+      {
+        "activity_count": 1,
+        "activity_ids": [
+          "5612"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1004:1006",
+        "influence_verified": false,
+        "pair_key": [
+          "1004",
+          "1006"
+        ],
+        "source": "1004",
+        "synthetic": true,
+        "target": "1006"
+      },
+      {
+        "activity_count": 1,
+        "activity_ids": [
+          "5160"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1004:1011",
+        "influence_verified": false,
+        "pair_key": [
+          "1004",
+          "1011"
+        ],
+        "source": "1004",
+        "synthetic": true,
+        "target": "1011"
+      },
+      {
+        "activity_count": 3,
+        "activity_ids": [
+          "5213",
+          "5220",
+          "5249"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1004:1026",
+        "influence_verified": false,
+        "pair_key": [
+          "1004",
+          "1026"
+        ],
+        "source": "1004",
+        "synthetic": true,
+        "target": "1026"
+      },
+      {
+        "activity_count": 3,
+        "activity_ids": [
+          "5041",
+          "5042",
+          "5061"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1006:1009",
+        "influence_verified": false,
+        "pair_key": [
+          "1006",
+          "1009"
+        ],
+        "source": "1006",
+        "synthetic": true,
+        "target": "1009"
+      },
+      {
+        "activity_count": 1,
+        "activity_ids": [
+          "5041"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1006:1010",
+        "influence_verified": false,
+        "pair_key": [
+          "1006",
+          "1010"
+        ],
+        "source": "1006",
+        "synthetic": true,
+        "target": "1010"
+      },
+      {
+        "activity_count": 3,
+        "activity_ids": [
+          "5321",
+          "5322",
+          "5342"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1006:1015",
+        "influence_verified": false,
+        "pair_key": [
+          "1006",
+          "1015"
+        ],
+        "source": "1006",
+        "synthetic": true,
+        "target": "1015"
+      },
+      {
+        "activity_count": 1,
+        "activity_ids": [
+          "5321"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1006:1016",
+        "influence_verified": false,
+        "pair_key": [
+          "1006",
+          "1016"
+        ],
+        "source": "1006",
+        "synthetic": true,
+        "target": "1016"
+      },
+      {
+        "activity_count": 2,
+        "activity_ids": [
+          "5237",
+          "5590"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1008:1009",
+        "influence_verified": false,
+        "pair_key": [
+          "1008",
+          "1009"
+        ],
+        "source": "1008",
+        "synthetic": true,
+        "target": "1009"
+      },
+      {
+        "activity_count": 2,
+        "activity_ids": [
+          "5237",
+          "5590"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1008:1010",
+        "influence_verified": false,
+        "pair_key": [
+          "1008",
+          "1010"
+        ],
+        "source": "1008",
+        "synthetic": true,
+        "target": "1010"
+      },
+      {
+        "activity_count": 1,
+        "activity_ids": [
+          "5590"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1008:1011",
+        "influence_verified": false,
+        "pair_key": [
+          "1008",
+          "1011"
+        ],
+        "source": "1008",
+        "synthetic": true,
+        "target": "1011"
+      },
+      {
+        "activity_count": 2,
+        "activity_ids": [
+          "5237",
+          "5246"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1008:1016",
+        "influence_verified": false,
+        "pair_key": [
+          "1008",
+          "1016"
+        ],
+        "source": "1008",
+        "synthetic": true,
+        "target": "1016"
+      },
+      {
+        "activity_count": 10,
+        "activity_ids": [
+          "5041",
+          "5043",
+          "5062",
+          "5211",
+          "5237",
+          "5239",
+          "5284",
+          "5285",
+          "5590",
+          "5627"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1009:1010",
+        "influence_verified": false,
+        "pair_key": [
+          "1009",
+          "1010"
+        ],
+        "source": "1009",
+        "synthetic": true,
+        "target": "1010"
+      },
+      {
+        "activity_count": 4,
+        "activity_ids": [
+          "5572",
+          "5590",
+          "5592",
+          "5626"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1009:1011",
+        "influence_verified": false,
+        "pair_key": [
+          "1009",
+          "1011"
+        ],
+        "source": "1009",
+        "synthetic": true,
+        "target": "1011"
+      },
+      {
+        "activity_count": 3,
+        "activity_ids": [
+          "5211",
+          "5212",
+          "5237"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1009:1016",
+        "influence_verified": false,
+        "pair_key": [
+          "1009",
+          "1016"
+        ],
+        "source": "1009",
+        "synthetic": true,
+        "target": "1016"
+      },
+      {
+        "activity_count": 1,
+        "activity_ids": [
+          "5590"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1010:1011",
+        "influence_verified": false,
+        "pair_key": [
+          "1010",
+          "1011"
+        ],
+        "source": "1010",
+        "synthetic": true,
+        "target": "1011"
+      },
+      {
+        "activity_count": 2,
+        "activity_ids": [
+          "5211",
+          "5237"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1010:1016",
+        "influence_verified": false,
+        "pair_key": [
+          "1010",
+          "1016"
+        ],
+        "source": "1010",
+        "synthetic": true,
+        "target": "1016"
+      },
+      {
+        "activity_count": 3,
+        "activity_ids": [
+          "5093",
+          "5094",
+          "5104"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1011:1015",
+        "influence_verified": false,
+        "pair_key": [
+          "1011",
+          "1015"
+        ],
+        "source": "1011",
+        "synthetic": true,
+        "target": "1015"
+      },
+      {
+        "activity_count": 3,
+        "activity_ids": [
+          "5093",
+          "5103",
+          "5104"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1011:1016",
+        "influence_verified": false,
+        "pair_key": [
+          "1011",
+          "1016"
+        ],
+        "source": "1011",
+        "synthetic": true,
+        "target": "1016"
+      },
+      {
+        "activity_count": 3,
+        "activity_ids": [
+          "5404",
+          "5406",
+          "5424"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1011:1021",
+        "influence_verified": false,
+        "pair_key": [
+          "1011",
+          "1021"
+        ],
+        "source": "1011",
+        "synthetic": true,
+        "target": "1021"
+      },
+      {
+        "activity_count": 3,
+        "activity_ids": [
+          "5391",
+          "5404",
+          "5424"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1011:1022",
+        "influence_verified": false,
+        "pair_key": [
+          "1011",
+          "1022"
+        ],
+        "source": "1011",
+        "synthetic": true,
+        "target": "1022"
+      },
+      {
+        "activity_count": 2,
+        "activity_ids": [
+          "5624",
+          "5629"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1014:1015",
+        "influence_verified": false,
+        "pair_key": [
+          "1014",
+          "1015"
+        ],
+        "source": "1014",
+        "synthetic": true,
+        "target": "1015"
+      },
+      {
+        "activity_count": 3,
+        "activity_ids": [
+          "5624",
+          "5628",
+          "5629"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1014:1016",
+        "influence_verified": false,
+        "pair_key": [
+          "1014",
+          "1016"
+        ],
+        "source": "1014",
+        "synthetic": true,
+        "target": "1016"
+      },
+      {
+        "activity_count": 12,
+        "activity_ids": [
+          "5093",
+          "5104",
+          "5105",
+          "5316",
+          "5320",
+          "5321",
+          "5343",
+          "5347",
+          "5624",
+          "5625",
+          "5629",
+          "5630"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1015:1016",
+        "influence_verified": false,
+        "pair_key": [
+          "1015",
+          "1016"
+        ],
+        "source": "1015",
+        "synthetic": true,
+        "target": "1016"
+      },
+      {
+        "activity_count": 4,
+        "activity_ids": [
+          "5286",
+          "5289",
+          "5290",
+          "5316"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1015:1021",
+        "influence_verified": false,
+        "pair_key": [
+          "1015",
+          "1021"
+        ],
+        "source": "1015",
+        "synthetic": true,
+        "target": "1021"
+      },
+      {
+        "activity_count": 5,
+        "activity_ids": [
+          "5112",
+          "5113",
+          "5154",
+          "5175",
+          "5316"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1016:1021",
+        "influence_verified": false,
+        "pair_key": [
+          "1016",
+          "1021"
+        ],
+        "source": "1016",
+        "synthetic": true,
+        "target": "1021"
+      },
+      {
+        "activity_count": 1,
+        "activity_ids": [
+          "5154"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1016:1022",
+        "influence_verified": false,
+        "pair_key": [
+          "1016",
+          "1022"
+        ],
+        "source": "1016",
+        "synthetic": true,
+        "target": "1022"
+      },
+      {
+        "activity_count": 4,
+        "activity_ids": [
+          "5426",
+          "5427",
+          "5428",
+          "5436"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1016:1027",
+        "influence_verified": false,
+        "pair_key": [
+          "1016",
+          "1027"
+        ],
+        "source": "1016",
+        "synthetic": true,
+        "target": "1027"
+      },
+      {
+        "activity_count": 1,
+        "activity_ids": [
+          "5436"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1016:1028",
+        "influence_verified": false,
+        "pair_key": [
+          "1016",
+          "1028"
+        ],
+        "source": "1016",
+        "synthetic": true,
+        "target": "1028"
+      },
+      {
+        "activity_count": 1,
+        "activity_ids": [
+          "5337"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1020:1021",
+        "influence_verified": false,
+        "pair_key": [
+          "1020",
+          "1021"
+        ],
+        "source": "1020",
+        "synthetic": true,
+        "target": "1021"
+      },
+      {
+        "activity_count": 1,
+        "activity_ids": [
+          "5337"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1020:1022",
+        "influence_verified": false,
+        "pair_key": [
+          "1020",
+          "1022"
+        ],
+        "source": "1020",
+        "synthetic": true,
+        "target": "1022"
+      },
+      {
+        "activity_count": 1,
+        "activity_ids": [
+          "5337"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1020:1026",
+        "influence_verified": false,
+        "pair_key": [
+          "1020",
+          "1026"
+        ],
+        "source": "1020",
+        "synthetic": true,
+        "target": "1026"
+      },
+      {
+        "activity_count": 8,
+        "activity_ids": [
+          "5154",
+          "5157",
+          "5337",
+          "5344",
+          "5367",
+          "5404",
+          "5424",
+          "5425"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1021:1022",
+        "influence_verified": false,
+        "pair_key": [
+          "1021",
+          "1022"
+        ],
+        "source": "1021",
+        "synthetic": true,
+        "target": "1022"
+      },
+      {
+        "activity_count": 3,
+        "activity_ids": [
+          "5337",
+          "5338",
+          "5365"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1021:1026",
+        "influence_verified": false,
+        "pair_key": [
+          "1021",
+          "1026"
+        ],
+        "source": "1021",
+        "synthetic": true,
+        "target": "1026"
+      },
+      {
+        "activity_count": 3,
+        "activity_ids": [
+          "5187",
+          "5189",
+          "5209"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1021:1027",
+        "influence_verified": false,
+        "pair_key": [
+          "1021",
+          "1027"
+        ],
+        "source": "1021",
+        "synthetic": true,
+        "target": "1027"
+      },
+      {
+        "activity_count": 1,
+        "activity_ids": [
+          "5187"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1021:1028",
+        "influence_verified": false,
+        "pair_key": [
+          "1021",
+          "1028"
+        ],
+        "source": "1021",
+        "synthetic": true,
+        "target": "1028"
+      },
+      {
+        "activity_count": 1,
+        "activity_ids": [
+          "5337"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1022:1026",
+        "influence_verified": false,
+        "pair_key": [
+          "1022",
+          "1026"
+        ],
+        "source": "1022",
+        "synthetic": true,
+        "target": "1026"
+      },
+      {
+        "activity_count": 1,
+        "activity_ids": [
+          "5562"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1026:1027",
+        "influence_verified": false,
+        "pair_key": [
+          "1026",
+          "1027"
+        ],
+        "source": "1026",
+        "synthetic": true,
+        "target": "1027"
+      },
+      {
+        "activity_count": 2,
+        "activity_ids": [
+          "5555",
+          "5562"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1026:1028",
+        "influence_verified": false,
+        "pair_key": [
+          "1026",
+          "1028"
+        ],
+        "source": "1026",
+        "synthetic": true,
+        "target": "1028"
+      },
+      {
+        "activity_count": 8,
+        "activity_ids": [
+          "5176",
+          "5187",
+          "5210",
+          "5436",
+          "5439",
+          "5502",
+          "5562",
+          "5565"
+        ],
+        "directed": false,
+        "edge_type": "co_participation",
+        "id": "communication:1027:1028",
+        "influence_verified": false,
+        "pair_key": [
+          "1027",
+          "1028"
+        ],
+        "source": "1027",
+        "synthetic": true,
+        "target": "1028"
+      }
+    ],
+    "communication_evidence": [
+      {
+        "activity_id": "5001",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1001",
+        "target": "1003"
+      },
+      {
+        "activity_id": "5002",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1001",
+        "target": "1003"
+      },
+      {
+        "activity_id": "5003",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1001",
+        "target": "1003"
+      },
+      {
+        "activity_id": "5016",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1001",
+        "target": "1003"
+      },
+      {
+        "activity_id": "5016",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1001",
+        "target": "1004"
+      },
+      {
+        "activity_id": "5016",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1003",
+        "target": "1004"
+      },
+      {
+        "activity_id": "5019",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1003",
+        "target": "1004"
+      },
+      {
+        "activity_id": "5041",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1006",
+        "target": "1009"
+      },
+      {
+        "activity_id": "5041",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1006",
+        "target": "1010"
+      },
+      {
+        "activity_id": "5041",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1009",
+        "target": "1010"
+      },
+      {
+        "activity_id": "5042",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1006",
+        "target": "1009"
+      },
+      {
+        "activity_id": "5043",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1009",
+        "target": "1010"
+      },
+      {
+        "activity_id": "5061",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1006",
+        "target": "1009"
+      },
+      {
+        "activity_id": "5062",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1009",
+        "target": "1010"
+      },
+      {
+        "activity_id": "5093",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1011",
+        "target": "1015"
+      },
+      {
+        "activity_id": "5093",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1011",
+        "target": "1016"
+      },
+      {
+        "activity_id": "5093",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1015",
+        "target": "1016"
+      },
+      {
+        "activity_id": "5094",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1011",
+        "target": "1015"
+      },
+      {
+        "activity_id": "5103",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1011",
+        "target": "1016"
+      },
+      {
+        "activity_id": "5104",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1011",
+        "target": "1015"
+      },
+      {
+        "activity_id": "5104",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1011",
+        "target": "1016"
+      },
+      {
+        "activity_id": "5104",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1015",
+        "target": "1016"
+      },
+      {
+        "activity_id": "5105",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1015",
+        "target": "1016"
+      },
+      {
+        "activity_id": "5112",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1016",
+        "target": "1021"
+      },
+      {
+        "activity_id": "5113",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1016",
+        "target": "1021"
+      },
+      {
+        "activity_id": "5154",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1016",
+        "target": "1021"
+      },
+      {
+        "activity_id": "5154",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1016",
+        "target": "1022"
+      },
+      {
+        "activity_id": "5154",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1021",
+        "target": "1022"
+      },
+      {
+        "activity_id": "5157",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1021",
+        "target": "1022"
+      },
+      {
+        "activity_id": "5160",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1002",
+        "target": "1003"
+      },
+      {
+        "activity_id": "5160",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1002",
+        "target": "1004"
+      },
+      {
+        "activity_id": "5160",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1002",
+        "target": "1011"
+      },
+      {
+        "activity_id": "5160",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1003",
+        "target": "1004"
+      },
+      {
+        "activity_id": "5160",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1003",
+        "target": "1011"
+      },
+      {
+        "activity_id": "5160",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1004",
+        "target": "1011"
+      },
+      {
+        "activity_id": "5163",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1003",
+        "target": "1011"
+      },
+      {
+        "activity_id": "5175",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1016",
+        "target": "1021"
+      },
+      {
+        "activity_id": "5176",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1027",
+        "target": "1028"
+      },
+      {
+        "activity_id": "5187",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1021",
+        "target": "1027"
+      },
+      {
+        "activity_id": "5187",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1021",
+        "target": "1028"
+      },
+      {
+        "activity_id": "5187",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1027",
+        "target": "1028"
+      },
+      {
+        "activity_id": "5189",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1021",
+        "target": "1027"
+      },
+      {
+        "activity_id": "5204",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1002",
+        "target": "1004"
+      },
+      {
+        "activity_id": "5207",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1003",
+        "target": "1011"
+      },
+      {
+        "activity_id": "5208",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1003",
+        "target": "1004"
+      },
+      {
+        "activity_id": "5209",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1021",
+        "target": "1027"
+      },
+      {
+        "activity_id": "5210",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1027",
+        "target": "1028"
+      },
+      {
+        "activity_id": "5211",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1009",
+        "target": "1010"
+      },
+      {
+        "activity_id": "5211",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1009",
+        "target": "1016"
+      },
+      {
+        "activity_id": "5211",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1010",
+        "target": "1016"
+      },
+      {
+        "activity_id": "5212",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1009",
+        "target": "1016"
+      },
+      {
+        "activity_id": "5213",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1003",
+        "target": "1004"
+      },
+      {
+        "activity_id": "5213",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1003",
+        "target": "1026"
+      },
+      {
+        "activity_id": "5213",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1004",
+        "target": "1026"
+      },
+      {
+        "activity_id": "5215",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1003",
+        "target": "1026"
+      },
+      {
+        "activity_id": "5220",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1004",
+        "target": "1026"
+      },
+      {
+        "activity_id": "5237",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1008",
+        "target": "1009"
+      },
+      {
+        "activity_id": "5237",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1008",
+        "target": "1010"
+      },
+      {
+        "activity_id": "5237",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1008",
+        "target": "1016"
+      },
+      {
+        "activity_id": "5237",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1009",
+        "target": "1010"
+      },
+      {
+        "activity_id": "5237",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1009",
+        "target": "1016"
+      },
+      {
+        "activity_id": "5237",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1010",
+        "target": "1016"
+      },
+      {
+        "activity_id": "5239",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1009",
+        "target": "1010"
+      },
+      {
+        "activity_id": "5246",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1008",
+        "target": "1016"
+      },
+      {
+        "activity_id": "5249",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1003",
+        "target": "1004"
+      },
+      {
+        "activity_id": "5249",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1003",
+        "target": "1026"
+      },
+      {
+        "activity_id": "5249",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1004",
+        "target": "1026"
+      },
+      {
+        "activity_id": "5252",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1003",
+        "target": "1004"
+      },
+      {
+        "activity_id": "5264",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1001",
+        "target": "1009"
+      },
+      {
+        "activity_id": "5265",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1001",
+        "target": "1009"
+      },
+      {
+        "activity_id": "5283",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1001",
+        "target": "1009"
+      },
+      {
+        "activity_id": "5284",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1001",
+        "target": "1009"
+      },
+      {
+        "activity_id": "5284",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1001",
+        "target": "1010"
+      },
+      {
+        "activity_id": "5284",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1009",
+        "target": "1010"
+      },
+      {
+        "activity_id": "5285",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1009",
+        "target": "1010"
+      },
+      {
+        "activity_id": "5286",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1015",
+        "target": "1021"
+      },
+      {
+        "activity_id": "5289",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1015",
+        "target": "1021"
+      },
+      {
+        "activity_id": "5290",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1015",
+        "target": "1021"
+      },
+      {
+        "activity_id": "5316",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1015",
+        "target": "1016"
+      },
+      {
+        "activity_id": "5316",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1015",
+        "target": "1021"
+      },
+      {
+        "activity_id": "5316",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1016",
+        "target": "1021"
+      },
+      {
+        "activity_id": "5320",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1015",
+        "target": "1016"
+      },
+      {
+        "activity_id": "5321",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1006",
+        "target": "1015"
+      },
+      {
+        "activity_id": "5321",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1006",
+        "target": "1016"
+      },
+      {
+        "activity_id": "5321",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1015",
+        "target": "1016"
+      },
+      {
+        "activity_id": "5322",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1006",
+        "target": "1015"
+      },
+      {
+        "activity_id": "5337",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1020",
+        "target": "1021"
+      },
+      {
+        "activity_id": "5337",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1020",
+        "target": "1022"
+      },
+      {
+        "activity_id": "5337",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1020",
+        "target": "1026"
+      },
+      {
+        "activity_id": "5337",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1021",
+        "target": "1022"
+      },
+      {
+        "activity_id": "5337",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1021",
+        "target": "1026"
+      },
+      {
+        "activity_id": "5337",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1022",
+        "target": "1026"
+      },
+      {
+        "activity_id": "5338",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1021",
+        "target": "1026"
+      },
+      {
+        "activity_id": "5342",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1006",
+        "target": "1015"
+      },
+      {
+        "activity_id": "5343",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1015",
+        "target": "1016"
+      },
+      {
+        "activity_id": "5344",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1021",
+        "target": "1022"
+      },
+      {
+        "activity_id": "5347",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1015",
+        "target": "1016"
+      },
+      {
+        "activity_id": "5365",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1021",
+        "target": "1026"
+      },
+      {
+        "activity_id": "5367",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1021",
+        "target": "1022"
+      },
+      {
+        "activity_id": "5391",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1011",
+        "target": "1022"
+      },
+      {
+        "activity_id": "5404",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1011",
+        "target": "1021"
+      },
+      {
+        "activity_id": "5404",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1011",
+        "target": "1022"
+      },
+      {
+        "activity_id": "5404",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1021",
+        "target": "1022"
+      },
+      {
+        "activity_id": "5406",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1011",
+        "target": "1021"
+      },
+      {
+        "activity_id": "5424",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1011",
+        "target": "1021"
+      },
+      {
+        "activity_id": "5424",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1011",
+        "target": "1022"
+      },
+      {
+        "activity_id": "5424",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1021",
+        "target": "1022"
+      },
+      {
+        "activity_id": "5425",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1021",
+        "target": "1022"
+      },
+      {
+        "activity_id": "5426",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1016",
+        "target": "1027"
+      },
+      {
+        "activity_id": "5427",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1016",
+        "target": "1027"
+      },
+      {
+        "activity_id": "5428",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1016",
+        "target": "1027"
+      },
+      {
+        "activity_id": "5436",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1016",
+        "target": "1027"
+      },
+      {
+        "activity_id": "5436",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1016",
+        "target": "1028"
+      },
+      {
+        "activity_id": "5436",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1027",
+        "target": "1028"
+      },
+      {
+        "activity_id": "5439",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1027",
+        "target": "1028"
+      },
+      {
+        "activity_id": "5502",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1001",
+        "target": "1027"
+      },
+      {
+        "activity_id": "5502",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1001",
+        "target": "1028"
+      },
+      {
+        "activity_id": "5502",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1027",
+        "target": "1028"
+      },
+      {
+        "activity_id": "5506",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1001",
+        "target": "1027"
+      },
+      {
+        "activity_id": "5551",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1003",
+        "target": "1006"
+      },
+      {
+        "activity_id": "5552",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1003",
+        "target": "1006"
+      },
+      {
+        "activity_id": "5555",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1026",
+        "target": "1028"
+      },
+      {
+        "activity_id": "5562",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1001",
+        "target": "1026"
+      },
+      {
+        "activity_id": "5562",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1001",
+        "target": "1027"
+      },
+      {
+        "activity_id": "5562",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1001",
+        "target": "1028"
+      },
+      {
+        "activity_id": "5562",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1026",
+        "target": "1027"
+      },
+      {
+        "activity_id": "5562",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1026",
+        "target": "1028"
+      },
+      {
+        "activity_id": "5562",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1027",
+        "target": "1028"
+      },
+      {
+        "activity_id": "5565",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1027",
+        "target": "1028"
+      },
+      {
+        "activity_id": "5572",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1009",
+        "target": "1011"
+      },
+      {
+        "activity_id": "5590",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1008",
+        "target": "1009"
+      },
+      {
+        "activity_id": "5590",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1008",
+        "target": "1010"
+      },
+      {
+        "activity_id": "5590",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1008",
+        "target": "1011"
+      },
+      {
+        "activity_id": "5590",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1009",
+        "target": "1010"
+      },
+      {
+        "activity_id": "5590",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1009",
+        "target": "1011"
+      },
+      {
+        "activity_id": "5590",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1010",
+        "target": "1011"
+      },
+      {
+        "activity_id": "5592",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1009",
+        "target": "1011"
+      },
+      {
+        "activity_id": "5612",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1003",
+        "target": "1004"
+      },
+      {
+        "activity_id": "5612",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1003",
+        "target": "1006"
+      },
+      {
+        "activity_id": "5612",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1004",
+        "target": "1006"
+      },
+      {
+        "activity_id": "5613",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1003",
+        "target": "1004"
+      },
+      {
+        "activity_id": "5623",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1002",
+        "target": "1006"
+      },
+      {
+        "activity_id": "5624",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1014",
+        "target": "1015"
+      },
+      {
+        "activity_id": "5624",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1014",
+        "target": "1016"
+      },
+      {
+        "activity_id": "5624",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1015",
+        "target": "1016"
+      },
+      {
+        "activity_id": "5625",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1015",
+        "target": "1016"
+      },
+      {
+        "activity_id": "5626",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1009",
+        "target": "1011"
+      },
+      {
+        "activity_id": "5627",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1009",
+        "target": "1010"
+      },
+      {
+        "activity_id": "5628",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1014",
+        "target": "1016"
+      },
+      {
+        "activity_id": "5629",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1014",
+        "target": "1015"
+      },
+      {
+        "activity_id": "5629",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1014",
+        "target": "1016"
+      },
+      {
+        "activity_id": "5629",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1015",
+        "target": "1016"
+      },
+      {
+        "activity_id": "5630",
+        "directed": false,
+        "edge_type": "co_participation",
+        "influence_verified": false,
+        "source": "1015",
+        "target": "1016"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "1001",
+        "label": "Александр Белов",
+        "node_type": "crm_contact",
+        "source": "bitrix24_contract_v3_2_3",
+        "synthetic": true
+      },
+      {
+        "id": "1002",
+        "label": "Мария Соколова",
+        "node_type": "crm_contact",
+        "source": "bitrix24_contract_v3_2_3",
+        "synthetic": true
+      },
+      {
+        "id": "1003",
+        "label": "Дмитрий Миронов",
+        "node_type": "crm_contact",
+        "source": "bitrix24_contract_v3_2_3",
+        "synthetic": true
+      },
+      {
+        "id": "1004",
+        "label": "Анна Орлова",
+        "node_type": "crm_contact",
+        "source": "bitrix24_contract_v3_2_3",
+        "synthetic": true
+      },
+      {
+        "id": "1005",
+        "label": "Илья Власов",
+        "node_type": "crm_contact",
+        "source": "bitrix24_contract_v3_2_3",
+        "synthetic": true
+      },
+      {
+        "id": "1006",
+        "label": "Елена Громова",
+        "node_type": "crm_contact",
+        "source": "bitrix24_contract_v3_2_3",
+        "synthetic": true
+      },
+      {
+        "id": "1007",
+        "label": "Николай Ершов",
+        "node_type": "crm_contact",
+        "source": "bitrix24_contract_v3_2_3",
+        "synthetic": true
+      },
+      {
+        "id": "1008",
+        "label": "Ольга Крылова",
+        "node_type": "crm_contact",
+        "source": "bitrix24_contract_v3_2_3",
+        "synthetic": true
+      },
+      {
+        "id": "1009",
+        "label": "Андрей Данилов",
+        "node_type": "crm_contact",
+        "source": "bitrix24_contract_v3_2_3",
+        "synthetic": true
+      },
+      {
+        "id": "1010",
+        "label": "Ирина Фомина",
+        "node_type": "crm_contact",
+        "source": "bitrix24_contract_v3_2_3",
+        "synthetic": true
+      },
+      {
+        "id": "1011",
+        "label": "Михаил Титов",
+        "node_type": "crm_contact",
+        "source": "bitrix24_contract_v3_2_3",
+        "synthetic": true
+      },
+      {
+        "id": "1012",
+        "label": "Наталья Баранова",
+        "node_type": "crm_contact",
+        "source": "bitrix24_contract_v3_2_3",
+        "synthetic": true
+      },
+      {
+        "id": "1013",
+        "label": "Павел Жуков",
+        "node_type": "crm_contact",
+        "source": "bitrix24_contract_v3_2_3",
+        "synthetic": true
+      },
+      {
+        "id": "1014",
+        "label": "Светлана Романова",
+        "node_type": "crm_contact",
+        "source": "bitrix24_contract_v3_2_3",
+        "synthetic": true
+      },
+      {
+        "id": "1015",
+        "label": "Кирилл Морозов",
+        "node_type": "crm_contact",
+        "source": "bitrix24_contract_v3_2_3",
+        "synthetic": true
+      },
+      {
+        "id": "1016",
+        "label": "Вера Калинина",
+        "node_type": "crm_contact",
+        "source": "bitrix24_contract_v3_2_3",
+        "synthetic": true
+      },
+      {
+        "id": "1017",
+        "label": "Роман Савин",
+        "node_type": "crm_contact",
+        "source": "bitrix24_contract_v3_2_3",
+        "synthetic": true
+      },
+      {
+        "id": "1018",
+        "label": "Татьяна Котова",
+        "node_type": "crm_contact",
+        "source": "bitrix24_contract_v3_2_3",
+        "synthetic": true
+      },
+      {
+        "id": "1019",
+        "label": "Максим Фролов",
+        "node_type": "crm_contact",
+        "source": "bitrix24_contract_v3_2_3",
+        "synthetic": true
+      },
+      {
+        "id": "1020",
+        "label": "Алина Климова",
+        "node_type": "crm_contact",
+        "source": "bitrix24_contract_v3_2_3",
+        "synthetic": true
+      },
+      {
+        "id": "1021",
+        "label": "Виктор Быков",
+        "node_type": "crm_contact",
+        "source": "bitrix24_contract_v3_2_3",
+        "synthetic": true
+      },
+      {
+        "id": "1022",
+        "label": "Полина Лебедева",
+        "node_type": "crm_contact",
+        "source": "bitrix24_contract_v3_2_3",
+        "synthetic": true
+      },
+      {
+        "id": "1023",
+        "label": "Сергей Осипов",
+        "node_type": "crm_contact",
+        "source": "bitrix24_contract_v3_2_3",
+        "synthetic": true
+      },
+      {
+        "id": "1024",
+        "label": "Юлия Зорина",
+        "node_type": "crm_contact",
+        "source": "bitrix24_contract_v3_2_3",
+        "synthetic": true
+      },
+      {
+        "id": "1025",
+        "label": "Артём Гущин",
+        "node_type": "crm_contact",
+        "source": "bitrix24_contract_v3_2_3",
+        "synthetic": true
+      },
+      {
+        "id": "1026",
+        "label": "Дарья Никитина",
+        "node_type": "crm_contact",
+        "source": "bitrix24_contract_v3_2_3",
+        "synthetic": true
+      },
+      {
+        "id": "1027",
+        "label": "Игорь Комаров",
+        "node_type": "crm_contact",
+        "source": "bitrix24_contract_v3_2_3",
+        "synthetic": true
+      },
+      {
+        "id": "1028",
+        "label": "Ксения Лазарева",
+        "node_type": "crm_contact",
+        "source": "bitrix24_contract_v3_2_3",
+        "synthetic": true
+      },
+      {
+        "id": "1029",
+        "label": "Денис Медведев",
+        "node_type": "crm_contact",
+        "source": "bitrix24_contract_v3_2_3",
+        "synthetic": true
+      },
+      {
+        "id": "1030",
+        "label": "Екатерина Волкова",
+        "node_type": "crm_contact",
+        "source": "bitrix24_contract_v3_2_3",
+        "synthetic": true
+      }
+    ]
+  },
+  "influence_verified": false,
+  "project": "LPR_26",
+  "provenance": {
+    "analytics_cell_version": "1.0.0",
+    "crm_source": "bitrix24_contract_v3_2_3",
+    "final_audit_cell_version": "1.0.0",
+    "graph_cell_version": "1.0.0",
+    "ground_truth_included": false,
+    "nlp_enrichment_source": "feature/nlp-influence-v3.3.1-mvp",
+    "real_world_influence_verified": false
+  },
+  "requires_human_review": true,
+  "schema_version": "1.0.0"
+}
