@@ -271,14 +271,15 @@
     "Internal client messages are represented as illustrative email activities",
     "This is legacy REST v1 response shape, not REST 3.0",
     "Text variants are synthetic and deterministic; they are not evidence of real client statements.",
-    "Generator-side exact uniqueness is not a semantic-similarity evaluation."
+    "Generator-side exact uniqueness is not a semantic-similarity evaluation.",
+    "Synthetic action subject is unspecified: role-action cooccurrence is not evidence of a specific person's action."
   ],
-  "generatorVersion": "3.2.3",
-  "parentGeneratorVersion": "3.2.2",
+  "generatorVersion": "3.3.0",
+  "parentGeneratorVersion": "3.2.3",
   "generationSeed": 20261123,
-  "textGeneration": "activity_type_specific_opening_argument_and_closing_variants",
-  "datasetVersion": "v3.2.3",
-  "sourceBranch": "feature/synthetic-bank-v3.2.3-nlp-diversity",
+  "textGeneration": "role_action_same_segment_with_unverified_actor",
+  "datasetVersion": "v3.3.0",
+  "sourceBranch": "feature/synthetic-bank-v3.3.0-compatible-nlp",
   "sourceDataset": "src/data/bitrix24_contract_v2",
   "generationAudit": {
     "documents": 630,
@@ -287,8 +288,11 @@
       "email": 324,
       "meeting": 126
     },
-    "uniqueNormalizedDescriptions": 625,
-    "emailClosingVariants": 16,
-    "note": "Descriptions are regenerated from type-specific scenarios; the previous DESCRIPTION is intentionally not concatenated. Exact uniqueness is only a lexical precheck; run NLP 20 and NLP 20A for independent TF-IDF/template validation."
+    "uniqueNormalizedDescriptions": 630,
+    "segmentsPerActivity": 4,
+    "verifiedActorAssignments": 0,
+    "roleActionCooccurrence": "synthetic context only; not verified person attribution",
+    "nonDescriptionCRMFields": "unchanged",
+    "source": "v3.2.3"
   }
 }
