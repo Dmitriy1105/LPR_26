@@ -1,0 +1,1111 @@
+[
+  {
+    "activity_id": "5001",
+    "document_id": "activity:5001",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Александр Белов попросил Дмитрий Миронов пересмотреть бюджет.",
+    "participant_contact_ids": [
+      1001,
+      1003
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5002",
+    "document_id": "activity:5002",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Александр Белов поручил Дмитрий Миронов подготовить заключение.",
+    "participant_contact_ids": [
+      1001,
+      1003
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5003",
+    "document_id": "activity:5003",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Александр Белов убедил Дмитрий Миронов поддержать инициативу.",
+    "participant_contact_ids": [
+      1001,
+      1003
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5016",
+    "document_id": "activity:5016",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Александр Белов и Дмитрий Миронов участвовали в обсуждении; решение не зафиксировано.",
+    "participant_contact_ids": [
+      1001,
+      1003,
+      1004
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5019",
+    "document_id": "activity:5019",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Дмитрий Миронов попросил Анна Орлова уточнить сроки.",
+    "participant_contact_ids": [
+      1003,
+      1004
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5041",
+    "document_id": "activity:5041",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Елена Громова попросил Андрей Данилов пересмотреть бюджет.",
+    "participant_contact_ids": [
+      1006,
+      1009,
+      1010
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5042",
+    "document_id": "activity:5042",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Елена Громова поручил Андрей Данилов подготовить заключение.",
+    "participant_contact_ids": [
+      1006,
+      1009
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5043",
+    "document_id": "activity:5043",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Андрей Данилов убедил Ирина Фомина поддержать инициативу.",
+    "participant_contact_ids": [
+      1009,
+      1010
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5061",
+    "document_id": "activity:5061",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Елена Громова попросил Андрей Данилов пересмотреть бюджет.",
+    "participant_contact_ids": [
+      1006,
+      1009
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5062",
+    "document_id": "activity:5062",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Андрей Данилов поручил Ирина Фомина подготовить заключение.",
+    "participant_contact_ids": [
+      1009,
+      1010
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5093",
+    "document_id": "activity:5093",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Михаил Титов убедил Кирилл Морозов поддержать инициативу.",
+    "participant_contact_ids": [
+      1011,
+      1015,
+      1016
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5094",
+    "document_id": "activity:5094",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Михаил Титов и Кирилл Морозов участвовали в обсуждении; решение не зафиксировано.",
+    "participant_contact_ids": [
+      1011,
+      1015
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5103",
+    "document_id": "activity:5103",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Вера Калинина убедил Михаил Титов поддержать инициативу.",
+    "participant_contact_ids": [
+      1016,
+      1011
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5104",
+    "document_id": "activity:5104",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Михаил Титов попросил Кирилл Морозов уточнить сроки.",
+    "participant_contact_ids": [
+      1011,
+      1015,
+      1016
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5105",
+    "document_id": "activity:5105",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Кирилл Морозов рекомендовал Вера Калинина рассмотреть предложение.",
+    "participant_contact_ids": [
+      1015,
+      1016
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5112",
+    "document_id": "activity:5112",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Вера Калинина и Виктор Быков участвовали в обсуждении; решение не зафиксировано.",
+    "participant_contact_ids": [
+      1016,
+      1021
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5113",
+    "document_id": "activity:5113",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Вера Калинина убедил Виктор Быков поддержать инициативу.",
+    "participant_contact_ids": [
+      1016,
+      1021
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5154",
+    "document_id": "activity:5154",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Вера Калинина и Виктор Быков участвовали в обсуждении; решение не зафиксировано.",
+    "participant_contact_ids": [
+      1016,
+      1021,
+      1022
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5157",
+    "document_id": "activity:5157",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Виктор Быков поручил Полина Лебедева подготовить заключение.",
+    "participant_contact_ids": [
+      1021,
+      1022
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5160",
+    "document_id": "activity:5160",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Михаил Титов и Дмитрий Миронов участвовали в обсуждении; решение не зафиксировано.",
+    "participant_contact_ids": [
+      1011,
+      1003,
+      1004,
+      1002
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5163",
+    "document_id": "activity:5163",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Михаил Титов убедил Дмитрий Миронов поддержать инициативу.",
+    "participant_contact_ids": [
+      1011,
+      1003
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5175",
+    "document_id": "activity:5175",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Вера Калинина рекомендовал Виктор Быков рассмотреть предложение.",
+    "participant_contact_ids": [
+      1016,
+      1021
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5176",
+    "document_id": "activity:5176",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Игорь Комаров попросил Ксения Лазарева пересмотреть бюджет.",
+    "participant_contact_ids": [
+      1027,
+      1028
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5187",
+    "document_id": "activity:5187",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Виктор Быков поручил Игорь Комаров подготовить заключение.",
+    "participant_contact_ids": [
+      1021,
+      1027,
+      1028
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5189",
+    "document_id": "activity:5189",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Виктор Быков попросил Игорь Комаров уточнить сроки.",
+    "participant_contact_ids": [
+      1021,
+      1027
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5204",
+    "document_id": "activity:5204",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Анна Орлова попросил Мария Соколова уточнить сроки.",
+    "participant_contact_ids": [
+      1004,
+      1002
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5207",
+    "document_id": "activity:5207",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Михаил Титов поручил Дмитрий Миронов подготовить заключение.",
+    "participant_contact_ids": [
+      1011,
+      1003
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5208",
+    "document_id": "activity:5208",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Дмитрий Миронов и Анна Орлова участвовали в обсуждении; решение не зафиксировано.",
+    "participant_contact_ids": [
+      1003,
+      1004
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5209",
+    "document_id": "activity:5209",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Виктор Быков попросил Игорь Комаров уточнить сроки.",
+    "participant_contact_ids": [
+      1021,
+      1027
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5210",
+    "document_id": "activity:5210",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Игорь Комаров рекомендовал Ксения Лазарева рассмотреть предложение.",
+    "participant_contact_ids": [
+      1027,
+      1028
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5211",
+    "document_id": "activity:5211",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Вера Калинина попросил Андрей Данилов пересмотреть бюджет.",
+    "participant_contact_ids": [
+      1016,
+      1009,
+      1010
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5212",
+    "document_id": "activity:5212",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Вера Калинина поручил Андрей Данилов подготовить заключение.",
+    "participant_contact_ids": [
+      1016,
+      1009
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5213",
+    "document_id": "activity:5213",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Дарья Никитина убедил Дмитрий Миронов поддержать инициативу.",
+    "participant_contact_ids": [
+      1026,
+      1003,
+      1004
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5215",
+    "document_id": "activity:5215",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Дарья Никитина рекомендовал Дмитрий Миронов рассмотреть предложение.",
+    "participant_contact_ids": [
+      1026,
+      1003
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5220",
+    "document_id": "activity:5220",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Анна Орлова и Дарья Никитина участвовали в обсуждении; решение не зафиксировано.",
+    "participant_contact_ids": [
+      1004,
+      1026
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5237",
+    "document_id": "activity:5237",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Вера Калинина поручил Андрей Данилов подготовить заключение.",
+    "participant_contact_ids": [
+      1016,
+      1009,
+      1010,
+      1008
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5239",
+    "document_id": "activity:5239",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Андрей Данилов попросил Ирина Фомина уточнить сроки.",
+    "participant_contact_ids": [
+      1009,
+      1010
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5246",
+    "document_id": "activity:5246",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Ольга Крылова попросил Вера Калинина пересмотреть бюджет.",
+    "participant_contact_ids": [
+      1008,
+      1016
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5249",
+    "document_id": "activity:5249",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Дарья Никитина попросил Дмитрий Миронов уточнить сроки.",
+    "participant_contact_ids": [
+      1026,
+      1003,
+      1004
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5252",
+    "document_id": "activity:5252",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Дмитрий Миронов поручил Анна Орлова подготовить заключение.",
+    "participant_contact_ids": [
+      1003,
+      1004
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5264",
+    "document_id": "activity:5264",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Александр Белов попросил Андрей Данилов уточнить сроки.",
+    "participant_contact_ids": [
+      1001,
+      1009
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5265",
+    "document_id": "activity:5265",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Александр Белов рекомендовал Андрей Данилов рассмотреть предложение.",
+    "participant_contact_ids": [
+      1001,
+      1009
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5283",
+    "document_id": "activity:5283",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Александр Белов убедил Андрей Данилов поддержать инициативу.",
+    "participant_contact_ids": [
+      1001,
+      1009
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5284",
+    "document_id": "activity:5284",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Александр Белов попросил Андрей Данилов уточнить сроки.",
+    "participant_contact_ids": [
+      1001,
+      1009,
+      1010
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5285",
+    "document_id": "activity:5285",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Андрей Данилов рекомендовал Ирина Фомина рассмотреть предложение.",
+    "participant_contact_ids": [
+      1009,
+      1010
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5286",
+    "document_id": "activity:5286",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Виктор Быков и Кирилл Морозов участвовали в обсуждении; решение не зафиксировано.",
+    "participant_contact_ids": [
+      1021,
+      1015
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5289",
+    "document_id": "activity:5289",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Виктор Быков попросил Кирилл Морозов уточнить сроки.",
+    "participant_contact_ids": [
+      1021,
+      1015
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5290",
+    "document_id": "activity:5290",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Виктор Быков рекомендовал Кирилл Морозов рассмотреть предложение.",
+    "participant_contact_ids": [
+      1021,
+      1015
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5316",
+    "document_id": "activity:5316",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Виктор Быков и Кирилл Морозов участвовали в обсуждении; решение не зафиксировано.",
+    "participant_contact_ids": [
+      1021,
+      1015,
+      1016
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5320",
+    "document_id": "activity:5320",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Кирилл Морозов рекомендовал Вера Калинина рассмотреть предложение.",
+    "participant_contact_ids": [
+      1015,
+      1016
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5321",
+    "document_id": "activity:5321",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Елена Громова попросил Кирилл Морозов пересмотреть бюджет.",
+    "participant_contact_ids": [
+      1006,
+      1015,
+      1016
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5322",
+    "document_id": "activity:5322",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Елена Громова и Кирилл Морозов участвовали в обсуждении; решение не зафиксировано.",
+    "participant_contact_ids": [
+      1006,
+      1015
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5337",
+    "document_id": "activity:5337",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Дарья Никитина поручил Виктор Быков подготовить заключение.",
+    "participant_contact_ids": [
+      1026,
+      1021,
+      1022,
+      1020
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5338",
+    "document_id": "activity:5338",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Дарья Никитина убедил Виктор Быков поддержать инициативу.",
+    "participant_contact_ids": [
+      1026,
+      1021
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5342",
+    "document_id": "activity:5342",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Елена Громова поручил Кирилл Морозов подготовить заключение.",
+    "participant_contact_ids": [
+      1006,
+      1015
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5343",
+    "document_id": "activity:5343",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Кирилл Морозов убедил Вера Калинина поддержать инициативу.",
+    "participant_contact_ids": [
+      1015,
+      1016
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5344",
+    "document_id": "activity:5344",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Виктор Быков попросил Полина Лебедева уточнить сроки.",
+    "participant_contact_ids": [
+      1021,
+      1022
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5347",
+    "document_id": "activity:5347",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Кирилл Морозов поручил Вера Калинина подготовить заключение.",
+    "participant_contact_ids": [
+      1015,
+      1016
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5365",
+    "document_id": "activity:5365",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Дарья Никитина рекомендовал Виктор Быков рассмотреть предложение.",
+    "participant_contact_ids": [
+      1026,
+      1021
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5367",
+    "document_id": "activity:5367",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Виктор Быков поручил Полина Лебедева подготовить заключение.",
+    "participant_contact_ids": [
+      1021,
+      1022
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5391",
+    "document_id": "activity:5391",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Полина Лебедева попросил Михаил Титов пересмотреть бюджет.",
+    "participant_contact_ids": [
+      1022,
+      1011
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5404",
+    "document_id": "activity:5404",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Михаил Титов попросил Виктор Быков уточнить сроки.",
+    "participant_contact_ids": [
+      1011,
+      1021,
+      1022
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5406",
+    "document_id": "activity:5406",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Михаил Титов и Виктор Быков участвовали в обсуждении; решение не зафиксировано.",
+    "participant_contact_ids": [
+      1011,
+      1021
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5424",
+    "document_id": "activity:5424",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Михаил Титов и Виктор Быков участвовали в обсуждении; решение не зафиксировано.",
+    "participant_contact_ids": [
+      1011,
+      1021,
+      1022
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5425",
+    "document_id": "activity:5425",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Виктор Быков рекомендовал Полина Лебедева рассмотреть предложение.",
+    "participant_contact_ids": [
+      1021,
+      1022
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5426",
+    "document_id": "activity:5426",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Вера Калинина попросил Игорь Комаров пересмотреть бюджет.",
+    "participant_contact_ids": [
+      1016,
+      1027
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5427",
+    "document_id": "activity:5427",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Вера Калинина поручил Игорь Комаров подготовить заключение.",
+    "participant_contact_ids": [
+      1016,
+      1027
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5428",
+    "document_id": "activity:5428",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Вера Калинина убедил Игорь Комаров поддержать инициативу.",
+    "participant_contact_ids": [
+      1016,
+      1027
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5436",
+    "document_id": "activity:5436",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Вера Калинина и Игорь Комаров участвовали в обсуждении; решение не зафиксировано.",
+    "participant_contact_ids": [
+      1016,
+      1027,
+      1028
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5439",
+    "document_id": "activity:5439",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Игорь Комаров попросил Ксения Лазарева уточнить сроки.",
+    "participant_contact_ids": [
+      1027,
+      1028
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5502",
+    "document_id": "activity:5502",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Александр Белов и Игорь Комаров участвовали в обсуждении; решение не зафиксировано.",
+    "participant_contact_ids": [
+      1001,
+      1027,
+      1028
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5506",
+    "document_id": "activity:5506",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Александр Белов попросил Игорь Комаров пересмотреть бюджет.",
+    "participant_contact_ids": [
+      1001,
+      1027
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5551",
+    "document_id": "activity:5551",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Елена Громова попросил Дмитрий Миронов пересмотреть бюджет.",
+    "participant_contact_ids": [
+      1006,
+      1003
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5552",
+    "document_id": "activity:5552",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Елена Громова поручил Дмитрий Миронов подготовить заключение.",
+    "participant_contact_ids": [
+      1006,
+      1003
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5555",
+    "document_id": "activity:5555",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Ксения Лазарева рекомендовал Дарья Никитина рассмотреть предложение.",
+    "participant_contact_ids": [
+      1028,
+      1026
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5562",
+    "document_id": "activity:5562",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Александр Белов и Игорь Комаров участвовали в обсуждении; решение не зафиксировано.",
+    "participant_contact_ids": [
+      1001,
+      1027,
+      1028,
+      1026
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5565",
+    "document_id": "activity:5565",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Игорь Комаров рекомендовал Ксения Лазарева рассмотреть предложение.",
+    "participant_contact_ids": [
+      1027,
+      1028
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5572",
+    "document_id": "activity:5572",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Михаил Титов поручил Андрей Данилов подготовить заключение.",
+    "participant_contact_ids": [
+      1011,
+      1009
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5590",
+    "document_id": "activity:5590",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Михаил Титов рекомендовал Андрей Данилов рассмотреть предложение.",
+    "participant_contact_ids": [
+      1011,
+      1009,
+      1010,
+      1008
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5592",
+    "document_id": "activity:5592",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Михаил Титов и Андрей Данилов участвовали в обсуждении; решение не зафиксировано.",
+    "participant_contact_ids": [
+      1011,
+      1009
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5612",
+    "document_id": "activity:5612",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Елена Громова поручил Дмитрий Миронов подготовить заключение.",
+    "participant_contact_ids": [
+      1006,
+      1003,
+      1004
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5613",
+    "document_id": "activity:5613",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Дмитрий Миронов убедил Анна Орлова поддержать инициативу.",
+    "participant_contact_ids": [
+      1003,
+      1004
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5623",
+    "document_id": "activity:5623",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Мария Соколова убедил Елена Громова поддержать инициативу.",
+    "participant_contact_ids": [
+      1002,
+      1006
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5624",
+    "document_id": "activity:5624",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Вера Калинина попросил Кирилл Морозов уточнить сроки.",
+    "participant_contact_ids": [
+      1016,
+      1015,
+      1014
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5625",
+    "document_id": "activity:5625",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Вера Калинина рекомендовал Кирилл Морозов рассмотреть предложение.",
+    "participant_contact_ids": [
+      1016,
+      1015
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5626",
+    "document_id": "activity:5626",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Михаил Титов попросил Андрей Данилов пересмотреть бюджет.",
+    "participant_contact_ids": [
+      1011,
+      1009
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5627",
+    "document_id": "activity:5627",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Андрей Данилов поручил Ирина Фомина подготовить заключение.",
+    "participant_contact_ids": [
+      1009,
+      1010
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5628",
+    "document_id": "activity:5628",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Светлана Романова и Вера Калинина участвовали в обсуждении; решение не зафиксировано.",
+    "participant_contact_ids": [
+      1014,
+      1016
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5629",
+    "document_id": "activity:5629",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Вера Калинина попросил Кирилл Морозов уточнить сроки.",
+    "participant_contact_ids": [
+      1016,
+      1015,
+      1014
+    ],
+    "synthetic": true
+  },
+  {
+    "activity_id": "5630",
+    "document_id": "activity:5630",
+    "company_id": 42,
+    "source": "synthetic_nlp_enrichment_v3.3.1",
+    "text": "Кирилл Морозов рекомендовал Вера Калинина рассмотреть предложение.",
+    "participant_contact_ids": [
+      1015,
+      1016
+    ],
+    "synthetic": true
+  }
+]
