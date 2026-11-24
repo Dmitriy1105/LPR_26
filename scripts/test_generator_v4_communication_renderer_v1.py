@@ -57,6 +57,12 @@ class CanonicalCommunicationRendererTests(unittest.TestCase):
         self.assertGreater(len(missing), 0)
         self.assertTrue(all(not row["context_note_included"] for row in missing))
 
+    def test_internal_scenario_labels_are_not_rendered_into_body(self):
+        for row in self.first:
+            self.assertNotIn("Контекст события:", row["body"])
+            self.assertNotIn("Область согласования:", row["body"])
+            self.assertNotIn("unit_approval:", row["body"].lower())
+
     def test_ground_truth_fields_are_not_exposed(self):
         forbidden = {"authority_grant_ref", "authority_grant_refs", "decision_outcome",
                      "ground_truth", "decision_maker_contact_id", "executor_contact_id"}
