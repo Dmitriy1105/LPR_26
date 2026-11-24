@@ -1,8 +1,8 @@
 {
-  "version": "1.2",
+  "version": "1.3",
   "status": "REVIEW_REQUIRED",
-  "baseline_candidate": "d57744542fc20f35fabf7f44f20e2bfc3a543e13",
-  "latest_verified_run": 45420518332,
+  "baseline_candidate": "7cfe1b60a2110ed53bd3032b19bb983e2571f13a",
+  "latest_verified_run": 45425761757,
   "defects": [
     {
       "id": "ARCH-001",
@@ -29,25 +29,25 @@
       "id": "ARCH-004",
       "title": "Incomplete global audit",
       "status": "PARTIAL",
-      "run_id": "45419016403",
+      "run_id": "45425761757",
       "acceptance": "Cross-process chronology and full replay",
-      "evidence_note": "Ordered decision and escalation projection passes; complete independent node and actor semantics pending"
+      "evidence_note": "Independent outcome oracle 576 cases; full independent node/actor semantics and physical chronology not established."
     },
     {
       "id": "ARCH-005",
       "title": "Business logic in specialized Python runners",
       "status": "PARTIAL",
-      "run_id": "45419688683",
+      "run_id": "45425761757",
       "acceptance": "Move bindings and routing policy into declarative models",
-      "evidence_note": "Declarative authority profile implemented; duplicated registry and legacy runners remain"
+      "evidence_note": "Shared authoritative registry composed from overrides; legacy runners and duplicated call bindings remain."
     },
     {
       "id": "ARCH-006",
       "title": "Insufficient negative test coverage",
       "status": "PARTIAL",
-      "run_id": "45420032462",
+      "run_id": "45425761757",
       "acceptance": "Existing mutation suites pass; add cross-process and malformed-model cases",
-      "evidence_note": "27 extended negative cases pass; malformed DMN and registry consistency coverage incomplete"
+      "evidence_note": "18 malformed DMN and 4 registry negative cases added; coverage is not exhaustive."
     },
     {
       "id": "ARCH-007",
@@ -82,9 +82,9 @@
       "id": "ARCH-011",
       "title": "Incomplete nested event projection",
       "status": "PARTIAL",
-      "run_id": "45419016403",
+      "run_id": "45425761757",
       "acceptance": "Escalation internal transitions and interleaving not fully audited",
-      "evidence_note": "Decision projection passes; complete nested task projection pending"
+      "evidence_note": "Nested task actor projection and exact replay pass; global physical chronology and independent complete node projection remain."
     },
     {
       "id": "ARCH-012",
@@ -97,25 +97,25 @@
       "id": "ARCH-013",
       "title": "Authority input bypass in leaf budget process",
       "status": "PARTIAL",
-      "run_id": "45419688683",
+      "run_id": "45425761757",
       "acceptance": "Derive monetary and temporal authority from grants at execution boundary",
-      "evidence_note": "Declarative authoritative boundary passes; generator integration and temporal non-budget grants pending"
+      "evidence_note": "Authoritative boundary verified; generator integration and temporal non-budget grants remain."
     },
     {
       "id": "ARCH-014",
       "title": "Delegation and task assignment not modeled",
       "status": "PARTIAL",
-      "run_id": "45420518332",
+      "run_id": "45425761757",
       "acceptance": "Organization engine milestone",
-      "evidence_note": "Standalone assignment lifecycle passes; BPMN integration, authority delegation and replay pending"
+      "evidence_note": "Task assignment integrated and replayed; dynamic authority delegation and cross-task chronology remain."
     },
     {
       "id": "ARCH-015",
       "title": "Decision evidence replay not full process replay",
       "status": "PARTIAL",
-      "run_id": "45419016403",
+      "run_id": "45425761757",
       "acceptance": "Validate all transitions, actor evidence and completeness against source inputs",
-      "evidence_note": "Replay and decision equivalence pass; historical checkout verification and full independent semantics pending"
+      "evidence_note": "Two historical revisions replay successfully; same-engine replay, environment archival and independent full trace semantics remain."
     }
   ]
 }
