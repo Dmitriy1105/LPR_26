@@ -13,7 +13,7 @@ def main():
     assert missing["status"]=="REVIEW_REQUIRED" and missing["unattributed_event_ids"]==["EV2"]
     empty=assess_dependency_risk(org,[],[])
     assert empty["heuristic_risk_level"]=="LOW" and empty["calibrated_risk_probability"] is False
-    try: assess_dependency_risk(org,events,chains,0.5,0.4)
+    try: assess_dependency_risk(org,events,chains,0.5,0.5)
     except ValueError: pass
     else: raise AssertionError("invalid thresholds accepted")
     print(json.dumps(dict(status="PASS",positive_cases=2,negative_cases=2)))
