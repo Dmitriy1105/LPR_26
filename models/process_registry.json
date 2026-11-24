@@ -160,6 +160,53 @@
           }
         }
       }
+    },
+    {
+      "id": "budget_escalation_universal",
+      "bpmn": "models/bpmn/budget_escalation_universal.bpmn",
+      "namespace": "urn:lpr:process",
+      "executor": "composite",
+      "max_steps": 100,
+      "updates": {},
+      "before": {
+        "assess": [
+          "budget_authority"
+        ],
+        "advance_manager": [
+          "advance_manager"
+        ]
+      },
+      "decisions": {
+        "route_decision": {
+          "file": "models/dmn/escalation_route.dmn",
+          "id": "escalation_route",
+          "output": "routeOutcome"
+        }
+      },
+      "calls": {
+        "assess": {
+          "process": "budget_approval",
+          "inputs": {
+            "authorized": {
+              "ref": "authorized"
+            },
+            "withinLimit": {
+              "ref": "withinLimit"
+            },
+            "fundsAvailable": {
+              "ref": "fundsAvailable"
+            },
+            "actor": {
+              "ref": "actor"
+            }
+          },
+          "outputs": {
+            "budgetStatus": {
+              "ref": "end"
+            }
+          }
+        }
+      }
     }
   ]
 }
