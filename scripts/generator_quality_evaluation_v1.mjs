@@ -12,7 +12,7 @@ let uniqueBodyTotal = 0, sameSeedReplayPass = true;
 const eventTypes = new Set();
 
 function ratio(n, d) { return d ? Number((n / d).toFixed(4)) : 0; }
-function normalized(s) { return s.toLowerCase().replace(/[^\\p{L}\\p{N}]+/gu, " ").trim(); }
+function normalized(s) { return s.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ").trim(); }
 
 for (const seed of seeds) {
   const dataset = generateCommunications({ seed });
@@ -62,7 +62,7 @@ const structural = ratio(seeds.length - rows.filter(r => !r.structural_pass).len
 const attribution = ratio(seeds.length - rows.filter(r => !r.ground_truth_pass).length, seeds.length);
 const semantic = ratio(Math.max(0, totalEvents - eventSemanticErrors), totalEvents);
 const coverage = ratio(totalActivities, totalEvents);
-const diversity = ratio(uniqueBodyTotal, totalActivities);
+const diversity = Number((rows.reduce((sum, row) => sum + ratio(row.unique_text_bodies, row.communications), 0) / rows.length).toFixed(4));
 const reproducibility = sameSeedReplayPass ? 1 : 0;
 const seedVariation = allSignatures.size > 1 ? 1 : 0;
 const hardGates = {
