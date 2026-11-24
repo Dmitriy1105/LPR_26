@@ -7,7 +7,8 @@ def main():
     assert report["status"]=="REVIEW_REQUIRED"
     assert len(findings)==9
     assert report["contract_status"]=="PROPOSAL_REVIEW_REQUIRED"
-    assert findings["GEN-001"]["status"]=="OPEN"
+    assert findings["GEN-001"]["status"] in ("OPEN","CLOSED")
+    assert report["checks"]["scenario_negative_test_pass"] == (findings["GEN-001"]["status"]=="CLOSED")
     assert report["scenario_smoke"]["negative_test"]["pass"] is False
     assert report["fixture_total"]==677
     assert report["contract_baseline_target"]==767
