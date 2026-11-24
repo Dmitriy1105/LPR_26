@@ -1,11 +1,16 @@
 """Detect explicitly recorded conflicting outcomes for the same decision subject and scope."""
 from collections import defaultdict
-from datetime import datetime,timezone
+from datetime import datetime,date,time,timezone
 from event_chronology_v1 import validate_events,chronology
 from decision_authority_reconciliation_v1 import reconcile_decisions
 def _instant(value):
-    dt=datetime.fromisoformat(value.replace("Z","+00:00"))
-    if dt.tzinfo is None or dt.utcoffset() is None: raise ValueError("decided_at requires timezone")
+    if not isinstance(value,str): raise ValueError("decided_at must be an ISO date or timestamp")
+    try:
+        if len(value)==10:
+            return datetime.combine(date.fromisoformat(value),time.min,tzinfo=timezone.utc)
+        dt=datetime.fromisoformat(value.replace("Z","+00:00"))
+    except ValueError as exc: raise ValueError("invalid decided_at") from exc
+    if dt.tzinfo is None or dt.utcoffset() is None: raise ValueError("decided_at timestamp requires timezone")
     return dt.astimezone(timezone.utc)
 def detect_contradictory_decisions(org,grants,delegations,events,decisions,window_days=90):
     validate_events(events)
