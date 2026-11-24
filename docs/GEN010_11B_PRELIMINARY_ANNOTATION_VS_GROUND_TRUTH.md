@@ -15,7 +15,7 @@ The corrected-v2 annotation files previously described in chat as LLM-generated 
 
 ## Results
 - Accuracy: 0.8636 (190/220)
-- Macro Precision across 11 Ground Truth classes: 0.9448
+- Macro Precision across 11 Ground Truth classes: 0.9384
 - Macro Recall across 11 Ground Truth classes: 0.8636
 - Macro F1 across 11 Ground Truth classes: 0.8906
 - Macro F1 with an explicit 12th `unclear` category: 0.8164
