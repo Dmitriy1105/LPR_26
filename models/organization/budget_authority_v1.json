@@ -1,0 +1,17 @@
+{
+  "currency": "RUB",
+  "grants": [
+    {
+      "person": "P3",
+      "limit": 500000,
+      "valid_from": "2026-01-01",
+      "valid_to": "2026-12-31"
+    },
+    {
+      "person": "P1",
+      "limit": 5000000,
+      "valid_from": "2026-01-01",
+      "valid_to": "2026-12-31"
+    }
+  ]
+}
