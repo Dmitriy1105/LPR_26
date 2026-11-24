@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" id="Definitions_Readiness" name="Corporate readiness" namespace="urn:lpr:decision">
+<decision id="corporate_readiness" name="Corporate readiness"><decisionTable id="readiness_table" hitPolicy="UNIQUE">
+<input><inputExpression typeRef="string"><text>technicalStatus</text></inputExpression></input>
+<input><inputExpression typeRef="string"><text>budgetStatus</text></inputExpression></input>
+<output name="outcome" typeRef="string"/>
+<rule id="r0"><inputEntry><text>"positive"</text></inputEntry><inputEntry><text>"approved"</text></inputEntry><outputEntry><text>"ready"</text></outputEntry></rule>
+<rule id="r1"><inputEntry><text>"positive"</text></inputEntry><inputEntry><text>"rejected"</text></inputEntry><outputEntry><text>"not_ready"</text></outputEntry></rule>
+<rule id="r2"><inputEntry><text>"positive"</text></inputEntry><inputEntry><text>"unresolved_limit"</text></inputEntry><outputEntry><text>"pending"</text></outputEntry></rule>
+<rule id="r3"><inputEntry><text>"positive"</text></inputEntry><inputEntry><text>"no_active_grant"</text></inputEntry><outputEntry><text>"pending"</text></outputEntry></rule>
+<rule id="r4"><inputEntry><text>"positive"</text></inputEntry><inputEntry><text>"blocked"</text></inputEntry><outputEntry><text>"pending"</text></outputEntry></rule>
+<rule id="r5"><inputEntry><text>"negative"</text></inputEntry><inputEntry><text>"approved"</text></inputEntry><outputEntry><text>"not_ready"</text></outputEntry></rule>
+<rule id="r6"><inputEntry><text>"negative"</text></inputEntry><inputEntry><text>"rejected"</text></inputEntry><outputEntry><text>"not_ready"</text></outputEntry></rule>
+<rule id="r7"><inputEntry><text>"negative"</text></inputEntry><inputEntry><text>"unresolved_limit"</text></inputEntry><outputEntry><text>"pending"</text></outputEntry></rule>
+<rule id="r8"><inputEntry><text>"negative"</text></inputEntry><inputEntry><text>"no_active_grant"</text></inputEntry><outputEntry><text>"pending"</text></outputEntry></rule>
+<rule id="r9"><inputEntry><text>"negative"</text></inputEntry><inputEntry><text>"blocked"</text></inputEntry><outputEntry><text>"pending"</text></outputEntry></rule>
+<rule id="r10"><inputEntry><text>"rework"</text></inputEntry><inputEntry><text>"approved"</text></inputEntry><outputEntry><text>"pending"</text></outputEntry></rule>
+<rule id="r11"><inputEntry><text>"rework"</text></inputEntry><inputEntry><text>"rejected"</text></inputEntry><outputEntry><text>"pending"</text></outputEntry></rule>
+<rule id="r12"><inputEntry><text>"rework"</text></inputEntry><inputEntry><text>"unresolved_limit"</text></inputEntry><outputEntry><text>"pending"</text></outputEntry></rule>
+<rule id="r13"><inputEntry><text>"rework"</text></inputEntry><inputEntry><text>"no_active_grant"</text></inputEntry><outputEntry><text>"pending"</text></outputEntry></rule>
+<rule id="r14"><inputEntry><text>"rework"</text></inputEntry><inputEntry><text>"blocked"</text></inputEntry><outputEntry><text>"pending"</text></outputEntry></rule>
+<rule id="r15"><inputEntry><text>"referred"</text></inputEntry><inputEntry><text>"approved"</text></inputEntry><outputEntry><text>"pending"</text></outputEntry></rule>
+<rule id="r16"><inputEntry><text>"referred"</text></inputEntry><inputEntry><text>"rejected"</text></inputEntry><outputEntry><text>"pending"</text></outputEntry></rule>
+<rule id="r17"><inputEntry><text>"referred"</text></inputEntry><inputEntry><text>"unresolved_limit"</text></inputEntry><outputEntry><text>"pending"</text></outputEntry></rule>
+<rule id="r18"><inputEntry><text>"referred"</text></inputEntry><inputEntry><text>"no_active_grant"</text></inputEntry><outputEntry><text>"pending"</text></outputEntry></rule>
+<rule id="r19"><inputEntry><text>"referred"</text></inputEntry><inputEntry><text>"blocked"</text></inputEntry><outputEntry><text>"pending"</text></outputEntry></rule>
+</decisionTable></decision></definitions>
