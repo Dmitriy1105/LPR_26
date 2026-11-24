@@ -40,5 +40,18 @@ def main():
         assert r["result"]["context"]["budgetStatus"]==status
         assert [x["context"]["actor"] for x in r["result"]["children"]]==actors
         escalation_cases.append(dict(inputs=inputs,status=status,actors=actors))
-    print(json.dumps(dict(status="PASS",cases=cases,limits_rejected=rejected,readiness_cases=readiness_cases,escalation_cases=escalation_cases),indent=2))
+    from corporate_multilevel_v4 import run as legacy_run
+    integration_cases=[]
+    for amount,funds,day,tech,rem,actor in product((500000,500001,5000001),(False,True),("2026-06-01","2027-01-01"),(False,True),(False,True),("P1","P2")):
+        inputs=dict(amount=amount,fundsAvailable=funds,as_of=day,initiator="P4",budgetActor="P3",competent=True,technicalRequirementsMet=tech,remediable=rem,dealAuthorized=actor=="P1")
+        r=execute("corporate_multilevel_universal",inputs,registry)
+        old=legacy_run("legacy",dict(requirementsMet=tech,remediable=rem),dict(amount=amount,funds=funds,as_of=day),dict(initiator="P4",technical_expertise="P2",budget_approval="P3",deal_approval=actor))
+        ctx=r["result"]["context"]
+        actual="pending" if r["result"]["end"]=="pending" else ctx["dealOutcome"]
+        assert actual==old["decision"],(inputs,actual,old["decision"])
+        budget=r["result"]["children"][1]
+        assert [x["context"]["actor"] for x in budget["children"]]==[a["actor"] for a in old["children"]["budget_escalation"]["attempts"]]
+        assert r==execute("corporate_multilevel_universal",inputs,registry)
+        integration_cases.append(dict(inputs=inputs,outcome=actual))
+    print(json.dumps(dict(status="PASS",cases=cases,limits_rejected=rejected,readiness_cases=readiness_cases,escalation_cases=escalation_cases,integration_cases=integration_cases),indent=2))
 if __name__=="__main__": main()
