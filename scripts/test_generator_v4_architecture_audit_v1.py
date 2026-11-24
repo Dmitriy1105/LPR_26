@@ -16,7 +16,10 @@ def main():
     assert report["checks"]["e2e_executes_scenario_or_bpmn_runtime"] is True
     assert report["bpmn_dmn_integration"]["bpmn_dmn_executions"]==30
     assert report["bpmn_dmn_integration"]["matched_outcomes"]==30
-    assert findings["GEN-003"]["status"]=="OPEN"
+    assert findings["GEN-003"]["status"]=="CLOSED"
+    assert report["checks"]["scenario_engine_emits_crm_communications"] is True
+    assert report["communication_generation"]["communications"]==report["communication_generation"]["source_events"]
+    assert report["communication_generation"]["deterministic"] is True
     assert findings["GEN-004"]["status"]=="OPEN"
     assert findings["GEN-006"]["status"]=="OPEN"
     assert len(report["prior_architecture_partial_ids"])>=1
