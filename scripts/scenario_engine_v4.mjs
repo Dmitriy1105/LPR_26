@@ -14,7 +14,7 @@ const roles = [
 ];
 function rng(seed){let s=seed>>>0;return ()=>{s=(Math.imul(1664525,s)+1013904223)>>>0;return s/4294967296;};}
 export function generate({seed=42,organizations=5,dealsPerOrganization=6}={}){
- if(!Number.isInteger(seed)||!Number.isInteger(organizations)||organizations<1||!Number.isInteger(dealsPerOrganization)||dealsPerOrganization<1)throw Error("invalid configuration");
+ if(!Number.isInteger(seed)||seed<0||seed>0xFFFFFFFF||!Number.isInteger(organizations)||organizations<1||!Number.isInteger(dealsPerOrganization)||dealsPerOrganization<1)throw Error("invalid configuration");
  const random=rng(seed), people=[],orgs=[],deals=[],events=[],grants=[];
  for(let o=0;o<organizations;o++){
   const org="ORG-"+(o+1);orgs.push({id:org});
