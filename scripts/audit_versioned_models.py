@@ -1,3 +1,4 @@
+from registry_consolidation import compose
 """Generate byte-level catalog and check shared model bindings."""
 import json,hashlib
 from pathlib import Path
@@ -8,7 +9,7 @@ def audit():
     def read(p): return json.loads((ROOT/p).read_text())
     universal={p["id"]:p for p in read("models/process_registry_universal_v1.json")["processes"]}
     profile=read("models/organization/authority_execution_profile_v1.json")
-    authoritative={p["id"]:p for p in profile["registry"]["processes"]}
+    authoritative={p["id"]:p for p in compose(profile)["processes"]}
     for pid,s in authoritative.items():
         u=universal[pid]
         for k in ("bpmn","namespace","decisions","updates","max_steps"):
