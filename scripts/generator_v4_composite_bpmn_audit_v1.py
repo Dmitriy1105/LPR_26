@@ -154,13 +154,15 @@ def audit():
             "readiness":result["context"].get("readiness"),
             "root_trace":result["trace"]})
     expected_unit=sum(1 for e in world["events"] if e["event_type"]=="unit_approval")
+    family_counts=dict(Counter(r["family"] for r in rows))
+    outcome_counts=dict(Counter(r["deal_outcome"] for r in rows))
     return {"status":"PASS" if not errors and len(rows)==800 and unit_checks==expected_unit else "FAIL",
         "seed":world["seed"],"organizations":len(orgs),"deals":len(world["deals"]),
         "composite_executions":len(rows),"unit_approval_authority_checks":unit_checks,
         "unit_approval_authority_expected":expected_unit,"unit_authority_errors":unit_errors,
         "final_decision_event_reconciliations":final_reconciliations,
         "deal_close_event_reconciliations":close_reconciliations,
-        "terminal_distribution":dict(terminals),"errors":errors,"results":rows,
+        "terminal_distribution":dict(terminals),"scenario_family_counts":family_counts,\n        "deal_outcome_counts":outcome_counts,"errors":errors,"results":rows,
         "process_id":ROOT_PROCESS["id"],"nested_call_activity_execution":True,
         "financial_policy_evidence":"SYNTHETIC_INPUTS_ONLY_NO_CANONICAL_BUDGET_BANDS",
         "communication_rendering":"NOT_IN_SCOPE_GEN_010_9",
