@@ -1,5 +1,6 @@
+import re
 import unittest
-from collections import Counter
+from collections import Counter, defaultdict
 
 from generator_v4_scenario_engine_v1 import build
 from generator_v4_communication_renderer_v1 import (
@@ -29,6 +30,18 @@ class CanonicalCommunicationRendererTests(unittest.TestCase):
         self.assertEqual(counts, {"email": 2600, "call": 1000, "meeting": 2840})
         expected = {"email": 4, "call": 2, "meeting": 1}
         self.assertTrue(all(row["type_id"] == expected[row["channel"]] for row in self.first))
+
+    def test_body_diversity_minimum_per_event_type(self):
+        grouped = defaultdict(list)
+        for row in self.first:
+            value = row["body"].lower()
+            value = re.sub(r"org-\\d+-d\\d+-e\\d+|org-\\d+-d\\d+|comm:org-\\d+-d\\d+-e\\d+", " ", value)
+            value = re.sub(r"\\b\\d+\\b", " ", value)
+            value = re.sub(r"[^\\wа-яё]+", " ", value, flags=re.IGNORECASE).strip()
+            grouped[row["event_type"]].append(value)
+        ratios = {kind: len(set(texts)) / len(texts) for kind, texts in grouped.items()}
+        self.assertEqual(len(ratios), 11)
+        self.assertTrue(all(ratio >= 0.55 for ratio in ratios.values()), ratios)
 
     def test_attribution_and_participant_lineage(self):
         self.assertTrue(all(row["author_contact_id"] for row in self.first))
