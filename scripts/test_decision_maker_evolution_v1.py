@@ -10,7 +10,7 @@ def main():
     chains=[
       dict(chain_id="CH1",event_id="EV1",participant_id=a,utterance_author_id=a,action_executor_id=a,addressee_id=d,confirming_source_ref="s1"),
       dict(chain_id="CH2",event_id="EV2",participant_id=a,utterance_author_id=b,action_executor_id=a,addressee_id=d,confirming_source_ref="s2"),
-      dict(chain_id="CH3",event_id="EV3",participant_id=b,utterance_author_id=b,action_executor_id=b,addressee_id=d,confirming_source_ref="s3")]
+      dict(chain_id="CH3",event_id="EV3",participant_id=a,utterance_author_id=b,action_executor_id=b,addressee_id=d,confirming_source_ref="s3")]
     result=analyze_decision_maker_evolution(org,events,chains,"C1")
     rows={x["person_id"]:x for x in result["signals"]}
     assert result["status"]=="PASS" and rows[a]["trend"]=="INCREASING"
