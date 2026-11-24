@@ -26,7 +26,7 @@ def main():
     # Strictly constrain model input to reviewer-visible fields; discard prebuilt reviewer slots.
     visible=[]
     for row in pack["records"]:
-        visible.append({k:row[k] for k in ("review_id","channel","record_format","subject","body")})
+        visible.append({k:row[k] for k in ("review_id","subject","body")})
     pack["records"]=visible
     blind_dir=OUT/"blind"
     key_dir=OUT/"restricted"
@@ -41,7 +41,8 @@ def main():
     checks={
       "sample_size_220":len(visible)==220,
       "unique_review_ids":len({r["review_id"] for r in visible})==220,
-      "answer_key_not_in_blind_schema":all(set(r)=={"review_id","channel","record_format","subject","body"} for r in visible),
+      "answer_key_not_in_blind_schema":all(set(r)=={"review_id","subject","body"} for r in visible),
+      "channel_shortcut_removed":all("channel" not in r and "record_format" not in r for r in visible),
       "no_ground_truth_fields":not any(any(k in r for k in ("event_type","ground_truth_event_type","source_event_id","organization_id","deal_id","occurred_at")) for r in visible),
       "no_scenario_markers":not any(any(x in r["body"] for x in ("Контекст события:","Область согласования:","unit_approval:")) for r in visible),
       "all_classes_20":all(v["sample"]==20 for v in audit["per_event_class"].values())
