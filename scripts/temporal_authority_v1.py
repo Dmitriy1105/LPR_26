@@ -1,6 +1,6 @@
 """Evidence-backed temporal authority grants; no authority inferred from job title."""
 from datetime import date
-PERMISSIONS=("approve","final_decision")
+PERMISSIONS=("approve","final_decision","delegate")
 def _date(value):
     if not isinstance(value,str): raise ValueError("date must be ISO string")
     try: parsed=date.fromisoformat(value)
