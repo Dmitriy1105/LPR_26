@@ -24,6 +24,7 @@ jobs:
       - run: python scripts/corporate_multilevel_v4.py > multilevel-qc.json
       - run: python scripts/test_nested_process_audit.py > nested-process-qc.json
       - run: python scripts/test_universal_bpmn_engine.py > universal-bpmn-qc.json
+          python scripts/test_authoritative_execution.py > authoritative-execution-qc.json
       - run: python scripts/audit_model_links.py > model-links-qc.json
       - run: pip install lxml==5.4.0
       - run: |
@@ -46,5 +47,6 @@ jobs:
             multilevel-qc.json
             nested-process-qc.json
             universal-bpmn-qc.json
+            authoritative-execution-qc.json
             model-links-qc.json
             official-xsd-qc.json
