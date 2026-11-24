@@ -9,7 +9,7 @@ This is an evidence-based initial register. A passing CI means the audit script 
 
 | ID | Severity | Status | Finding | Evidence / impact |
 |---|---|---|---|---|
-| GEN-001 | CRITICAL | OPEN | Scenario Engine negative authorization case fails | `reports/scenario_engine_v4_smoke.json` reports `negative_test.pass=false` and `unauthorized decision ORG-1-D1-E9`. The scenario generator must not emit an unauthorized approval/rejection. |
+| GEN-001 | CRITICAL | CLOSED | Scenario Engine authority enforcement | Dedicated regression on CI #160: valid seed=42 scenario passes; unauthorized actor, expired grant, future grant, wrong-scope grant and wrong-organization grant are all rejected (1 positive + 5 negative cases). The legacy smoke `negative_test.pass=false` records the validator rejecting a deliberately unauthorized event; it was not evidence of a failed test. |
 | GEN-002 | HIGH | OPEN | E2E does not execute the v4 scenario/BPMN runtime | `scripts/generator_v4_e2e_v1.py` validates organization modules and stored REST fixtures but does not call `scenario_engine_v4.mjs`, `process_executor_v4.py` or `authority_execution_v1.py`. Its PASS is not a full process-to-dataset E2E result. |
 | GEN-003 | HIGH | OPEN | Scenario Engine does not produce CRM communication projections | `scripts/scenario_engine_v4.mjs` returns organizations, people, grants, deals and events; it does not generate activity/email/call/meeting records or communication text. |
 | GEN-004 | HIGH | OPEN | v4 scenario output lacks scenario-linked Ground Truth | The scenario output has no gold event/label projection, although the proposed v4 Data Contract defines gold events and attribution provenance as a distinct layer. |
@@ -29,7 +29,7 @@ This is an evidence-based initial register. A passing CI means the audit script 
 
 ## Remediation order
 
-1. GEN-001: validate the valid scenario baseline and explicit unauthorized/expired/wrong-scope/wrong-organization mutations. The legacy smoke report field alone is ambiguous; close only after the dedicated authority regression passes.
+1. GEN-001: CLOSED on CI #160. Valid scenario passes; five unauthorized/invalid-grant mutations are rejected.
 2. GEN-006: approve the v4 Data Contract and settle the 767-record baseline/versioning rule.
 3. GEN-002 and GEN-007: connect the authoritative BPMN/DMN execution boundary to scenario generation; close carried architecture defects.
 4. GEN-003 and GEN-004: add CRM projections and Ground Truth as separate outputs derived from the same hidden scenario state.
