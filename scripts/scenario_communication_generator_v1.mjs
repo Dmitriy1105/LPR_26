@@ -1,4 +1,5 @@
 import { generate, validate as validateWorld } from "./scenario_engine_v4.mjs";
+import { buildCommunicationContext } from "./communication_context_v1.mjs";
 
 export const COMMUNICATION_VERSION = "1.0.0";
 
@@ -159,10 +160,11 @@ function renderText(event, actor, target, deal, seed) {
   };
   const subject = stableChoice(seed + ":" + event.id + ":subject", subjects[event.type] || ["Обновление по сделке"]);
   const body = stableChoice(seed + ":" + event.id + ":body", bodies[event.type] || ["Направляю информацию по текущему этапу."]);
+  const context = buildCommunicationContext(event, seed);
   const outcome = event.outcome ? " Итог: " + event.outcome + "." : "";
   return {
     subject: subject + " " + deal.id,
-    description: body + " Сделка: " + deal.id + ". Отправитель: " + actorRole +
+    description: body + " " + context + " Сделка: " + deal.id + ". Отправитель: " + actorRole +
       (target ? ". Адресат: " + targetRole + "." : ". Адресат: участники процесса.") + outcome
   };
 }
