@@ -3,8 +3,13 @@ import json,re
 from decimal import Decimal
 D="{https://www.omg.org/spec/DMN/20191111/MODEL/}"
 def literal(s):
-    return json.loads(s,parse_float=Decimal)
+    if not isinstance(s,str) or not s.strip(): raise ValueError('missing literal')
+    def reject_constant(x): raise ValueError('nonfinite literal '+x)
+    v=json.loads(s,parse_float=Decimal,parse_constant=reject_constant)
+    if type(v) not in (str,bool,int,Decimal): raise ValueError('unsupported literal')
+    return v
 def matches(test,value):
+    if not isinstance(test,str) or not test.strip(): raise ValueError("missing unary test")
     if test=="-": return True
     m=re.fullmatch(r'([\[(])\s*(.+?)\s*\.\.\s*(.+?)\s*([\])])',test)
     if m:
@@ -28,8 +33,9 @@ def typed(value,kind):
 def evaluate_detail(table,values):
     if table is None or table.get("hitPolicy")!="UNIQUE": raise ValueError("unsupported hit policy")
     expr=[i.find(D+"inputExpression") for i in table.findall(D+"input")]
+    if any(e is None for e in expr): raise ValueError("missing input expression")
     names=[e.findtext(D+"text") for e in expr]
-    if not names or len(set(names))!=len(names): raise ValueError("invalid input names")
+    if not names or any(not n or not n.strip() for n in names) or len(set(names))!=len(names): raise ValueError("invalid input names")
     snapshot={n:values[n] for n in names}
     for e,n in zip(expr,names): typed(snapshot[n],e.get("typeRef"))
     outputs=table.findall(D+"output")
