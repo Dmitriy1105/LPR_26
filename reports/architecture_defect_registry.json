@@ -1,0 +1,113 @@
+{
+  "version": "1.0",
+  "status": "REVIEW_REQUIRED",
+  "baseline_candidate": "9f6cd33bd4b5a2336385373c1dca5197afb1de3f",
+  "latest_verified_run": 45407656802,
+  "defects": [
+    {
+      "id": "ARCH-001",
+      "title": "OMG DMN schema retrieval",
+      "status": "CLOSED",
+      "run_id": "45403377347",
+      "acceptance": "Official XSD validation"
+    },
+    {
+      "id": "ARCH-002",
+      "title": "XSD script indentation",
+      "status": "CLOSED",
+      "run_id": "45403377347",
+      "acceptance": "Successful execution"
+    },
+    {
+      "id": "ARCH-003",
+      "title": "Schema retrieval diagnostics",
+      "status": "CLOSED",
+      "run_id": "45403377347",
+      "acceptance": "Dependency URL diagnostics"
+    },
+    {
+      "id": "ARCH-004",
+      "title": "Incomplete global audit",
+      "status": "OPEN",
+      "run_id": null,
+      "acceptance": "Cross-process chronology and full replay"
+    },
+    {
+      "id": "ARCH-005",
+      "title": "Business logic in specialized Python runners",
+      "status": "OPEN",
+      "run_id": null,
+      "acceptance": "Move bindings and routing policy into declarative models"
+    },
+    {
+      "id": "ARCH-006",
+      "title": "Insufficient negative test coverage",
+      "status": "OPEN",
+      "run_id": null,
+      "acceptance": "Existing mutation suites pass; add cross-process and malformed-model cases"
+    },
+    {
+      "id": "ARCH-007",
+      "title": "QName namespace resolution",
+      "status": "PARTIAL",
+      "run_id": "45404865972",
+      "acceptance": "Root declarations checked; scoped namespaces not supported"
+    },
+    {
+      "id": "ARCH-008",
+      "title": "Relative schema dependency URLs",
+      "status": "CLOSED",
+      "run_id": "45403377347",
+      "acceptance": "Official dependency aliases"
+    },
+    {
+      "id": "ARCH-009",
+      "title": "Duplicate DMN evaluation logic",
+      "status": "CLOSED",
+      "run_id": "45405474297",
+      "acceptance": "Shared evaluator regression"
+    },
+    {
+      "id": "ARCH-010",
+      "title": "Blocked subject recorded as action actor",
+      "status": "CLOSED",
+      "run_id": "45407377222",
+      "acceptance": "Authority actor regression"
+    },
+    {
+      "id": "ARCH-011",
+      "title": "Incomplete nested event projection",
+      "status": "OPEN",
+      "run_id": null,
+      "acceptance": "Escalation internal transitions and interleaving not fully audited"
+    },
+    {
+      "id": "ARCH-012",
+      "title": "Restricted FEEL and BPMN execution",
+      "status": "LIMITATION",
+      "run_id": null,
+      "acceptance": "Document supported profile; reject unsupported constructs"
+    },
+    {
+      "id": "ARCH-013",
+      "title": "Authority input bypass in leaf budget process",
+      "status": "OPEN",
+      "run_id": null,
+      "acceptance": "Derive monetary and temporal authority from grants at execution boundary"
+    },
+    {
+      "id": "ARCH-014",
+      "title": "Delegation and task assignment not modeled",
+      "status": "OPEN",
+      "run_id": null,
+      "acceptance": "Organization engine milestone"
+    },
+    {
+      "id": "ARCH-015",
+      "title": "Decision evidence replay not full process replay",
+      "status": "OPEN",
+      "run_id": null,
+      "acceptance": "Validate all transitions, actor evidence and completeness against source inputs"
+    }
+  ]
+}
