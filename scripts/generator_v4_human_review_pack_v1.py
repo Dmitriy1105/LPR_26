@@ -130,7 +130,21 @@ def build_review_pack(communications: list[dict], seed: int = 42):
         "title": "Blinded synthetic CRM communication review",
         "instructions": {
             "blindness": "Do not consult the separate answer key or CRM metadata while annotating.",
-            "allowed_primary_event_types": list(EVENT_TYPES),
+            "allowed_primary_event_types": list(EVENT_TYPES) + ["unclear"],
+            "event_type_definitions": {
+                "request_information": "Запрос исходной информации, документов или уточнений.",
+                "delegate": "Назначение или передача задачи другому исполнителю.",
+                "complete_task": "Сообщение о выполнении ранее назначенной задачи.",
+                "review": "Рассмотрение или обсуждение материалов без самостоятельного решения.",
+                "recommend": "Экспертная рекомендация или предложение дальнейшего действия.",
+                "object": "Возражение, несогласие или замечание к условиям.",
+                "revise": "Изменение или повторная подача ранее предложенного варианта.",
+                "unit_approval": "Согласование в пределах компетенции подразделения, не обязательно итоговое.",
+                "approve": "Итоговое положительное решение по сделке.",
+                "reject": "Итоговое отрицательное решение по сделке.",
+                "close": "Фиксация закрытия процесса или эпизода сделки.",
+                "unclear": "Текст не позволяет уверенно определить один основной класс."
+            },
             "primary_event_type": "Choose the single best-supported event class; use unclear if no class is adequately supported.",
             "secondary_signals": "Optional additional signals; do not replace the primary class.",
             "rating_scale": "1=very poor/unclear, 5=clear/strong",
