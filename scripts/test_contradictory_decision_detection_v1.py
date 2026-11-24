@@ -13,7 +13,8 @@ def main():
     result=detect_contradictory_decisions(org,grants,[],events,decisions)
     assert result["conflict_count"]==1 and result["conflicts"][0]["decision_ids"]==["D1","D2"]
     assert result["status"]=="REVIEW_REQUIRED"
-    missing=detect_contradictory_decisions(org,grants,[],events,[dict(decisions[0])])
+    missing_decision=dict(decisions[0]); missing_decision.pop("outcome")
+    missing=detect_contradictory_decisions(org,grants,[],events,[missing_decision])
     assert missing["status"]=="REVIEW_REQUIRED" and missing["unclassified_decision_ids"]==["D1"]
     empty=detect_contradictory_decisions(org,grants,[],[],[])
     assert empty["status"]=="EMPTY"
