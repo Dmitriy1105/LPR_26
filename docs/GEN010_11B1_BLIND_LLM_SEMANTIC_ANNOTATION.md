@@ -63,3 +63,24 @@ The current conversation has no independently callable LLM inference endpoint or
 - OpenAI-compatible inference adapter added at `scripts/generator_v4_gen01011b1_llm_adapter_v1.py`.
 
 **Current status:** fresh sample built and validated. Actual LLM inference has not run because no model-provider endpoint/model credentials are configured in the repository environment. Do not open the restricted key until the annotation JSON is completed and locked.
+
+
+## 2026-11-25 — ChatGPT blinded annotation completed
+
+- Sample: `GEN01011B1-SEED-20261125`.
+- Annotator: ChatGPT GPT-6.2, semantic annotation performed in this conversation.
+- Input used: reviewer-visible `subject` and `body` only.
+- External provider API: not called. The in-conversation model was the annotator.
+- Restricted answer key / Ground Truth: not opened or accessed.
+- 220 annotations produced; 220 unique review IDs; all 11 classes represented.
+- Structural/schema QC: PASS (10/10 checks).
+- Mean confidence: 0.9371; mean event clarity: 4.836/5; mean naturalness: 2.514/5; mean visible-text factual support: 5/5.
+- Predicted class counts: approve 22; complete_task 22; delegate 20; recommend 20; object 20; revise 20; unit_approval 20; reject 20; close 20; review 19; request_information 17.
+- 36 annotations note reliance on the subject because the body itself lacks an explicit event marker.
+- Annotation SHA-256: `8870dd8aacd52687a5718d659357418386f9a0849e5ea8a8bbbdcb090eac5d2e`.
+- Compressed annotation file: `artifacts/gen01011b1/annotations/gen01011b1_llm_annotations.json.gz`.
+- QC: `artifacts/gen01011b1/annotations/gen01011b1_annotation_qc.json`.
+- Manifest: `artifacts/gen01011b1/annotations/gen01011b1_annotation_manifest.json`.
+- Artifact README: `artifacts/gen01011b1/annotations/README.md`.
+
+**Important evaluation boundary:** these metrics are annotation-structure and annotator self-ratings only. No accuracy, precision, recall, F1, or confusion matrix is claimed yet. The next step is to freeze the annotation hash, then retrieve the separately restricted answer key and run the evaluator once.
