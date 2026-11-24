@@ -1,0 +1,57 @@
+{
+  "status": "prototype",
+  "organization_id": "ORG-DEMO",
+  "roles": [
+    {
+      "id": "director",
+      "grants": [
+        "deal.approve",
+        "budget.approve"
+      ],
+      "competencies": []
+    },
+    {
+      "id": "technical_expert",
+      "grants": [],
+      "competencies": [
+        "technical.assess"
+      ]
+    },
+    {
+      "id": "finance_manager",
+      "grants": [
+        "budget.approve"
+      ],
+      "competencies": [
+        "finance.assess"
+      ]
+    },
+    {
+      "id": "buyer",
+      "grants": [],
+      "competencies": []
+    }
+  ],
+  "people": [
+    {
+      "id": "P1",
+      "role": "director",
+      "manager": null
+    },
+    {
+      "id": "P2",
+      "role": "technical_expert",
+      "manager": "P1"
+    },
+    {
+      "id": "P3",
+      "role": "finance_manager",
+      "manager": "P1"
+    },
+    {
+      "id": "P4",
+      "role": "buyer",
+      "manager": "P3"
+    }
+  ]
+}
