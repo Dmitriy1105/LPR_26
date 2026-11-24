@@ -14,4 +14,4 @@ def replay_decisions(org,grants,delegations,events,decisions):
         result=reconcile_decisions(org,grants,delegations,ordered,[d])
         row=result["results"][0]
         replay.append({"decision_id":did,"decided_at":d["decided_at"],"source_event_id":d["source_event_id"],"status":row["status"],"authorized":row["authorized"],"authority_source":row["authority_source"],"direct_reason":row["direct_result"]["reason"],"delegated_reason":row["delegated_result"]["reason"]})
-    return {"schema_version":"1.0","status":"PASS" if all(x["authorized"] for x in replay) else ("REVIEW_REQUIRED" if replay else "EMPTY"),"replayed_count":len(replay),"authorized_count":sum(x["authorized"] for x in replay),"review_required_count":sum(not x["authorized"] for x in replay),"replay":replay}
+    return {"schema_version":"1.0","status":"EMPTY" if not replay else ("PASS" if all(x["authorized"] for x in replay) else "REVIEW_REQUIRED"),"replayed_count":len(replay),"authorized_count":sum(x["authorized"] for x in replay),"review_required_count":sum(not x["authorized"] for x in replay),"replay":replay}
