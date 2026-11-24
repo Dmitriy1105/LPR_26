@@ -1,4 +1,4 @@
-name: Process model QC # GEN-010.11 text-only NLP suitability and provisional quality gate
+name: Process model QC # GEN-010.11 explicit NOT_ACCEPTED quality gate
 on:
   workflow_dispatch:
   push:
