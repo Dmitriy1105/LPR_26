@@ -1,0 +1,4 @@
+# Decision Audit Protocol v0.1
+BPMN 2.0 describes flow; DMN 1.3 describes decision logic. This audit protocol is project-specific, not an OMG standard.
+Each process instance records instance ID, organization, process ID, model hashes, initiator, task actor, step, sequence flow, decision ID, input snapshot, matched rule ID, outcome, authority/competence source and logical time. Decision evaluation is distinct from human enactment. A recommendation is not approval. A blocked attempt is not a valid decision. Missing actor/evidence stays null; do not infer influence from participation. Influence requires a separate causal model and evidence. Ground truth is private to evaluation.
+Initial profile: one organization, explicit task assignments, logical sequence time, boolean UNIQUE tables, no real monetary limits, no delegated grants or cross-process escalation. No claim of full BPMN/DMN conformance.
