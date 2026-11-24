@@ -21,7 +21,9 @@ jobs:
       - run: python scripts/corporate_multilevel_v4.py > multilevel-qc.json
       - run: python scripts/audit_model_links.py > model-links-qc.json
       - run: pip install lxml==5.4.0
-      - run: python scripts/audit_official_xsd.py > official-xsd-qc.json
+      - run: |
+          set -o pipefail
+          python scripts/audit_official_xsd.py | tee official-xsd-qc.json
       - uses: actions/upload-artifact@v4
         if: always()
         with:
