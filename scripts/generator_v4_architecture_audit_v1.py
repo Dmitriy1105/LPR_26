@@ -37,7 +37,7 @@ def audit():
     scenario_has_communications=("generateCommunications" in communication_module and "DESCRIPTION" in communication_module and "SOURCE_EVENT_ID" in communication_module and communication_test.get("status")=="PASS" and communication_test.get("communications")==communication_test.get("source_events") and communication_test.get("deterministic") is True)
     scenario_has_ground_truth=any(k in scenario for k in ("ground_truth","gold_events","gold_labels"))
     e2e_runs_scenario=("scenario_engine_v4" in e2e or "process_executor_v4" in e2e or "authority_execution_v1" in e2e)
-    contract_status=next((re.sub(r"^\\*\\*Status:\\*\\*\\s*|^Status:\\s*","",line).strip() for line in contract.splitlines() if line.startswith("**Status:**") or line.startswith("Status:")),"UNKNOWN")
+    contract_status=next((line.replace("**Status:**","",1).replace("Status:","",1).strip() for line in contract.splitlines() if line.startswith("**Status:**") or line.startswith("Status:")),"UNKNOWN")
     checks={
       "scenario_negative_test_pass":authority_test.get("status")=="PASS" and authority_test.get("negative_cases_passed")==authority_test.get("negative_cases") and authority_test.get("baseline",{}).get("pass") is True,
       "scenario_engine_emits_crm_communications":scenario_has_communications,
