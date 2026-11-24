@@ -33,13 +33,13 @@ def audit():
     scenario_has_communications=any(k in scenario for k in ("communications","activities","transcripts","emails","meetings"))
     scenario_has_ground_truth=any(k in scenario for k in ("ground_truth","gold_events","gold_labels"))
     e2e_runs_scenario=("scenario_engine_v4" in e2e or "process_executor_v4" in e2e or "authority_execution_v1" in e2e)
-    contract_status=contract.splitlines()[1].strip() if len(contract.splitlines())>1 else "UNKNOWN"
+    contract_status=next((line.split(":",1)[1].strip().split(".",1)[0] for line in contract.splitlines() if line.startswith("Status:")),"UNKNOWN")
     checks={
       "scenario_negative_test_pass":bool(smoke.get("negative_test",{}).get("pass")),
       "scenario_engine_emits_crm_communications":scenario_has_communications,
       "scenario_engine_emits_ground_truth":scenario_has_ground_truth,
       "e2e_executes_scenario_or_bpmn_runtime":e2e_runs_scenario,
-      "data_contract_approved":contract_status.lower().endswith("approved"),
+      "data_contract_approved":contract_status.upper()=="APPROVED",
       "fixture_count_matches_contract_baseline":target is not None and fixture_total==target,
       "architecture_partial_defects_closed":len(partial)==0,
       "restricted_bpmn_dmn_limitation_closed":len(limitations)==0,
@@ -53,8 +53,8 @@ def audit():
       {"id":"GEN-005","severity":"HIGH","status":"OPEN" if not checks["fixture_count_matches_contract_baseline"] else "CLOSED","title":"Synthetic CRM fixture count differs from declared regression baseline","evidence":f"docs/GENERATOR_V4_DATA_CONTRACT.md declares {target} records; src/data/bitrix24_contract_v1/manifest.json sums to {fixture_total} records ({counts}).","impact":"The documented v4 regression baseline is not reproduced by the committed fixture manifest."},
       {"id":"GEN-006","severity":"HIGH","status":"OPEN" if not checks["data_contract_approved"] else "CLOSED","title":"Generator v4 data contract is not approved","evidence":f"docs/GENERATOR_V4_DATA_CONTRACT.md status: {contract_status}.","impact":"The authoritative output schema and acceptance gates remain proposals; implementation cannot be certified against an accepted contract."},
       {"id":"GEN-007","severity":"HIGH","status":"OPEN" if not checks["architecture_partial_defects_closed"] else "CLOSED","title":"Prior architecture defects remain partially resolved","evidence":f"reports/architecture_defect_registry.json retains PARTIAL items: {', '.join(partial)}.","impact":"Independent full trace semantics, declarative bindings, negative coverage, generator authority integration, dynamic delegation and full replay remain incomplete."},
-      {"id":"GEN-008","severity":"MEDIUM","status":"OPEN" if not checks["restricted_bpmn_dmn_limitation_closed"] else "CLOSED","title":"BPMN/DMN execution is a restricted custom profile","evidence":f"reports/architecture_defect_registry.json retains LIMITATION items: {', '.join(limitations)}; docs/adr/0001-bpmn-dmn.md says models are descriptive and not executable-certified.","impact":"No general BPMN 2.0 / DMN 1.3 conformance claim is supported."},
-      {"id":"GEN-009","severity":"MEDIUM","status":"OPEN" if not checks["bpmn_models_marked_executable"] else "CLOSED","title":"BPMN model files are not declared executable","evidence":f"{sum(1 for p in bpmn_processes if p['isExecutable']=='false')} of {len(bpmn_processes)} parsed BPMN process definitions declare isExecutable=false.","impact":"The BPMN files currently serve as descriptive model inputs to a custom restricted runner, not independently executable BPMN process definitions."},
+      {"id":"GEN-008","severity":"MEDIUM","status":"DECISION_REQUIRED" if not checks["restricted_bpmn_dmn_limitation_closed"] else "CLOSED","title":"BPMN/DMN execution is a restricted custom profile","evidence":f"reports/architecture_defect_registry.json retains LIMITATION items: {', '.join(limitations)}; docs/adr/0001-bpmn-dmn.md says models are descriptive and not executable-certified.","impact":"No general BPMN 2.0 / DMN 1.3 conformance claim is supported."},
+      {"id":"GEN-009","severity":"MEDIUM","status":"DECISION_REQUIRED" if not checks["bpmn_models_marked_executable"] else "CLOSED","title":"BPMN model files are not declared executable","evidence":f"{sum(1 for p in bpmn_processes if p['isExecutable']=='false')} of {len(bpmn_processes)} parsed BPMN process definitions declare isExecutable=false.","impact":"The BPMN files currently serve as descriptive model inputs to a custom restricted runner, not independently executable BPMN process definitions."},
     ]
     return {
       "schema_version":"1.0",
@@ -63,6 +63,7 @@ def audit():
       "fixture_counts":counts,
       "fixture_total":fixture_total,
       "contract_baseline_target":target,
+      "contract_status":contract_status,
       "scenario_smoke":smoke,
       "bpmn_processes":bpmn_processes,
       "prior_architecture_partial_ids":partial,
