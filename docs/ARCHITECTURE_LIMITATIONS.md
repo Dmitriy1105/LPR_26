@@ -12,3 +12,7 @@ Status: REVIEW_REQUIRED. Verified CI run 45407656802, commit 9f6cd33. Passing te
 - Run complete CI on the exact candidate commit before tagging a baseline.
 
 The current fixture uses one organization and specialized composite runners. Synthetic ground truth is not independent evidence of real-world NLP accuracy. No final baseline is accepted by this document.
+
+## Final regression candidate
+
+Verified run 45425761757 at 7cfe1b60. Seven defects closed, seven partial, one limitation. Proposed scope: deterministic restricted BPMN/DMN simulation of the fixed demo organization, authoritative budget and role checks, optional task assignment, logical trace and trusted historical replay. Not a general BPMN engine, not a production generator, not independent real-world validation. Historical Python environment not archived; oracle revised against existing protocol. Scope approval required before baseline. See reports/architecture_qc_report.json and architecture_defect_registry.json.
