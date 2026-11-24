@@ -14,9 +14,11 @@ def audit():
     smoke=read_json("reports/scenario_engine_v4_smoke.json")
     authority_test=read_json("scenario-authority-enforcement-qc.json")
     bpmn_integration=read_json("generator-v4-bpmn-integration-qc.json")
+    communication_test=read_json("scenario-communication-generator-qc.json")
     arch=read_json("reports/architecture_defect_registry.json")
     contract=(ROOT/"docs/GENERATOR_V4_DATA_CONTRACT.md").read_text(encoding="utf-8")
     scenario=(ROOT/"scripts/scenario_engine_v4.mjs").read_text(encoding="utf-8")
+    communication_module=(ROOT/"scripts/scenario_communication_generator_v1.mjs").read_text(encoding="utf-8")
     e2e=(ROOT/"scripts/generator_v4_e2e_v1.py").read_text(encoding="utf-8")
     counts=manifest.get("recordCounts",{})
     fixture_total=sum(v for v in counts.values() if isinstance(v,int))
@@ -32,7 +34,7 @@ def audit():
     partial=[x["id"] for x in arch.get("defects",[]) if x.get("status")=="PARTIAL"]
     limitations=[x["id"] for x in arch.get("defects",[]) if x.get("status")=="LIMITATION"]
     returns_scenario_payload="return {version:VERSION,seed,organizations:orgs,people,grants,deals,events}" in scenario.replace("\n"," ")
-    scenario_has_communications=any(k in scenario for k in ("communications","activities","transcripts","emails","meetings"))
+    scenario_has_communications=("generateCommunications" in communication_module and "DESCRIPTION" in communication_module and "SOURCE_EVENT_ID" in communication_module and communication_test.get("status")=="PASS" and communication_test.get("communications")==communication_test.get("source_events") and communication_test.get("deterministic") is True)
     scenario_has_ground_truth=any(k in scenario for k in ("ground_truth","gold_events","gold_labels"))
     e2e_runs_scenario=("scenario_engine_v4" in e2e or "process_executor_v4" in e2e or "authority_execution_v1" in e2e)
     contract_status=next((line.split(":",1)[1].strip().split(".",1)[0] for line in contract.splitlines() if line.startswith("Status:")),"UNKNOWN")
@@ -50,7 +52,7 @@ def audit():
     findings=[
       {"id":"GEN-001","severity":"CRITICAL","status":"CLOSED" if checks["scenario_negative_test_pass"] else "OPEN","title":"Scenario Engine authority enforcement","evidence":f"scenario-authority-enforcement-qc.json: {authority_test.get('status')}; valid baseline={authority_test.get('baseline',{}).get('pass')}; rejected unauthorized/expired/wrong-scope/wrong-org cases={authority_test.get('negative_cases_passed')}/{authority_test.get('negative_cases')}. Legacy smoke report has negative_test.pass={smoke.get('negative_test',{}).get('pass')}, which is ambiguous without a separate assertion result.","impact":"GEN-001 is closed only when valid generated scenarios pass and every unauthorized mutation is rejected by the validator."},
       {"id":"GEN-002","severity":"HIGH","status":"CLOSED" if checks["e2e_executes_scenario_or_bpmn_runtime"] else "OPEN","title":"Scenario-to-BPMN/DMN execution bridge","evidence":f"generator-v4-bpmn-integration-qc.json: status={bpmn_integration.get('status')}; generated deals={bpmn_integration.get('deals')}; BPMN/DMN executions={bpmn_integration.get('bpmn_dmn_executions')}; matched outcomes={bpmn_integration.get('matched_outcomes')}; deterministic={bpmn_integration.get('deterministic')}.","impact":"Closes the seed-42 integration baseline. The actor mapping remains an explicit demo-profile mapping; dynamic mapping for arbitrary generated organizations remains a separate follow-up under ARCH-013/014."},
-      {"id":"GEN-003","severity":"HIGH","status":"OPEN" if not checks["scenario_engine_emits_crm_communications"] else "CLOSED","title":"Scenario engine does not render CRM communication records","evidence":"scripts/scenario_engine_v4.mjs returns organizations, people, grants, deals and events; it has no communication/activity/email/call/meeting projection.","impact":"Business-process events are not yet transformed into the CRM communication dataset used for downstream analysis."},
+      {"id":"GEN-003","severity":"HIGH","status":"CLOSED" if checks["scenario_engine_emits_crm_communications"] else "OPEN","title":"Scenario-based CRM communication generation","evidence":f"scenario-communication-generator-qc.json: status={communication_test.get('status')}; source events={communication_test.get('source_events')}; rendered communications={communication_test.get('communications')}; linked events={communication_test.get('linked_source_events')}; channel counts={communication_test.get('channel_counts')}; deterministic={communication_test.get('deterministic')}.","impact":"Closes the seed-42 communication projection baseline. Text templates are deterministic synthetic examples; broader content diversity and realistic multi-turn dialogue remain future quality work."},
       {"id":"GEN-004","severity":"HIGH","status":"OPEN" if not checks["scenario_engine_emits_ground_truth"] else "CLOSED","title":"Scenario output has no linked Ground Truth event labels","evidence":"scripts/scenario_engine_v4.mjs output contains no ground_truth, gold_events or gold_labels field; the Data Contract describes these as required layers.","impact":"There is no scenario-linked gold record to independently assess who spoke, acted, approved, objected or executed."},
       {"id":"GEN-005","severity":"HIGH","status":"OPEN" if not checks["fixture_count_matches_contract_baseline"] else "CLOSED","title":"Synthetic CRM fixture count differs from declared regression baseline","evidence":f"docs/GENERATOR_V4_DATA_CONTRACT.md declares {target} records; src/data/bitrix24_contract_v1/manifest.json sums to {fixture_total} records ({counts}).","impact":"The documented v4 regression baseline is not reproduced by the committed fixture manifest."},
       {"id":"GEN-006","severity":"HIGH","status":"OPEN" if not checks["data_contract_approved"] else "CLOSED","title":"Generator v4 data contract is not approved","evidence":f"docs/GENERATOR_V4_DATA_CONTRACT.md status: {contract_status}.","impact":"The authoritative output schema and acceptance gates remain proposals; implementation cannot be certified against an accepted contract."},
@@ -69,6 +71,7 @@ def audit():
       "scenario_smoke":smoke,
       "scenario_authority_enforcement":authority_test,
       "bpmn_dmn_integration":bpmn_integration,
+      "communication_generation":communication_test,
       "bpmn_processes":bpmn_processes,
       "prior_architecture_partial_ids":partial,
       "prior_architecture_limitation_ids":limitations,
