@@ -6,7 +6,7 @@ from organization_decision_audit import simulate,load,digest
 from process_executor_v4 import ROOT,B
 MODEL="models/bpmn/budget_escalation.bpmn"
 GRANTS="models/organization/budget_authority_v1.json"
-def escalate(instance,amount,funds,as_of,start="P3"):
+def escalate(instance,amount,funds,as_of,start="P3",initiator="P4"):
     if type(amount) is not int or amount<=0 or type(funds) is not bool: raise ValueError("invalid inputs")
     day=date.fromisoformat(as_of)
     org=load("models/organization/organization_profile_v1.json")
@@ -30,7 +30,7 @@ def escalate(instance,amount,funds,as_of,start="P3"):
                 outcome="no_active_grant"; cont=False
                 attempts.append(dict(actor=actor,limit=None,outcome=outcome))
             else:
-                audit=simulate("budget_approval",instance+"/"+str(len(attempts)+1),"P4",actor,dict(fundsAvailable=funds,withinLimit=amount<=limit))
+                audit=simulate("budget_approval",instance+"/"+str(len(attempts)+1),initiator,actor,dict(fundsAvailable=funds,withinLimit=amount<=limit))
                 outcome=audit["end"]
                 cont=outcome=="escalated" and people[actor]["manager"] is not None
                 if outcome=="escalated" and not cont: outcome="unresolved_limit"
