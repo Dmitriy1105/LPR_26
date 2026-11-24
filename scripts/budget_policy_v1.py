@@ -17,7 +17,7 @@ def prepare(c):
     if len(grants)>1: raise ValueError("ambiguous grant")
     limit=grants[0]["limit"] if grants else None
     authorized=limit is not None and "budget.approve" in roles[people[actor]["role"]]["grants"]
-    return dict(authorized=authorized,withinLimit=authorized and c["amount"]<=limit,limit=limit,manager=people[actor]["manager"])
+    return dict(authorized=authorized,withinLimit=authorized and c["amount"]<=limit,limit=limit,manager=people[actor]["manager"],hasManager=people[actor]["manager"] is not None)
 def advance(c):
     if c["manager"] is None: raise ValueError("missing manager")
     return dict(actor=c["manager"])
