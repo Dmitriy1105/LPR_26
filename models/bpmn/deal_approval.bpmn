@@ -17,6 +17,8 @@
   <bpmn:exclusiveGateway id="merge" name="merge"/>
   <bpmn:task id="close" name="close"/>
   <bpmn:endEvent id="end" name="end"/>
+  <bpmn:task id="deny" name="Deny unauthorized operation"/>
+  <bpmn:endEvent id="blocked" name="Operation blocked"/>
   <bpmn:sequenceFlow id="f1" sourceRef="start" targetRef="request"></bpmn:sequenceFlow>
   <bpmn:sequenceFlow id="f2" sourceRef="request" targetRef="delegate"></bpmn:sequenceFlow>
   <bpmn:sequenceFlow id="f3" sourceRef="delegate" targetRef="complete"></bpmn:sequenceFlow>
@@ -34,5 +36,7 @@
   <bpmn:sequenceFlow id="f15" sourceRef="reject" targetRef="merge"></bpmn:sequenceFlow>
   <bpmn:sequenceFlow id="f16" sourceRef="merge" targetRef="close"></bpmn:sequenceFlow>
   <bpmn:sequenceFlow id="f17" sourceRef="close" targetRef="end"></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f18" sourceRef="route" targetRef="deny"><bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">outcome = "deny"</bpmn:conditionExpression></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f19" sourceRef="deny" targetRef="blocked"/>
  </bpmn:process>
 </bpmn:definitions>
