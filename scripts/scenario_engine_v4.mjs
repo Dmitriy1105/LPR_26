@@ -40,7 +40,7 @@ export function generate({seed=42,organizations=5,dealsPerOrganization=6}={}){
    emit("complete_task",expert,owner);
    emit("review",owner,expert);
    emit("recommend",expert,approver);
-   if(family==="revision"){emit("object",approver,owner);emit("revise",expert,owner);emit("review",owner,expert);}
+   if(family==="revision"){emit("object",approver,approver.id===owner.id?expert:owner);emit("revise",expert,owner);emit("review",owner,expert);}
    emit(family==="rejected"?"reject":"approve",approver);
    deal.status=family==="rejected"?"rejected":"approved";
    emit("close",owner,null,{outcome:deal.status});
@@ -59,6 +59,7 @@ export function validate(w){
    check(e.org===d.org&&e.scope===d.scope,"scope mismatch "+e.id);
    check(people.get(e.actor_id)?.org===d.org,"actor mismatch "+e.id);
    check(e.target_id===null||people.get(e.target_id)?.org===d.org,"target mismatch "+e.id);
+   check(e.type!=="object"||e.actor_id!==e.target_id,"self-directed objection "+e.id);
    check(e.previous_event_id===(prev?.id??null),"broken chronology "+e.id);
    check(Number.isFinite(Date.parse(e.occurred_at))&&(!prev||Date.parse(e.occurred_at)>Date.parse(prev.occurred_at)),"invalid time "+e.id);
    if(["approve","reject"].includes(e.type)){
