@@ -1,0 +1,27 @@
+name: LPR UI automated tests
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['public/**', 'tests/ui/**', '.github/workflows/lpr-ui-tests.yml']
+permissions:
+  contents: read
+jobs:
+  ui:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --prefix tests/ui --no-audit --no-fund
+      - run: npx --prefix tests/ui playwright install --with-deps chromium
+      - run: npx --prefix tests/ui playwright test --config tests/ui/playwright.config.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lpr-ui-report
+          path: |
+            playwright-report/
+            test-results/
