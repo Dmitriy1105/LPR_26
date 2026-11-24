@@ -11,7 +11,7 @@ class CompositeBpmnTests(unittest.TestCase):
     def test_unit_approval_authority_is_reconciled(self):
         self.assertEqual(self.report["unit_approval_authority_checks"],240)
         self.assertEqual(self.report["unit_authority_errors"],0)
-    def test_nested_call_activities_execute(self):
+    def test_final_and_close_events_reconcile(self):\n        self.assertEqual(self.report["final_decision_event_reconciliations"],800)\n        self.assertEqual(self.report["deal_close_event_reconciliations"],800)\n\n    def test_nested_call_activities_execute(self):
         self.assertTrue(self.report["nested_call_activity_execution"])
         self.assertEqual(self.report["process_id"],"corporate_multilevel_universal")
     def test_exact_conflict_revision_uses_revision_path(self):
