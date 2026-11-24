@@ -162,6 +162,8 @@ def render_communications(observable_events: list[dict[str, Any]],
         note = event.get("context_note")
         if note:
             body += " Контекст события: " + note.rstrip(". ") + "."
+        if event_type == "unit_approval":
+            body += " Область согласования: " + str(event.get("decision_scope") or "не указана") + "."
         actor_role = roles[author]
         target_role = roles.get(target) if target else None
         author_label = ROLE_LABELS.get(actor_role, actor_role)
@@ -174,6 +176,7 @@ def render_communications(observable_events: list[dict[str, Any]],
             "deal_id": event["deal_id"],
             "organization_id": oid,
             "event_type": event_type,
+            "decision_scope": event.get("decision_scope"),
             "occurred_at": event["occurred_at"],
             "channel": channel,
             "type_id": type_id,
@@ -224,6 +227,8 @@ def validate_rendered_communications(observable_events: list[dict[str, Any]],
             errors.append("participant attribution mismatch " + cid)
         if item["addressee_contact_ids"] != ([target] if target else []):
             errors.append("addressee attribution mismatch " + cid)
+        if item["decision_scope"] != event.get("decision_scope"):
+            errors.append("decision scope projection mismatch " + cid)
         if item["occurred_at"] != event["occurred_at"] or item["source_ref"] != event["source_ref"]:
             errors.append("source chronology/provenance mismatch " + cid)
         if item["missing_fields"] != event["missing_fields"]:
