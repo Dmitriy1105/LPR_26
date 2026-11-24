@@ -3,6 +3,7 @@ import json
 from hashlib import sha256
 from budget_policy_v1 import ROOT,load
 from universal_bpmn_engine import execute
+from validate_organization_v1 import validate
 PROFILE="authority_execution_profile_v1.json"
 def role_policy(c,policy):
     org=load("organization_profile_v1.json")
@@ -12,6 +13,7 @@ def role_policy(c,policy):
     capability=policy["capability"]
     return {policy["output"]:capability in role[policy["field"]],"authority_role":role["id"],"authority_capability":capability}
 def execute_authoritative(pid,inputs,instance="I1"):
+    validate(load("organization_profile_v1.json"),load("budget_authority_v1.json"))
     profile=load(PROFILE)
     allowed=profile["allowed_inputs"]
     if pid not in allowed or set(inputs)!=set(allowed[pid]): raise ValueError("invalid authoritative inputs")
