@@ -1,10 +1,11 @@
+from registry_consolidation import compose
 import json
 from hashlib import sha256
 from budget_policy_v1 import ROOT,load
 from authority_execution_v1 import execute_authoritative,PROFILE
 def main():
     p=load(PROFILE)
-    specs={s["id"]:s for s in p["registry"]["processes"]}
+    specs={s["id"]:s for s in compose(p)["processes"]}
     assert set(specs)==set(p["allowed_inputs"])
     protected={"authorized","competent","withinLimit","dealAuthorized","budgetAuthorized"}
     for keys in p["allowed_inputs"].values(): assert not protected.intersection(keys)
