@@ -148,6 +148,13 @@ def run_benchmark(world: dict[str, Any], communications: list[dict[str, Any]]) -
                                  for actual in sorted({a for a, _ in confusion})},
         },
         "binary_event_tasks": binary_report,
+        "provisional_quality_gate": {
+            "status": "NOT_ACCEPTED" if (correct / total if total else 0.0) < 0.80 or (sum(macro_f1_values) / len(macro_f1_values) if macro_f1_values else 0.0) < 0.70 else "PROVISIONAL_PASS",
+            "thresholds": {"event_type_accuracy_min": 0.80, "event_type_macro_f1_min": 0.70},
+            "measured": {"event_type_accuracy": round(correct / total, 4) if total else 0.0,
+                         "event_type_macro_f1": round(sum(macro_f1_values) / len(macro_f1_values), 4) if macro_f1_values else 0.0},
+            "interpretation": "Provisional engineering thresholds only; not a final human-validated acceptance standard."
+        },
         "person_attribution": attribution,
         "known_limitations": [
             "A lexical baseline is a smoke test, not evidence of generalization by a learned NLP model.",
