@@ -10,13 +10,19 @@ def main():
     decisions=[dict(decision_id="D1",actor_id=a,action="contract",permission="final_decision",decided_at="2026-06-01",source_event_id="EV1")]
     good=reconcile_decisions(org,grants,delegations,events,decisions)
     assert good["status"]=="PASS" and good["authorized_count"]==1
-    # actor/source mismatch must be rejected rather than silently reconciled
-    negatives=0
-    for bad_decisions,bad_events in (([dict(decisions[0],actor_id=b)],events),([dict(decisions[0],source_event_id="MISSING")],events),([dict(decisions[0],permission="approve")],events),([dict(decisions[0],decided_at="2025-01-01")],events)):
-        try: reconcile_decisions(org,grants,delegations,bad_events,bad_decisions)
-        except ValueError: negatives+=1
-        else: raise AssertionError("invalid decision evidence accepted")
-    unauthorized=reconcile_decisions(org,grants,delegations,events,[dict(decisions[0],actor_id=a,action="payment")])
+    # Actor mismatch and missing source are malformed evidence and must be rejected.
+    malformed=0
+    for bad_decisions in ([dict(decisions[0],actor_id=b)],[dict(decisions[0],source_event_id="MISSING")]):
+        try: reconcile_decisions(org,grants,delegations,events,bad_decisions)
+        except ValueError: malformed+=1
+        else: raise AssertionError("malformed decision evidence accepted")
+    assert malformed==2
+    # Validly shaped decisions without a matching grant are review cases, not schema errors.
+    no_permission=reconcile_decisions(org,grants,delegations,events,[dict(decisions[0],permission="approve")])
+    expired=reconcile_decisions(org,grants,delegations,events,[dict(decisions[0],decided_at="2025-01-01")])
+    assert no_permission["status"]=="REVIEW_REQUIRED" and no_permission["authorized_count"]==0
+    assert expired["status"]=="REVIEW_REQUIRED" and expired["authorized_count"]==0
+    unauthorized=reconcile_decisions(org,grants,delegations,events,[dict(decisions[0],action="payment")])
     assert unauthorized["status"]=="REVIEW_REQUIRED" and unauthorized["authorized_count"]==0
-    print(json.dumps(dict(status="PASS",positive_cases=2,negative_cases=negatives)))
+    print(json.dumps(dict(status="PASS",positive_cases=2,malformed_cases=malformed,review_cases=3)))
 if __name__=="__main__": main()
