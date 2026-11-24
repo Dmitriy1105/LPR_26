@@ -1,0 +1,39 @@
+{
+  "version": "1.0",
+  "rules": [
+    {
+      "process": "deal_approval",
+      "node": "complete",
+      "assigner_roles": [
+        "director"
+      ],
+      "assignee_roles": [
+        "technical_expert",
+        "finance_manager"
+      ],
+      "capability": null
+    },
+    {
+      "process": "technical_expertise",
+      "node": "technical_review",
+      "assigner_roles": [
+        "director"
+      ],
+      "assignee_roles": [
+        "technical_expert"
+      ],
+      "capability": "technical.assess"
+    },
+    {
+      "process": "budget_approval",
+      "node": "financial_review",
+      "assigner_roles": [
+        "director"
+      ],
+      "assignee_roles": [
+        "finance_manager"
+      ],
+      "capability": "finance.assess"
+    }
+  ]
+}
