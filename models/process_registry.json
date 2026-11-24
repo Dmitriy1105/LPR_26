@@ -1,5 +1,5 @@
 {
-  "version": "0.2",
+  "version": "0.3",
   "processes": [
     {
       "id": "deal_approval",
@@ -17,7 +17,9 @@
           "revisionAllowed": false
         }
       },
-      "max_steps": 100
+      "max_steps": 100,
+      "namespace": "urn:lpr:process",
+      "executor": "leaf"
     },
     {
       "id": "budget_approval",
@@ -30,7 +32,9 @@
         }
       },
       "updates": {},
-      "max_steps": 100
+      "max_steps": 100,
+      "namespace": "urn:lpr:process",
+      "executor": "leaf"
     },
     {
       "id": "technical_expertise",
@@ -40,6 +44,41 @@
           "file": "models/dmn/technical_outcome.dmn",
           "id": "technical_outcome",
           "output": "outcome"
+        }
+      },
+      "updates": {},
+      "max_steps": 100,
+      "namespace": "urn:lpr:process",
+      "executor": "leaf"
+    },
+    {
+      "id": "budget_escalation",
+      "bpmn": "models/bpmn/budget_escalation.bpmn",
+      "namespace": "urn:lpr:process",
+      "executor": "composite",
+      "decisions": {},
+      "updates": {},
+      "max_steps": 100
+    },
+    {
+      "id": "corporate_decision",
+      "bpmn": "models/bpmn/corporate_decision.bpmn",
+      "namespace": "urn:lpr:process",
+      "executor": "composite",
+      "decisions": {},
+      "updates": {},
+      "max_steps": 100
+    },
+    {
+      "id": "corporate_decision_multilevel",
+      "bpmn": "models/bpmn/corporate_decision_multilevel.bpmn",
+      "namespace": "urn:lpr:process",
+      "executor": "composite",
+      "decisions": {
+        "readiness": {
+          "file": "models/dmn/corporate_readiness.dmn",
+          "id": "corporate_readiness",
+          "output": "readiness"
         }
       },
       "updates": {},
