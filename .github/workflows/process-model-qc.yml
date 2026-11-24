@@ -17,6 +17,24 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+      - name: Build fresh GEN-010.11B.1 blind pack
+        run: python scripts/generator_v4_gen01011b1_blind_pack_v1.py
+      - name: Test GEN-010.11B.1 blind pack
+        run: python scripts/test_generator_v4_gen01011b1_blind_pack_v1.py
+      - name: Upload GEN-010.11B.1 reviewer-visible pack
+        uses: actions/upload-artifact@v4
+        with:
+          name: gen01011b1-blind-pack
+          path: artifacts/gen01011b1/blind/
+          if-no-files-found: error
+          retention-days: 30
+      - name: Upload GEN-010.11B.1 restricted answer key separately
+        uses: actions/upload-artifact@v4
+        with:
+          name: gen01011b1-restricted-answer-key
+          path: artifacts/gen01011b1/restricted/
+          if-no-files-found: error
+          retention-days: 30
       - run: python scripts/test_dmn_interpreter.py > dmn-interpreter-qc.json
       - run: python scripts/validate_process_profile.py > process-qc.json
       - run: python scripts/process_executor_v4.py > executor-qc.json
