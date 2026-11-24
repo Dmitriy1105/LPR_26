@@ -11,18 +11,7 @@ def load():
     p=ET.parse(ROOT/"models/bpmn/deal_approval.bpmn").getroot().find(B+"process")
     t=ET.parse(ROOT/"models/dmn/approval_outcome.dmn").getroot().find(D+"decision").find(D+"decisionTable")
     return p,t
-def evaluate(t, values):
-    assert t.attrib["hitPolicy"]=="UNIQUE"
-    names=[i.find(D+"inputExpression").findtext(D+"text") for i in t.findall(D+"input")]
-    assert all(type(values[n]) is bool for n in names)
-    matches=[]
-    for r in t.findall(D+"rule"):
-        tests=[x.findtext(D+"text") for x in r.findall(D+"inputEntry")]
-        assert len(tests)==len(names) and set(tests)<={"-","true","false"}
-        if all(a=="-" or (a=="true")==values[n] for a,n in zip(tests,names)):
-            matches.append(json.loads(r.find(D+"outputEntry").findtext(D+"text")))
-    assert len(matches)==1, ("DMN non-unique or incomplete",values,matches)
-    return matches[0]
+from dmn_interpreter import evaluate
 def execute(p,t,values,bindings,max_steps=100):
     nodes={n.attrib["id"]:n for n in p if n.tag!=B+"sequenceFlow"}
     flows=p.findall(B+"sequenceFlow")
