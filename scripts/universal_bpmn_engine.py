@@ -14,7 +14,14 @@ def execute(process_id,inputs,registry,instance="I1",max_events=1000,max_depth=1
         if len(events)>=max_events: raise RuntimeError("event limit")
         events.append(dict(global_step=len(events),instance_path=path,**deepcopy(record)))
     def resolve(mapping,context):
-        return {k:context[v["ref"]] if "ref" in v else deepcopy(v["literal"]) for k,v in mapping.items()}
+        def value(v):
+            if set(v)=={"ref"}: return context[v["ref"]]
+            if set(v)=={"literal"}: return deepcopy(v["literal"])
+            if set(v)=={"equals"}:
+                q=v["equals"]; a=context[q["ref"]]; b=q["literal"]
+                return type(a) is type(b) and a==b
+            raise ValueError("unsupported binding")
+        return {k:value(v) for k,v in mapping.items()}
     def visit(pid,values,path,stack):
         if pid in stack or len(stack)>=max_depth: raise RuntimeError("recursive call or depth limit")
         s=specs[pid]; root=ET.parse(ROOT/s["bpmn"]).getroot()
