@@ -31,6 +31,19 @@
       },
       "updates": {},
       "max_steps": 100
+    },
+    {
+      "id": "technical_expertise",
+      "bpmn": "models/bpmn/technical_expertise.bpmn",
+      "decisions": {
+        "assess": {
+          "file": "models/dmn/technical_outcome.dmn",
+          "id": "technical_outcome",
+          "output": "outcome"
+        }
+      },
+      "updates": {},
+      "max_steps": 100
     }
   ]
 }
