@@ -18,7 +18,8 @@ def oracle(technical,budget,deal,amount,day,funds,met,rem):
     return tech,status,readiness,outcome,attempts
 def projection(r):
     c=r["result"]["context"]
-    attempts=[(e["context"]["actor"],e["end"]) for e in r["events"] if e["event"]=="process_end" and e["process_id"]=="budget_approval"]
+    paths={e["instance_path"]:e["process_id"] for e in r["events"] if e["event"]=="process_start"}
+    attempts=[(e["context"]["actor"],e["end"]) for e in r["events"] if e["event"]=="process_end" and paths[e["instance_path"]]=="budget_approval"]
     return c["technicalStatus"],c["budgetStatus"],c["readiness"],c.get("dealOutcome"),attempts
 def compare(r,expected):
     if projection(r)!=expected: raise ValueError(("semantic mismatch",projection(r),expected))
