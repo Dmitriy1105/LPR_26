@@ -49,14 +49,12 @@ class CommunicationSemanticAuditTests(unittest.TestCase):
         report = audit_rendered_communications(self.world, rows)
         self.assertTrue(any("author role label mismatch" in error for error in report["errors"]))
 
-    def test_altered_context_is_detected(self):
+    def test_injected_scenario_context_is_detected_as_leakage(self):
         rows = copy.deepcopy(self.communications)
-        index = next(i for i, row in enumerate(rows) if row["context_note_included"])
-        rows[index]["body"] = rows[index]["body"].replace(
-            self.world["observable_events"][index]["context_note"], "unverified claim"
-        )
+        index = next(i for i, event in enumerate(self.world["observable_events"]) if event.get("context_note"))
+        rows[index]["body"] += " Контекст события: " + self.world["observable_events"][index]["context_note"]
         report = audit_rendered_communications(self.world, rows)
-        self.assertTrue(any("observable context omitted or altered" in error for error in report["errors"]))
+        self.assertTrue(any("internal scenario context leaked" in error for error in report["errors"]))
 
     def test_close_outcome_leak_is_detected(self):
         rows = copy.deepcopy(self.communications)
