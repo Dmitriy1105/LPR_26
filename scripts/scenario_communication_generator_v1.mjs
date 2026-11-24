@@ -180,7 +180,8 @@ export function generateCommunications({ seed = 42, organizations = 5, dealsPerO
     if (!actor || !deal) throw new Error("Missing actor/deal reference for " + event.id);
     const channel = channels[event.type];
     if (!channel) throw new Error("No communication mapping for event type " + event.type);
-    const textEvent = { id: event.id, type: event.type, outcome: event.outcome ?? null };\n    const rendered = renderText(textEvent, actor, target, deal, seed);
+    const textEvent = { id: event.id, type: event.type, outcome: event.outcome ?? null };
+    const rendered = renderText(textEvent, actor, target, deal, seed);
     return {
       ID: "ACT-" + String(index + 1).padStart(6, "0"),
       TYPE_ID: channel.typeId,
