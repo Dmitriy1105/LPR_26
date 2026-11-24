@@ -1,13 +1,12 @@
 """Static model linkage audit; independent of XSD validation."""
 import json
-from xml.dom import minidom
+from bpmn_qname import parse_scoped,resolve_qname
 import xml.etree.ElementTree as ET
 from process_executor_v4 import ROOT,B,D
 def audit():
     processes={}; namespaces={}; prefixes={}; paths={}; decisions=set(); errors=[]; links=[]
     for f in sorted((ROOT/"models/bpmn").glob("*.bpmn")):
-        root=ET.parse(f).getroot()
-        nsmap=dict((k.split(":",1)[1],v) for k,v in minidom.parse(str(f)).documentElement.attributes.items() if k.startswith("xmlns:"))
+        root,nsmap=parse_scoped(f)
         for p in root.findall(B+"process"):
             pid=p.get("id")
             if pid in processes: errors.append("duplicate process "+pid)
@@ -40,10 +39,10 @@ def audit():
         for k in nodes:
             if not reach([k]) & ends: errors.append(pid+": no path to end "+k)
         for n in p.findall(B+"callActivity"):
-            prefix,sep,child=n.get("calledElement","").partition(":")
-            if not sep or not child or prefix not in prefixes[pid]:
-                errors.append(pid+": unresolved QName "+n.get("calledElement","")); continue
-            if child in namespaces and prefixes[pid][prefix]!=namespaces[child]: errors.append(pid+": namespace mismatch "+child)
+            try: ns,child=resolve_qname(n.get("calledElement"),prefixes[pid][n])
+            except ValueError as exc:
+                errors.append(pid+": "+str(exc)); continue
+            if child in namespaces and ns!=namespaces[child]: errors.append(pid+": namespace mismatch "+child)
             links.append([pid,child])
             if child not in processes: errors.append(pid+": missing child "+child)
     registry=json.loads((ROOT/"models/process_registry.json").read_text())
