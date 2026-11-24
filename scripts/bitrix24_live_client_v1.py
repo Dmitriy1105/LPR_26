@@ -1,7 +1,6 @@
 """Opt-in Bitrix24 REST client. Credentials are read from environment; never log or commit secrets."""
 import json
 import os
-import re
 import urllib.error
 import urllib.parse
 import urllib.request
