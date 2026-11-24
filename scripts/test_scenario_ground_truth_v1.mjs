@@ -10,6 +10,9 @@ assert.ok(g.records.every(r=>r.speaker_contact_id===null&&r.process_instance_id=
 assert.ok(g.records.filter(r=>r.decision_maker_contact_id!==null).every(r=>r.authority_grant_refs.length>0));
 assert.ok(g.records.some(r=>r.target_contact_id===null&&r.addressee_contact_ids.length===0));
 assert.ok(d.communications.every(a=>!("decision_maker_contact_id" in a)&&!("annotation_origin" in a)));
+assert.ok(d.world.events.filter(e=>e.type==="object").every(e=>e.actor_id!==e.target_id));
+const invalid=structuredClone(d);const objection=invalid.world.events.find(e=>e.type==="object");objection.target_id=objection.actor_id;
+assert.equal(validateGroundTruth(invalid,g).pass,false);
 const mutations=[
  x=>x.records[0].actor_contact_id="UNKNOWN",
  x=>x.records[0].speaker_contact_id=x.records[0].actor_contact_id,
