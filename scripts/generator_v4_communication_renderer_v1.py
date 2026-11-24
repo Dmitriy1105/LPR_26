@@ -368,7 +368,7 @@ def validate_rendered_communications(observable_events: list[dict[str, Any]],
             errors.append("source chronology/provenance mismatch " + cid)
         if item["missing_fields"] != event["missing_fields"]:
             errors.append("missingness projection mismatch " + cid)
-        if item["context_note_included"] != bool(event.get("context_note")):
+        if item["context_note_included"] is not False:
             errors.append("context note visibility mismatch " + cid)
         if not item["body"].strip() or len(item["body"].split()) < 8:
             errors.append("insufficient body text " + cid)
