@@ -211,6 +211,35 @@ EXTRA_TEMPLATES = {
     ),
 }
 
+
+# GEN-010.12: action-specific language for the three most frequently confused
+# business events. These templates describe distinct speech acts rather than
+# repeating generic CRM metadata boilerplate.
+SEMANTIC_TEMPLATES_V2 = {
+    "request_information": (
+        "Для подготовки сделки {deal_id} к проверке прошу прислать исходные требования и недостающие документы. После получения материалов можно определить дальнейший порядок рассмотрения.",
+        "По сделке {deal_id} пока не хватает исходных данных. Просьба уточнить параметры запроса и направить подтверждающие материалы; поручение на проверку этим сообщением не назначается.",
+        "Прошу подтвердить исходные условия сделки {deal_id} и предоставить документы, необходимые для предметного рассмотрения. Когда информация поступит, вернёмся к вопросу о следующем этапе.",
+        "Чтобы передать сделку {deal_id} профильным специалистам, необходимо уточнить требования и собрать комплект исходных материалов. Просьба направить недостающие сведения.",
+        "По сделке {deal_id} запрашиваю уточнения по исходным условиям и составу документов. Сейчас речь идёт о сборе информации, а не о назначении исполнителя."
+    ),
+    "delegate": (
+        "Поручаю {target_role} провести профильную проверку материалов по сделке {deal_id}. По итогам прошу направить заключение мне для дальнейшего рассмотрения.",
+        "Для продолжения работы по сделке {deal_id} назначаю {target_role} ответственным за проверку. Необходимо изучить материалы, зафиксировать замечания и вернуть результат инициатору.",
+        "Передаю {target_role} задачу по сделке {deal_id}: проверить материалы в пределах своей компетенции и сообщить выводы. Итоговое решение по сделке этим поручением не принимается.",
+        "Прошу {target_role} выполнить проверку сделки {deal_id} и направить результат до перехода к следующему этапу. Это назначение задачи, а не подтверждение её выполнения.",
+        "Назначаю {target_role} исполнителем профильной проверки по сделке {deal_id}. После завершения работы ожидаю заключение и перечень вопросов, требующих решения."
+    ),
+    "complete_task": (
+        "Профильная проверка по сделке {deal_id} завершена. Результат передан {target_role} для дальнейшего рассмотрения; новых поручений этим сообщением не назначается.",
+        "Сообщаю о выполнении ранее назначенной проверки по сделке {deal_id}. Подготовленные выводы направлены ответственному участнику.",
+        "Работа по поручению для сделки {deal_id} выполнена: проверка завершена, результат передан инициатору. Запись фиксирует исполнение задачи, а не её назначение.",
+        "По сделке {deal_id} завершена проверка представленных материалов. Результаты доступны ответственному участнику для следующего этапа согласования.",
+        "Подтверждаю завершение порученной работы по сделке {deal_id}. Проверка выполнена, замечания и выводы переданы адресату."
+    )
+}
+
+
 OPENERS = (
     "В рамках сопровождения сделки {deal_id} фиксирую следующее.",
     "Для сохранения истории взаимодействия по сделке {deal_id} внесена запись.",
@@ -282,16 +311,24 @@ def render_communications(observable_events: list[dict[str, Any]],
 
         channel, type_id = CHANNELS[event_type]
         subject = _choice(seed, event_id, "subject", SUBJECTS[event_type])
-        body_options = TEMPLATES[event_type] + EXTRA_TEMPLATES[event_type]
-        opener = _choice(seed, event_id, "opener", OPENERS).format(deal_id=event["deal_id"])
-        main = _choice(seed, event_id, "body", body_options).format(deal_id=event["deal_id"])
-        closer = _choice(seed, event_id, "closer", CLOSERS)
-        body = opener + " " + main + " " + closer
+        # Role labels are visible organizational context, not hidden event labels.
+        actor_role = roles[author]
+        target_role = roles.get(target) if target else None
+        author_label = ROLE_LABELS.get(actor_role, actor_role)
+        addressee_label = ROLE_LABELS.get(target_role, target_role) if target_role else "ответственному участнику"
+        if event_type in SEMANTIC_TEMPLATES_V2:
+            body_options = SEMANTIC_TEMPLATES_V2[event_type]
+        else:
+            # Keep event-specific statements; do not surround them with generic
+            # openers/closers that made the corpus sound like system logs.
+            body_options = TEMPLATES[event_type] + EXTRA_TEMPLATES[event_type]
+        body = _choice(seed, event_id, "body_v2", body_options).format(
+            deal_id=event["deal_id"], author_role=author_label,
+            target_role=addressee_label
+        )
         # Internal scenario context and decision-scope codes are intentionally
         # excluded from the communication body. They remain available only in
         # structured evaluation fields; exposing them leaks labels to NLP/reviewers.
-        actor_role = roles[author]
-        target_role = roles.get(target) if target else None
         author_label = ROLE_LABELS.get(actor_role, actor_role)
         addressee_label = ROLE_LABELS.get(target_role, target_role) if target_role else None
         participant_ids = [author] + ([target] if target and target != author else [])
@@ -324,7 +361,7 @@ def render_communications(observable_events: list[dict[str, Any]],
             "context_note_included": False,
             "missing_fields": list(event.get("missing_fields", [])),
             "synthetic": True,
-            "renderer_version": "1.0.0",
+            "renderer_version": "1.1.0",
         })
     return output
 
