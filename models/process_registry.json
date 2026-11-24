@@ -274,13 +274,10 @@
               "ref": "dealAuthorized"
             },
             "requirementsMet": {
-              "equals": {
-                "ref": "readiness",
-                "literal": "ready"
-              }
+              "ref": "dealRequirementsMet"
             },
             "revisionAllowed": {
-              "literal": false
+              "ref": "revisionAllowed"
             }
           },
           "outputs": {
