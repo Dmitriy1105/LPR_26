@@ -359,7 +359,7 @@ def validate_rendered_communications(observable_events: list[dict[str, Any]],
             errors.append("insufficient body text " + cid)
         if item["speaker_contact_id"] is not None or item["speaker_status"] != "unknown_no_turn_annotation":
             errors.append("speaker identity invented without turn annotation " + cid)
-        if event["event_type"] == "close" and any(x in item["body"].lower() for x in ("одобр", "отклон")):
+        if event["event_type"] == "close" and any(x in item["body"].lower() for x in ("одобр", "отклон", "approved", "rejected")):
             errors.append("close text leaks hidden outcome " + cid)
     expected_ids = set(event_by_id)
     if set(comm_by_id) != expected_ids:
