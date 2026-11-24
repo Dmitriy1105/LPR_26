@@ -18,6 +18,19 @@
         }
       },
       "max_steps": 100
+    },
+    {
+      "id": "budget_approval",
+      "bpmn": "models/bpmn/budget_approval.bpmn",
+      "decisions": {
+        "decide": {
+          "file": "models/dmn/budget_outcome.dmn",
+          "id": "budget_outcome",
+          "output": "outcome"
+        }
+      },
+      "updates": {},
+      "max_steps": 100
     }
   ]
 }
