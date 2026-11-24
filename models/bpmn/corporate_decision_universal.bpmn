@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:lpr="urn:lpr:process" id="Definitions_Corporate_Universal" targetNamespace="urn:lpr:process">
+ <bpmn:process id="corporate_decision_universal" name="Corporate decision making" isExecutable="false">
+  <bpmn:startEvent id="start" name="start"/>
+  <bpmn:callActivity id="technical" name="technical" calledElement="lpr:technical_expertise"/>
+  <bpmn:callActivity id="budget" name="budget" calledElement="lpr:budget_approval"/>
+  <bpmn:businessRuleTask id="readiness" name="Assess readiness"/>
+  <bpmn:exclusiveGateway id="route" name="Route readiness"/>
+  <bpmn:endEvent id="pending" name="Pending"/>
+  <bpmn:callActivity id="deal" name="deal" calledElement="lpr:deal_approval"/>
+  <bpmn:endEvent id="end" name="end"/>
+  <bpmn:sequenceFlow id="f1" sourceRef="start" targetRef="technical"/>
+  <bpmn:sequenceFlow id="f2" sourceRef="technical" targetRef="budget"/>
+  <bpmn:sequenceFlow id="f3" sourceRef="budget" targetRef="readiness"/>
+  <bpmn:sequenceFlow id="f5" sourceRef="readiness" targetRef="route"/>
+  <bpmn:sequenceFlow id="r0" sourceRef="route" targetRef="deal"><bpmn:conditionExpression>readiness = "ready"</bpmn:conditionExpression></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="r1" sourceRef="route" targetRef="deal"><bpmn:conditionExpression>readiness = "not_ready"</bpmn:conditionExpression></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="r2" sourceRef="route" targetRef="pending"><bpmn:conditionExpression>readiness = "pending"</bpmn:conditionExpression></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f4" sourceRef="deal" targetRef="end"/>
+ </bpmn:process>
+</bpmn:definitions>
