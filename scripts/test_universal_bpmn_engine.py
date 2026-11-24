@@ -32,5 +32,13 @@ def main():
         if pending: assert r["result"]["end"]=="pending" and "dealOutcome" not in ctx
         else: assert ctx["dealOutcome"]==("deny" if not deal_auth else "approve" if expected=="ready" else "reject")
         readiness_cases.append(dict(inputs=inputs,readiness=expected))
-    print(json.dumps(dict(status="PASS",cases=cases,limits_rejected=rejected,readiness_cases=readiness_cases),indent=2))
+    escalation_cases=[]
+    for amount,funds,day,status,actors in [(500000,True,"2026-01-01","approved",["P3"]),(500001,True,"2026-12-31","approved",["P3","P1"]),(5000000,True,"2026-06-01","approved",["P3","P1"]),(5000001,True,"2026-06-01","escalated",["P3","P1"]),(100,False,"2026-06-01","rejected",["P3"]),(100,True,"2027-01-01","blocked",["P3"])]:
+        inputs=dict(amount=amount,fundsAvailable=funds,as_of=day,actor="P3",initiator="P4")
+        r=execute("budget_escalation_universal",inputs,registry)
+        assert r==execute("budget_escalation_universal",inputs,registry)
+        assert r["result"]["context"]["budgetStatus"]==status
+        assert [x["context"]["actor"] for x in r["result"]["children"]]==actors
+        escalation_cases.append(dict(inputs=inputs,status=status,actors=actors))
+    print(json.dumps(dict(status="PASS",cases=cases,limits_rejected=rejected,readiness_cases=readiness_cases,escalation_cases=escalation_cases),indent=2))
 if __name__=="__main__": main()
