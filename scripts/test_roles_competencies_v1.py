@@ -7,6 +7,10 @@ def main():
     sales=[r for r in rows if r["department"]=="sales"]
     assert any(r["position"]=="head_of_sales" for r in sales)
     assert any(r["position"]=="account_manager" for r in sales)
+    assert any(r["position"]=="security_manager" and r["department"]=="security" for r in rows)
+    assert any(r["position"]=="information_security_manager" and r["department"]=="information_security" for r in rows)
+    assert any(r["position"]=="security_specialist" for r in rows)
+    assert any(r["position"]=="information_security_specialist" for r in rows)
     enriched=add_competency(rows,sales[-1]["person_id"],"enterprise_sales","verified","assessment-001")
     assert validate(org,enriched)
     negatives=0
@@ -18,5 +22,8 @@ def main():
     try: add_competency(rows,"unknown","skill")
     except ValueError: negatives+=1
     else: raise AssertionError("unknown employee accepted")
+    try: add_competency(rows,sales[-1]["person_id"],"unverified_test","verified")
+    except ValueError: negatives+=1
+    else: raise AssertionError("verified competency without source accepted")
     print(json.dumps(dict(status="PASS",people=len(rows),sales_roles=len(sales),positive_cases=3,negative_cases=negatives)))
 if __name__=="__main__": main()
