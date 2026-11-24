@@ -1,5 +1,5 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "allowed_inputs": {
     "technical_expertise": [
       "actor",
@@ -51,213 +51,132 @@
       "capability": "deal.approve"
     }
   },
-  "registry": {
-    "version": "0.4-prototype",
-    "processes": [
-      {
-        "id": "deal_approval",
-        "bpmn": "models/bpmn/deal_approval.bpmn",
-        "decisions": {
-          "decide": {
-            "file": "models/dmn/approval_outcome.dmn",
-            "id": "approval_outcome",
-            "output": "outcome"
-          }
-        },
-        "updates": {
-          "recheck": {
-            "requirementsMet": true,
-            "revisionAllowed": false
-          }
-        },
-        "max_steps": 100,
-        "namespace": "urn:lpr:process",
-        "executor": "leaf",
-        "before": {
-          "decide": [
-            "deal_authority"
-          ]
-        }
-      },
-      {
-        "id": "budget_approval",
-        "bpmn": "models/bpmn/budget_approval.bpmn",
-        "decisions": {
-          "decide": {
-            "file": "models/dmn/budget_outcome.dmn",
-            "id": "budget_outcome",
-            "output": "outcome"
-          }
-        },
-        "updates": {},
-        "max_steps": 100,
-        "namespace": "urn:lpr:process",
-        "executor": "leaf",
-        "before": {
-          "decide": [
-            "budget_authority"
-          ]
-        }
-      },
-      {
-        "id": "technical_expertise",
-        "bpmn": "models/bpmn/technical_expertise.bpmn",
-        "decisions": {
-          "assess": {
-            "file": "models/dmn/technical_outcome.dmn",
-            "id": "technical_outcome",
-            "output": "outcome"
-          }
-        },
-        "updates": {},
-        "max_steps": 100,
-        "namespace": "urn:lpr:process",
-        "executor": "leaf",
-        "before": {
-          "assess": [
-            "technical_authority"
-          ]
-        }
-      },
-      {
-        "id": "budget_escalation_universal",
-        "bpmn": "models/bpmn/budget_escalation_universal.bpmn",
-        "namespace": "urn:lpr:process",
-        "executor": "composite",
-        "max_steps": 100,
-        "updates": {},
-        "before": {
-          "assess": [
-            "budget_authority"
-          ],
-          "advance_manager": [
-            "advance_manager"
-          ]
-        },
-        "decisions": {
-          "route_decision": {
-            "file": "models/dmn/escalation_route.dmn",
-            "id": "escalation_route",
-            "output": "routeOutcome"
-          }
-        },
-        "calls": {
-          "assess": {
-            "process": "budget_approval",
-            "inputs": {
-              "fundsAvailable": {
-                "ref": "fundsAvailable"
-              },
-              "actor": {
-                "ref": "actor"
-              },
-              "amount": {
-                "ref": "amount"
-              },
-              "as_of": {
-                "ref": "as_of"
-              },
-              "initiator": {
-                "ref": "initiator"
-              }
+  "registry_overrides": {
+    "deal_approval": {
+      "before": {
+        "decide": [
+          "deal_authority"
+        ]
+      }
+    },
+    "budget_approval": {
+      "before": {
+        "decide": [
+          "budget_authority"
+        ]
+      }
+    },
+    "technical_expertise": {
+      "before": {
+        "assess": [
+          "technical_authority"
+        ]
+      }
+    },
+    "budget_escalation_universal": {
+      "calls": {
+        "assess": {
+          "process": "budget_approval",
+          "inputs": {
+            "fundsAvailable": {
+              "ref": "fundsAvailable"
             },
-            "outputs": {
-              "budgetStatus": {
-                "ref": "end"
-              }
-            }
-          }
-        }
-      },
-      {
-        "id": "corporate_multilevel_universal",
-        "bpmn": "models/bpmn/corporate_multilevel_universal.bpmn",
-        "namespace": "urn:lpr:process",
-        "executor": "composite",
-        "decisions": {
-          "readiness": {
-            "file": "models/dmn/corporate_readiness_direct.dmn",
-            "id": "corporate_readiness_direct",
-            "output": "readiness"
-          }
-        },
-        "updates": {},
-        "max_steps": 100,
-        "calls": {
-          "technical": {
-            "process": "technical_expertise",
-            "inputs": {
-              "requirementsMet": {
-                "ref": "technicalRequirementsMet"
-              },
-              "remediable": {
-                "ref": "remediable"
-              },
-              "actor": {
-                "ref": "technicalActor"
-              },
-              "initiator": {
-                "ref": "initiator"
-              }
+            "actor": {
+              "ref": "actor"
             },
-            "outputs": {
-              "technicalStatus": {
-                "ref": "end"
-              }
+            "amount": {
+              "ref": "amount"
+            },
+            "as_of": {
+              "ref": "as_of"
+            },
+            "initiator": {
+              "ref": "initiator"
             }
           },
-          "budget": {
-            "process": "budget_escalation_universal",
-            "inputs": {
-              "amount": {
-                "ref": "amount"
-              },
-              "fundsAvailable": {
-                "ref": "fundsAvailable"
-              },
-              "as_of": {
-                "ref": "as_of"
-              },
-              "initiator": {
-                "ref": "initiator"
-              },
-              "actor": {
-                "ref": "budgetActor"
-              }
-            },
-            "outputs": {
-              "budgetStatus": {
-                "ref": "budgetStatus"
-              }
-            }
-          },
-          "deal": {
-            "process": "deal_approval",
-            "inputs": {
-              "requirementsMet": {
-                "equals": {
-                  "ref": "readiness",
-                  "literal": "ready"
-                }
-              },
-              "revisionAllowed": {
-                "literal": false
-              },
-              "actor": {
-                "ref": "dealActor"
-              },
-              "initiator": {
-                "ref": "initiator"
-              }
-            },
-            "outputs": {
-              "dealOutcome": {
-                "ref": "outcome"
-              }
+          "outputs": {
+            "budgetStatus": {
+              "ref": "end"
             }
           }
         }
       }
-    ]
+    },
+    "corporate_multilevel_universal": {
+      "calls": {
+        "technical": {
+          "process": "technical_expertise",
+          "inputs": {
+            "requirementsMet": {
+              "ref": "technicalRequirementsMet"
+            },
+            "remediable": {
+              "ref": "remediable"
+            },
+            "actor": {
+              "ref": "technicalActor"
+            },
+            "initiator": {
+              "ref": "initiator"
+            }
+          },
+          "outputs": {
+            "technicalStatus": {
+              "ref": "end"
+            }
+          }
+        },
+        "budget": {
+          "process": "budget_escalation_universal",
+          "inputs": {
+            "amount": {
+              "ref": "amount"
+            },
+            "fundsAvailable": {
+              "ref": "fundsAvailable"
+            },
+            "as_of": {
+              "ref": "as_of"
+            },
+            "initiator": {
+              "ref": "initiator"
+            },
+            "actor": {
+              "ref": "budgetActor"
+            }
+          },
+          "outputs": {
+            "budgetStatus": {
+              "ref": "budgetStatus"
+            }
+          }
+        },
+        "deal": {
+          "process": "deal_approval",
+          "inputs": {
+            "requirementsMet": {
+              "equals": {
+                "ref": "readiness",
+                "literal": "ready"
+              }
+            },
+            "revisionAllowed": {
+              "literal": false
+            },
+            "actor": {
+              "ref": "dealActor"
+            },
+            "initiator": {
+              "ref": "initiator"
+            }
+          },
+          "outputs": {
+            "dealOutcome": {
+              "ref": "outcome"
+            }
+          }
+        }
+      }
+    }
   }
 }
