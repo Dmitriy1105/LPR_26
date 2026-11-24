@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches: [feature/generator-v4-bpmn-dmn]
-    paths: ['models/**', 'scripts/dmn_interpreter.py', 'scripts/test_dmn_interpreter.py', 'scripts/validate_process_profile.py', 'scripts/process_executor_v4.py', 'scripts/test_process_library.py', 'scripts/organization_decision_audit.py', 'scripts/corporate_decision_v4.py', 'scripts/budget_escalation_v4.py', 'scripts/corporate_multilevel_v4.py', 'scripts/audit_model_links.py', 'scripts/audit_official_xsd.py', '.github/workflows/process-model-qc.yml']
+    paths: ['models/**', 'scripts/test_decision_evidence_v2.py', 'scripts/dmn_interpreter.py', 'scripts/test_dmn_interpreter.py', 'scripts/validate_process_profile.py', 'scripts/process_executor_v4.py', 'scripts/test_process_library.py', 'scripts/organization_decision_audit.py', 'scripts/corporate_decision_v4.py', 'scripts/budget_escalation_v4.py', 'scripts/corporate_multilevel_v4.py', 'scripts/audit_model_links.py', 'scripts/audit_official_xsd.py', '.github/workflows/process-model-qc.yml']
 jobs:
   profile:
     runs-on: ubuntu-latest
@@ -17,6 +17,7 @@ jobs:
       - run: python scripts/process_executor_v4.py > executor-qc.json
       - run: python scripts/test_process_library.py > library-qc.json
       - run: python scripts/organization_decision_audit.py > decision-audit-qc.json
+      - run: python scripts/test_decision_evidence_v2.py > decision-evidence-qc.json
       - run: python scripts/corporate_decision_v4.py > corporate-decision-qc.json
       - run: python scripts/budget_escalation_v4.py > escalation-qc.json
       - run: python scripts/corporate_multilevel_v4.py > multilevel-qc.json
@@ -35,6 +36,7 @@ jobs:
             executor-qc.json
             library-qc.json
             decision-audit-qc.json
+            decision-evidence-qc.json
             corporate-decision-qc.json
             escalation-qc.json
             multilevel-qc.json
