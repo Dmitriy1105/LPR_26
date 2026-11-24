@@ -1,0 +1,48 @@
+{
+  "status": "REVIEW_REQUIRED",
+  "verified_commit": "7cfe1b60a2110ed53bd3032b19bb983e2571f13a",
+  "verified_run": 45425761757,
+  "ci": "success",
+  "reported_cumulative_checks": 1197,
+  "independent_oracle": {
+    "cases": 576,
+    "negative_cases": 4,
+    "scope": "fixed demo organization; outcome and escalation actor projection"
+  },
+  "defects": {
+    "closed": 7,
+    "partial": 7,
+    "limitation": 1
+  },
+  "baseline_gate": "requires explicit scope approval; no full conformance claim",
+  "remaining": [
+    {
+      "id": "ARCH-004",
+      "note": "Independent outcome oracle 576 cases; full independent node/actor semantics and physical chronology not established."
+    },
+    {
+      "id": "ARCH-005",
+      "note": "Shared authoritative registry composed from overrides; legacy runners and duplicated call bindings remain."
+    },
+    {
+      "id": "ARCH-006",
+      "note": "18 malformed DMN and 4 registry negative cases added; coverage is not exhaustive."
+    },
+    {
+      "id": "ARCH-011",
+      "note": "Nested task actor projection and exact replay pass; global physical chronology and independent complete node projection remain."
+    },
+    {
+      "id": "ARCH-013",
+      "note": "Authoritative boundary verified; generator integration and temporal non-budget grants remain."
+    },
+    {
+      "id": "ARCH-014",
+      "note": "Task assignment integrated and replayed; dynamic authority delegation and cross-task chronology remain."
+    },
+    {
+      "id": "ARCH-015",
+      "note": "Two historical revisions replay successfully; same-engine replay, environment archival and independent full trace semantics remain."
+    }
+  ]
+}
