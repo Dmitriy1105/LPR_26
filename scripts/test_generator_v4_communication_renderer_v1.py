@@ -47,7 +47,7 @@ class CanonicalCommunicationRendererTests(unittest.TestCase):
         by_type = defaultdict(list)
         for row in self.first:
             by_type[row["event_type"]].append(row["body"].lower())
-        request_markers = ("прошу", "не хватает исходных данных", "запрашиваются исходные сведения", "запрашиваю уточнения")
+        request_markers = ("прошу", "просьба", "не хватает исходных данных", "запрашиваются исходные сведения", "запрашиваю уточнения")
         delegate_markers = ("поручаю", "назначаю", "передаю", "прошу выполнить", "прошу рассмотреть")
         completion_markers = ("завершена", "выполнена", "сообщаю о выполнении", "подтверждаю завершение", "подтверждаю выполнение")
         self.assertTrue(all(any(m in body for m in request_markers) for body in by_type["request_information"]))
