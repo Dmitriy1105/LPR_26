@@ -43,6 +43,8 @@ def validate(org,records):
         seen=set()
         for c in r["competencies"]:
             if not isinstance(c,dict) or not c.get("skill") or c.get("skill") in seen or c.get("evidence_status") not in ("verified","self_reported","unverified"): raise ValueError("invalid competency evidence")
+            if c["evidence_status"]=="verified" and not c.get("source_ref"): raise ValueError("verified competency requires source evidence")
+            if c.get("source_ref") is not None and (not isinstance(c["source_ref"],str) or not c["source_ref"].strip()): raise ValueError("invalid competency source")
             seen.add(c["skill"])
     return True
 def add_competency(records,person_id,skill,evidence_status="unverified",source_ref=None):
