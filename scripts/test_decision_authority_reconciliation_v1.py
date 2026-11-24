@@ -10,7 +10,6 @@ def main():
     decisions=[dict(decision_id="D1",actor_id=a,action="contract",permission="final_decision",decided_at="2026-06-01",source_event_id="EV1")]
     good=reconcile_decisions(org,grants,delegations,events,decisions)
     assert good["status"]=="PASS" and good["authorized_count"]==1
-    denied=reconcile_decisions(org,grants,delegations,events,[dict(decisions[0],actor_id=b)])
     # actor/source mismatch must be rejected rather than silently reconciled
     negatives=0
     for bad_decisions,bad_events in (([dict(decisions[0],actor_id=b)],events),([dict(decisions[0],source_event_id="MISSING")],events),([dict(decisions[0],permission="approve")],events),([dict(decisions[0],decided_at="2025-01-01")],events)):
