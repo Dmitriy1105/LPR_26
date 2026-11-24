@@ -1,0 +1,5 @@
+# Event Trace v1.0 — candidate
+
+Each event has a global step, unique event ID, previous global and local event IDs and instance path. Process start records identify parent, inputs and BPMN SHA-256. Decisions record DMN identity, rule, input snapshot, outcome, actor (nullable for system decisions), and DMN SHA-256. Policy events record subject and derived values. Call start/end identify child instances. Transitions record sequence flow and endpoints. Process end records final context. The envelope includes effective registry SHA-256 and, in authoritative mode, organization source hashes.
+
+Global and local predecessor links express execution order, not proof of social influence. Actor on a decision is the evaluated subject, not necessarily a human who enacted it. No inferred actor is assigned to generic tasks. Logical order is not wall-clock time. This is a candidate execution trace, not yet a complete ground-truth annotation or tamper-proof ledger. Full replay and independent model validation are separate acceptance gates.
