@@ -8,6 +8,9 @@ def evaluate_task(org,task,grants,delegations,events,as_of,amount=None):
     for k in ("task_id","action","actor_id","subject_id","bpmn_process_id","bpmn_task_id","dmn_decision_id"):
         if not isinstance(task[k],str) or not task[k].strip(): raise ValueError("empty task binding: "+k)
     if task["required_permission"] not in ("approve","final_decision"): raise ValueError("invalid required permission")
+    person_ids={p["id"] for p in org.get("people",[])}
+    if task["actor_id"] not in person_ids: raise ValueError("unknown process actor")
+    if not isinstance(task["required_permission"],str): raise ValueError("invalid required permission")
     validate_events(events)
     direct=authorize_at(org,grants,task["actor_id"],task["action"],task["required_permission"],as_of,amount)
     delegated=authorize_delegated_at(org,grants,delegations,task["actor_id"],task["action"],task["required_permission"],as_of,amount)
