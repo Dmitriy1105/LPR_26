@@ -277,6 +277,7 @@ def validate(dataset, config=None):
     gold = dataset["ground_truth"]["records"]
     check(len(dataset["organizations"]) == 20, "organization count")
     check(len(deals) == 800, "deal count")
+    check(len(events) == 6440, "event count")
     check(len({d["deal_id"] for d in deals}) == len(deals), "duplicate deal IDs")
     check(len(events) == len(obs) == len(gold), "event projection coverage")
     check(len({e["event_id"] for e in events}) == len(events), "duplicate event IDs")
@@ -289,6 +290,8 @@ def validate(dataset, config=None):
     expected_missing = cfg["observable_missingness"]["affected_deal_count"]
     check(missing["affected_deal_count"] == expected_missing, "exact missingness deal quota")
     check(len(missing["affected_deal_ids"]) == expected_missing, "unique missingness deal IDs")
+    missing_by_org = Counter(deal_by_id[did]["organization_id"] for did in missing["affected_deal_ids"] if did in deal_by_id) if "deal_by_id" in locals() else Counter()
+    check(len(missing_by_org) == 20 and all(n == 4 for n in missing_by_org.values()), "missingness must affect four deals per organization")
     deal_ids = {d["deal_id"] for d in deals}
     check(set(missing["affected_deal_ids"]) <= deal_ids, "missingness orphan deal")
     org_ids = {o["organization_id"] for o in dataset["organizations"]}
@@ -320,6 +323,8 @@ def validate(dataset, config=None):
             check(event["previous_event_id"] == previous, "broken event chain " + event["event_id"])
             previous = event["event_id"]
         check(rows[-1]["event_type"] == "close", "deal closure missing " + deal_id)
+        final_decisions = [e for e in rows if e["event_type"] in ("approve", "reject")]
+        check(len(final_decisions) == 1, "deal must have exactly one final decision " + deal_id)
         check(rows[-1]["decision_outcome"] == deal_by_id[deal_id]["status"], "deal outcome mismatch")
         if deal_by_id[deal_id]["family"] == "conflict_revision":
             types = [e["event_type"] for e in rows]
