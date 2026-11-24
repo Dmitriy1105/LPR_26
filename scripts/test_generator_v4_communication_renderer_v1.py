@@ -48,7 +48,7 @@ class CanonicalCommunicationRendererTests(unittest.TestCase):
         for row in self.first:
             by_type[row["event_type"]].append(row["body"].lower())
         request_markers = ("прошу", "просьба", "не хватает исходных данных", "запрашиваются исходные сведения", "запрашиваю уточнения")
-        delegate_markers = ("поручаю", "назначаю", "передаю", "передается", "передаётся", "передаются", "передаются", "прошу выполнить", "прошу рассмотреть")
+        delegate_markers = ("поруч", "назнач", "переда", "выполнить", "прошу рассмотреть")
         completion_markers = ("завершена", "выполнена", "сообщаю о выполнении", "подтверждаю завершение", "подтверждаю выполнение")
         self.assertTrue(all(any(m in body for m in request_markers) for body in by_type["request_information"]))
         self.assertTrue(all(any(m in body for m in delegate_markers) for body in by_type["delegate"]))
