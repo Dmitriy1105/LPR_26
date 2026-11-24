@@ -14,7 +14,9 @@ def oracle(technical,budget,deal,amount,day,funds,met,rem):
         if status=="escalated" and actor=="P3": actor="P1"
         else: break
     readiness="pending" if tech in ("rework","referred") or status in ("blocked","escalated") else "ready" if tech=="positive" and status=="approved" else "not_ready"
-    outcome=("approve" if deal=="P1" else "deny") if readiness=="ready" else None
+    # A definitive negative readiness requires a formal rejection by an authorized decision maker.
+    # Pending readiness alone bypasses the final decision.
+    outcome=None if readiness=="pending" else "deny" if deal!="P1" else "approve" if readiness=="ready" else "reject"
     return tech,status,readiness,outcome,attempts
 def projection(r):
     c=r["result"]["context"]
