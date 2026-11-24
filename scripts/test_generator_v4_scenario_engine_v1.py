@@ -59,8 +59,9 @@ class CanonicalScenarioEngineTests(unittest.TestCase):
         self.assertEqual(set(gold), set(observable))
         for event_id, truth in gold.items():
             if truth["deal_id"] in set(miss["affected_deal_ids"]):
-                self.assertIsNotNone(truth["target_contact_id"])
-                self.assertIsNone(observable[event_id]["target_contact_id"])
+                if truth["target_contact_id"] is not None:
+                    self.assertIsNone(observable[event_id]["target_contact_id"])
+                self.assertIsNone(observable[event_id]["context_note"])
             else:
                 self.assertEqual(observable[event_id]["target_contact_id"], truth["target_contact_id"])
 
@@ -71,12 +72,12 @@ class CanonicalScenarioEngineTests(unittest.TestCase):
 
     def test_authority_decisions_have_valid_grant_references(self):
         grants = {g["grant_id"]: g for g in self.dataset["authority_grants"]}
-        decisions = [e for e in self.dataset["events"] if e["event_type"] in ("approve", "reject")]
-        self.assertEqual(len(decisions), 800)
+        decisions = [e for e in self.dataset["events"] if e["event_type"] in ("approve", "reject", "unit_approval")]
+        self.assertEqual(len(decisions), 1040)
         for e in decisions:
             g = grants[e["authority_grant_ref"]]
             self.assertEqual(g["contact_id"], e["actor_contact_id"])
-            self.assertEqual(g["scope"], "deal_approval")
+            self.assertEqual(g["scope"], e["decision_scope"])
 
     def test_event_lineage_and_unique_keys(self):
         ids = [e["event_id"] for e in self.dataset["events"]]
