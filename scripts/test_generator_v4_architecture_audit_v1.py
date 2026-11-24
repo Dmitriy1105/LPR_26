@@ -11,7 +11,7 @@ def main():
     assert report["checks"]["scenario_negative_test_pass"] == (findings["GEN-001"]["status"]=="CLOSED")
     assert report["scenario_smoke"]["negative_test"]["pass"] is False
     assert report["fixture_total"]==677
-    assert report["contract_baseline_target"] is None
+    assert report["contract_baseline_target"]==767
     assert findings["GEN-002"]["status"]=="CLOSED"
     assert report["checks"]["e2e_executes_scenario_or_bpmn_runtime"] is True
     assert report["bpmn_dmn_integration"]["bpmn_dmn_executions"]==30
