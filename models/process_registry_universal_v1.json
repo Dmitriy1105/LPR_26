@@ -242,6 +242,89 @@
           }
         }
       }
+    },
+    {
+      "id": "corporate_multilevel_universal",
+      "bpmn": "models/bpmn/corporate_multilevel_universal.bpmn",
+      "namespace": "urn:lpr:process",
+      "executor": "composite",
+      "decisions": {
+        "readiness": {
+          "file": "models/dmn/corporate_readiness_direct.dmn",
+          "id": "corporate_readiness_direct",
+          "output": "readiness"
+        }
+      },
+      "updates": {},
+      "max_steps": 100,
+      "calls": {
+        "technical": {
+          "process": "technical_expertise",
+          "inputs": {
+            "competent": {
+              "ref": "competent"
+            },
+            "requirementsMet": {
+              "ref": "technicalRequirementsMet"
+            },
+            "remediable": {
+              "ref": "remediable"
+            }
+          },
+          "outputs": {
+            "technicalStatus": {
+              "ref": "end"
+            }
+          }
+        },
+        "budget": {
+          "process": "budget_escalation_universal",
+          "inputs": {
+            "amount": {
+              "ref": "amount"
+            },
+            "fundsAvailable": {
+              "ref": "fundsAvailable"
+            },
+            "as_of": {
+              "ref": "as_of"
+            },
+            "initiator": {
+              "ref": "initiator"
+            },
+            "actor": {
+              "ref": "budgetActor"
+            }
+          },
+          "outputs": {
+            "budgetStatus": {
+              "ref": "budgetStatus"
+            }
+          }
+        },
+        "deal": {
+          "process": "deal_approval",
+          "inputs": {
+            "authorized": {
+              "ref": "dealAuthorized"
+            },
+            "requirementsMet": {
+              "equals": {
+                "ref": "readiness",
+                "literal": "ready"
+              }
+            },
+            "revisionAllowed": {
+              "literal": false
+            }
+          },
+          "outputs": {
+            "dealOutcome": {
+              "ref": "outcome"
+            }
+          }
+        }
+      }
     }
   ]
 }
