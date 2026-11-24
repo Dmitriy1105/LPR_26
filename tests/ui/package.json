@@ -1,0 +1,9 @@
+{
+  "name": "lpr-ui-tests",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@playwright/test": "1.51.1"
+  }
+}
