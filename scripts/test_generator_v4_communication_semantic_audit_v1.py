@@ -22,6 +22,13 @@ class CommunicationSemanticAuditTests(unittest.TestCase):
         self.assertEqual(report["unique_sources"], 6440)
         self.assertEqual(report["checks"]["executor_event_type_reconciliation"], 1000)
         self.assertEqual(report["checks"]["decision_actor_authority_reconciliation"], 1040)
+        self.assertTrue(all(row["confirming_source_ref"] == row["source_ref"] for row in self.communications))
+        self.assertTrue(all((row["action_executor_contact_id"] == row["author_contact_id"])
+                            if row["event_type"] in ("complete_task", "revise")
+                            else row["action_executor_contact_id"] is None for row in self.communications))
+        self.assertTrue(all((row["decision_actor_contact_id"] == row["author_contact_id"])
+                            if row["event_type"] in ("approve", "reject", "unit_approval")
+                            else row["decision_actor_contact_id"] is None for row in self.communications))
 
     def test_wrong_author_is_detected(self):
         rows = copy.deepcopy(self.communications)
