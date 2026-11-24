@@ -279,11 +279,9 @@ def render_communications(observable_events: list[dict[str, Any]],
         main = _choice(seed, event_id, "body", body_options).format(deal_id=event["deal_id"])
         closer = _choice(seed, event_id, "closer", CLOSERS)
         body = opener + " " + main + " " + closer
-        note = event.get("context_note")
-        if note:
-            body += " Контекст события: " + note.rstrip(". ") + "."
-        if event_type == "unit_approval":
-            body += " Область согласования: " + str(event.get("decision_scope") or "не указана") + "."
+        # Internal scenario context and decision-scope codes are intentionally
+        # excluded from the communication body. They remain available only in
+        # structured evaluation fields; exposing them leaks labels to NLP/reviewers.
         actor_role = roles[author]
         target_role = roles.get(target) if target else None
         author_label = ROLE_LABELS.get(actor_role, actor_role)
