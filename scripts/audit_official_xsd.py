@@ -24,8 +24,8 @@ def fetch(url,folder,seen):
         for n in tree.findall(XS+tag):
             loc=n.get("schemaLocation")
             if loc:
-            try: n.set('schemaLocation',str(fetch(urljoin(url,loc),folder,seen)))
-            except Exception as e: raise RuntimeError(f'{url} dependency {loc}: {e}') from e
+                try: n.set('schemaLocation',str(fetch(urljoin(url,loc),folder,seen)))
+                except Exception as e: raise RuntimeError(f'{url} dependency {loc}: {e}') from e
     path.write_bytes(etree.tostring(tree))
     return path
 def main():
