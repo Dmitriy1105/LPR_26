@@ -79,6 +79,16 @@ def audit():
             if not result.get("authorized") or result.get("grant_id")!=event["authority_grant_ref"]:
                 unit_errors+=1
                 errors.append({"event_id":event["event_id"],"error":"unit_authority_mismatch"})
+        final_events=[e for e in events if e["event_type"] in ("approve","reject")]
+        close_events=[e for e in events if e["event_type"]=="close"]
+        if len(final_events)!=1 or final_events[0]["actor_contact_id"]!=director:
+            errors.append({"deal_id":deal["deal_id"],"error":"event_final_decision_actor_mismatch"})
+        else:
+            final_reconciliations+=1
+        if len(close_events)!=1 or close_events[0]["decision_outcome"]!=deal["status"]:
+            errors.append({"deal_id":deal["deal_id"],"error":"event_close_outcome_mismatch"})
+        else:
+            close_reconciliations+=1
         family=deal["family"]
         def budget_authority(context):
             # Unit-level finance authorization is checked from canonical grants.
