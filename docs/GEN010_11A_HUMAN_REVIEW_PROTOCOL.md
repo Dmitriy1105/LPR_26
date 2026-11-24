@@ -61,3 +61,10 @@ No human-review result or PASS is claimed until reviewers return completed, inde
 
 ## 2026-11-25 correction
 The renderer no longer appends internal scenario context notes or unit decision-scope codes to communication bodies. The reviewer-facing pack must be regenerated from this corrected renderer. Prior reviewer pack is superseded because it contained label leakage.
+
+
+## 2026-11-25 provenance correction and preliminary completion
+
+The corrected-v2 annotation workbook and JSON were previously described in chat as LLM-generated. That description was inaccurate: the frozen annotation labels and ratings were produced by a deterministic Python keyword/rule-assisted pass, not by a true per-record LLM inference call and not by a human expert. The annotation was created before opening the answer key and can therefore be retained as a blinded automated baseline. Do not describe it as LLM expert assessment.
+
+GEN-010.11A is considered complete only as a **preliminary automated annotation experiment**, not as human evaluation. The artifacts preserve the original annotation and the provenance correction. Human review remains pending and may be added later without overwriting this baseline.
