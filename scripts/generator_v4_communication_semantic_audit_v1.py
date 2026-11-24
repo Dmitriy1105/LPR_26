@@ -169,22 +169,18 @@ def audit_rendered_communications(world: dict[str, Any],
             errors.append("channel-specific record format mismatch " + event_id)
         channel_checks += 1
 
-        # Observable context is copied verbatim only when it is present.
+        # Scenario context is evaluator-only metadata and must never be rendered.
         note = event.get("context_note")
         if note:
             context_present += 1
-            if note not in comm.get("body", ""):
-                errors.append("observable context omitted or altered " + event_id)
-            if not any(marker in note.lower() for marker in CONTEXT_MARKERS[event_type]):
-                errors.append("source context conflicts with event type " + event_id)
+            if note in comm.get("body", ""):
+                errors.append("internal scenario context leaked into communication " + event_id)
         else:
             context_masked += 1
-            if comm.get("context_note_included"):
-                errors.append("masked context marked as included " + event_id)
-            if comm.get("context_note_included") is not False:
-                errors.append("missing context inclusion flag not false " + event_id)
-        if comm.get("context_note_included") != bool(note):
-            errors.append("context inclusion flag mismatch " + event_id)
+        if comm.get("context_note_included") is not False:
+            errors.append("scenario context inclusion flag must remain false " + event_id)
+        if "Контекст события:" in comm.get("body", "") or "Область согласования:" in comm.get("body", ""):
+            errors.append("internal scenario label marker leaked into communication " + event_id)
 
         # Event semantics and explicit contradictions.
         semantic_terms = {
