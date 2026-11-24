@@ -17,6 +17,10 @@ ROLE_CATALOG={
  "legal_specialist":{"department":"legal","level":"specialist"},
  "project_office_manager":{"department":"project_office","level":"manager"},
  "project_office_specialist":{"department":"project_office","level":"specialist"},
+ "security_manager":{"department":"security","level":"manager"},
+ "security_specialist":{"department":"security","level":"specialist"},
+ "information_security_manager":{"department":"information_security","level":"manager"},
+ "information_security_specialist":{"department":"information_security","level":"specialist"},
 }
 def build(org):
     people=[]
