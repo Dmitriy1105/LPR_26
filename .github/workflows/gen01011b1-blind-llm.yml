@@ -1,0 +1,38 @@
+name: GEN-010.11B.1 Blind LLM Sample
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/generator-v4-organization-engine]
+    paths:
+      - 'scripts/generator_v4_gen01011b1_blind_pack_v1.py'
+      - 'scripts/generator_v4_gen01011b1_llm_adapter_v1.py'
+      - 'scripts/test_generator_v4_gen01011b1_blind_pack_v1.py'
+      - 'scripts/generator_v4_scenario_engine_v1.py'
+      - 'scripts/generator_v4_communication_renderer_v1.py'
+      - 'scripts/generator_v4_human_review_pack_v1.py'
+jobs:
+  build-blind-pack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Build fresh blind pack and restricted key
+        run: python scripts/generator_v4_gen01011b1_blind_pack_v1.py
+      - name: Validate blind pack
+        run: python scripts/test_generator_v4_gen01011b1_blind_pack_v1.py
+      - name: Upload reviewer-visible pack
+        uses: actions/upload-artifact@v4
+        with:
+          name: gen01011b1-blind-pack
+          path: artifacts/gen01011b1/blind/
+          if-no-files-found: error
+          retention-days: 30
+      - name: Upload restricted answer key separately
+        uses: actions/upload-artifact@v4
+        with:
+          name: gen01011b1-restricted-answer-key
+          path: artifacts/gen01011b1/restricted/
+          if-no-files-found: error
+          retention-days: 30
