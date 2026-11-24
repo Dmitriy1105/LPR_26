@@ -16,8 +16,8 @@ This is an evidence-based initial register. A passing CI means the audit script 
 | GEN-005 | HIGH | OPEN | Fixture total does not match the documented regression target | The v4 Data Contract says preserve 767 records; the committed REST manifest sums to 677 (1 company + 30 contacts + 18 deals + 44 invoices + 540 activities + 44 tasks). The target and fixture version must be reconciled explicitly. |
 | GEN-006 | HIGH | OPEN | Generator v4 Data Contract is not approved | `docs/GENERATOR_V4_DATA_CONTRACT.md` is marked `PROPOSAL_REVIEW_REQUIRED`; output schema and acceptance gates are not authoritative yet. |
 | GEN-007 | HIGH | OPEN | Previous architecture defects remain partial | `reports/architecture_defect_registry.json` still has ARCH-004/005/006/011/013/014/015 in PARTIAL status. These are carried forward, not duplicated as new GEN IDs. |
-| GEN-008 | MEDIUM | OPEN | BPMN/DMN runtime is a restricted custom profile | ARCH-012 remains a LIMITATION; the ADR explicitly says initial models are descriptive and not executable-certified. Do not claim general OMG BPMN/DMN conformance. |
-| GEN-009 | MEDIUM | OPEN | BPMN definitions are declared non-executable | The inspected BPMN process definitions use `isExecutable="false"`; they are currently inputs to a custom restricted runner, not standalone executable BPMN models. |
+| GEN-008 | MEDIUM | DECISION_REQUIRED | BPMN/DMN runtime is a restricted custom profile | ARCH-012 remains a LIMITATION; the ADR explicitly says initial models are descriptive and not executable-certified. Do not claim general OMG BPMN/DMN conformance. |
+| GEN-009 | MEDIUM | DECISION_REQUIRED | BPMN definitions are declared non-executable | The inspected BPMN process definitions use `isExecutable="false"`; they are currently inputs to a custom restricted runner, not standalone executable BPMN models. |
 
 ## Audit interpretation
 
@@ -37,4 +37,4 @@ This is an evidence-based initial register. A passing CI means the audit script 
 6. GEN-008 and GEN-009: document the supported BPMN/DMN profile and decide whether full executable BPMN conformance is required for v4.0.
 7. Run a genuine full E2E audit, diversity/realism audit, negative tests, deterministic replay and release gate.
 
-No defect is marked closed by this initial audit. Close each item only with a code change, a focused regression test, and a passing CI run on the exact commit.
+No defect is marked closed by this initial audit. GEN-008 and GEN-009 are architecture-scope decisions, not assumed implementation defects: confirm whether the project requires a restricted custom BPMN/DMN profile or executable-standard model files. Close each item only with a code change, a focused regression test, and a passing CI run on the exact commit.
