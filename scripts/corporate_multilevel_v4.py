@@ -5,13 +5,11 @@ from organization_decision_audit import simulate,digest
 from budget_escalation_v4 import escalate
 from process_executor_v4 import ROOT,B,D
 READINESS='models/dmn/corporate_readiness.dmn'
+from dmn_interpreter import evaluate_detail
 def readiness(values):
     table=ET.parse(ROOT/READINESS).getroot().find(D+'decision').find(D+'decisionTable')
-    names=[i.find(D+'inputExpression').findtext(D+'text') for i in table.findall(D+'input')]
-    matches=[r for r in table.findall(D+'rule') if [json.loads(x.findtext(D+'text')) for x in r.findall(D+'inputEntry')]==[values[n] for n in names]]
-    if len(matches)!=1: raise ValueError('nonunique or missing readiness rule')
-    r=matches[0]
-    return json.loads(r.find(D+'outputEntry').findtext(D+'text')),r.get('id')
+    detail=evaluate_detail(table,values)
+    return detail["outcome"],detail["rule_id"]
 MODEL="models/bpmn/corporate_decision_multilevel.bpmn"
 def run(instance,technical,budget,actors):
     p=ET.parse(ROOT/MODEL).getroot().find(B+"process")
