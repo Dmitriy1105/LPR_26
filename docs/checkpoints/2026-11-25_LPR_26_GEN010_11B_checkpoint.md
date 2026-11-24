@@ -34,6 +34,10 @@ The corrected-v2 annotation files previously described in chat as LLM-generated 
 ## Interpretation
 This is a rule-assisted automated classification baseline, not an LLM benchmark or expert validation. It measures recovery of synthetic event labels from a deliberately balanced diagnostic sample. It does not prove real-world realism or full-corpus prevalence performance. No Cohen's kappa is calculated because there is only one annotation stream.
 
+## CI verification
+- [Process model QC #45505491176 — SUCCESS](https://github.com/Dmitriy1105/LPR_26/actions/runs/45505491176)
+- New evaluator regression tests: 4/4 PASS.
+
 ## Added implementation
 - `scripts/generator_v4_annotation_ground_truth_audit_v1.py`
 - `scripts/test_generator_v4_annotation_ground_truth_audit_v1.py`
