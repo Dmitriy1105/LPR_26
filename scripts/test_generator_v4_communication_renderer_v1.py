@@ -43,6 +43,31 @@ class CanonicalCommunicationRendererTests(unittest.TestCase):
         self.assertEqual(len(ratios), 11)
         self.assertTrue(all(ratio >= 0.55 for ratio in ratios.values()), ratios)
 
+    def test_request_delegate_completion_have_distinct_action_semantics(self):
+        by_type = defaultdict(list)
+        for row in self.first:
+            by_type[row["event_type"]].append(row["body"].lower())
+        request_markers = ("прошу прислать", "не хватает исходных данных", "запрашиваю уточнения", "предоставить документы")
+        delegate_markers = ("поручаю", "назначаю", "передаю", "ответственным за проверку")
+        completion_markers = ("завершена", "выполнена", "сообщаю о выполнении", "подтверждаю завершение")
+        self.assertTrue(all(any(m in body for m in request_markers) for body in by_type["request_information"]))
+        self.assertTrue(all(any(m in body for m in delegate_markers) for body in by_type["delegate"]))
+        self.assertTrue(all(any(m in body for m in completion_markers) for body in by_type["complete_task"]))
+
+    def test_generic_system_log_openers_and_closers_removed(self):
+        forbidden = (
+            "для сохранения истории взаимодействия",
+            "в журнале коммуникаций",
+            "настоящая запись относится",
+            "запись предназначена для последующего просмотра",
+            "источник и временная привязка сохранены",
+            "содержание не выходит за пределы сведений",
+            "ответственных участников прошу учитывать указанный статус",
+        )
+        for row in self.first:
+            body = row["body"].lower()
+            self.assertFalse(any(marker in body for marker in forbidden), row["source_event_id"])
+
     def test_attribution_and_participant_lineage(self):
         self.assertTrue(all(row["author_contact_id"] for row in self.first))
         self.assertTrue(all(row["participant_contact_ids"] for row in self.first))
