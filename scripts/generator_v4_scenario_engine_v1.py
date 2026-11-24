@@ -225,6 +225,10 @@ def build(seed=None, config=None):
     for event in events:
         observable = {k: v for k, v in event.items()
                       if k not in ("authority_grant_ref", "decision_outcome")}
+        # The source event note embeds the hidden final outcome for close events.
+        # Replace it before observable missingness is applied.
+        if event["event_type"] == "close":
+            observable["context_note"] = "Deal episode closed"
         masked = []
         if event["deal_id"] in affected:
             for field in ELIGIBLE_MISSING_FIELDS:
@@ -343,7 +347,11 @@ def validate(dataset, config=None):
         check(observable["organization_id"] == truth["organization_id"], "observable org lineage")
         if observable["deal_id"] not in set(missing["affected_deal_ids"]):
             check(observable["target_contact_id"] == truth["target_contact_id"], "unmasked target mismatch")
-            check(observable["context_note"] == truth["context_note"], "unmasked context mismatch")
+            expected_context = "Deal episode closed" if truth["event_type"] == "close" else truth["context_note"]
+            check(observable["context_note"] == expected_context, "unmasked context mismatch")
+            if truth["event_type"] == "close":
+                check(not any(token in str(observable["context_note"]).lower() for token in ("approved", "rejected")),
+                      "close outcome leaked through observable context")
         else:
             check(observable["missing_fields"] == [f for f in ELIGIBLE_MISSING_FIELDS
                   if truth.get(f) is not None], "missingness field mask")
