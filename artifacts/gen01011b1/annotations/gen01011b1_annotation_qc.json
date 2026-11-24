@@ -1,0 +1,33 @@
+{
+  "annotation_sha256": "8870dd8aacd52687a5718d659357418386f9a0849e5ea8a8bbbdcb090eac5d2e",
+  "audit": "GEN-010.11B.1-ANNOTATION-QC",
+  "checks": {
+    "all_11_classes_predicted": true,
+    "all_labels_in_schema": true,
+    "confidence_range_valid": true,
+    "exactly_220_annotations": true,
+    "ground_truth_not_accessed": true,
+    "no_ground_truth_fields_in_output": true,
+    "ratings_valid": true,
+    "review_id_coverage_matches_input": true,
+    "sample_id_matches": true,
+    "unique_review_ids": true
+  },
+  "ground_truth_accessed": false,
+  "ground_truth_evaluation_performed": false,
+  "interpretation": "Structural and schema QC only. ChatGPT semantic annotations are locked. Accuracy, precision, recall, F1 and confusion matrix are intentionally not reported until the separate restricted answer key is opened.",
+  "mean_confidence": 0.9371,
+  "mean_event_clarity": 4.836,
+  "mean_factual_support": 5,
+  "mean_naturalness": 2.514,
+  "predicted_class_distribution": {
+    "approve": 22, "close": 20, "complete_task": 22, "delegate": 20,
+    "object": 20, "recommend": 20, "reject": 20, "request_information": 17,
+    "review": 19, "revise": 20, "unit_approval": 20
+  },
+  "record_count": 220,
+  "sample_id": "GEN01011B1-SEED-20261125",
+  "status": "PASS",
+  "subject_reliance_count": 36,
+  "unique_review_ids": 220
+}
