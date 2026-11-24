@@ -1,0 +1,19 @@
+name: Process model QC
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/generator-v4-bpmn-dmn]
+    paths: ['models/**', 'scripts/validate_process_profile.py', '.github/workflows/process-model-qc.yml']
+jobs:
+  profile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python scripts/validate_process_profile.py > process-qc.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: process-qc
+          path: process-qc.json
