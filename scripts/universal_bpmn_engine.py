@@ -9,7 +9,7 @@ from budget_policy_v1 import OPERATIONS
 from bpmn_qname import parse_scoped,resolve_qname
 B="{http://www.omg.org/spec/BPMN/20100524/MODEL}"
 ROOT=Path(__file__).resolve().parents[1]
-def execute(process_id,inputs,registry,instance="I1",max_events=1000,max_depth=10,policy_operations=None):
+def execute(process_id,inputs,registry,instance="I1",max_events=1000,max_depth=10,policy_operations=None,task_handler=None):
     operations={**OPERATIONS,**(policy_operations or {})}
     specs={s["id"]:s for s in registry["processes"]}
     if len(specs)!=len(registry["processes"]): raise ValueError("duplicate process")
@@ -59,6 +59,10 @@ def execute(process_id,inputs,registry,instance="I1",max_events=1000,max_depth=1
                 updates=operations[operation](context)
                 context.update(updates)
                 emit(path,event="policy",node_id=current,operation=operation,actor_id=context.get("actor"),updates=updates)
+            if task_handler is not None and n.tag==B+"task":
+                task_records=task_handler(pid,current,path,deepcopy(context),step)
+                for record in task_records:
+                    emit(path,node_id=current,**record)
             if current in decisions:
                 b=decisions[current]; d=ET.parse(ROOT/b["file"]).getroot()
                 matches=[x for x in d.findall(D+"decision") if x.get("id")==b["id"]]
