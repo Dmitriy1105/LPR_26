@@ -1,18 +1,69 @@
-"""GEN-010.9 renderer QC report; in-memory only."""
+"""GEN-010.9 renderer QC and lexical diversity diagnostic; in-memory only."""
 import json
-from collections import Counter
+import re
+from collections import Counter, defaultdict
+from itertools import combinations
+
 from generator_v4_scenario_engine_v1 import build
 from generator_v4_composite_bpmn_audit_v1 import CONFIG
-from generator_v4_communication_renderer_v1 import render_communications, validate_rendered_communications
+from generator_v4_communication_renderer_v1 import (
+    render_communications, validate_rendered_communications
+)
+
+
+def normalize(text):
+    value = text.lower()
+    value = re.sub(r"org-\d+-d\d+-e\d+|org-\d+-d\d+|comm:org-\d+-d\d+-e\d+", " ", value)
+    value = re.sub(r"\b\d+\b", " ", value)
+    return re.sub(r"[^\wа-яё]+", " ", value, flags=re.IGNORECASE).strip()
+
+
+def jaccard(left, right):
+    a, b = set(normalize(left).split()), set(normalize(right).split())
+    return len(a & b) / len(a | b) if a or b else 1.0
 
 
 def audit():
     world = build(config=CONFIG)
-    communications = render_communications(world["observable_events"], world["organizations"], world["seed"])
+    communications = render_communications(
+        world["observable_events"], world["organizations"], world["seed"]
+    )
     validation = validate_rendered_communications(world["observable_events"], communications)
     channels = dict(Counter(row["channel"] for row in communications))
     event_types = dict(Counter(row["event_type"] for row in communications))
     missing = sum(bool(row["missing_fields"]) for row in communications)
+
+    grouped = defaultdict(list)
+    for row in communications:
+        grouped[row["event_type"]].append(row)
+    diversity = {}
+    for event_type, rows in sorted(grouped.items()):
+        normalized_bodies = [normalize(row["body"]) for row in rows]
+        unique_bodies = len(set(normalized_bodies))
+        unique_subjects = len({normalize(row["subject"]) for row in rows})
+        max_similarity = 0.0
+        high_pairs = 0
+        pair_count = 0
+        token_sets = [set(value.split()) for value in normalized_bodies]
+        for left, right in combinations(range(len(rows)), 2):
+            a, b = token_sets[left], token_sets[right]
+            score = len(a & b) / len(a | b) if a or b else 1.0
+            max_similarity = max(max_similarity, score)
+            pair_count += 1
+            if score >= 0.85:
+                high_pairs += 1
+        diversity[event_type] = {
+            "records": len(rows),
+            "unique_normalized_bodies": unique_bodies,
+            "body_uniqueness_ratio": round(unique_bodies / len(rows), 4),
+            "unique_normalized_subjects": unique_subjects,
+            "subject_uniqueness_ratio": round(unique_subjects / len(rows), 4),
+            "mean_body_words": round(sum(len(row["body"].split()) for row in rows) / len(rows), 2),
+            "max_within_type_jaccard": round(max_similarity, 4),
+            "high_similarity_pairs_ge_0_85": high_pairs,
+            "within_type_pairs": pair_count,
+        }
+
     return {
         "status": validation["status"],
         "seed": world["seed"],
@@ -25,10 +76,12 @@ def audit():
         "event_type_counts": event_types,
         "missingness_preserved_records": missing,
         "speaker_turns_fabricated": sum(row["speaker_contact_id"] is not None for row in communications),
+        "text_diversity_diagnostic": diversity,
         "validation_errors": validation["errors"],
         "generation_authorized": CONFIG["generation_authorized"],
         "bulk_generation_enabled": CONFIG["bulk_generation_enabled"],
-        "scope": "in-memory observable-only communication rendering; no fixture writes"
+        "scope": "in-memory observable-only communication rendering; no fixture writes",
+        "quality_note": "Lexical metrics are diagnostic only; they do not establish semantic realism or NLP suitability."
     }
 
 
