@@ -34,7 +34,7 @@ for(const config of configs){
  configResults.push({config,events:a.events.length});
 }
 for(const bad of [
- {seed:-1},{seed:1.5},{seed:NaN},{organizations:0},{organizations:-1},
+ {seed:-1},{seed:1.5},{seed:NaN},{seed:4294967296},{organizations:0},{organizations:-1},
  {organizations:1.2},{dealsPerOrganization:0},{dealsPerOrganization:-1},
  {dealsPerOrganization:1.2}
 ]){
@@ -42,7 +42,7 @@ for(const bad of [
 }
 const report={
  status:"PASS",seeds:runs,unique_seed_outputs:new Set(signatures).size,
- configurations:configResults,invalid_configurations_rejected:9,
+ configurations:configResults,invalid_configurations_rejected:10,
  checks:["same-seed world replay","same-seed communication replay","same-seed ground-truth replay","different-seed variation","configuration reproducibility","world validation","ground-truth projection","invalid configuration rejection"]
 };
 console.log(JSON.stringify(report,null,2));
