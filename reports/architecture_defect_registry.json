@@ -1,8 +1,8 @@
 {
-  "version": "1.1",
+  "version": "1.2",
   "status": "REVIEW_REQUIRED",
-  "baseline_candidate": "fff532d02c4b91f7e0100628880369ddd6e5d217",
-  "latest_verified_run": 45418095356,
+  "baseline_candidate": "d57744542fc20f35fabf7f44f20e2bfc3a543e13",
+  "latest_verified_run": 45420518332,
   "defects": [
     {
       "id": "ARCH-001",
@@ -29,33 +29,33 @@
       "id": "ARCH-004",
       "title": "Incomplete global audit",
       "status": "PARTIAL",
-      "run_id": "45418095356",
+      "run_id": "45419016403",
       "acceptance": "Cross-process chronology and full replay",
-      "evidence_note": "Global deterministic replay passes; independent semantic validation pending"
+      "evidence_note": "Ordered decision and escalation projection passes; complete independent node and actor semantics pending"
     },
     {
       "id": "ARCH-005",
       "title": "Business logic in specialized Python runners",
       "status": "PARTIAL",
-      "run_id": "45416991979",
+      "run_id": "45419688683",
       "acceptance": "Move bindings and routing policy into declarative models",
-      "evidence_note": "Universal routing implemented; authority bindings still assembled in Python; legacy runners retained"
+      "evidence_note": "Declarative authority profile implemented; duplicated registry and legacy runners remain"
     },
     {
       "id": "ARCH-006",
       "title": "Insufficient negative test coverage",
       "status": "PARTIAL",
-      "run_id": "45418095356",
+      "run_id": "45420032462",
       "acceptance": "Existing mutation suites pass; add cross-process and malformed-model cases",
-      "evidence_note": "Mutation suites pass; malformed model and cross-engine coverage incomplete"
+      "evidence_note": "27 extended negative cases pass; malformed DMN and registry consistency coverage incomplete"
     },
     {
       "id": "ARCH-007",
       "title": "QName namespace resolution",
-      "status": "QC_PENDING",
-      "run_id": null,
+      "status": "CLOSED",
+      "run_id": "45418584564",
       "acceptance": "Root declarations checked; scoped namespaces not supported",
-      "evidence_note": "Scoped QName resolution added to runtime and static audit; eight tests pending"
+      "evidence_note": "Scoped QName tests pass; full NCName grammar outside current scope"
     },
     {
       "id": "ARCH-008",
@@ -82,9 +82,9 @@
       "id": "ARCH-011",
       "title": "Incomplete nested event projection",
       "status": "PARTIAL",
-      "run_id": "45418095356",
+      "run_id": "45419016403",
       "acceptance": "Escalation internal transitions and interleaving not fully audited",
-      "evidence_note": "Nested trace and replay pass; independent semantic projection pending"
+      "evidence_note": "Decision projection passes; complete nested task projection pending"
     },
     {
       "id": "ARCH-012",
@@ -97,25 +97,25 @@
       "id": "ARCH-013",
       "title": "Authority input bypass in leaf budget process",
       "status": "PARTIAL",
-      "run_id": "45416991979",
+      "run_id": "45419688683",
       "acceptance": "Derive monetary and temporal authority from grants at execution boundary",
-      "evidence_note": "Authoritative entry point rejects overrides; generator integration and non-budget temporal grants pending"
+      "evidence_note": "Declarative authoritative boundary passes; generator integration and temporal non-budget grants pending"
     },
     {
       "id": "ARCH-014",
       "title": "Delegation and task assignment not modeled",
-      "status": "OPEN",
-      "run_id": null,
+      "status": "PARTIAL",
+      "run_id": "45420518332",
       "acceptance": "Organization engine milestone",
-      "evidence_note": "Task assignment and delegation not implemented"
+      "evidence_note": "Standalone assignment lifecycle passes; BPMN integration, authority delegation and replay pending"
     },
     {
       "id": "ARCH-015",
       "title": "Decision evidence replay not full process replay",
       "status": "PARTIAL",
-      "run_id": "45418095356",
+      "run_id": "45419016403",
       "acceptance": "Validate all transitions, actor evidence and completeness against source inputs",
-      "evidence_note": "Full deterministic replay passes; immutable historical model storage and independent validation pending"
+      "evidence_note": "Replay and decision equivalence pass; historical checkout verification and full independent semantics pending"
     }
   ]
 }
