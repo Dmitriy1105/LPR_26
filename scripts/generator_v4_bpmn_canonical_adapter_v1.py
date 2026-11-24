@@ -66,7 +66,7 @@ def audit():
         if actual != expected:
             errors.append({"deal_id": deal["deal_id"], "error": "process_outcome_mismatch",
                            "expected": expected, "actual": actual})
-        terminal = "end" if expected == "approve" else "blocked"
+        terminal = "end"
         if execution["end"] != terminal:
             errors.append({"deal_id": deal["deal_id"], "error": "unexpected_process_terminal",
                            "terminal": execution["end"]})
