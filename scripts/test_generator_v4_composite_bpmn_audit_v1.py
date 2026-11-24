@@ -12,6 +12,15 @@ class CompositeBpmnTests(unittest.TestCase):
         self.assertEqual(self.report["status"], "PASS")
         self.assertEqual(self.report["composite_executions"], 800)
 
+    def test_exact_scenario_and_outcome_distribution(self):
+        self.assertEqual(self.report["scenario_family_counts"], {
+            "routine_approval": 400,
+            "conflict_revision": 200,
+            "rejected": 120,
+            "multi_level_approval": 80
+        })
+        self.assertEqual(self.report["deal_outcome_counts"], {"approve": 680, "reject": 120})
+
     def test_unit_approval_authority_is_reconciled(self):
         self.assertEqual(self.report["unit_approval_authority_checks"], 240)
         self.assertEqual(self.report["unit_authority_errors"], 0)
