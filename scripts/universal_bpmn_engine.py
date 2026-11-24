@@ -7,7 +7,8 @@ from dmn_interpreter import D,evaluate_detail
 from budget_policy_v1 import OPERATIONS
 B="{http://www.omg.org/spec/BPMN/20100524/MODEL}"
 ROOT=Path(__file__).resolve().parents[1]
-def execute(process_id,inputs,registry,instance="I1",max_events=1000,max_depth=10):
+def execute(process_id,inputs,registry,instance="I1",max_events=1000,max_depth=10,policy_operations=None):
+    operations={**OPERATIONS,**(policy_operations or {})}
     specs={s["id"]:s for s in registry["processes"]}
     if len(specs)!=len(registry["processes"]): raise ValueError("duplicate process")
     events=[]
@@ -48,7 +49,7 @@ def execute(process_id,inputs,registry,instance="I1",max_events=1000,max_depth=1
                 emit(path,event="process_end",end=current,context=context)
                 return dict(instance_id=path,process_id=pid,end=current,context=context,children=children)
             for operation in s.get("before",{}).get(current,[]):
-                updates=OPERATIONS[operation](context)
+                updates=operations[operation](context)
                 context.update(updates)
                 emit(path,event="policy",node_id=current,operation=operation,updates=updates)
             if current in decisions:
@@ -69,7 +70,7 @@ def execute(process_id,inputs,registry,instance="I1",max_events=1000,max_depth=1
                 context.update(resolve(b["outputs"],{"end":child["end"],**child["context"]}))
                 emit(path,event="call_end",node_id=current,child_id=cid)
             for operation in s.get("after",{}).get(current,[]):
-                updates=OPERATIONS[operation](context)
+                updates=operations[operation](context)
                 context.update(updates)
                 emit(path,event="policy",node_id=current,operation=operation,updates=updates)
             context.update(s.get("updates",{}).get(current,{}))
