@@ -166,13 +166,14 @@ def build_review_pack(communications: list[dict], seed: int = 42):
         "records": key_rows
     }
     audit = {
-        "status": "PASS" if len(blinded_rows) == 220 and len(key_rows) == 220 else "FAIL",
+        "status": "PASS" if len(blinded_rows) == 220 and len(key_rows) == 220 and not any(("Контекст события:" in r["body"] or "Область согласования:" in r["body"] or "unit_approval:" in r["body"].lower()) for r in blinded_rows) else "FAIL",
         "sample_size": len(blinded_rows),
         "unique_review_ids": len({r["review_id"] for r in blinded_rows}),
         "per_event_class": selection_audit,
         "blinded_fields": ["event_type", "source_event_id", "source_ref", "organization_id", "deal_id", "occurred_at", "contact_ids"],
         "answer_key_separate": True,
         "body_deal_ids_redacted": all("[DEAL]" in r["body"] or "ORG-" not in r["body"] for r in blinded_rows),
+        "scenario_label_leakage": sum(("Контекст события:" in r["body"] or "Область согласования:" in r["body"] or "unit_approval:" in r["body"].lower()) for r in blinded_rows),
         "human_annotations_completed": False
     }
     return pack, answer_key, audit
