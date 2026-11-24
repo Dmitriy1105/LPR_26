@@ -57,3 +57,7 @@ Report:
 
 ## Acceptance
 No human-review result or PASS is claimed until reviewers return completed, independent annotations and adjudication. The previous lexical benchmark's provisional quality gate remains NOT_ACCEPTED. Human review is only one component; a text-only trained baseline and a suitably de-identified real-data comparison remain separate future checks.
+
+
+## 2026-11-25 correction
+The renderer no longer appends internal scenario context notes or unit decision-scope codes to communication bodies. The reviewer-facing pack must be regenerated from this corrected renderer. Prior reviewer pack is superseded because it contained label leakage.
