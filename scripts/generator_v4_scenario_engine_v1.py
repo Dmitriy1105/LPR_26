@@ -181,11 +181,14 @@ def build(seed=None, config=None):
                      authority_grant_ref=f"{oid}:GRANT:deal_approval:001")
             elif family == "multi_level_approval":
                 emit("unit_approval", technical, director, scope="unit_approval:technical",
-                     context_note="Technical unit approval recorded")
+                     context_note="Technical unit approval recorded",
+                     authority_grant_ref=f"{oid}:GRANT:unit:technical:001")
                 emit("unit_approval", finance, director, scope="unit_approval:finance",
-                     context_note="Finance unit approval recorded")
+                     context_note="Finance unit approval recorded",
+                     authority_grant_ref=f"{oid}:GRANT:unit:finance:001")
                 emit("unit_approval", procurement, director, scope="unit_approval:procurement",
-                     context_note="Procurement unit approval recorded")
+                     context_note="Procurement unit approval recorded",
+                     authority_grant_ref=f"{oid}:GRANT:unit:procurement:001")
                 emit("recommend", procurement, director,
                      context_note="Cross-functional recommendation submitted")
                 emit("approve", director, None, decision_outcome="approved",
@@ -303,12 +306,12 @@ def validate(dataset, config=None):
         target = event["target_contact_id"]
         check(target is None or person_org.get(target) == event["organization_id"], "event target org")
         check(event["event_type"] in EVENT_TYPES, "unknown event type")
-        if event["event_type"] in ("approve", "reject"):
+        if event["event_type"] in ("approve", "reject", "unit_approval"):
             grant = grants.get(event["authority_grant_ref"])
             check(grant is not None, "decision grant missing")
             if grant:
                 check(grant["contact_id"] == event["actor_contact_id"], "decision grant actor")
-                check(grant["scope"] == "deal_approval", "decision grant scope")
+                check(grant["scope"] == event["decision_scope"], "decision grant scope")
                 check(grant["valid_from"] <= event["occurred_at"], "decision grant validity")
     for deal_id, rows in by_deal.items():
         rows.sort(key=lambda e: e["occurred_at"])
