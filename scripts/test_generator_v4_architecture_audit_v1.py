@@ -12,7 +12,10 @@ def main():
     assert report["scenario_smoke"]["negative_test"]["pass"] is False
     assert report["fixture_total"]==677
     assert report["contract_baseline_target"]==767
-    assert findings["GEN-002"]["status"]=="OPEN"
+    assert findings["GEN-002"]["status"]=="CLOSED"
+    assert report["checks"]["e2e_executes_scenario_or_bpmn_runtime"] is True
+    assert report["bpmn_dmn_integration"]["bpmn_dmn_executions"]==30
+    assert report["bpmn_dmn_integration"]["matched_outcomes"]==30
     assert findings["GEN-003"]["status"]=="OPEN"
     assert findings["GEN-004"]["status"]=="OPEN"
     assert findings["GEN-006"]["status"]=="OPEN"
