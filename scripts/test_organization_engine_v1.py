@@ -4,7 +4,8 @@ from organization_engine_v1 import generate,validate
 def main():
     orgs=generate()
     assert len(orgs)==5 and validate(orgs)
-    assert all({u["department"] for u in o["units"]}>={"sales","finance","technical","procurement","legal","project_office"} for o in orgs)
+    assert all({u["department"] for u in o["units"]}>={"sales","finance","technical","procurement","legal","project_office","security","information_security"} for o in orgs)
+    assert all(any(p["role"]=="security_manager" for p in o["people"]) and any(p["role"]=="information_security_manager" for p in o["people"]) for o in orgs)
     assert all(any(p["role"]=="head_of_sales" for p in o["people"]) and any(p["role"]=="account_manager" for p in o["people"]) for o in orgs)
     assert orgs==generate()
     assert orgs!=generate(seed=43)
