@@ -49,8 +49,8 @@ class CanonicalCommunicationRendererTests(unittest.TestCase):
                      "ground_truth", "decision_maker_contact_id", "executor_contact_id"}
         self.assertTrue(all(not forbidden.intersection(row) for row in self.first))
         close = [row for row in self.first if row["event_type"] == "close"]
-        self.assertTrue(all("одобр" not in row["body"].lower() and "отклон" not in row["body"].lower()
-                            for row in close))
+        self.assertTrue(all(not any(token in row["body"].lower() for token in
+                            ("одобр", "отклон", "approved", "rejected")) for row in close))
 
     def test_all_event_types_are_rendered(self):
         event_types = {row["event_type"] for row in self.first}
