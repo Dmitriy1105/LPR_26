@@ -2,7 +2,8 @@
 import json
 import xml.etree.ElementTree as ET
 from pathlib import Path
-from validate_process_profile import B,D,evaluate
+from validate_process_profile import B,D
+from dmn_interpreter import evaluate_detail
 ROOT=Path(__file__).resolve().parents[1]
 def run(spec,inputs):
     p=ET.parse(ROOT/spec["bpmn"]).getroot().find(B+"process")
@@ -29,8 +30,8 @@ def run(spec,inputs):
         trace.append(record)
         if n.tag==B+"endEvent": return {"trace":trace,"context":context,"end":current}
         if current in tables:
-            b=bindings[current]; value=evaluate(tables[current],context)
-            context[b["output"]]=value; record["decision_id"]=b["id"]; record["outcome"]=value
+            b=bindings[current]; detail=evaluate_detail(tables[current],context); value=detail["outcome"]
+            context[b["output"]]=value; record["decision_id"]=b["id"]; record.update(detail)
         context.update(spec.get("updates",{}).get(current,{}))
         candidates=[]
         for f in flows:
