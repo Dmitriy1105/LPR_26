@@ -6,6 +6,7 @@ from copy import deepcopy
 from pathlib import Path
 from dmn_interpreter import D,evaluate_detail
 from budget_policy_v1 import OPERATIONS
+from bpmn_qname import parse_scoped,resolve_qname
 B="{http://www.omg.org/spec/BPMN/20100524/MODEL}"
 ROOT=Path(__file__).resolve().parents[1]
 def execute(process_id,inputs,registry,instance="I1",max_events=1000,max_depth=10,policy_operations=None):
@@ -31,7 +32,8 @@ def execute(process_id,inputs,registry,instance="I1",max_events=1000,max_depth=1
         return {k:value(v) for k,v in mapping.items()}
     def visit(pid,values,path,stack):
         if pid in stack or len(stack)>=max_depth: raise RuntimeError("recursive call or depth limit")
-        s=specs[pid]; root=ET.parse(ROOT/s["bpmn"]).getroot()
+        s=specs[pid]; root,scopes=parse_scoped(ROOT/s["bpmn"])
+        if root.get("targetNamespace")!=s["namespace"]: raise ValueError("process namespace mismatch")
         p=root.find(B+"process")
         if p is None or p.get("id")!=pid: raise ValueError("process identity")
         nodes={n.get("id"):n for n in p if n.tag!=B+"sequenceFlow"}
@@ -66,7 +68,7 @@ def execute(process_id,inputs,registry,instance="I1",max_events=1000,max_depth=1
                 emit(path,event="decision",node_id=current,decision_id=b["id"],dmn_sha256=digest(b["file"]),actor_id=context.get("actor"),**detail)
             if current in calls:
                 b=calls[current]; target=b["process"]
-                if n.get("calledElement")!="lpr:"+target or specs[target]["namespace"]!=s["namespace"]: raise ValueError("call target mismatch")
+                if resolve_qname(n.get("calledElement"),scopes[n])!=(specs[target]["namespace"],target): raise ValueError("call target mismatch")
                 visits[current]=visits.get(current,0)+1
                 cid=path+"/"+current+"/"+str(visits[current])
                 emit(path,event="call_start",node_id=current,child_id=cid)
