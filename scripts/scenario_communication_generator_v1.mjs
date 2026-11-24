@@ -1,7 +1,7 @@
 import { generate, validate as validateWorld } from "./scenario_engine_v4.mjs";
 import { buildCommunicationContext } from "./communication_context_v1.mjs";
 
-export const COMMUNICATION_VERSION = "1.0.0";
+export const COMMUNICATION_VERSION = "1.1.0";
 
 const channels = {
   request_information: { typeId: 4, label: "email" },
