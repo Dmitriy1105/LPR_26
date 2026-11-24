@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:lpr="urn:lpr:process" id="Definitions_Corporate_Multilevel" targetNamespace="urn:lpr:process">
+ <bpmn:process id="corporate_decision_multilevel" name="Corporate decision making" isExecutable="false">
+  <bpmn:startEvent id="start" name="start"/>
+  <bpmn:callActivity id="technical" name="technical" calledElement="lpr:technical_expertise"/>
+  <bpmn:callActivity id="budget" name="budget" calledElement="lpr:budget_escalation"/>
+  <bpmn:callActivity id="deal" name="deal" calledElement="lpr:deal_approval"/>
+  <bpmn:endEvent id="end" name="end"/>
+  <bpmn:sequenceFlow id="f1" sourceRef="start" targetRef="technical"/>
+  <bpmn:sequenceFlow id="f2" sourceRef="technical" targetRef="budget"/>
+  <bpmn:sequenceFlow id="f3" sourceRef="budget" targetRef="deal"/>
+  <bpmn:sequenceFlow id="f4" sourceRef="deal" targetRef="end"/>
+ </bpmn:process>
+</bpmn:definitions>
