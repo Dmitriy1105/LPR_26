@@ -10,7 +10,8 @@ class BlindPackTests(unittest.TestCase):
         self.assertEqual(len(k["records"]),220)
         self.assertEqual({r["review_id"] for r in p["records"]},{r["review_id"] for r in k["records"]})
         for row in p["records"]:
-            self.assertEqual(set(row),{"review_id","channel","record_format","subject","body"})
+            self.assertEqual(set(row),{"review_id","subject","body"})
         self.assertNotIn("ground_truth_event_type",json.dumps(p))
+        self.assertTrue(p["records"] and all("channel" not in r and "record_format" not in r for r in p["records"]))
         self.assertEqual(p["sample_id"],"GEN01011B1-SEED-20261125")
 if __name__=="__main__": unittest.main()
