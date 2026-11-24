@@ -33,7 +33,7 @@ def authorize_at(org,grants,person_id,action,permission,as_of,amount=None):
     if amount is not None and (isinstance(amount,bool) or not isinstance(amount,(int,float)) or amount<0): raise ValueError("invalid amount")
     for g in grants:
         if g["person_id"]!=person_id or g["action"]!=action or g["permission"]!=permission: continue
-        if g["status"]=="revoked" and moment>=_date(g["revoked_at"]): continue
+        if g.get("status","active")=="revoked" and moment>=_date(g["revoked_at"]): continue
         if moment<_date(g["valid_from"]): continue
         if g.get("valid_until") is not None and moment>=_date(g["valid_until"]): continue
         if g.get("revoked_at") is not None and moment>=_date(g["revoked_at"]): continue
