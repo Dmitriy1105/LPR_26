@@ -170,8 +170,16 @@ def main():
         world["observable_events"], world["organizations"], world["seed"]
     )
     pack, key, audit = build_review_pack(communications, seed=world["seed"])
-    print(json.dumps({"audit": audit, "review_pack": pack, "answer_key": key},
-                     ensure_ascii=False, indent=2, sort_keys=True))
+    Path("human-review-pack.json").write_text(
+        json.dumps(pack, ensure_ascii=False, indent=2, sort_keys=True), encoding="utf-8"
+    )
+    Path("human-review-answer-key.json").write_text(
+        json.dumps(key, ensure_ascii=False, indent=2, sort_keys=True), encoding="utf-8"
+    )
+    Path("human-review-pack-audit.json").write_text(
+        json.dumps(audit, ensure_ascii=False, indent=2, sort_keys=True), encoding="utf-8"
+    )
+    print(json.dumps(audit, ensure_ascii=False, indent=2, sort_keys=True))
     if audit["status"] != "PASS":
         raise SystemExit(1)
 
