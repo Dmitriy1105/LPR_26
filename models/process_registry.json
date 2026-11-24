@@ -1,0 +1,23 @@
+{
+  "version": "0.2",
+  "processes": [
+    {
+      "id": "deal_approval",
+      "bpmn": "models/bpmn/deal_approval.bpmn",
+      "decisions": {
+        "decide": {
+          "file": "models/dmn/approval_outcome.dmn",
+          "id": "approval_outcome",
+          "output": "outcome"
+        }
+      },
+      "updates": {
+        "recheck": {
+          "requirementsMet": true,
+          "revisionAllowed": false
+        }
+      },
+      "max_steps": 100
+    }
+  ]
+}
