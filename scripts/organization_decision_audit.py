@@ -24,7 +24,9 @@ def simulate(process_id,instance_id,initiator,actor,inputs):
         if "decision_id" in step:
             b=spec["decisions"][node]
             record.update(actor_id=actor,actor_role="decision_subject",authority_source={"role":role["id"],"field":field,"required":required,"granted":context[key]},decision_model_sha256=digest(b["file"]))
-        if node in {"approve","reject","deny","escalate","recommend_accept","recommend_rework","recommend_reject","refer_expert"}:
+        if node in {"deny","refer_expert"}:
+            record.update(actor_id=None,actor_role="system_routing",subject_id=actor)
+        if node in {"approve","reject","escalate","recommend_accept","recommend_rework","recommend_reject"}:
             record.update(actor_id=actor,actor_role="assigned_action_actor")
         records.append(record)
         context.update(spec.get("updates",{}).get(node,{}))
