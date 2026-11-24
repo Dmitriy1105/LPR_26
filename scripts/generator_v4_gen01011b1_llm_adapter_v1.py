@@ -26,7 +26,7 @@ def main():
     if len(records)!=220 or len({r["review_id"] for r in records})!=220: raise SystemExit("invalid blinded sample")
     results=[]; observed_models=set()
     for index,row in enumerate(records,1):
-        annotation,actual_model=call_api(base,key,model,{k:row[k] for k in ("review_id","channel","record_format","subject","body")})
+        annotation,actual_model=call_api(base,key,model,{k:row[k] for k in ("review_id","subject","body")})
         if annotation.get("primary_event_type") not in LABELS: raise ValueError("invalid event label: "+str(annotation.get("primary_event_type")))
         if not 0<=float(annotation.get("confidence",-1))<=1: raise ValueError("invalid confidence")
         for field in ("event_clarity_1_to_5","naturalness_1_to_5","factual_support_1_to_5"):
