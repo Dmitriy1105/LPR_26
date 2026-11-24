@@ -78,7 +78,7 @@ jobs:
       - run: python scripts/test_bitrix24_live_client_v1.py > bitrix24-live-client-qc.json
       - run: node scripts/test_scenario_authority_enforcement_v1.mjs > scenario-authority-enforcement-qc.json
       - run: node scripts/test_scenario_communication_generator_v1.mjs > scenario-communication-generator-qc.json
-      - run: node scripts/generator_quality_evaluation_v1.mjs > generator-quality-report.json
+      - run: node scripts/generator_quality_evaluation_v1.mjs | tee generator-quality-report.json
       - run: node scripts/test_generator_reproducibility_v1.mjs > generator-reproducibility-qc.json
       - run: node scripts/test_ground_truth_leakage_v1.mjs > ground-truth-leakage-qc.json
       - run: node scripts/test_scenario_ground_truth_v1.mjs > scenario-ground-truth-qc.json
