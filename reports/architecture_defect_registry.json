@@ -1,8 +1,8 @@
 {
-  "version": "1.0",
+  "version": "1.1",
   "status": "REVIEW_REQUIRED",
-  "baseline_candidate": "9f6cd33bd4b5a2336385373c1dca5197afb1de3f",
-  "latest_verified_run": 45407656802,
+  "baseline_candidate": "fff532d02c4b91f7e0100628880369ddd6e5d217",
+  "latest_verified_run": 45418095356,
   "defects": [
     {
       "id": "ARCH-001",
@@ -28,30 +28,34 @@
     {
       "id": "ARCH-004",
       "title": "Incomplete global audit",
-      "status": "OPEN",
-      "run_id": null,
-      "acceptance": "Cross-process chronology and full replay"
+      "status": "PARTIAL",
+      "run_id": "45418095356",
+      "acceptance": "Cross-process chronology and full replay",
+      "evidence_note": "Global deterministic replay passes; independent semantic validation pending"
     },
     {
       "id": "ARCH-005",
       "title": "Business logic in specialized Python runners",
-      "status": "OPEN",
-      "run_id": null,
-      "acceptance": "Move bindings and routing policy into declarative models"
+      "status": "PARTIAL",
+      "run_id": "45416991979",
+      "acceptance": "Move bindings and routing policy into declarative models",
+      "evidence_note": "Universal routing implemented; authority bindings still assembled in Python; legacy runners retained"
     },
     {
       "id": "ARCH-006",
       "title": "Insufficient negative test coverage",
-      "status": "OPEN",
-      "run_id": null,
-      "acceptance": "Existing mutation suites pass; add cross-process and malformed-model cases"
+      "status": "PARTIAL",
+      "run_id": "45418095356",
+      "acceptance": "Existing mutation suites pass; add cross-process and malformed-model cases",
+      "evidence_note": "Mutation suites pass; malformed model and cross-engine coverage incomplete"
     },
     {
       "id": "ARCH-007",
       "title": "QName namespace resolution",
-      "status": "PARTIAL",
-      "run_id": "45404865972",
-      "acceptance": "Root declarations checked; scoped namespaces not supported"
+      "status": "QC_PENDING",
+      "run_id": null,
+      "acceptance": "Root declarations checked; scoped namespaces not supported",
+      "evidence_note": "Scoped QName resolution added to runtime and static audit; eight tests pending"
     },
     {
       "id": "ARCH-008",
@@ -77,9 +81,10 @@
     {
       "id": "ARCH-011",
       "title": "Incomplete nested event projection",
-      "status": "OPEN",
-      "run_id": null,
-      "acceptance": "Escalation internal transitions and interleaving not fully audited"
+      "status": "PARTIAL",
+      "run_id": "45418095356",
+      "acceptance": "Escalation internal transitions and interleaving not fully audited",
+      "evidence_note": "Nested trace and replay pass; independent semantic projection pending"
     },
     {
       "id": "ARCH-012",
@@ -91,23 +96,26 @@
     {
       "id": "ARCH-013",
       "title": "Authority input bypass in leaf budget process",
-      "status": "OPEN",
-      "run_id": null,
-      "acceptance": "Derive monetary and temporal authority from grants at execution boundary"
+      "status": "PARTIAL",
+      "run_id": "45416991979",
+      "acceptance": "Derive monetary and temporal authority from grants at execution boundary",
+      "evidence_note": "Authoritative entry point rejects overrides; generator integration and non-budget temporal grants pending"
     },
     {
       "id": "ARCH-014",
       "title": "Delegation and task assignment not modeled",
       "status": "OPEN",
       "run_id": null,
-      "acceptance": "Organization engine milestone"
+      "acceptance": "Organization engine milestone",
+      "evidence_note": "Task assignment and delegation not implemented"
     },
     {
       "id": "ARCH-015",
       "title": "Decision evidence replay not full process replay",
-      "status": "OPEN",
-      "run_id": null,
-      "acceptance": "Validate all transitions, actor evidence and completeness against source inputs"
+      "status": "PARTIAL",
+      "run_id": "45418095356",
+      "acceptance": "Validate all transitions, actor evidence and completeness against source inputs",
+      "evidence_note": "Full deterministic replay passes; immutable historical model storage and independent validation pending"
     }
   ]
 }
