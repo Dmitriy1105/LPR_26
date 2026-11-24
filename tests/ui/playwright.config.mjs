@@ -1,0 +1,2 @@
+import {defineConfig} from '@playwright/test';
+export default defineConfig({testDir:'.',testMatch:'*.spec.mjs',use:{baseURL:'http://127.0.0.1:8765',viewport:{width:1366,height:768},trace:'retain-on-failure',screenshot:'only-on-failure'},reporter:[['list'],['html',{outputFolder:'playwright-report',open:'never'}]],webServer:{command:'python3 -m http.server 8765 --bind 127.0.0.1 --directory public',url:'http://127.0.0.1:8765',reuseExistingServer:false},workers:1,timeout:20000});
