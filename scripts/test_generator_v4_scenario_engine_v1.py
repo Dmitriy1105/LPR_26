@@ -65,6 +65,18 @@ class CanonicalScenarioEngineTests(unittest.TestCase):
             else:
                 self.assertEqual(observable[event_id]["target_contact_id"], truth["target_contact_id"])
 
+    def test_close_event_context_does_not_leak_hidden_outcome(self):
+        gold = {r["event_id"]: r for r in self.dataset["ground_truth"]["records"]}
+        observable = {r["event_id"]: r for r in self.dataset["observable_events"]}
+        close_ids = [e["event_id"] for e in self.dataset["events"] if e["event_type"] == "close"]
+        self.assertEqual(len(close_ids), 800)
+        for event_id in close_ids:
+            if observable[event_id]["context_note"] is not None:
+                self.assertEqual(observable[event_id]["context_note"], "Deal episode closed")
+                self.assertNotIn("approved", observable[event_id]["context_note"].lower())
+                self.assertNotIn("rejected", observable[event_id]["context_note"].lower())
+            self.assertIn(gold[event_id]["decision_outcome"], ("approved", "rejected"))
+
     def test_ground_truth_is_separate_and_speaker_unknown(self):
         self.assertEqual(self.dataset["ground_truth"]["visibility"], "evaluation_only")
         self.assertTrue(all(r["speaker_contact_id"] is None for r in self.dataset["ground_truth"]["records"]))
