@@ -1,0 +1,14 @@
+{
+  "annotation_audit": "GEN-010.11B.1-LLM-ANNOTATIONS",
+  "annotation_method": "ChatGPT GPT-6.2 semantic annotation of the blinded subject/body fields in this conversation; no external provider API was called, and no Ground Truth or answer key was accessed.",
+  "annotation_sha256": "8870dd8aacd52687a5718d659357418386f9a0849e5ea8a8bbbdcb090eac5d2e",
+  "annotator_type": "ChatGPT LLM (in-conversation semantic annotation)",
+  "ground_truth_accessed": false,
+  "ground_truth_evaluation_performed": false,
+  "input_pack_sha256": "86e95f4219ad87ed2e92416e53b0d9ab1374c75a78159aa780e38489c2251f61",
+  "locked": true,
+  "model": "GPT-6.2",
+  "record_count": 220,
+  "sample_id": "GEN01011B1-SEED-20261125",
+  "status": "PASS"
+}
