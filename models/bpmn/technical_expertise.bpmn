@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Definitions_Technical" targetNamespace="urn:lpr:process">
+ <bpmn:process id="technical_expertise" name="Technical expertise" isExecutable="false">
+  <bpmn:startEvent id="start" name="start"/>
+  <bpmn:task id="request_expertise" name="request_expertise"/>
+  <bpmn:task id="technical_review" name="technical_review"/>
+  <bpmn:businessRuleTask id="assess" name="assess"/>
+  <bpmn:exclusiveGateway id="route" name="route"/>
+  <bpmn:task id="recommend_accept" name="recommend_accept"/>
+  <bpmn:task id="recommend_rework" name="recommend_rework"/>
+  <bpmn:task id="recommend_reject" name="recommend_reject"/>
+  <bpmn:task id="refer_expert" name="refer_expert"/>
+  <bpmn:endEvent id="positive" name="positive"/>
+  <bpmn:endEvent id="rework" name="rework"/>
+  <bpmn:endEvent id="negative" name="negative"/>
+  <bpmn:endEvent id="referred" name="referred"/>
+  <bpmn:sequenceFlow id="f1" sourceRef="start" targetRef="request_expertise"></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f2" sourceRef="request_expertise" targetRef="technical_review"></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f3" sourceRef="technical_review" targetRef="assess"></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f4" sourceRef="assess" targetRef="route"></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f5" sourceRef="route" targetRef="recommend_accept"><bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">outcome = "recommend_accept"</bpmn:conditionExpression></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f6" sourceRef="route" targetRef="recommend_rework"><bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">outcome = "recommend_rework"</bpmn:conditionExpression></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f7" sourceRef="route" targetRef="recommend_reject"><bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">outcome = "recommend_reject"</bpmn:conditionExpression></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f8" sourceRef="route" targetRef="refer_expert"><bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">outcome = "refer_expert"</bpmn:conditionExpression></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f9" sourceRef="recommend_accept" targetRef="positive"></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f10" sourceRef="recommend_rework" targetRef="rework"></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f11" sourceRef="recommend_reject" targetRef="negative"></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f12" sourceRef="refer_expert" targetRef="referred"></bpmn:sequenceFlow>
+ </bpmn:process>
+</bpmn:definitions>
