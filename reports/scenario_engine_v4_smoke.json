@@ -1,0 +1,25 @@
+{
+  "version": "4.0.0-alpha.1",
+  "seed": 42,
+  "organizations": 5,
+  "people": 30,
+  "deals": 30,
+  "events": 252,
+  "grants": 30,
+  "scenarios": {
+    "routine": 12,
+    "revision": 14,
+    "rejected": 4
+  },
+  "qc": {
+    "pass": true,
+    "errors": []
+  },
+  "negative_test": {
+    "pass": false,
+    "errors": [
+      "unauthorized decision ORG-1-D1-E9"
+    ]
+  },
+  "deterministic": true
+}
