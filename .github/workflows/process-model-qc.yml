@@ -143,7 +143,8 @@ jobs:
             scenario-communication-generator-qc.json
             scenario-ground-truth-qc.json
             ground-truth-leakage-qc.json
-            generator-reproducibility-qc.json\n            generator-quality-report.json
+            generator-reproducibility-qc.json
+            generator-quality-report.json
             fixture-baselines-qc.json
             generator-integrity-qc.json
             generator-event-semantics-qc.json
