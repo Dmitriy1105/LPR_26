@@ -29,7 +29,7 @@ This is an evidence-based initial register. A passing CI means the audit script 
 
 ## Remediation order
 
-1. GEN-001: isolate and fix unauthorized decision generation; add negative authorization tests.
+1. GEN-001: validate the valid scenario baseline and explicit unauthorized/expired/wrong-scope/wrong-organization mutations. The legacy smoke report field alone is ambiguous; close only after the dedicated authority regression passes.
 2. GEN-006: approve the v4 Data Contract and settle the 767-record baseline/versioning rule.
 3. GEN-002 and GEN-007: connect the authoritative BPMN/DMN execution boundary to scenario generation; close carried architecture defects.
 4. GEN-003 and GEN-004: add CRM projections and Ground Truth as separate outputs derived from the same hidden scenario state.
