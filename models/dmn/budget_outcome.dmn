@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" id="Definitions_Budget_DMN" name="Budget decisions" namespace="urn:lpr:decision">
+ <decision id="budget_outcome" name="Budget outcome"><decisionTable id="budget_table" hitPolicy="UNIQUE">
+   <input id="i0"><inputExpression id="ie0" typeRef="boolean"><text>authorized</text></inputExpression></input>
+   <input id="i1"><inputExpression id="ie1" typeRef="boolean"><text>fundsAvailable</text></inputExpression></input>
+   <input id="i2"><inputExpression id="ie2" typeRef="boolean"><text>withinLimit</text></inputExpression></input>
+   <output id="out" name="outcome" typeRef="string"/>
+   <rule id="r0"><inputEntry id="r0i0"><text>false</text></inputEntry><inputEntry id="r0i1"><text>-</text></inputEntry><inputEntry id="r0i2"><text>-</text></inputEntry><outputEntry id="r0o"><text>"deny"</text></outputEntry></rule>
+   <rule id="r1"><inputEntry id="r1i0"><text>true</text></inputEntry><inputEntry id="r1i1"><text>false</text></inputEntry><inputEntry id="r1i2"><text>-</text></inputEntry><outputEntry id="r1o"><text>"reject"</text></outputEntry></rule>
+   <rule id="r2"><inputEntry id="r2i0"><text>true</text></inputEntry><inputEntry id="r2i1"><text>true</text></inputEntry><inputEntry id="r2i2"><text>false</text></inputEntry><outputEntry id="r2o"><text>"escalate"</text></outputEntry></rule>
+   <rule id="r3"><inputEntry id="r3i0"><text>true</text></inputEntry><inputEntry id="r3i1"><text>true</text></inputEntry><inputEntry id="r3i2"><text>true</text></inputEntry><outputEntry id="r3o"><text>"approve"</text></outputEntry></rule>
+ </decisionTable></decision>
+</definitions>
