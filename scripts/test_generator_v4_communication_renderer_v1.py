@@ -26,7 +26,7 @@ class CanonicalCommunicationRendererTests(unittest.TestCase):
 
     def test_channel_distribution_and_event_type_mapping(self):
         counts = Counter(row["channel"] for row in self.first)
-        self.assertEqual(counts, {"email": 2600, "call": 1200, "meeting": 2640})
+        self.assertEqual(counts, {"email": 2600, "call": 1000, "meeting": 2840})
         expected = {"email": 4, "call": 2, "meeting": 1}
         self.assertTrue(all(row["type_id"] == expected[row["channel"]] for row in self.first))
 
