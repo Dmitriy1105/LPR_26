@@ -5,10 +5,10 @@ def main():
     def transport(url,body,timeout):
         calls.append((url,body,timeout))
         return 200,json.dumps({"result":{"items":[{"id":1}]},"total":1})
-    client=Bitrix24Client("https://example.bitrix24.com","test-secret",transport)
+    import os\n    os.environ["BITRIX24_USER_ID"]="42"\n    client=Bitrix24Client("https://example.bitrix24.com","test-secret",transport)
     result=client.call("crm.item.list",{"select[]":["ID","TITLE"]})
     assert result["records"]==[{"id":1}] and result["total"]==1
-    assert "test-secret" in calls[0][0] and calls[0][2]==20
+    assert "/rest/42/test-secret/crm.item.list.json" in calls[0][0] and calls[0][2]==20
     def bad_status(url,body,timeout): return 403,""
     try: Bitrix24Client("https://example.bitrix24.com","x",bad_status).call("crm.item.list")
     except Bitrix24LiveError: pass
@@ -17,7 +17,7 @@ def main():
     try: Bitrix24Client("https://example.bitrix24.com","x",bad_json).call("crm.item.list")
     except Bitrix24LiveError: pass
     else: raise AssertionError("invalid JSON accepted")
-    for url,token in [("http://example.bitrix24.com","x"),("https://example.bitrix24.com",""),("https://example.bitrix24.com/rest/1/hook","x")]:
+    for url,token in [("http://example.bitrix24.com","x"),("https://example.bitrix24.com",""),("https://example.bitrix24.com/path","x")]:
         try: Bitrix24Client(url,token,transport)
         except Bitrix24LiveError: pass
         else: raise AssertionError("unsafe configuration accepted")
