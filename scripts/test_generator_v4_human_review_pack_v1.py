@@ -30,6 +30,13 @@ class HumanReviewPackTests(unittest.TestCase):
             self.assertNotIn("ORG-", row["body"])
             self.assertNotIn("ORG-", row["subject"])
 
+    def test_blinded_body_has_no_internal_scenario_label_leakage(self):
+        self.assertEqual(self.audit["scenario_label_leakage"], 0)
+        for row in self.pack["records"]:
+            self.assertNotIn("Контекст события:", row["body"])
+            self.assertNotIn("Область согласования:", row["body"])
+            self.assertNotIn("unit_approval:", row["body"].lower())
+
     def test_answer_key_is_separate_and_complete(self):
         self.assertTrue(self.key["restricted"])
         self.assertTrue(self.key["do_not_share_with_reviewers"])
