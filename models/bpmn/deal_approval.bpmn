@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Definitions_LPR" targetNamespace="urn:lpr:process">
+ <bpmn:process id="deal_approval" name="Deal approval" isExecutable="false">
+  <bpmn:startEvent id="start" name="start"/>
+  <bpmn:task id="request" name="request"/>
+  <bpmn:task id="delegate" name="delegate"/>
+  <bpmn:task id="complete" name="complete"/>
+  <bpmn:task id="review" name="review"/>
+  <bpmn:task id="recommend" name="recommend"/>
+  <bpmn:businessRuleTask id="decide" name="decide"/>
+  <bpmn:exclusiveGateway id="route" name="route"/>
+  <bpmn:task id="object" name="object"/>
+  <bpmn:task id="revise" name="revise"/>
+  <bpmn:task id="recheck" name="recheck"/>
+  <bpmn:task id="approve" name="approve"/>
+  <bpmn:task id="reject" name="reject"/>
+  <bpmn:exclusiveGateway id="merge" name="merge"/>
+  <bpmn:task id="close" name="close"/>
+  <bpmn:endEvent id="end" name="end"/>
+  <bpmn:sequenceFlow id="f1" sourceRef="start" targetRef="request"></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f2" sourceRef="request" targetRef="delegate"></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f3" sourceRef="delegate" targetRef="complete"></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f4" sourceRef="complete" targetRef="review"></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f5" sourceRef="review" targetRef="recommend"></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f6" sourceRef="recommend" targetRef="decide"></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f7" sourceRef="decide" targetRef="route"></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f8" sourceRef="route" targetRef="object"><bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">outcome = "revise"</bpmn:conditionExpression></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f9" sourceRef="route" targetRef="approve"><bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">outcome = "approve"</bpmn:conditionExpression></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f10" sourceRef="route" targetRef="reject"><bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">outcome = "reject"</bpmn:conditionExpression></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f11" sourceRef="object" targetRef="revise"></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f12" sourceRef="revise" targetRef="recheck"></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f13" sourceRef="recheck" targetRef="decide"></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f14" sourceRef="approve" targetRef="merge"></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f15" sourceRef="reject" targetRef="merge"></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f16" sourceRef="merge" targetRef="close"></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f17" sourceRef="close" targetRef="end"></bpmn:sequenceFlow>
+ </bpmn:process>
+</bpmn:definitions>
