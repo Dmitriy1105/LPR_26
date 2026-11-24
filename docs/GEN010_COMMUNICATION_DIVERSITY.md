@@ -34,9 +34,10 @@ Increase contextual diversity of generated CRM messages without changing the sce
 
 ## Measured results
 
-From CI run #193, implementation commit `74366d11956beacf46e39227f70b3ac5c2bc2dcf`:
+From CI run #193 (implementation) and CI run #194 (final generator version bump to 1.1.0):
 
-- Full CI: **SUCCESS**.
+- Full CI: **SUCCESS** on #193 and #194.
+- Final generator-version commit `36ce89a42fe08b3ef2824506d90ea9a23e0f94f8`: full CI #194 **SUCCESS**.
 - Eight deterministic seeds in the consolidated evaluation.
 - Events: **1,959**.
 - Communications: **1,959**.
