@@ -10,11 +10,16 @@ class Bitrix24LiveError(RuntimeError):
     pass
 
 def _base_url(value):
-    if not isinstance(value,str) or not value.startswith("https://"):
+    if not isinstance(value, str):
+        raise Bitrix24LiveError("Bitrix24 base URL must be a string")
+    parsed = urllib.parse.urlparse(value)
+    if parsed.scheme != "https" or not parsed.hostname:
         raise Bitrix24LiveError("Bitrix24 base URL must use HTTPS")
-    if re.search(r"/rest/\d+/[^/]+/?$",value):
-        raise Bitrix24LiveError("Pass the REST webhook base path; keep the webhook token in an environment secret")
-    return value.rstrip("/")
+    if parsed.username or parsed.password or parsed.query or parsed.fragment:
+        raise Bitrix24LiveError("Configure only the HTTPS Bitrix24 portal origin")
+    if parsed.path not in ("", "/"):
+        raise Bitrix24LiveError("Configure only the HTTPS Bitrix24 portal origin")
+    return "https://" + parsed.netloc
 
 class Bitrix24Client:
     def __init__(self,base_url=None,webhook_token=None,transport=None):
