@@ -47,3 +47,19 @@ request_information, delegate, complete_task, review, recommend, object, revise,
 ## Current blocker
 
 The current conversation has no independently callable LLM inference endpoint or model-provider credentials exposed for batch execution. ChatGPT can provide semantic judgments in conversation, but that is not a reproducible external batch-inference run with a verifiable model-call log. Do not fabricate provider logs or claim a batch LLM run. The next implementation task is to prepare the fresh blinded pack and an inference adapter, then run it through an explicitly configured model endpoint.
+
+
+## 2026-11-25 implementation update — fresh pack built
+
+- Fresh sample ID: `GEN01011B1-SEED-20261125`.
+- Scenario seed: `42`; deterministic sample-selection seed: `20261125`.
+- 220 records: exactly 20 per each of 11 event classes, distributed across all 20 organizations.
+- The LLM classification input was tightened to **review_id, subject, body only**. Channel and record_format were removed from model input because the generator's event-to-channel mapping can act as a label shortcut.
+- Blind-pack audit: PASS; 220 unique IDs; no Ground Truth fields; no internal scenario markers; answer key separate.
+- Blind-pack SHA-256: `86e95f4219ad87ed2e92416e53b0d9ab1374c75a78159aa780e38489c2251f61`.
+- CI run: https://github.com/Dmitriy1105/LPR_26/actions/runs/45506756588
+- Reviewer-visible artifact ID: `14972574525`.
+- Restricted answer-key artifact ID: `14973970286`; not opened or downloaded during this step.
+- OpenAI-compatible inference adapter added at `scripts/generator_v4_gen01011b1_llm_adapter_v1.py`.
+
+**Current status:** fresh sample built and validated. Actual LLM inference has not run because no model-provider endpoint/model credentials are configured in the repository environment. Do not open the restricted key until the annotation JSON is completed and locked.
