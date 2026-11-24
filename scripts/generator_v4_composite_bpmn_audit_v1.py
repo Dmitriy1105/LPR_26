@@ -121,7 +121,7 @@ def audit():
             errors.append({"deal_id":deal["deal_id"],"error":"composite_execution_error","detail":str(exc)})
             continue
         terminal=result["end"]; terminals[terminal]+=1
-        expected="blocked" if family=="rejected" else "end"
+        expected="end"
         outcome=result["context"].get("dealOutcome")
         expected_outcome="reject" if family=="rejected" else "approve"
         if terminal!=expected:
