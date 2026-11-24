@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" id="Definitions_Escalation_Route" name="Escalation route" namespace="urn:lpr:decision">
+<decision id="escalation_route" name="Escalation route"><decisionTable id="escalation_table" hitPolicy="UNIQUE">
+<input><inputExpression typeRef="string"><text>budgetStatus</text></inputExpression></input>
+<input><inputExpression typeRef="boolean"><text>hasManager</text></inputExpression></input>
+<output name="outcome" typeRef="string"/>
+<rule id="r00"><inputEntry><text>"approved"</text></inputEntry><inputEntry><text>false</text></inputEntry><outputEntry><text>"stop"</text></outputEntry></rule>
+<rule id="r01"><inputEntry><text>"approved"</text></inputEntry><inputEntry><text>true</text></inputEntry><outputEntry><text>"stop"</text></outputEntry></rule>
+<rule id="r10"><inputEntry><text>"rejected"</text></inputEntry><inputEntry><text>false</text></inputEntry><outputEntry><text>"stop"</text></outputEntry></rule>
+<rule id="r11"><inputEntry><text>"rejected"</text></inputEntry><inputEntry><text>true</text></inputEntry><outputEntry><text>"stop"</text></outputEntry></rule>
+<rule id="r20"><inputEntry><text>"blocked"</text></inputEntry><inputEntry><text>false</text></inputEntry><outputEntry><text>"stop"</text></outputEntry></rule>
+<rule id="r21"><inputEntry><text>"blocked"</text></inputEntry><inputEntry><text>true</text></inputEntry><outputEntry><text>"stop"</text></outputEntry></rule>
+<rule id="r30"><inputEntry><text>"escalated"</text></inputEntry><inputEntry><text>false</text></inputEntry><outputEntry><text>"stop"</text></outputEntry></rule>
+<rule id="r31"><inputEntry><text>"escalated"</text></inputEntry><inputEntry><text>true</text></inputEntry><outputEntry><text>"advance"</text></outputEntry></rule>
+</decisionTable></decision></definitions>
