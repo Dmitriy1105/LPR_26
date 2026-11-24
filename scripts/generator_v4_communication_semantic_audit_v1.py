@@ -98,7 +98,11 @@ def audit_rendered_communications(world: dict[str, Any],
         if event_type in ("complete_task", "revise"):
             if gold.get("executor_contact_id") != expected_executor:
                 errors.append("executor annotation mismatch " + event_id)
+            if comm.get("action_executor_contact_id") != expected_executor:
+                errors.append("rendered action executor mismatch " + event_id)
             executor_checks += 1
+        elif comm.get("action_executor_contact_id") is not None:
+            errors.append("executor populated for non-execution event " + event_id)
         elif gold.get("executor_contact_id") is not None:
             errors.append("unexpected executor annotation " + event_id)
 
@@ -107,6 +111,10 @@ def audit_rendered_communications(world: dict[str, Any],
         expected_decision_actor = author if event_type in decision_types else None
         if gold.get("decision_maker_contact_id") != expected_decision_actor:
             errors.append("decision actor attribution mismatch " + event_id)
+        if comm.get("decision_actor_contact_id") != expected_decision_actor:
+            errors.append("rendered decision actor mismatch " + event_id)
+        if event_type not in decision_types and comm.get("decision_actor_contact_id") is not None:
+            errors.append("decision actor populated for non-decision event " + event_id)
         if event_type in decision_types:
             decision_actor_checks += 1
             grant_refs = gold.get("authority_grant_refs", [])
@@ -144,6 +152,8 @@ def audit_rendered_communications(world: dict[str, Any],
             errors.append("communication timestamp differs from source event " + event_id)
         if comm.get("source_ref") != event.get("source_ref") or not event.get("source_ref"):
             errors.append("confirming source reference mismatch " + event_id)
+        if comm.get("confirming_source_ref") != event.get("source_ref"):
+            errors.append("explicit confirming source lineage mismatch " + event_id)
         if comm.get("deal_id") != event.get("deal_id") or comm.get("organization_id") != event.get("organization_id"):
             errors.append("deal/organization lineage mismatch " + event_id)
         confirming_source_checks += 1
@@ -240,7 +250,7 @@ def audit_rendered_communications(world: dict[str, Any],
             "masked_or_absent_context_records": context_masked,
         },
         "limitations": [
-            "Executor and decision-maker identities are validated against evaluation annotations but are not explicit fields in the current communication schema.",
+            "Executor, decision actor and confirming source are now explicit fields derived from the observable event; Ground Truth is used only to independently verify them.",
             "Speaker identity remains unknown because turn-level annotations are unavailable.",
             "Automated semantic checks are rule-based; they cannot establish human-level naturalness or full entailment."
         ],
