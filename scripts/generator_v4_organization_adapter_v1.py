@@ -165,7 +165,7 @@ def build(seed: int = 42, count: int = 20, config: dict | None = None) -> list[d
             "people": people_rows,
             "role_assignments": assignments,
         }
-        validate(canonical, minimum, maximum, required_units)
+        validate([canonical], minimum, maximum, required_units)
         result.append(canonical)
     if len({o["target_employee_count"] for o in result}) < 2:
         raise ValueError("employee counts must vary across organizations")
