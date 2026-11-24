@@ -104,7 +104,7 @@ jobs:
       - run: python scripts/test_generator_v4_bpmn_canonical_adapter_v1.py > generator-v4-bpmn-canonical-adapter-test.json
       - run: python scripts/generator_v4_composite_bpmn_audit_v1.py > generator-v4-composite-bpmn-audit.json
       - run: python scripts/test_generator_v4_composite_bpmn_audit_v1.py > generator-v4-composite-bpmn-audit-test.json
-      - run: python scripts/generator_v4_communication_renderer_audit_v1.py > generator-v4-communication-renderer-audit.json
+      - run: python scripts/generator_v4_communication_renderer_audit_v1.py | tee generator-v4-communication-renderer-audit.json
       - run: python scripts/test_generator_v4_communication_renderer_v1.py > generator-v4-communication-renderer-test.json
       - run: python scripts/audit_model_links.py > model-links-qc.json
       - run: pip install lxml==5.4.0
