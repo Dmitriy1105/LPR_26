@@ -62,6 +62,18 @@ def run(instance,technical,budget,actors):
         current=outgoing[0].get("targetRef")
     raise RuntimeError("step limit")
 if __name__=="__main__":
+    from itertools import product
+    readiness_cases=[]
+    for t,b in product(("positive","negative","rework","referred"),("approved","rejected","unresolved_limit","no_active_grant","blocked")):
+        expected="pending" if t in {"rework","referred"} or b in {"unresolved_limit","no_active_grant","blocked"} else "ready" if (t,b)==("positive","approved") else "not_ready"
+        inputs=dict(technicalStatus=t,budgetStatus=b)
+        actual,rule=readiness(inputs)
+        assert actual==expected and rule
+        readiness_cases.append(dict(inputs=inputs,outcome=actual,rule=rule))
+    for inputs in [dict(technicalStatus="unknown",budgetStatus="approved"),dict(technicalStatus="positive",budgetStatus=None),dict(technicalStatus="positive")]:
+        try: readiness(inputs)
+        except (ValueError,KeyError): pass
+        else: raise AssertionError("invalid readiness input accepted")
     cases=[]
     for amount,funds,day,tech,rem,actor,expected in [
       (500000,True,"2026-06-01",True,False,"P1","approve"),
@@ -76,5 +88,10 @@ if __name__=="__main__":
         r=run(*args)
         assert r["decision"]==expected and r==run(*args)
         assert [e["global_step"] for e in r["events"]]==list(range(len(r["events"])))
+        assert (r["trace"][-1]=="pending")== (expected=="pending")
+        assert ("deal_approval" in r["children"]) == (expected!="pending")
+        decisions=[e["record"] for e in r["events"] if e["record"].get("decision_id")=="corporate_readiness"]
+        assert len(decisions)==1 and decisions[0]["rule_id"] and len(decisions[0]["dmn_sha256"])==64
+        assert len([e for e in r["events"] if "sequence_flow_id" in e["record"]])==len(r["trace"])-1
         cases.append(r)
-    print(json.dumps({"status":"PASS","cases":cases},indent=2))
+    print(json.dumps({"status":"PASS","cases":cases,"readiness_cases":readiness_cases,"invalid_inputs_rejected":3},indent=2))
