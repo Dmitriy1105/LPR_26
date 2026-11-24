@@ -35,9 +35,9 @@ class CanonicalCommunicationRendererTests(unittest.TestCase):
         grouped = defaultdict(list)
         for row in self.first:
             value = row["body"].lower()
-            value = re.sub(r"org-\\d+-d\\d+-e\\d+|org-\\d+-d\\d+|comm:org-\\d+-d\\d+-e\\d+", " ", value)
-            value = re.sub(r"\\b\\d+\\b", " ", value)
-            value = re.sub(r"[^\\wа-яё]+", " ", value, flags=re.IGNORECASE).strip()
+            value = re.sub(r"org-\d+-d\d+-e\d+|org-\d+-d\d+|comm:org-\d+-d\d+-e\d+", " ", value)
+            value = re.sub(r"\b\d+\b", " ", value)
+            value = re.sub(r"[^\wа-яё]+", " ", value, flags=re.IGNORECASE).strip()
             grouped[row["event_type"]].append(value)
         ratios = {kind: len(set(texts)) / len(texts) for kind, texts in grouped.items()}
         self.assertEqual(len(ratios), 11)
