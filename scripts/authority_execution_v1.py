@@ -12,7 +12,7 @@ def role_policy(c,policy):
     role=next(r for r in org["roles"] if r["id"]==people[c["actor"]]["role"])
     capability=policy["capability"]
     return {policy["output"]:capability in role[policy["field"]],"authority_role":role["id"],"authority_capability":capability}
-def execute_authoritative(pid,inputs,instance="I1"):
+def execute_authoritative(pid,inputs,instance="I1",task_handler=None):
     validate(load("organization_profile_v1.json"),load("budget_authority_v1.json"))
     profile=load(PROFILE)
     allowed=profile["allowed_inputs"]
@@ -21,7 +21,7 @@ def execute_authoritative(pid,inputs,instance="I1"):
     people={p["id"] for p in org["people"]}
     if any(v not in people for k,v in inputs.items() if k=="actor" or k=="initiator" or k.endswith("Actor")): raise ValueError("unknown person")
     operations={name:(lambda c,p=policy:role_policy(c,p)) for name,policy in profile["role_policies"].items()}
-    result=execute(pid,inputs,profile["registry"],instance=instance,policy_operations=operations)
+    result=execute(pid,inputs,profile["registry"],instance=instance,policy_operations=operations,task_handler=task_handler)
     result["execution_mode"]="authoritative_simulation"
     result["authority_sources"]={name:sha256((ROOT/"models/organization"/name).read_bytes()).hexdigest() for name in ("organization_profile_v1.json","budget_authority_v1.json",PROFILE)}
     return result
