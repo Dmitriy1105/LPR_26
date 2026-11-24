@@ -290,7 +290,8 @@ def validate(dataset, config=None):
     expected_missing = cfg["observable_missingness"]["affected_deal_count"]
     check(missing["affected_deal_count"] == expected_missing, "exact missingness deal quota")
     check(len(missing["affected_deal_ids"]) == expected_missing, "unique missingness deal IDs")
-    missing_by_org = Counter(deal_by_id[did]["organization_id"] for did in missing["affected_deal_ids"] if did in deal_by_id) if "deal_by_id" in locals() else Counter()
+    deal_org_index = {d["deal_id"]: d["organization_id"] for d in deals}
+    missing_by_org = Counter(deal_org_index[did] for did in missing["affected_deal_ids"] if did in deal_org_index)
     check(len(missing_by_org) == 20 and all(n == 4 for n in missing_by_org.values()), "missingness must affect four deals per organization")
     deal_ids = {d["deal_id"] for d in deals}
     check(set(missing["affected_deal_ids"]) <= deal_ids, "missingness orphan deal")
