@@ -1,6 +1,6 @@
 """Deterministic multi-organization model with six core departments."""
 import random
-DEPARTMENTS=("sales","finance","technical","procurement","legal","project_office")
+DEPARTMENTS=("sales","finance","technical","procurement","legal","project_office","security","information_security")
 SALES_ROLES=("corporate_sales_manager","account_manager","business_development_specialist","sales_specialist")
 def generate(seed=42,count=5):
     if type(count) is not int or not 1<=count<=1000: raise ValueError("invalid organization count")
