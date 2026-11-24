@@ -64,8 +64,16 @@ def audit():
             "within_type_pairs": pair_count,
         }
 
+    pair_total = sum(row["within_type_pairs"] for row in diversity.values())
+    high_total = sum(row["high_similarity_pairs_ge_0_85"] for row in diversity.values())
+    minimum_body_ratio = min(row["body_uniqueness_ratio"] for row in diversity.values())
+    diversity_status = "PASS" if minimum_body_ratio >= 0.55 and high_total / max(pair_total, 1) <= 0.005 else "FAIL"
     return {
-        "status": validation["status"],
+        "status": "PASS" if validation["status"] == "PASS" and diversity_status == "PASS" else "FAIL",
+        "structural_status": validation["status"],
+        "text_diversity_status": diversity_status,
+        "minimum_event_type_body_uniqueness_ratio": minimum_body_ratio,
+        "high_similarity_pair_ratio": round(high_total / max(pair_total, 1), 6),
         "seed": world["seed"],
         "organizations": len(world["organizations"]),
         "deals": len(world["deals"]),
