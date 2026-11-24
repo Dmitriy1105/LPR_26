@@ -3,18 +3,31 @@ import json
 import xml.etree.ElementTree as ET
 from organization_decision_audit import simulate,digest
 from budget_escalation_v4 import escalate
-from process_executor_v4 import ROOT,B
+from process_executor_v4 import ROOT,B,D
+READINESS='models/dmn/corporate_readiness.dmn'
+def readiness(values):
+    table=ET.parse(ROOT/READINESS).getroot().find(D+'decision').find(D+'decisionTable')
+    names=[i.find(D+'inputExpression').findtext(D+'text') for i in table.findall(D+'input')]
+    matches=[r for r in table.findall(D+'rule') if [json.loads(x.findtext(D+'text')) for x in r.findall(D+'inputEntry')]==[values[n] for n in names]]
+    if len(matches)!=1: raise ValueError('nonunique or missing readiness rule')
+    r=matches[0]
+    return json.loads(r.find(D+'outputEntry').findtext(D+'text')),r.get('id')
 MODEL="models/bpmn/corporate_decision_multilevel.bpmn"
 def run(instance,technical,budget,actors):
     p=ET.parse(ROOT/MODEL).getroot().find(B+"process")
     nodes={n.get("id"):n for n in p if n.tag!=B+"sequenceFlow"}
     flows=p.findall(B+"sequenceFlow")
-    current="start"; children={}; trace=[]; events=[]
+    current="start"; children={}; trace=[]; events=[]; context={}; decision=None
     def emit(path,record):
         events.append(dict(global_step=len(events),instance_path=path,record=record))
     for _ in range(20):
         n=nodes[current]; trace.append(current); emit(instance,{"node_id":current})
+        if n.tag==B+"businessRuleTask":
+            inputs=dict(technicalStatus=children["technical_expertise"]["end"],budgetStatus=children["budget_escalation"]["outcome"])
+            context["readiness"],rule=readiness(inputs)
+            emit(instance,dict(decision_id="corporate_readiness",rule_id=rule,inputs=inputs,outcome=context["readiness"],dmn_sha256=digest(READINESS)))
         if n.tag==B+"endEvent":
+            if current=="pending": decision="pending"
             return dict(instance_id=instance,trace=trace,children=children,events=events,decision=decision,model_sha256=digest(MODEL))
         if n.tag==B+"callActivity":
             child=n.get("calledElement").removeprefix("lpr:")
@@ -24,13 +37,8 @@ def run(instance,technical,budget,actors):
             elif child=="budget_escalation":
                 r=escalate(cid,**budget,start=actors["budget_approval"],initiator=actors["initiator"])
             elif child=="deal_approval":
-                b=children["budget_escalation"]["outcome"]
-                t=children["technical_expertise"]["end"]
-                if b in {"unresolved_limit","no_active_grant","blocked"} or t in {"rework","referred"}:
-                    decision="pending"; r={"end":"pending","records":[],"reason":{"budget":b,"technical":t}}
-                else:
-                    r=simulate(child,cid,actors["initiator"],actors[child],dict(requirementsMet=b=="approved" and t=="positive",revisionAllowed=False))
-                    decision=next(x["outcome"] for x in reversed(r["records"]) if "decision_id" in x)
+                r=simulate(child,cid,actors["initiator"],actors[child],dict(requirementsMet=context["readiness"]=="ready",revisionAllowed=False))
+                decision=next(x["outcome"] for x in reversed(r["records"]) if "decision_id" in x)
             else: raise ValueError("unsupported child")
             children[child]=r
             if child=="budget_escalation":
@@ -40,8 +48,17 @@ def run(instance,technical,budget,actors):
             else:
                 for record in r["records"]: emit(cid,record)
                 if r["end"]=="pending": emit(cid,{"status":"pending","reason":r["reason"]})
-        outgoing=[f for f in flows if f.get("sourceRef")==current]
+        outgoing=[]
+        for f in flows:
+            if f.get("sourceRef")!=current: continue
+            condition=f.find(B+"conditionExpression")
+            if condition is None: outgoing.append(f)
+            else:
+                key,sep,value=condition.text.partition(" = ")
+                if not sep or key not in context: raise ValueError("invalid condition")
+                if context[key]==json.loads(value): outgoing.append(f)
         if len(outgoing)!=1: raise ValueError("invalid flow")
+        emit(instance,{"sequence_flow_id":outgoing[0].get("id")})
         current=outgoing[0].get("targetRef")
     raise RuntimeError("step limit")
 if __name__=="__main__":
