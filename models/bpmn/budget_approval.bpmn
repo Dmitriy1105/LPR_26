@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Definitions_Budget" targetNamespace="urn:lpr:process">
+ <bpmn:process id="budget_approval" name="Budget approval" isExecutable="false">
+  <bpmn:startEvent id="start" name="start"/>
+  <bpmn:task id="submit" name="submit"/>
+  <bpmn:task id="financial_review" name="financial_review"/>
+  <bpmn:businessRuleTask id="decide" name="decide"/>
+  <bpmn:exclusiveGateway id="route" name="route"/>
+  <bpmn:task id="approve" name="approve"/>
+  <bpmn:task id="reject" name="reject"/>
+  <bpmn:task id="escalate" name="escalate"/>
+  <bpmn:task id="deny" name="deny"/>
+  <bpmn:endEvent id="approved" name="approved"/>
+  <bpmn:endEvent id="rejected" name="rejected"/>
+  <bpmn:endEvent id="escalated" name="escalated"/>
+  <bpmn:endEvent id="blocked" name="blocked"/>
+  <bpmn:sequenceFlow id="f1" sourceRef="start" targetRef="submit"></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f2" sourceRef="submit" targetRef="financial_review"></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f3" sourceRef="financial_review" targetRef="decide"></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f4" sourceRef="decide" targetRef="route"></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f5" sourceRef="route" targetRef="approve"><bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">outcome = "approve"</bpmn:conditionExpression></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f6" sourceRef="route" targetRef="reject"><bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">outcome = "reject"</bpmn:conditionExpression></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f7" sourceRef="route" targetRef="escalate"><bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">outcome = "escalate"</bpmn:conditionExpression></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f8" sourceRef="route" targetRef="deny"><bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">outcome = "deny"</bpmn:conditionExpression></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f9" sourceRef="approve" targetRef="approved"></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f10" sourceRef="reject" targetRef="rejected"></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f11" sourceRef="escalate" targetRef="escalated"></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f12" sourceRef="deny" targetRef="blocked"></bpmn:sequenceFlow>
+ </bpmn:process>
+</bpmn:definitions>
