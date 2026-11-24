@@ -21,8 +21,9 @@ class Bitrix24Client:
     def __init__(self,base_url=None,webhook_token=None,transport=None):
         self.base_url=_base_url(base_url or os.getenv("BITRIX24_BASE_URL",""))
         self.token=webhook_token or os.getenv("BITRIX24_WEBHOOK_TOKEN","")
-        if not self.token or "/" in self.token or "?" in self.token:
-            raise Bitrix24LiveError("Missing or invalid webhook token; configure BITRIX24_WEBHOOK_TOKEN securely")
+        self.user_id=os.getenv("BITRIX24_USER_ID","")
+        if not self.token or "/" in self.token or "?" in self.token or not self.user_id.isdigit():
+            raise Bitrix24LiveError("Configure BITRIX24_USER_ID and BITRIX24_WEBHOOK_TOKEN as protected environment secrets")
         self.transport=transport or self._https_transport
     @staticmethod
     def _https_transport(url,body,timeout):
@@ -39,8 +40,8 @@ class Bitrix24Client:
             raise Bitrix24LiveError("REST method is not allowlisted")
         if not isinstance(timeout,(int,float)) or timeout<=0 or timeout>60:
             raise Bitrix24LiveError("timeout must be between 0 and 60 seconds")
-        url=self.base_url+"/rest/"+urllib.parse.quote(self.token,safe="")+"/"+method+".json"
-        body=urllib.parse.urlencode({"filter[ID]": "", **(params or {})},doseq=True).encode()
+        url=self.base_url+"/rest/"+urllib.parse.quote(self.user_id,safe="")+"/"+urllib.parse.quote(self.token,safe="")+"/"+method+".json"
+        body=urllib.parse.urlencode(params or {},doseq=True).encode()
         status,text=self.transport(url,body,timeout)
         if status!=200: raise Bitrix24LiveError("Bitrix24 returned HTTP "+str(status))
         try: payload=json.loads(text)
