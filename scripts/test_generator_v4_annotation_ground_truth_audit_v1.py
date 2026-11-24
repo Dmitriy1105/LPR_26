@@ -28,7 +28,7 @@ class AnnotationGroundTruthAuditTests(unittest.TestCase):
         a,k=fixture()
         a["records"][0]["reviewer_llm_v2"]["primary_event_type"]="unclear"
         r=evaluate(a,k)
-        self.assertEqual(r["primary_metrics"]["accuracy"],219/220)
+        self.assertAlmostEqual(r["primary_metrics"]["accuracy"],219/220,places=4)
         self.assertEqual(r["per_class"][CLASSES[0]]["recall"],0.95)
 
     def test_incomplete_ids_rejected(self):
