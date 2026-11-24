@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "status": "PASS",
+  "organizations": 5,
+  "departments_required": [
+    "sales",
+    "finance",
+    "technical",
+    "procurement",
+    "legal",
+    "project_office",
+    "security",
+    "information_security"
+  ],
+  "checks": {
+    "authority_empty_by_default": true,
+    "competency_evidence_defaults": true,
+    "cross_module_empty_ledger_compatibility": true,
+    "department_coverage": true,
+    "deterministic_generation": true,
+    "role_coverage": true,
+    "sales_department_coverage": true,
+    "security_separation": true,
+    "unique_organization_ids": true
+  },
+  "failed_checks": [],
+  "organization_results": [
+    {
+      "organization_id": "ORG-0001",
+      "units": 9,
+      "people": 30,
+      "roles": 30,
+      "status": "PASS"
+    },
+    {
+      "organization_id": "ORG-0002",
+      "units": 9,
+      "people": 31,
+      "roles": 31,
+      "status": "PASS"
+    },
+    {
+      "organization_id": "ORG-0003",
+      "units": 9,
+      "people": 40,
+      "roles": 40,
+      "status": "PASS"
+    },
+    {
+      "organization_id": "ORG-0004",
+      "units": 9,
+      "people": 34,
+      "roles": 34,
+      "status": "PASS"
+    },
+    {
+      "organization_id": "ORG-0005",
+      "units": 9,
+      "people": 37,
+      "roles": 37,
+      "status": "PASS"
+    }
+  ]
+}
