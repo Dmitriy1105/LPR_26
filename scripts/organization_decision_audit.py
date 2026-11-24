@@ -23,15 +23,7 @@ def simulate(process_id,instance_id,initiator,actor,inputs):
         record={**step,"logical_time":step["step"],"actor_id":None}
         if "decision_id" in step:
             b=spec["decisions"][node]
-            table=next(d for d in ET.parse(ROOT/b["file"]).getroot().findall(D+"decision") if d.get("id")==b["id"]).find(D+"decisionTable")
-            names=[i.find(D+"inputExpression").findtext(D+"text") for i in table.findall(D+"input")]
-            snapshot={n:context[n] for n in names}
-            matched=[]
-            for r in table.findall(D+"rule"):
-                tests=[x.findtext(D+"text") for x in r.findall(D+"inputEntry")]
-                if all(t=="-" or (t=="true")==snapshot[n] for t,n in zip(tests,names)): matched.append(r.get("id"))
-            assert len(matched)==1
-            record.update(actor_id=actor,actor_role="decision_subject",inputs=snapshot,rule_id=matched[0],authority_source={"role":role["id"],"field":field,"required":required,"granted":context[key]},decision_model_sha256=digest(b["file"]))
+            record.update(actor_id=actor,actor_role="decision_subject",authority_source={"role":role["id"],"field":field,"required":required,"granted":context[key]},decision_model_sha256=digest(b["file"]))
         if node in {"approve","reject","deny","escalate","recommend_accept","recommend_rework","recommend_reject","refer_expert"}:
             record.update(actor_id=actor,actor_role="assigned_action_actor")
         records.append(record)
