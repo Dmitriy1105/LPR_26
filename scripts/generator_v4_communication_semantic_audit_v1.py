@@ -23,11 +23,7 @@ CONTEXT_MARKERS = {
     "reject": ("reject",),
     "close": ("deal episode closed",),
 }
-CHANNEL_MARKERS = {
-    "email": ("направ", "письм", "передаю", "прошу", "сообщ"),
-    "call": ("звон", "телефон"),
-    "meeting": ("встреч", "протокол", "совещан"),
-}
+RECORD_FORMATS = {"email": "email_message", "call": "call_summary", "meeting": "meeting_minutes"}
 FORBIDDEN_OUTCOME_TOKENS = ("approved", "rejected", "одобрен", "одобрено", "отклонен", "отклонено")
 
 
@@ -159,8 +155,8 @@ def audit_rendered_communications(world: dict[str, Any],
         if not comm.get("subject") or comm.get("subject") not in SUBJECTS[event_type]:
             errors.append("subject does not belong to event type " + event_id)
         body_lower = comm.get("body", "").lower()
-        if not any(marker in body_lower for marker in CHANNEL_MARKERS[expected_channel]):
-            errors.append("channel-specific body marker missing " + event_id)
+        if comm.get("record_format") != RECORD_FORMATS[expected_channel]:
+            errors.append("channel-specific record format mismatch " + event_id)
         channel_checks += 1
 
         # Observable context is copied verbatim only when it is present.
@@ -200,7 +196,7 @@ def audit_rendered_communications(world: dict[str, Any],
             errors.append("approval communication contains rejection language " + event_id)
         if event_type == "reject" and "одобр" in body_lower:
             errors.append("rejection communication contains approval language " + event_id)
-        if event_type == "unit_approval" and "итоговое одобрение сделки" in body_lower:
+        if event_type == "unit_approval" and any(phrase in body_lower for phrase in ("это итоговое одобрение сделки", "является итоговым одобрением сделки", "подтверждает итоговое одобрение сделки")):
             errors.append("unit approval inflated to final deal approval " + event_id)
         if event_type == "close" and any(term in body_lower for term in FORBIDDEN_OUTCOME_TOKENS):
             errors.append("closure communication exposes final outcome " + event_id)
