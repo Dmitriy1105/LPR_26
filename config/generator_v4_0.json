@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0.0",
+  "contract_version": "1.0.0",
+  "generator_version": "4.0",
+  "generation_authorized": false,
+  "bulk_generation_enabled": false,
+  "seed": 42,
+  "organizations": 20,
+  "deals_per_organization": 40,
+  "total_deals": 800,
+  "employees_per_organization": {
+    "min": 30,
+    "max": 40,
+    "mode": "variable",
+    "require_variation": true
+  },
+  "scenario_profile": "mixed",
+  "scenario_families": [
+    {
+      "code": "routine_approval",
+      "share_percent": 50,
+      "exact_count": 400
+    },
+    {
+      "code": "conflict_revision",
+      "share_percent": 25,
+      "exact_count": 200,
+      "requires_explicit_conflict_evidence": true
+    },
+    {
+      "code": "rejected",
+      "share_percent": 15,
+      "exact_count": 120
+    },
+    {
+      "code": "multi_level_approval",
+      "share_percent": 10,
+      "exact_count": 80,
+      "requires_multiple_units": true
+    }
+  ],
+  "observable_missingness": {
+    "mode": "observable_only",
+    "affected_deal_share_percent": 10,
+    "affected_deal_count": 80,
+    "selection_unit": "distinct_deal_episode",
+    "deterministic": true,
+    "preserve_hidden_ground_truth": true,
+    "mask_eligible_fields_only": true,
+    "never_mask_keys_or_lineage": true
+  },
+  "required_organization_units": [
+    "headquarters",
+    "sales",
+    "finance",
+    "technical",
+    "procurement",
+    "legal",
+    "project_office",
+    "security",
+    "information_security"
+  ],
+  "ground_truth": {
+    "completeness": "complete_hidden_truth",
+    "separate_from_observable_input": true,
+    "accessible_to_nlp_inference": false,
+    "preserve_unknown_statuses": true
+  },
+  "reproducibility": {
+    "same_seed_same_logical_output": true,
+    "stable_entity_event_keys": true,
+    "manifest_sha256": true
+  },
+  "legacy_compatibility": {
+    "preserve_v3_fixtures": true,
+    "overwrite_legacy_fixtures": false,
+    "unresolved_record_count_discrepancy": [
+      677,
+      767
+    ],
+    "require_reconciliation_before_migration": true
+  },
+  "output_root": "src/data/generator_v4_0/",
+  "notes": [
+    "Configuration validation only; this file does not authorize or execute generation.",
+    "Conflict/revision is an exact primary scenario family: 200 of 800 deal episodes.",
+    "Observable missingness affects exactly 80 distinct deal episodes; it is not a percentage of cells or deleted records.",
+    "The 677 versus 767 legacy fixture discrepancy must be reconciled before migration."
+  ]
+}
