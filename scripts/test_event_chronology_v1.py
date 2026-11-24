@@ -9,7 +9,7 @@ def main():
     assert len(events_as_of(e,"2026-06-01T02:05:00Z","recorded_at"))==1
     assert len(events_as_of(e,"2026-06-01T02:00:00Z","occurred_at"))==2
     negatives=0
-    for mutate in (lambda x:x[0].update(event_id=""),lambda x:x[0].update(event_type="unknown"),lambda x:x[0].update(occurred_at="2026-06-01T09:00:00"),lambda x:x[0].update(recorded_at="2026-06-01T08:00:00+08:00"),lambda x:x[1].update(causation_id="missing"),lambda x:x[0].update(causation_id="E2"),lambda x:x[1].update(causation_id="E1"),lambda x:x.append(x[0]),lambda x:x[0].update(actor_id=""),lambda x:x[0].update(source_ref="")):
+    for mutate in (lambda x:x[0].update(event_id=""),lambda x:x[0].update(event_type="unknown"),lambda x:x[0].update(occurred_at="2026-06-01T09:00:00"),lambda x:x[0].update(recorded_at="2026-06-01T08:00:00+08:00"),lambda x:x[1].update(causation_id="missing"),lambda x:x[0].update(causation_id="E2"),lambda x:x[1].update(causation_id="E2"),lambda x:x.append(x[0]),lambda x:x[0].update(actor_id=""),lambda x:x[0].update(source_ref="")):
         bad=deepcopy(e); mutate(bad)
         try: validate_events(bad)
         except ValueError: negatives+=1
