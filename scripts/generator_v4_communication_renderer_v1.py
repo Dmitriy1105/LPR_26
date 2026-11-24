@@ -326,6 +326,19 @@ def validate_rendered_communications(observable_events: list[dict[str, Any]],
     comm_by_id = {}
     forbidden_fields = {"authority_grant_ref", "authority_grant_refs", "decision_outcome",
                         "ground_truth", "decision_maker_contact_id", "executor_contact_id"}
+    semantic_markers = {
+        "request_information": ("запрос", "исходн", "прошу", "сведен"),
+        "delegate": ("провер", "поруч", "эксперт", "назнач"),
+        "complete_task": ("заверш", "выполн", "провер"),
+        "review": ("рассмотр", "встреч", "обсужден"),
+        "recommend": ("рекомендац", "эксперт", "заключ"),
+        "object": ("возраж", "замечан", "несоглас"),
+        "revise": ("доработ", "коррект", "обнов", "измен"),
+        "unit_approval": ("согласован",),
+        "approve": ("одобр",),
+        "reject": ("отклон", "отказ", "отрицательн"),
+        "close": ("закрыт", "закрыти"),
+    }
     for item in communications:
         cid = item["source_event_id"]
         if cid in comm_by_id:
@@ -357,6 +370,13 @@ def validate_rendered_communications(observable_events: list[dict[str, Any]],
             errors.append("context note visibility mismatch " + cid)
         if not item["body"].strip() or len(item["body"].split()) < 8:
             errors.append("insufficient body text " + cid)
+        body_lower = item["body"].lower()
+        if not any(marker in body_lower for marker in semantic_markers[event["event_type"]]):
+            errors.append("event/text semantic marker mismatch " + cid)
+        if event["event_type"] == "approve" and any(x in body_lower for x in ("отклон", "отказ")):
+            errors.append("approval text contradicts event type " + cid)
+        if event["event_type"] == "reject" and "одобр" in body_lower:
+            errors.append("rejection text contradicts event type " + cid)
         if item["speaker_contact_id"] is not None or item["speaker_status"] != "unknown_no_turn_annotation":
             errors.append("speaker identity invented without turn annotation " + cid)
         if event["event_type"] == "close" and any(x in item["body"].lower() for x in ("одобр", "отклон", "approved", "rejected")):
