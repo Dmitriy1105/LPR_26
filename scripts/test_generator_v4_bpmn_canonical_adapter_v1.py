@@ -1,5 +1,5 @@
 import unittest
-from generator_v4_bpmn_canonical_adapter_v1 import audit
+from generator_v4_bpmn_canonical_adapter_v1 import audit, PROCESS\nfrom process_executor_v4 import run
 
 class CanonicalBpmnAdapterTests(unittest.TestCase):
     @classmethod
@@ -15,7 +15,7 @@ class CanonicalBpmnAdapterTests(unittest.TestCase):
         self.assertEqual(self.report["errors"], [])
     def test_scenario_family_outcomes(self):
         self.assertEqual(self.report["outcome_distribution"], {"approve": 680, "reject": 120})
-    def test_scope_and_generation_boundary_are_explicit(self):
+    def test_unauthorized_decision_fails_closed(self):\n        result = run(PROCESS, {"authorized": False, "requirementsMet": True, "revisionAllowed": False})\n        self.assertEqual(result["context"]["outcome"], "deny")\n        self.assertEqual(result["end"], "blocked")\n\n    def test_scope_and_generation_boundary_are_explicit(self):
         self.assertEqual(self.report["composite_call_activity_execution"],
                          "NOT_IMPLEMENTED_BY_RESTRICTED_EXECUTOR")
         self.assertFalse(self.report["generation_authorized"])
