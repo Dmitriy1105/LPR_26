@@ -49,6 +49,8 @@ def validate(org,records):
     return True
 def add_competency(records,person_id,skill,evidence_status="unverified",source_ref=None):
     if evidence_status not in ("verified","self_reported","unverified") or not skill: raise ValueError("invalid competency")
+    if evidence_status=="verified" and (not isinstance(source_ref,str) or not source_ref.strip()): raise ValueError("verified competency requires source evidence")
+    if source_ref is not None and (not isinstance(source_ref,str) or not source_ref.strip()): raise ValueError("invalid competency source")
     out=deepcopy(records); target=next((r for r in out if r["person_id"]==person_id),None)
     if target is None: raise ValueError("unknown person")
     if any(c["skill"]==skill for c in target["competencies"]): raise ValueError("duplicate competency")
