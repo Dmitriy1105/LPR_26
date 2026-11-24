@@ -42,6 +42,8 @@ jobs:
             count="$(gh api "repos/$REPO/actions/runs/$RUN_ID/artifacts?per_page=100" --jq '[.artifacts[] | select(.name == "github-pages" and .expired == false)] | length')"
             echo "Pages artifact count: $count (check $attempt/20)"
             if [[ "$count" == "1" ]]; then
+              # Allow deployment API metadata to converge after artifact listing.
+              sleep 30
               exit 0
             fi
             if [[ "$count" -gt 1 ]]; then
