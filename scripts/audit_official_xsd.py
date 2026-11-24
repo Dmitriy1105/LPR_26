@@ -9,6 +9,9 @@ from lxml import etree
 ROOT=Path(__file__).resolve().parents[1]
 XS="{http://www.w3.org/2001/XMLSchema}"
 def fetch(url,folder,seen):
+    # OMG DMN15-76: DMN 1.3 reuses the normative DMN 1.2 DI/DC schemas.
+    aliases = { 'https://www.omg.org/spec/DMN/20191111/'+name: 'https://www.omg.org/spec/DMN/20180521/'+name for name in ('DC.xsd','DI.xsd') }
+    url = aliases.get(url,url)
     if url in seen: return seen[url]
     if urlparse(url).hostname not in {"www.omg.org","omg.org"}: raise ValueError("unexpected schema host")
     try:
