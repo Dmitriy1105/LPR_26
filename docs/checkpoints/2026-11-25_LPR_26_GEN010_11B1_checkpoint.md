@@ -31,3 +31,29 @@ The previous 220-record pack and restricted answer key were opened during the ba
 
 **GEN-010.11B.1:** SPECIFICATION_STARTED — awaiting fresh holdout pack and configured LLM inference endpoint.  
 No new LLM batch inference has been run. No human expert validation is claimed.
+
+
+## 2026-11-25 execution update
+
+### Fresh sample generated and validated
+
+- Sample: `GEN01011B1-SEED-20261125`.
+- Scenario seed 42; selection seed 20261125.
+- 220 unique records, 20 per class, spread across 20 organizations.
+- Model-visible input contains only `review_id`, `subject`, `body`. Channel and record_format were deliberately removed to prevent shortcut learning from the deterministic event/channel mapping.
+- Audit: PASS — all 6 validation checks passed, no Ground Truth fields, no internal scenario labels.
+- Blind pack SHA-256: `86e95f4219ad87ed2e92416e53b0d9ab1374c75a78159aa780e38489c2251f61`.
+- CI: https://github.com/Dmitriy1105/LPR_26/actions/runs/45506756588 (SUCCESS).
+- Public blind artifact: `14972574525`.
+- Restricted key artifact: `14973970286` (not opened).
+
+### Added implementation
+
+- `scripts/generator_v4_gen01011b1_blind_pack_v1.py`
+- `scripts/generator_v4_gen01011b1_llm_adapter_v1.py`
+- `scripts/test_generator_v4_gen01011b1_blind_pack_v1.py`
+- `.github/workflows/gen01011b1-blind-llm.yml`
+
+### Remaining blocker
+
+The adapter is implemented but actual inference is not run: repository environment has no configured `LLM_API_BASE_URL`, `LLM_API_KEY`, and `LLM_MODEL`. Configure these as repository Actions secrets/variables (do not paste API keys into chat), then run the adapter against the blind artifact. Lock annotation output and SHA-256 before downloading/opening restricted answer key artifact `14973970286`.
