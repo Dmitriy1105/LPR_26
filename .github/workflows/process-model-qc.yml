@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
   push:
     branches: [feature/generator-v4-bpmn-dmn]
-    paths: ['models/**', 'scripts/test_authority_actor.py', 'scripts/test_decision_evidence_v2.py', 'scripts/dmn_interpreter.py', 'scripts/test_dmn_interpreter.py', 'scripts/validate_process_profile.py', 'scripts/process_executor_v4.py', 'scripts/test_process_library.py', 'scripts/organization_decision_audit.py', 'scripts/corporate_decision_v4.py', 'scripts/budget_escalation_v4.py', 'scripts/corporate_multilevel_v4.py', 'scripts/audit_model_links.py', 'scripts/audit_official_xsd.py', '.github/workflows/process-model-qc.yml']
+    paths: ['models/**', 'scripts/test_nested_process_audit.py', 'scripts/test_authority_actor.py', 'scripts/test_decision_evidence_v2.py', 'scripts/dmn_interpreter.py', 'scripts/test_dmn_interpreter.py', 'scripts/validate_process_profile.py', 'scripts/process_executor_v4.py', 'scripts/test_process_library.py', 'scripts/organization_decision_audit.py', 'scripts/corporate_decision_v4.py', 'scripts/budget_escalation_v4.py', 'scripts/corporate_multilevel_v4.py', 'scripts/audit_model_links.py', 'scripts/audit_official_xsd.py', '.github/workflows/process-model-qc.yml']
 jobs:
   profile:
     runs-on: ubuntu-latest
@@ -22,6 +22,7 @@ jobs:
       - run: python scripts/corporate_decision_v4.py > corporate-decision-qc.json
       - run: python scripts/budget_escalation_v4.py > escalation-qc.json
       - run: python scripts/corporate_multilevel_v4.py > multilevel-qc.json
+      - run: python scripts/test_nested_process_audit.py > nested-process-qc.json
       - run: python scripts/audit_model_links.py > model-links-qc.json
       - run: pip install lxml==5.4.0
       - run: |
@@ -42,5 +43,6 @@ jobs:
             corporate-decision-qc.json
             escalation-qc.json
             multilevel-qc.json
+            nested-process-qc.json
             model-links-qc.json
             official-xsd-qc.json
