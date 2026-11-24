@@ -1,7 +1,8 @@
 # GEN-010.8 — Canonical Composite BPMN Execution
 
 **Status:** PASS — recursive composite execution and regression suite completed in GitHub Actions  
-**Branch:** `feature/generator-v4-organization-engine`
+**Branch:** `feature/generator-v4-organization-engine`  
+**CI:** [Process model QC #45490130846 — SUCCESS](https://github.com/Dmitriy1105/LPR_26/actions/runs/45490130846)
 
 ## Delivered
 
@@ -16,7 +17,9 @@
 The QC world is rebuilt in memory using seed 42. The composite root calls technical expertise, budget escalation (which itself calls budget approval), the readiness DMN decision and the final deal approval subprocess.
 
 The regression suite verifies:
-- 800 composite process executions;
+- 800 composite process executions;  
+- exact family counts: 400 routine, 200 conflict/revision, 120 rejected, 80 multi-level approval;  
+- outcome counts: 680 approved, 120 rejected;
 - 200 conflict/revision episodes follow the revision path and reach approval;
 - 120 rejected episodes reach the rejection outcome;
 - 240 recorded unit-approval events resolve to their exact time-valid authority grants;
