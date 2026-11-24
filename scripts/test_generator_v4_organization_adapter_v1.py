@@ -49,8 +49,8 @@ class GeneratorV4OrganizationAdapterTests(unittest.TestCase):
         again = build(seed=42, count=20, config=copy.deepcopy(CONFIG))
         other_config = copy.deepcopy(CONFIG)
         other_config["seed"] = 43
-        with self.assertRaises(ValueError):
-            build(seed=43, count=20, config=other_config)
+        other_seed = build(seed=43, count=20, config=other_config)
+        self.assertNotEqual(self.orgs, other_seed)
         self.assertEqual(self.orgs, again)
 
     def test_rejects_authorized_generation_flags(self):
