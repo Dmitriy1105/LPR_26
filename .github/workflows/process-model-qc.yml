@@ -35,6 +35,7 @@ jobs:
       - run: python scripts/audit_versioned_models.py > process-model-catalog.json
       - run: python scripts/test_task_integrated_execution_v1.py > task-integration-qc.json
       - run: python scripts/test_actor_trace_v1.py > actor-trace-qc.json
+      - run: python scripts/test_extended_dmn_negative.py > extended-dmn-qc.json
       - run: python scripts/audit_model_links.py > model-links-qc.json
       - run: pip install lxml==5.4.0
       - run: |
@@ -68,5 +69,6 @@ jobs:
             process-model-catalog.json
             task-integration-qc.json
             actor-trace-qc.json
+            extended-dmn-qc.json
             model-links-qc.json
             official-xsd-qc.json
