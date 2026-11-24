@@ -2,8 +2,8 @@ import assert from "node:assert/strict";
 import { generateCommunications } from "./scenario_communication_generator_v1.mjs";
 
 const seeds = [42, 7, 19, 2026, 99173];
-const normalize = value => value.toLowerCase().replace(/[^\\p{L}\\p{N}]+/gu, " ").trim();
-const tokens = value => new Set(normalize(value).split(/\\s+/).filter(Boolean));
+const normalize = value => value.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ").trim();
+const tokens = value => new Set(normalize(value).split(/\s+/).filter(Boolean));
 const jaccard = (left, right) => {
   const a = tokens(left), b = tokens(right);
   let intersection = 0;
@@ -17,7 +17,7 @@ function evaluate(seed) {
   const normalizedBodies = new Set();
   for (const activity of dataset.communications) {
     const body = activity.DESCRIPTION.split(" Сделка: ")[0].trim();
-    const subject = activity.SUBJECT.replace(/\\s+ORG-\\d+-D\\d+$/, "").trim();
+    const subject = activity.SUBJECT.replace(/\s+ORG-\d+-D\d+$/, "").trim();
     if (!groups.has(activity.EVENT_TYPE)) groups.set(activity.EVENT_TYPE, {
       bodies: new Set(), subjects: new Set(), count: 0
     });
