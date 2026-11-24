@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:lpr="urn:lpr:process" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Definitions_Escalation" targetNamespace="urn:lpr:process">
+ <bpmn:process id="budget_escalation" isExecutable="false">
+  <bpmn:startEvent id="start"/>
+  <bpmn:callActivity id="assess" calledElement="lpr:budget_approval"/>
+  <bpmn:exclusiveGateway id="route"/>
+  <bpmn:task id="advance_manager"/>
+  <bpmn:endEvent id="end"/>
+  <bpmn:sequenceFlow id="f1" sourceRef="start" targetRef="assess"/>
+  <bpmn:sequenceFlow id="f2" sourceRef="assess" targetRef="route"/>
+  <bpmn:sequenceFlow id="f3" sourceRef="route" targetRef="advance_manager"><bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">continue = true</bpmn:conditionExpression></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f4" sourceRef="route" targetRef="end"><bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">continue = false</bpmn:conditionExpression></bpmn:sequenceFlow>
+  <bpmn:sequenceFlow id="f5" sourceRef="advance_manager" targetRef="assess"/>
+ </bpmn:process>
+</bpmn:definitions>
