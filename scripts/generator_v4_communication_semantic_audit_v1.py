@@ -251,3 +251,19 @@ def audit_rendered_communications(world: dict[str, Any],
         "warnings": warnings,
         "errors": errors,
     }
+
+
+if __name__ == "__main__":
+    import json
+    from generator_v4_scenario_engine_v1 import build
+    from generator_v4_communication_renderer_v1 import render_communications
+    from generator_v4_composite_bpmn_audit_v1 import CONFIG
+
+    world = build(config=CONFIG)
+    communications = render_communications(
+        world["observable_events"], world["organizations"], world["seed"]
+    )
+    report = audit_rendered_communications(world, communications)
+    print(json.dumps(report, ensure_ascii=False, indent=2, sort_keys=True))
+    if report["status"] != "PASS":
+        raise SystemExit(1)
