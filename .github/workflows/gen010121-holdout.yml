@@ -1,0 +1,27 @@
+name: GEN-010.12.1 Comparative Holdout
+on:
+  workflow_dispatch:
+  push:
+    branches: [feature/generator-v4-organization-engine]
+    paths:
+      - '.github/workflows/gen010121-holdout.yml'
+      - 'scripts/generator_v4_gen010121_holdout_v1.py'
+jobs:
+  holdout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python scripts/generator_v4_gen010121_holdout_v1.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: gen010121-blind
+          path: artifacts/gen010121/blind/
+          if-no-files-found: error
+      - uses: actions/upload-artifact@v4
+        with:
+          name: gen010121-evaluator-only
+          path: artifacts/gen010121/restricted/
+          if-no-files-found: error
